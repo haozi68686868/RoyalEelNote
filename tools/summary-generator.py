@@ -36,7 +36,7 @@ def find_files(rel_path, n = 0, dir = ""):
             print("test")
     else:
         # path是文件
-        if path.endswith(".md") and path != "SUMMARY.md" and path != "README.md":
+        if basename.endswith(".md") and basename != "SUMMARY.md" and basename != "README.md":
             result_list.append(tab * n + flag + "[" + basename + "](" + rel_path + ")")
             # result_str += tab * n + flag + "[" + path + "](" + dir + path + ")\n"
 
