@@ -1,0 +1,1393 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>cmake中的PUBLIC_PRIVATE_INTERFACE.md · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gcc编译warning.html" />
+    
+    
+    <link rel="prev" href="cmake.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    3rdParty_Lib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../3rdParty_Lib/Eigen Guide.html">
+            
+                <a href="../3rdParty_Lib/Eigen Guide.html">
+            
+                    
+                    Eigen Guide.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../3rdParty_Lib/Jsoncpp.html">
+            
+                <a href="../3rdParty_Lib/Jsoncpp.html">
+            
+                    
+                    Jsoncpp.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                <a href="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                    
+                    ZeroMQ简述.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../3rdParty_Lib/openCV.html">
+            
+                <a href="../3rdParty_Lib/openCV.html">
+            
+                    
+                    openCV.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                <a href="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                    
+                    precision_recall_accuracy_F值.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    Power Supply Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Power Supply Design/Altium Designer.html">
+            
+                <a href="../Power Supply Design/Altium Designer.html">
+            
+                    
+                    Altium Designer.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Power Supply Design/电源设计.html">
+            
+                <a href="../Power Supply Design/电源设计.html">
+            
+                    
+                    电源设计.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../SUMMARY.html">
+            
+                <a href="../SUMMARY.html">
+            
+                    
+                    SUMMARY.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../algorithm/KDTree.html">
+            
+                <a href="../algorithm/KDTree.html">
+            
+                    
+                    KDTree.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../algorithm/KDTree2.html">
+            
+                <a href="../algorithm/KDTree2.html">
+            
+                    
+                    KDTree2.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../algorithm/从匈牙利算法到KM算法.html">
+            
+                <a href="../algorithm/从匈牙利算法到KM算法.html">
+            
+                    
+                    从匈牙利算法到KM算法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../algorithm/匈牙利算法.html">
+            
+                <a href="../algorithm/匈牙利算法.html">
+            
+                    
+                    匈牙利算法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                <a href="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                    
+                    图说卡尔曼滤波，一份通俗易懂的教程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../algorithm/正则表达式.html">
+            
+                <a href="../algorithm/正则表达式.html">
+            
+                    
+                    正则表达式.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../autodrive/">
+            
+                <a href="../autodrive/">
+            
+                    
+                    autodrive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../autodrive/">
+            
+                <a href="../autodrive/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../autodrive/Ros概念.html">
+            
+                <a href="../autodrive/Ros概念.html">
+            
+                    
+                    Ros概念.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                <a href="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                    
+                    SOTIF Safety of the Intended Functionality.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../autodrive/dbc文件解析.html">
+            
+                <a href="../autodrive/dbc文件解析.html">
+            
+                    
+                    dbc文件解析.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../autodrive/ros漫游实操.html">
+            
+                <a href="../autodrive/ros漫游实操.html">
+            
+                    
+                    ros漫游实操.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                <a href="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                    
+                    四元数、欧拉角和方向余弦矩阵的相互转化.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../autodrive/李群与李代数.html">
+            
+                <a href="../autodrive/李群与李代数.html">
+            
+                    
+                    李群与李代数.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../autodrive/阿克曼转向原理.html">
+            
+                <a href="../autodrive/阿克曼转向原理.html">
+            
+                    
+                    阿克曼转向原理.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    c++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="C++ algorithm.html">
+            
+                <a href="C++ algorithm.html">
+            
+                    
+                    C++ algorithm.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="C++ string.html">
+            
+                <a href="C++ string.html">
+            
+                    
+                    C++ string.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="C++ 数据类型.html">
+            
+                <a href="C++ 数据类型.html">
+            
+                    
+                    C++ 数据类型.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="JAVA 和 C++的区别.html">
+            
+                <a href="JAVA 和 C++的区别.html">
+            
+                    
+                    JAVA 和 C++的区别.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="c++ 多线程.html">
+            
+                <a href="c++ 多线程.html">
+            
+                    
+                    c++ 多线程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="c++特别语法.html">
+            
+                <a href="c++特别语法.html">
+            
+                    
+                    c++特别语法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="c++问题合集.html">
+            
+                <a href="c++问题合集.html">
+            
+                    
+                    c++问题合集.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="cmake.html">
+            
+                <a href="cmake.html">
+            
+                    
+                    cmake.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.10" data-path="cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                <a href="cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                    
+                    cmake中的PUBLIC_PRIVATE_INTERFACE.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="gcc编译warning.html">
+            
+                <a href="gcc编译warning.html">
+            
+                    
+                    gcc编译warning.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="pragma once.html">
+            
+                <a href="pragma once.html">
+            
+                    
+                    pragma once.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../git/gerrit答题.html">
+            
+                <a href="../git/gerrit答题.html">
+            
+                    
+                    gerrit答题.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../git/git 开发笔记.html">
+            
+                <a href="../git/git 开发笔记.html">
+            
+                    
+                    git 开发笔记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../git/gitbook.html">
+            
+                <a href="../git/gitbook.html">
+            
+                    
+                    gitbook.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../git/gitlab.html">
+            
+                <a href="../git/gitlab.html">
+            
+                    
+                    gitlab.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    linux开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../linux开发环境/Linux 实用软件.html">
+            
+                <a href="../linux开发环境/Linux 实用软件.html">
+            
+                    
+                    Linux 实用软件.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../linux开发环境/NTP服务详解.html">
+            
+                <a href="../linux开发环境/NTP服务详解.html">
+            
+                    
+                    NTP服务详解.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../linux开发环境/Tmux 使用小技巧.html">
+            
+                <a href="../linux开发环境/Tmux 使用小技巧.html">
+            
+                    
+                    Tmux 使用小技巧.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../linux开发环境/VSCode.html">
+            
+                <a href="../linux开发环境/VSCode.html">
+            
+                    
+                    VSCode.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../linux开发环境/linux.html">
+            
+                <a href="../linux开发环境/linux.html">
+            
+                    
+                    linux.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../linux开发环境/shell_if语句.html">
+            
+                <a href="../linux开发环境/shell_if语句.html">
+            
+                    
+                    shell_if语句.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../linux开发环境/shell字符串操作.html">
+            
+                <a href="../linux开发环境/shell字符串操作.html">
+            
+                    
+                    shell字符串操作.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../python/python note.html">
+            
+                <a href="../python/python note.html">
+            
+                    
+                    python note.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../python/python之Argparse模块.html">
+            
+                <a href="../python/python之Argparse模块.html">
+            
+                    
+                    python之Argparse模块.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    senseauto
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../senseauto/3D2D匹配.html">
+            
+                <a href="../senseauto/3D2D匹配.html">
+            
+                    
+                    3D2D匹配.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                <a href="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                    
+                    DataFactoryUtil 需求文档.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../senseauto/Senseauto common.html">
+            
+                <a href="../senseauto/Senseauto common.html">
+            
+                    
+                    Senseauto common.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../senseauto/horizon通信流程.html">
+            
+                <a href="../senseauto/horizon通信流程.html">
+            
+                    
+                    horizon通信流程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../senseauto/rec_parser踩坑记.html">
+            
+                <a href="../senseauto/rec_parser踩坑记.html">
+            
+                    
+                    rec_parser踩坑记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../senseauto/senseauto开发使用笔记.html">
+            
+                <a href="../senseauto/senseauto开发使用笔记.html">
+            
+                    
+                    senseauto开发使用笔记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../senseauto/感知真值系统.html">
+            
+                <a href="../senseauto/感知真值系统.html">
+            
+                    
+                    感知真值系统.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../senseauto/相机感知系统.html">
+            
+                <a href="../senseauto/相机感知系统.html">
+            
+                    
+                    相机感知系统.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../senseauto/统一软件平台.html">
+            
+                <a href="../senseauto/统一软件平台.html">
+            
+                    
+                    统一软件平台.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../senseauto/统一软件平台公告.html">
+            
+                <a href="../senseauto/统一软件平台公告.html">
+            
+                    
+                    统一软件平台公告.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    software engineering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../software engineering/设计模式.html">
+            
+                <a href="../software engineering/设计模式.html">
+            
+                    
+                    设计模式.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../software engineering/软件工程tip.html">
+            
+                <a href="../software engineering/软件工程tip.html">
+            
+                    
+                    软件工程tip.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >cmake中的PUBLIC_PRIVATE_INTERFACE.md</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cmake&#xFF1A;target-&#x4E2D;&#x7684;-public&#xFF0C;private&#xFF0C;interface">cmake&#xFF1A;target_** &#x4E2D;&#x7684; PUBLIC&#xFF0C;PRIVATE&#xFF0C;INTERFACE</h1>
+<h2 id="1-&#x6307;&#x4EE4;&#x8BF4;&#x660E;"><strong>1. &#x6307;&#x4EE4;&#x8BF4;&#x660E;</strong></h2>
+<p><strong>target_include_directories()</strong>&#xFF1A;&#x6307;&#x5B9A;<strong>&#x76EE;&#x6807;</strong>&#x5305;&#x542B;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;<a href="https://link.zhihu.com/?target=https%3A//cmake.org/cmake/help/v3.15/command/target_include_directories.html%3Fhighlight%3Dtarget_include_directories" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+<p><strong>target_link_libraries()</strong>&#xFF1A;&#x6307;&#x5B9A;<strong>&#x76EE;&#x6807;</strong>&#x94FE;&#x63A5;&#x7684;&#x5E93;&#x3002;<a href="https://link.zhihu.com/?target=https%3A//cmake.org/cmake/help/v3.15/command/target_link_libraries.html%3Fhighlight%3Dtarget_link_libraries" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+<p><strong>target_compile_options()</strong>&#xFF1A;&#x6307;&#x5B9A;<strong>&#x76EE;&#x6807;</strong>&#x7684;&#x7F16;&#x8BD1;&#x9009;&#x9879;&#x3002;<a href="https://link.zhihu.com/?target=https%3A//cmake.org/cmake/help/v3.15/command/target_compile_options.html%23command%3Atarget_compile_options" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+<p><strong>&#x76EE;&#x6807;</strong> &#x7531; <em>add_library()</em> &#x6216; <em>add_executable()</em> &#x751F;&#x6210;&#x3002;</p>
+<p>&#x8FD9;&#x4E09;&#x4E2A;&#x6307;&#x4EE4;&#x7C7B;&#x4F3C;&#xFF0C;&#x8FD9;&#x91CC;&#x4EE5; <strong>target_include_directories()</strong> &#x4E3A;&#x4F8B;&#x8FDB;&#x884C;&#x8BB2;&#x89E3;&#x3002;</p>
+<h2 id="2-&#x6307;&#x4EE4;&#x8BB2;&#x89E3;"><strong>2. &#x6307;&#x4EE4;&#x8BB2;&#x89E3;</strong></h2>
+<p><strong>&#x6D4B;&#x8BD5;&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#xFF1A;</strong></p>
+<pre><code class="lang-bash">cmake-test/                 &#x5DE5;&#x7A0B;&#x4E3B;&#x76EE;&#x5F55;&#xFF0C;main.c &#x8C03;&#x7528; libhello-world.so
+&#x251C;&#x2500;&#x2500; CMakeLists.txt
+&#x251C;&#x2500;&#x2500; hello-world             &#x751F;&#x6210; libhello-world.so&#xFF0C;&#x8C03;&#x7528; libhello.so &#x548C; libworld.so
+&#x2502;   &#x251C;&#x2500;&#x2500; CMakeLists.txt
+&#x2502;   &#x251C;&#x2500;&#x2500; hello               &#x751F;&#x6210; libhello.so 
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; CMakeLists.txt
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; hello.c
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; hello.h         libhello.so &#x5BF9;&#x5916;&#x7684;&#x5934;&#x6587;&#x4EF6;
+&#x2502;   &#x251C;&#x2500;&#x2500; hello_world.c
+&#x2502;   &#x251C;&#x2500;&#x2500; hello_world.h       libhello-world.so &#x5BF9;&#x5916;&#x7684;&#x5934;&#x6587;&#x4EF6;
+&#x2502;   &#x2514;&#x2500;&#x2500; world               &#x751F;&#x6210; libworld.so
+&#x2502;       &#x251C;&#x2500;&#x2500; CMakeLists.txt
+&#x2502;       &#x251C;&#x2500;&#x2500; world.c
+&#x2502;       &#x2514;&#x2500;&#x2500; world.h         libworld.so &#x5BF9;&#x5916;&#x7684;&#x5934;&#x6587;&#x4EF6;
+&#x2514;&#x2500;&#x2500; main.c
+</code></pre>
+<p><strong>&#x8C03;&#x7528;&#x5173;&#x7CFB;&#xFF1A;</strong></p>
+<pre><code class="lang-bash">                                 &#x251C;&#x2500;&#x2500;&#x2500;&#x2500;libhello.so
+&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x2500;&#x2500;&#x2500;&#x2500;libhello-world.so
+                                 &#x251C;&#x2500;&#x2500;&#x2500;&#x2500;libworld.so
+</code></pre>
+<p><strong>&#x5173;&#x952E;&#x5B57;&#x7528;&#x6CD5;&#x8BF4;&#x660E;&#xFF1A;</strong></p>
+<p><strong>PRIVATE</strong>&#xFF1A;&#x79C1;&#x6709;&#x7684;&#x3002;&#x751F;&#x6210; libhello-world.so&#x65F6;&#xFF0C;&#x53EA;&#x5728; hello_world.c &#x4E2D;&#x5305;&#x542B;&#x4E86; hello.h&#xFF0C;libhello-world.so <strong>&#x5BF9;&#x5916;</strong>&#x7684;&#x5934;&#x6587;&#x4EF6;&#x2014;&#x2014;hello_world.h &#x4E2D;&#x4E0D;&#x5305;&#x542B; hello.h&#x3002;&#x800C;&#x4E14; main.c &#x4E0D;&#x4F1A;&#x8C03;&#x7528; hello.c &#x4E2D;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x8BF4; main.c &#x4E0D;&#x77E5;&#x9053; hello.c &#x7684;&#x5B58;&#x5728;&#xFF0C;&#x90A3;&#x4E48;&#x5728; hello-world/CMakeLists.txt &#x4E2D;&#x5E94;&#x8BE5;&#x5199;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-cmake"><span class="hljs-keyword">target_link_libraries</span>(hello-world PRIVATE hello)
+target_include_directories(hello-world PRIVATE hello)
+</code></pre>
+<p><strong>INTERFACE</strong>&#xFF1A;&#x63A5;&#x53E3;&#x3002;&#x751F;&#x6210; libhello-world.so &#x65F6;&#xFF0C;&#x53EA;&#x5728;libhello-world.so <strong>&#x5BF9;&#x5916;</strong>&#x7684;&#x5934;&#x6587;&#x4EF6;&#x2014;&#x2014;hello_world.h &#x4E2D;&#x5305;&#x542B; &#x4E86; hello.h&#xFF0C; hello_world.c &#x4E2D;&#x4E0D;&#x5305;&#x542B; hello.h&#xFF0C;&#x5373; libhello-world.so &#x4E0D;&#x4F7F;&#x7528; libhello.so &#x63D0;&#x4F9B;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x53EA;&#x4F7F;&#x7528; hello.h &#x4E2D;&#x7684;&#x67D0;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x6BD4;&#x5982;&#x7ED3;&#x6784;&#x4F53;&#x3002;&#x4F46;&#x662F; main.c &#x9700;&#x8981;&#x4F7F;&#x7528; libhello.so &#x4E2D;&#x7684;&#x529F;&#x80FD;&#x3002;&#x90A3;&#x4E48;&#x5728; hello-world/CMakeLists.txt &#x4E2D;&#x5E94;&#x8BE5;&#x5199;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-cmake"><span class="hljs-keyword">target_link_libraries</span>(hello-world INTERFACE hello)
+target_include_directories(hello-world INTERFACE hello)
+</code></pre>
+<p><strong>PUBLIC</strong>&#xFF1A;&#x516C;&#x5F00;&#x7684;&#x3002;<strong>PUBLIC = PRIVATE + INTERFACE</strong>&#x3002;&#x751F;&#x6210; libhello-world.so &#x65F6;&#xFF0C;&#x5728; hello_world.c &#x548C; hello_world.h &#x4E2D;&#x90FD;&#x5305;&#x542B;&#x4E86; hello.h&#x3002;&#x5E76;&#x4E14; main.c &#x4E2D;&#x4E5F;&#x9700;&#x8981;&#x4F7F;&#x7528; libhello.so &#x63D0;&#x4F9B;&#x7684;&#x529F;&#x80FD;&#x3002;&#x90A3;&#x4E48;&#x5728; hello-world/CMakeLists.txt &#x4E2D;&#x5E94;&#x8BE5;&#x5199;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-cmake"><span class="hljs-keyword">target_link_libraries</span>(hello-world PUBLIC hello)
+target_include_directories(hello-world PUBLIC hello)
+</code></pre>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x8FD9;&#x4E09;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x6307;&#x5B9A;&#x7684;&#x662F;&#x76EE;&#x6807;&#x6587;&#x4EF6;&#x4F9D;&#x8D56;&#x9879;&#x7684;&#x4F7F;&#x7528;<strong>&#x8303;&#x56F4;&#xFF08;scope&#xFF09;</strong>&#x6216;&#x8005;&#x4E00;&#x79CD;<strong>&#x4F20;&#x9012;&#xFF08;propagate&#xFF09;</strong>&#x3002;<a href="https://link.zhihu.com/?target=https%3A//cmake.org/cmake/help/v3.15/manual/cmake-buildsystem.7.html%23transitive-usage-requirements" target="_blank">&#x5B98;&#x65B9;&#x8BF4;&#x660E;</a></p>
+<p>&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x4F9D;&#x8D56; libhello-world.so&#xFF0C; libhello-world.so &#x4F9D;&#x8D56; libhello.so &#x548C; libworld.so&#x3002;</p>
+<ol>
+<li>main.c &#x4E0D;&#x4F7F;&#x7528; libhello.so &#x7684;&#x4EFB;&#x4F55;&#x529F;&#x80FD;&#xFF0C;&#x56E0;&#x6B64; libhello-world.so &#x4E0D;&#x9700;&#x8981;&#x5C06;&#x5176;&#x4F9D;&#x8D56;&#x2014;&#x2014; libhello.so &#x4F20;&#x9012;&#x7ED9; main.c&#xFF0C;hello-world/CMakeLists.txt &#x4E2D;&#x4F7F;&#x7528; PRIVATE &#x5173;&#x952E;&#x5B57;&#xFF1B;</li>
+<li>main.c &#x4F7F;&#x7528; libhello.so &#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x662F;libhello-world.so &#x4E0D;&#x4F7F;&#x7528;&#xFF0C;hello-world/CMakeLists.txt &#x4E2D;&#x4F7F;&#x7528; INTERFACE &#x5173;&#x952E;&#x5B57;&#xFF1B;</li>
+<li>main.c &#x548C; libhello-world.so &#x90FD;&#x4F7F;&#x7528; libhello.so &#x7684;&#x529F;&#x80FD;&#xFF0C;hello-world/CMakeLists.txt &#x4E2D;&#x4F7F;&#x7528; PUBLIC &#x5173;&#x952E;&#x5B57;&#xFF1B;</li>
+</ol>
+<h2 id="3-includedirectoriesdir"><strong>3. include_directories(dir)</strong></h2>
+<p><code>target_include_directories()</code> &#x7684;&#x529F;&#x80FD;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>include_directories()</code> &#x5B9E;&#x73B0;&#x3002;&#x4F46;&#x662F;&#x6211;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; <code>target_include_directories()</code>&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x4FDD;&#x6301;&#x6E05;&#x6670;&#xFF01;</p>
+<p><code>include_directories(header-dir)</code> &#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x5305;&#x542B;&#xFF0C;&#x5411;&#x4E0B;&#x4F20;&#x9012;&#x3002;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x5462;&#xFF1F;&#x5C31;&#x662F;&#x8BF4;&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x76EE;&#x5F55;&#x7684; CMakeLists.txt &#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x8BE5;&#x6307;&#x4EE4;&#xFF0C;&#x5176;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x5B50;&#x76EE;&#x5F55;&#x9ED8;&#x8BA4;&#x4E5F;&#x5305;&#x542B;&#x4E86;<code>header-dir</code> &#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x9876;&#x5C42;&#x7684; cmake-test/CMakeLists.txt &#x4E2D;&#x52A0;&#x5165;&#xFF1A;</p>
+<pre><code class="lang-cmake"><span class="hljs-keyword">include_directories</span>(hello-world)
+<span class="hljs-keyword">include_directories</span>(hello-world/hello)
+<span class="hljs-keyword">include_directories</span>(hello-world/world)
+</code></pre>
+<p>&#x90A3;&#x4E48;&#x6574;&#x4E2A;&#x5DE5;&#x7A0B;&#x7684;&#x6E90;&#x6587;&#x4EF6;&#x5728;&#x7F16;&#x8BD1;&#x65F6;<strong>&#x90FD;</strong>&#x4F1A;&#x589E;&#x52A0;&#xFF1A;</p>
+<pre><code class="lang-bash">-I hello-world -I hello-world/hello -I hello-world/world ...
+</code></pre>
+<p>&#x5404;&#x7EA7;&#x5B50;&#x76EE;&#x5F55;&#x4E2D;&#x65E0;&#x9700;&#x4F7F;&#x7528; <code>target_include_directories()</code> &#x6216;&#x8005; <code>include_directories()</code>&#x4E86;&#x3002;&#x5982;&#x679C;&#x6B64;&#x65F6;&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x7684;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#xFF08;<code>make VERBOSE=1</code>&#xFF09;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x7F16;&#x8BD1;&#x8FC7;&#x7A0B;&#x662F;&#x4E00;&#x5927;&#x5768;&#xFF0C;&#x5F88;&#x4E0D;&#x8212;&#x670D;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x5728;<strong>&#x6700;&#x7EC8;&#x5B50;&#x76EE;&#x5F55;</strong>&#x7684; CMakeLists.txt &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528; <code>include_directories()</code> &#x548C; <code>target_include_directories()</code> &#x7684;&#x6548;&#x679C;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;</p>
+<h2 id="4-&#x76EE;&#x5F55;&#x5212;&#x5206;"><strong>4. &#x76EE;&#x5F55;&#x5212;&#x5206;</strong></h2>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x76EE;&#x5F55;&#x5185;&#x90E8;&#x5E94;&#x5C06;&#x5BF9;&#x5916;&#x548C;&#x5BF9;&#x5185;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x533A;&#x5206;&#xFF0C;&#x7531;&#x6A21;&#x5757;&#x7684;&#x8C03;&#x7528;&#x8005;&#x51B3;&#x5B9A;&#x6A21;&#x5757;&#x662F;&#x5426;&#x88AB;&#x4F20;&#x9012;&#xFF08;PRIVATE&#xFF0C;INTERFACE&#xFF0C;PUBLIC&#xFF09;&#x3002;</p>
+<h2 id="5-&#x53C2;&#x8003;&#xFF1A;"><strong>5. &#x53C2;&#x8003;&#xFF1A;</strong></h2>
+<p><a href="https://link.zhihu.com/?target=https%3A//cmake.org/pipermail/cmake/2016-May/063400.html" target="_blank">https://cmake.org/pipermail/cmake/2016-May/063400.html</a></p>
+<p><a href="https://link.zhihu.com/?target=https%3A//schneide.blog/2016/04/08/modern-cmake-with-target_link_libraries/" target="_blank">https://schneide.blog/2016/04/08/modern-cmake-with-target_link_libraries/</a></p>
+<p><a href="https://link.zhihu.com/?target=https%3A//stackoverflow.com/questions/26037954/cmake-target-link-libraries-interface-dependencies" target="_blank">https://stackoverflow.com/questions/26037954/cmake-target-link-libraries-interface-dependencies</a></p>
+<p><a href="https://link.zhihu.com/?target=https%3A//stackoverflow.com/questions/26243169/cmake-target-include-directories-meaning-of-scope" target="_blank">https://stackoverflow.com/questions/26243169/cmake-target-include-directories-meaning-of-scope</a></p>
+<p>&#x53D1;&#x5E03;&#x4E8E; 2019-09-12</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cmake.html" class="navigation navigation-prev " aria-label="Previous page: cmake.md">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gcc编译warning.html" class="navigation navigation-next " aria-label="Next page: gcc编译warning.md">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"cmake中的PUBLIC_PRIVATE_INTERFACE.md","level":"1.8.10","depth":2,"next":{"title":"gcc编译warning.md","level":"1.8.11","depth":2,"path":"c++/gcc编译warning.md","ref":"c++/gcc编译warning.md","articles":[]},"previous":{"title":"cmake.md","level":"1.8.9","depth":2,"path":"c++/cmake.md","ref":"c++/cmake.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"c++/cmake中的PUBLIC_PRIVATE_INTERFACE.md","mtime":"2020-08-17T13:58:16.865Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-17T05:07:13.121Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

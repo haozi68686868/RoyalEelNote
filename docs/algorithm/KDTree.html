@@ -1,0 +1,1515 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>KDTree.md · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="KDTree2.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    3rdParty_Lib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../3rdParty_Lib/Eigen Guide.html">
+            
+                <a href="../3rdParty_Lib/Eigen Guide.html">
+            
+                    
+                    Eigen Guide.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../3rdParty_Lib/Jsoncpp.html">
+            
+                <a href="../3rdParty_Lib/Jsoncpp.html">
+            
+                    
+                    Jsoncpp.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                <a href="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                    
+                    ZeroMQ简述.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../3rdParty_Lib/openCV.html">
+            
+                <a href="../3rdParty_Lib/openCV.html">
+            
+                    
+                    openCV.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                <a href="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                    
+                    precision_recall_accuracy_F值.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    Power Supply Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Power Supply Design/Altium Designer.html">
+            
+                <a href="../Power Supply Design/Altium Designer.html">
+            
+                    
+                    Altium Designer.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Power Supply Design/电源设计.html">
+            
+                <a href="../Power Supply Design/电源设计.html">
+            
+                    
+                    电源设计.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../SUMMARY.html">
+            
+                <a href="../SUMMARY.html">
+            
+                    
+                    SUMMARY.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="KDTree.html">
+            
+                <a href="KDTree.html">
+            
+                    
+                    KDTree.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="KDTree2.html">
+            
+                <a href="KDTree2.html">
+            
+                    
+                    KDTree2.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="从匈牙利算法到KM算法.html">
+            
+                <a href="从匈牙利算法到KM算法.html">
+            
+                    
+                    从匈牙利算法到KM算法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="匈牙利算法.html">
+            
+                <a href="匈牙利算法.html">
+            
+                    
+                    匈牙利算法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                <a href="图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                    
+                    图说卡尔曼滤波，一份通俗易懂的教程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    正则表达式.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../autodrive/">
+            
+                <a href="../autodrive/">
+            
+                    
+                    autodrive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../autodrive/">
+            
+                <a href="../autodrive/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../autodrive/Ros概念.html">
+            
+                <a href="../autodrive/Ros概念.html">
+            
+                    
+                    Ros概念.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                <a href="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                    
+                    SOTIF Safety of the Intended Functionality.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../autodrive/dbc文件解析.html">
+            
+                <a href="../autodrive/dbc文件解析.html">
+            
+                    
+                    dbc文件解析.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../autodrive/ros漫游实操.html">
+            
+                <a href="../autodrive/ros漫游实操.html">
+            
+                    
+                    ros漫游实操.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                <a href="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                    
+                    四元数、欧拉角和方向余弦矩阵的相互转化.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../autodrive/李群与李代数.html">
+            
+                <a href="../autodrive/李群与李代数.html">
+            
+                    
+                    李群与李代数.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../autodrive/阿克曼转向原理.html">
+            
+                <a href="../autodrive/阿克曼转向原理.html">
+            
+                    
+                    阿克曼转向原理.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    c++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../c++/C++ algorithm.html">
+            
+                <a href="../c++/C++ algorithm.html">
+            
+                    
+                    C++ algorithm.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../c++/C++ string.html">
+            
+                <a href="../c++/C++ string.html">
+            
+                    
+                    C++ string.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../c++/C++ 数据类型.html">
+            
+                <a href="../c++/C++ 数据类型.html">
+            
+                    
+                    C++ 数据类型.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../c++/JAVA 和 C++的区别.html">
+            
+                <a href="../c++/JAVA 和 C++的区别.html">
+            
+                    
+                    JAVA 和 C++的区别.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../c++/c++ 多线程.html">
+            
+                <a href="../c++/c++ 多线程.html">
+            
+                    
+                    c++ 多线程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../c++/c++特别语法.html">
+            
+                <a href="../c++/c++特别语法.html">
+            
+                    
+                    c++特别语法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../c++/c++问题合集.html">
+            
+                <a href="../c++/c++问题合集.html">
+            
+                    
+                    c++问题合集.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../c++/cmake.html">
+            
+                <a href="../c++/cmake.html">
+            
+                    
+                    cmake.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                <a href="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                    
+                    cmake中的PUBLIC_PRIVATE_INTERFACE.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../c++/gcc编译warning.html">
+            
+                <a href="../c++/gcc编译warning.html">
+            
+                    
+                    gcc编译warning.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../c++/pragma once.html">
+            
+                <a href="../c++/pragma once.html">
+            
+                    
+                    pragma once.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../git/gerrit答题.html">
+            
+                <a href="../git/gerrit答题.html">
+            
+                    
+                    gerrit答题.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../git/git 开发笔记.html">
+            
+                <a href="../git/git 开发笔记.html">
+            
+                    
+                    git 开发笔记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../git/gitbook.html">
+            
+                <a href="../git/gitbook.html">
+            
+                    
+                    gitbook.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../git/gitlab.html">
+            
+                <a href="../git/gitlab.html">
+            
+                    
+                    gitlab.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    linux开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../linux开发环境/Linux 实用软件.html">
+            
+                <a href="../linux开发环境/Linux 实用软件.html">
+            
+                    
+                    Linux 实用软件.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../linux开发环境/NTP服务详解.html">
+            
+                <a href="../linux开发环境/NTP服务详解.html">
+            
+                    
+                    NTP服务详解.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../linux开发环境/Tmux 使用小技巧.html">
+            
+                <a href="../linux开发环境/Tmux 使用小技巧.html">
+            
+                    
+                    Tmux 使用小技巧.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../linux开发环境/VSCode.html">
+            
+                <a href="../linux开发环境/VSCode.html">
+            
+                    
+                    VSCode.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../linux开发环境/linux.html">
+            
+                <a href="../linux开发环境/linux.html">
+            
+                    
+                    linux.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../linux开发环境/shell_if语句.html">
+            
+                <a href="../linux开发环境/shell_if语句.html">
+            
+                    
+                    shell_if语句.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../linux开发环境/shell字符串操作.html">
+            
+                <a href="../linux开发环境/shell字符串操作.html">
+            
+                    
+                    shell字符串操作.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../python/python note.html">
+            
+                <a href="../python/python note.html">
+            
+                    
+                    python note.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../python/python之Argparse模块.html">
+            
+                <a href="../python/python之Argparse模块.html">
+            
+                    
+                    python之Argparse模块.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    senseauto
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../senseauto/3D2D匹配.html">
+            
+                <a href="../senseauto/3D2D匹配.html">
+            
+                    
+                    3D2D匹配.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                <a href="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                    
+                    DataFactoryUtil 需求文档.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../senseauto/Senseauto common.html">
+            
+                <a href="../senseauto/Senseauto common.html">
+            
+                    
+                    Senseauto common.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../senseauto/horizon通信流程.html">
+            
+                <a href="../senseauto/horizon通信流程.html">
+            
+                    
+                    horizon通信流程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../senseauto/rec_parser踩坑记.html">
+            
+                <a href="../senseauto/rec_parser踩坑记.html">
+            
+                    
+                    rec_parser踩坑记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../senseauto/senseauto开发使用笔记.html">
+            
+                <a href="../senseauto/senseauto开发使用笔记.html">
+            
+                    
+                    senseauto开发使用笔记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../senseauto/感知真值系统.html">
+            
+                <a href="../senseauto/感知真值系统.html">
+            
+                    
+                    感知真值系统.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../senseauto/相机感知系统.html">
+            
+                <a href="../senseauto/相机感知系统.html">
+            
+                    
+                    相机感知系统.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../senseauto/统一软件平台.html">
+            
+                <a href="../senseauto/统一软件平台.html">
+            
+                    
+                    统一软件平台.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../senseauto/统一软件平台公告.html">
+            
+                <a href="../senseauto/统一软件平台公告.html">
+            
+                    
+                    统一软件平台公告.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    software engineering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../software engineering/设计模式.html">
+            
+                <a href="../software engineering/设计模式.html">
+            
+                    
+                    设计模式.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../software engineering/软件工程tip.html">
+            
+                <a href="../software engineering/软件工程tip.html">
+            
+                    
+                    软件工程tip.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >KDTree.md</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x4ECA;&#x5929;&#x662F;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7684;<strong>&#x7B2C;15&#x7BC7;&#x6587;&#x7AE0;</strong>&#xFF0C;&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;&#x5F53;&#x4E2D;&#x8BB2;&#x4E86;Kmeans&#x7684;&#x76F8;&#x5173;&#x4F18;&#x5316;&#xFF0C;&#x8FD8;&#x8BB2;&#x4E86;&#x5927;&#x540D;&#x9F0E;&#x9F0E;&#x7684;EM&#x7B97;&#x6CD5;&#x3002;&#x6709;&#x4E9B;&#x5C0F;&#x4F19;&#x4F34;&#x8868;&#x793A;&#x559C;&#x6B22;&#x770B;&#x8FD9;&#x4E9B;&#x786C;&#x6838;&#x7684;&#xFF0C;&#x4E8E;&#x662F;&#x4ECA;&#x5929;&#x4E0A;&#x70B9;&#x786C;&#x83DC;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x9886;&#x57DF;&#x7ECF;&#x5E38;&#x7528;&#x5230;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x2014;&#x2014;<strong>KD-Tree</strong>&#x3002;</p>
+<h2 id="&#x4ECE;&#x7EBF;&#x6BB5;&#x6811;&#x5230;kd&#x6811;"><strong>&#x4ECE;&#x7EBF;&#x6BB5;&#x6811;&#x5230;KD&#x6811;</strong></h2>
+<p>&#x5728;&#x8BB2;KD&#x6811;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;<strong>&#x7EBF;&#x6BB5;&#x6811;</strong>&#x7684;&#x6982;&#x5FF5;&#x3002;&#x7EBF;&#x6BB5;&#x6811;&#x5728;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x9886;&#x57DF;&#x5F53;&#x4E2D;&#x4E0D;&#x592A;&#x5E38;&#x89C1;&#xFF0C;&#x4F5C;&#x4E3A;&#x9AD8;&#x6027;&#x80FD;&#x7EF4;&#x62A4;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x7ECF;&#x5E38;&#x51FA;&#x73B0;&#x5728;&#x5404;&#x79CD;&#x7B97;&#x6CD5;&#x6BD4;&#x8D5B;&#x5F53;&#x4E2D;&#x3002;&#x7EBF;&#x6BB5;&#x6811;&#x7684;&#x672C;&#x8D28;&#x662F;&#x4E00;&#x68F5;&#x7EF4;&#x62A4;&#x4E00;&#x6BB5;&#x533A;&#x95F4;&#x7684;&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x6811;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x4E0B;&#x56FE;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7ECF;&#x5178;&#x7684;&#x7EBF;&#x6BB5;&#x6811;&#xFF1A;</p>
+<p><img src="https://pic1.zhimg.com/80/v2-b12fb843ddcbe17c0018dfbc003b4b38_720w.jpg" alt="img"></p>
+<p>&#x4ECE;&#x4E0B;&#x56FE;&#x5F53;&#x4E2D;&#x6211;&#x4EEC;&#x4E0D;&#x96BE;&#x770B;&#x51FA;&#x6765;&#xFF0C;&#x8FD9;&#x68F5;&#x7EBF;&#x6BB5;&#x6811;&#x7EF4;&#x62A4;&#x7684;&#x662F;&#x4E00;&#x4E2A;<strong>&#x533A;&#x95F4;&#x5185;&#x7684;&#x6700;&#x5927;&#x503C;</strong>&#x3002;&#x6BD4;&#x5982;&#x6811;&#x6839;&#x662F;8&#xFF0C;&#x7EF4;&#x62A4;&#x7684;&#x662F;&#x6574;&#x4E2A;&#x533A;&#x95F4;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x8282;&#x70B9;&#x7684;&#x503C;&#x90FD;&#x662F;&#x4EE5;&#x5B83;&#x4E3A;&#x6811;&#x6839;&#x7684;&#x5B50;&#x6811;&#x4E2D;&#x6240;&#x6709;&#x5143;&#x7D20;&#x7684;&#x6700;&#x5927;&#x503C;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x7EBF;&#x6BB5;&#x6811;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;<img src="https://www.zhihu.com/equation?tex=O%28logN%29" alt="[&#x516C;&#x5F0F;]">&#x7684;&#x65F6;&#x95F4;&#x5185;&#x8BA1;&#x7B97;&#x51FA;&#x67D0;&#x4E00;&#x4E2A;<strong>&#x8FDE;&#x7EED;&#x533A;&#x95F4;&#x7684;&#x6700;&#x5927;&#x503C;</strong>&#x3002;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="https://pic4.zhimg.com/80/v2-a9d32347da91187dceaf46a7d7c03f6b_720w.jpg" alt="img"></p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x8981;&#x6C42;&#x88AB;&#x6846;&#x8D77;&#x6765;&#x7684;&#x533A;&#x95F4;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;<strong>&#x627E;&#x5230;&#x80FD;&#x591F;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x533A;&#x95F4;&#x7684;&#x4E2D;&#x95F4;&#x8282;&#x70B9;</strong>&#x5C31;&#x884C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x88AB;&#x7EA2;&#x6846;&#x6846;&#x8D77;&#x6765;&#x7684;&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x6811;&#x521A;&#x597D;&#x8986;&#x76D6;&#x8FD9;&#x4E2A;&#x533A;&#x95F4;&#xFF0C;&#x4E8E;&#x662F;&#x6574;&#x4E2A;&#x533A;&#x95F4;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x5C31;&#x662F;&#x8FD9;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x6700;&#x5927;&#x503C;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x628A;&#x4E00;&#x4E2A;&#x9700;&#x8981;<img src="https://www.zhihu.com/equation?tex=O%28n%29" alt="[&#x516C;&#x5F0F;]">&#x67E5;&#x627E;&#x7684;&#x95EE;&#x9898;&#x964D;&#x4F4E;&#x6210;&#x4E86;<img src="https://www.zhihu.com/equation?tex=log%28N%29" alt="[&#x516C;&#x5F0F;]">&#xFF0C;&#x4E0D;&#x4F46;&#x5982;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;<strong>&#x505A;&#x5230;<img src="https://www.zhihu.com/equation?tex=O%28logN%29" alt="[&#x516C;&#x5F0F;]">&#x590D;&#x6742;&#x5EA6;&#x5185;&#x7684;&#x66F4;&#x65B0;</strong>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6211;&#x4EEC;&#x4E0D;&#x4F46;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x67E5;&#x8BE2;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;&#x7EBF;&#x6BB5;&#x5F53;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x7EBF;&#x6BB5;&#x6811;&#x7684;&#x5E94;&#x7528;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#xFF0C;&#x4E5F;&#x6709;<strong>&#x8BB8;&#x591A;&#x79CD;&#x53D8;&#x4F53;</strong>&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x4E0D;&#x8FC7;&#x591A;&#x6DF1;&#x5165;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x540C;&#x5B66;&#x53EF;&#x4EE5;&#x671F;&#x5F85;&#x4E00;&#x4E0B;&#x5468;&#x4E09;&#x7684;&#x7B97;&#x6CD5;&#x4E0E;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E13;&#x9898;&#xFF0C;&#x5728;&#x4E4B;&#x540E;&#x7684;&#x6587;&#x7AE0;&#x5F53;&#x4E2D;&#x4F1A;&#x4E3A;&#x5927;&#x5BB6;&#x5206;&#x4EAB;&#x7EBF;&#x6BB5;&#x6811;&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x5927;&#x6982;&#x7684;&#x5370;&#x8C61;&#xFF0C;&#x7EBF;&#x6BB5;&#x6811;&#x7A76;&#x7ADF;&#x5B8C;&#x6210;&#x7684;&#x662F;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x7EBF;&#x6BB5;&#x6811;&#x7EF4;&#x62A4;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x7EBF;&#x6BB5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x533A;&#x95F4;&#x5185;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x7EF4;&#x62A4;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x4E00;&#x7EF4;&#x7684;&#x5E8F;&#x5217;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C06;&#x6570;&#x636E;&#x7684;&#x7EF4;&#x5EA6;&#x6269;&#x5145;&#x4E00;&#x4E0B;&#xFF0C;&#x6269;&#x5145;&#x5230;&#x591A;&#x7EF4;&#x5462;&#xFF1F;</p>
+<p>&#x662F;&#x7684;&#xFF0C;&#x4F60;&#x6CA1;&#x6709;&#x731C;&#x9519;&#xFF0C;&#x4ECE;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;KD-Tree&#x770B;&#x6210;&#x662F;&#x7EBF;&#x6BB5;&#x6811;<strong>&#x62D3;&#x5C55;&#x5230;&#x591A;&#x7EF4;&#x7A7A;&#x95F4;</strong>&#x5F53;&#x4E2D;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<h2 id="kd-tree&#x5B9A;&#x4E49;"><strong>KD-Tree&#x5B9A;&#x4E49;</strong></h2>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B;KD-Tree&#x7684;&#x5177;&#x4F53;&#x5B9A;&#x4E49;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;K&#x6307;&#x7684;&#x662F;<strong>K&#x7EF4;&#x7A7A;&#x95F4;</strong>&#xFF0C;D&#x81EA;&#x7136;&#x5C31;&#x662F;dimension&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7EF4;&#x5EA6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;KD-Tree&#x5C31;&#x662F;K&#x7EF4;&#x5EA6;&#x6811;&#x7684;&#x610F;&#x601D;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x4EEC;&#x6784;&#x5EFA;&#x7EBF;&#x6BB5;&#x6811;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x4E2A;&#x9012;&#x5F52;&#x7684;&#x5EFA;&#x6811;&#x8FC7;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x6BCF;&#x6B21;&#x628A;&#x5F53;&#x524D;&#x7684;&#x7EBF;&#x6BB5;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x5206;&#x6210;&#x4E24;&#x534A;&#x7684;&#x6570;&#x636E;&#x5206;&#x522B;&#x6784;&#x5EFA;&#x5DE6;&#x53F3;&#x5B50;&#x6811;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5199;&#x4E00;&#x4E0B;&#x4F2A;&#x4EE3;&#x7801;&#xFF0C;&#x6765;&#x66F4;&#x76F4;&#x89C2;&#x5730;&#x611F;&#x53D7;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, value, lchild, rchild)</span>:</span>
+        self.value = value
+        self.lchild = lchild
+        self.rchild = rchild   
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">build</span><span class="hljs-params">(arr)</span>:</span>
+    n = len(arr):
+    left, right = arr[: n//<span class="hljs-number">2</span>], arr[n//<span class="hljs-number">2</span>:]
+    lchild, rchild = self.build(left), self.build(right)
+    <span class="hljs-keyword">return</span> Node(max(lchild.value, rchild.value), lchild, rchild)
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x7684;&#x5E73;&#x9762;&#x5F53;&#x4E2D;&#x5206;&#x5E03;&#x7740;&#x82E5;&#x5E72;&#x4E2A;&#x70B9;&#x3002;</p>
+<p><img src="https://pic3.zhimg.com/80/v2-031b1d5fe46878dc23939ffc811ad1ba_720w.jpg" alt="img"></p>
+<p>&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x7EF4;&#x5EA6;<strong>&#x5C06;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;</strong>&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x9009;&#x62E9;x&#x8F74;&#x3002;&#x6211;&#x4EEC;&#x5BF9;&#x6240;&#x6709;&#x6570;&#x636E;&#x6309;&#x7167;x&#x8F74;&#x7684;&#x503C;&#x6392;&#x5E8F;&#xFF0C;&#x9009;&#x51FA;&#x5176;&#x4E2D;&#x7684;&#x4E2D;&#x70B9;&#x8FDB;&#x884C;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#x3002;</p>
+<p><img src="https://pic4.zhimg.com/80/v2-f3d0ccc732efe9aa065d4288091e67e3_720w.jpg" alt="img"></p>
+<p>&#x5728;&#x8FD9;&#x6839;&#x7EBF;&#x5DE6;&#x53F3;&#x4E24;&#x4FA7;&#x7684;&#x70B9;&#x88AB;&#x5206;&#x6210;&#x4E86;&#x4E24;&#x68F5;&#x5B50;&#x6811;&#xFF0C;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x6570;&#x636E;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;<strong>&#x66F4;&#x6362;&#x4E00;&#x4E2A;&#x7EF4;&#x5EA6;</strong>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x9009;&#x62E9;y&#x8F74;&#x8FDB;&#x884C;&#x5212;&#x5206;&#x3002;&#x4E00;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6392;&#x5E8F;&#xFF0C;&#x7136;&#x540E;&#x627E;&#x5230;&#x4E2D;&#x95F4;&#x7684;&#x70B9;&#xFF0C;&#x518D;&#x6B21;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#xFF1A;</p>
+<p><img src="https://pic3.zhimg.com/80/v2-4a79e62ccd2342ebbed80201f0d5aae6_720w.jpg" alt="img"></p>
+<p>&#x6211;&#x4EEC;<strong>&#x91CD;&#x590D;&#x4E0A;&#x8FF0;&#x8FC7;&#x7A0B;</strong>&#xFF0C;&#x4E00;&#x76F4;&#x5C06;&#x70B9;&#x5206;&#x5230;&#x4E0D;&#x80FD;&#x5206;&#x4E3A;&#x6B62;&#xFF0C;&#x4E3A;&#x4E86;&#x80FD;&#x66F4;&#x597D;&#x5730;&#x770B;&#x6E05;&#x695A;&#xFF0C;&#x6211;&#x4EEC;&#x5BF9;&#x6240;&#x6709;&#x6570;&#x636E;&#x6807;&#x4E0A;&#x5750;&#x6807;&#xFF08;&#x5E76;&#x4E0D;&#x7CBE;&#x786E;&#xFF09;&#x3002;</p>
+<p><img src="https://pic1.zhimg.com/80/v2-efd48676dd5986d5ca05b7b134100b20_720w.jpg" alt="img"></p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x628A;&#x7A7A;&#x95F4;&#x770B;&#x6210;&#x662F;&#x5E7F;&#x4E49;&#x7684;&#x533A;&#x95F4;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x548C;&#x7EBF;&#x6BB5;&#x6811;&#x7684;&#x539F;&#x7406;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;&#x6700;&#x540E;&#x5F97;&#x5230;&#x7684;&#x4E5F;&#x662F;&#x4E00;&#x68F5;<strong>&#x5B8C;&#x7F8E;&#x4E8C;&#x53C9;&#x6811;</strong>&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x6BCF;&#x6B21;&#x90FD;&#x9009;&#x62E9;&#x4E86;&#x6570;&#x636E;&#x96C6;&#x7684;&#x4E2D;&#x70B9;&#x8FDB;&#x884C;&#x5212;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x4ECE;&#x6811;&#x6839;&#x5230;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x957F;&#x5EA6;&#x4E0D;&#x4F1A;&#x8D85;&#x8FC7;<img src="https://www.zhihu.com/equation?tex=logN" alt="[&#x516C;&#x5F0F;]">&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x4EE3;&#x5165;&#x4E0A;&#x9762;&#x7684;&#x5750;&#x6807;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6700;&#x7EC8;&#x5F97;&#x5230;&#x7684;KD-Tree&#x5927;&#x6982;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#xFF1A;</p>
+<p><img src="https://pic4.zhimg.com/80/v2-6be1abade49593c3b071ebb832e621df_720w.jpg" alt="img"></p>
+<h2 id="kd-tree-&#x5EFA;&#x6811;"><strong>KD-Tree &#x5EFA;&#x6811;</strong></h2>
+<p>&#x5728;&#x5EFA;&#x6811;&#x7684;&#x8FC7;&#x7A0B;&#x5F53;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6811;&#x6DF1;&#x6BCF;&#x5F80;&#x4E0B;&#x5EF6;&#x4F38;&#x4E00;&#x5C42;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#x6362;&#x4E00;&#x4E2A;&#x7EF4;&#x5EA6;&#x4F5C;&#x4E3A;&#x8861;&#x91CF;&#x6807;&#x51C6;&#x3002;&#x539F;&#x56E0;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x8FD9;&#x68F5;&#x6811;&#x5BF9;&#x4E8E;&#x8FD9;K&#x7EF4;&#x7A7A;&#x95F4;&#x90FD;&#x6709;&#x5F88;&#x597D;&#x7684;&#x8868;&#x8FBE;&#x80FD;&#x529B;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x7EF4;&#x5EA6;&#x5FEB;&#x901F;&#x67E5;&#x8BE2;&#x3002;</p>
+<p>&#x5728;&#x4E00;&#x4E9B;&#x5B9E;&#x73B0;&#x5F53;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x8BA1;&#x7B97;&#x6BCF;&#x4E00;&#x4E2A;&#x7EF4;&#x5EA6;&#x7684;&#x65B9;&#x5DEE;&#xFF0C;&#x7136;&#x540E;&#x9009;&#x62E9;&#x65B9;&#x5DEE;&#x8F83;&#x5927;&#x7684;&#x7EF4;&#x5EA6;&#x8FDB;&#x884C;&#x5207;&#x5206;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x81EA;&#x7136;&#x662F;&#x56E0;&#x4E3A;&#x65B9;&#x5DEE;&#x8F83;&#x5927;&#x7684;&#x7EF4;&#x5EA6;&#x8BF4;&#x660E;&#x6570;&#x636E;&#x76F8;&#x5BF9;&#x5206;&#x6563;&#xFF0C;&#x5207;&#x5206;&#x4E4B;&#x540E;&#x53EF;&#x4EE5;&#x628A;&#x6570;&#x636E;&#x533A;&#x5206;&#x5F97;&#x66F4;&#x52A0;&#x660E;&#x663E;&#x3002;&#x4F46;&#x6211;&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x8FD9;&#x6837;&#x505A;&#x610F;&#x4E49;&#x4E0D;&#x662F;&#x5F88;&#x5927;&#xFF0C;&#x6BD5;&#x7ADF;&#x8BA1;&#x7B97;&#x65B9;&#x5DEE;&#x4E5F;&#x662F;&#x4E00;&#x7B14;&#x5F00;&#x9500;&#x3002;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4E86;&#x6700;&#x6734;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#x2014;&#x2014;&#x8F6E;&#x6D41;&#x9009;&#x62E9;&#x3002;</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6211;&#x4EEC;&#x4ECE;&#x6811;&#x6839;&#x5F00;&#x59CB;&#xFF0C;&#x9009;&#x62E9;&#x7B2C;0&#x7EF4;&#x4F5C;&#x4E3A;&#x6392;&#x5E8F;&#x548C;&#x5207;&#x5206;&#x6570;&#x636E;&#x7684;&#x4F9D;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5230;&#x4E86;&#x6811;&#x6DF1;&#x4E3A;1&#x7684;&#x8FD9;&#x4E00;&#x5C42;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x7B2C;&#x4E00;&#x7EF4;&#xFF0C;&#x6811;&#x6DF1;&#x4E3A;2&#x7684;&#x8FD9;&#x4E00;&#x5C42;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x7B2C;&#x4E8C;&#x7EF4;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;&#x5F53;&#x6811;&#x6DF1;&#x8D85;&#x8FC7;&#x4E86;K&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5BF9;&#x6811;&#x6DF1;&#x53D6;&#x6A21;&#x3002;</p>
+<p>&#x660E;&#x786E;&#x4E86;&#x8FD9;&#x4E00;&#x70B9;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x6765;&#x5199;KD-Tree&#x7684;&#x5EFA;&#x6811;&#x4EE3;&#x7801;&#x4E86;&#xFF0C;&#x548C;&#x4E0A;&#x9762;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x4EE3;&#x7801;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x591A;&#x4E86;&#x7EF4;&#x5EA6;&#x7684;&#x5904;&#x7406;&#x800C;&#x5DF2;&#x3002;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5916;&#x90E8;&#x66B4;&#x9732;&#x63A5;&#x53E3;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">build_model</span><span class="hljs-params">(self, dataset)</span>:</span>
+        self.root = self._build_model(dataset)
+        <span class="hljs-comment"># &#x5148;&#x5FFD;&#x7565;&#xFF0C;&#x5BB9;&#x540E;&#x518D;&#x8BB2;</span>
+        self.set_father(self.root, <span class="hljs-keyword">None</span>)
+
+    <span class="hljs-comment"># &#x5185;&#x90E8;&#x5B9E;&#x73B0;&#x7684;&#x63A5;&#x53E3;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_build_model</span><span class="hljs-params">(self, dataset, depth=<span class="hljs-number">0</span>)</span>:</span>
+        <span class="hljs-keyword">if</span> len(dataset) == <span class="hljs-number">0</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">None</span>
+
+        <span class="hljs-comment"># &#x901A;&#x8FC7;&#x6811;&#x6DF1;&#x5BF9;K&#x53D6;&#x6A21;&#x6765;&#x83B7;&#x5F97;&#x5F53;&#x524D;&#x5BF9;&#x54EA;&#x4E00;&#x7EF4;&#x5207;&#x5206;</span>
+        axis = depth % self.K
+        m = len(dataset) // <span class="hljs-number">2</span>
+        <span class="hljs-comment"># &#x6839;&#x636E;axis&#x8FD9;&#x4E00;&#x7EF4;&#x6392;&#x5E8F;</span>
+        dataset = sorted(dataset, key=<span class="hljs-keyword">lambda</span> x: x[axis])
+        <span class="hljs-comment"># &#x5C06;&#x6570;&#x636E;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;</span>
+        left, mid, right = dataset[:m], dataset[m], dataset[m+<span class="hljs-number">1</span>:]
+
+        <span class="hljs-comment"># &#x9012;&#x5F52;&#x5EFA;&#x6811;</span>
+        <span class="hljs-keyword">return</span> KDTree.Node(
+            mid[axis],
+            mid,
+            axis,
+            depth,
+            len(dataset),
+            self._build_model(left, depth+<span class="hljs-number">1</span>),
+            self._build_model(right, depth+<span class="hljs-number">1</span>)
+        )
+</code></pre>
+<p>&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x5EFA;&#x597D;&#x4E86;&#x6811;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x540E;&#x5E8F;&#x7684;&#x67E5;&#x8BE2;&#x5F53;&#x4E2D;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x90FD;&#x8D4B;&#x503C;&#x6307;&#x5411;&#x7236;&#x4EB2;&#x8282;&#x70B9;&#x7684;&#x6307;&#x9488;&#x3002;&#x8FD9;&#x4E2A;&#x503C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5199;&#x5728;&#x5EFA;&#x6811;&#x7684;&#x4EE3;&#x7801;&#x91CC;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x7A0D;&#x7A0D;&#x590D;&#x6742;&#x4E00;&#x4E9B;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x628A;&#x5B83;&#x5355;&#x72EC;&#x62C6;&#x5206;&#x4E86;&#x51FA;&#x6765;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x51FD;&#x6570;&#x6765;&#x7ED9;&#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x8D4B;&#x503C;&#x3002;&#x5BF9;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x6765;&#x8BF4;&#xFF0C;&#x7531;&#x4E8E;&#x5B83;&#x6CA1;&#x6709;&#x7236;&#x4EB2;&#x8282;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x8D4B;&#x503C;&#x4E3A;None&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E0B;set_father&#x5F53;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6811;&#x7684;&#x9012;&#x5F52;&#x904D;&#x5386;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_father</span><span class="hljs-params">(self, node, father)</span>:</span>
+    <span class="hljs-keyword">if</span> node <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span>:
+        <span class="hljs-keyword">return</span>
+    <span class="hljs-comment"># &#x8D4B;&#x503C;</span>
+    node.father = father
+    <span class="hljs-comment"># &#x9012;&#x5F52;&#x5DE6;&#x53F3;</span>
+    self.set_father(node.lchild, node)
+    self.set_father(node.rchild, node)
+</code></pre>
+<h2 id="&#x5FEB;&#x901F;&#x6279;&#x91CF;&#x67E5;&#x8BE2;"><strong>&#x5FEB;&#x901F;&#x6279;&#x91CF;&#x67E5;&#x8BE2;</strong></h2>
+<p>KD-Tree&#x5EFA;&#x6811;&#x5EFA;&#x597D;&#x4E86;&#x80AF;&#x5B9A;&#x662F;&#x8981;&#x6765;&#x7528;&#x7684;&#xFF0C;&#x5B83;&#x6700;&#x5927;&#x7684;&#x7528;&#x5904;&#x662F;&#x53EF;&#x4EE5;<strong>&#x5728;&#x5355;&#x6B21;&#x67E5;&#x8BE2;&#x4E2D;&#x83B7;&#x5F97;&#x8DDD;&#x79BB;&#x6837;&#x672C;&#x6700;&#x8FD1;&#x7684;&#x82E5;&#x5E72;&#x4E2A;&#x6837;&#x672C;</strong>&#x3002;&#x5728;&#x5206;&#x6563;&#x5747;&#x5300;&#x7684;&#x6570;&#x636E;&#x96C6;&#x5F53;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;<img src="https://www.zhihu.com/equation?tex=K%5Clog%28n%29" alt="[&#x516C;&#x5F0F;]">&#x7684;&#x65F6;&#x95F4;&#x5185;&#x5B8C;&#x6210;&#x67E5;&#x8BE2;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x53EF;&#x80FD;&#x4F1A;&#x957F;&#x4E00;&#x4E9B;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x6BD4;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x6734;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#x67E5;&#x8BE2;&#x8981;&#x5FEB;&#x5F97;&#x591A;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5F88;&#x5BB9;&#x6613;&#x53D1;&#x73B0;&#xFF0C;KD-Tree&#x4E00;&#x4E2A;&#x5E7F;&#x6CDB;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x662F;&#x7528;&#x6765;<strong>&#x4F18;&#x5316;KNN&#x7B97;&#x6CD5;</strong>&#x3002;&#x6211;&#x4EEC;&#x5728;&#x4E4B;&#x524D;&#x4ECB;&#x7ECD;KNN&#x7B97;&#x6CD5;&#x7684;&#x6587;&#x7AE0;&#x5F53;&#x4E2D;&#x66FE;&#x7ECF;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;KNN&#x7B97;&#x6CD5;&#x5728;&#x9884;&#x6D4B;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x904D;&#x5386;&#x6574;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x7136;&#x540E;&#x8BA1;&#x7B97;&#x6570;&#x636E;&#x96C6;&#x4E2D;&#x6BCF;&#x4E00;&#x4E2A;&#x6837;&#x672C;&#x4E0E;&#x5F53;&#x524D;&#x6837;&#x672C;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x9009;&#x51FA;&#x6700;&#x8FD1;&#x7684;K&#x4E2A;&#x6765;&#xFF0C;&#x8FD9;&#x9700;&#x8981;&#x5927;&#x91CF;&#x7684;&#x5F00;&#x9500;&#x3002;&#x800C;&#x4F7F;&#x7528;KD-Tree&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x6B21;&#x67E5;&#x8BE2;&#x5F53;&#x4E2D;<strong>&#x76F4;&#x63A5;&#x67E5;&#x627E;&#x5230;K&#x4E2A;&#x6700;&#x8FD1;&#x7684;&#x6837;&#x672C;</strong>&#xFF0C;&#x56E0;&#x6B64;&#x5927;&#x5927;&#x63D0;&#x5347;KNN&#x7B97;&#x6CD5;&#x7684;&#x6548;&#x7387;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x8FD9;&#x4E2A;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x53C8;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;&#x5462;&#xFF1F;</p>
+<p>&#x8FD9;&#x4E2A;&#x67E5;&#x8BE2;&#x57FA;&#x4E8E;&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#xFF0C;&#x56E0;&#x6B64;&#x5BF9;&#x4E8E;&#x9012;&#x5F52;&#x4E0D;&#x719F;&#x6089;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#xFF0C;&#x53EF;&#x80FD;&#x521D;&#x770B;&#x4F1A;&#x6BD4;&#x8F83;&#x56F0;&#x96BE;&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x9605;&#x8BFB;&#x4E00;&#x4E0B;&#x4E4B;&#x524D;&#x5173;&#x4E8E;&#x9012;&#x5F52;&#x7684;&#x6587;&#x7AE0;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5148;&#x901A;&#x8FC7;<strong>&#x9012;&#x5F52;&#x67E5;&#x627E;&#x5230;KD-Tree&#x4E0A;&#x7684;&#x53F6;&#x5B50;&#x8282;&#x70B9;</strong>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x627E;&#x5230;&#x6837;&#x672C;&#x6240;&#x5728;&#x7684;&#x5B50;&#x7A7A;&#x95F4;&#x3002;&#x8FD9;&#x4E2A;&#x67E5;&#x627E;&#x5E94;&#x8BE5;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#xFF0C;&#x672C;&#x8D28;&#x4E0A;&#x6765;&#x8BF4;&#x6211;&#x4EEC;&#x5C31;&#x662F;&#x5C06;&#x5F53;&#x524D;&#x6837;&#x672C;&#x4E0D;&#x505C;&#x5730;&#x4E0E;&#x5206;&#x5272;&#x7EBF;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x770B;&#x770B;&#x662F;&#x5728;&#x5206;&#x5272;&#x7EBF;&#x7684;&#x5DE6;&#x4FA7;&#x8FD8;&#x662F;&#x53F3;&#x4FA7;&#x3002;&#x548C;&#x4E8C;&#x53C9;&#x641C;&#x7D22;&#x6811;&#x7684;&#x5143;&#x7D20;&#x67E5;&#x627E;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">iter_down</span><span class="hljs-params">(self, node, data)</span>:</span>
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x662F;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;</span>
+        <span class="hljs-keyword">if</span> node.lchild <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span> <span class="hljs-keyword">and</span> node.rchild <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span>:
+            <span class="hljs-keyword">return</span> node
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x5DE6;&#x8282;&#x70B9;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x53F3;&#x8282;&#x70B9;</span>
+        <span class="hljs-keyword">if</span> node.lchild <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span>:
+            <span class="hljs-keyword">return</span> self.iter_down(node.rchild, data)
+        <span class="hljs-comment"># &#x540C;&#x7406;&#xFF0C;&#x9012;&#x5F52;&#x5DE6;&#x8282;&#x70B9;</span>
+        <span class="hljs-keyword">if</span> node.rchild <span class="hljs-keyword">is</span> <span class="hljs-keyword">None</span>:
+            <span class="hljs-keyword">return</span> self.iter_down(node.rchild, data)
+        <span class="hljs-comment"># &#x90FD;&#x4E0D;&#x4E3A;&#x7A7A;&#x5219;&#x548C;&#x5206;&#x5272;&#x7EBF;&#x5224;&#x65AD;&#x662F;&#x5DE6;&#x8FD8;&#x662F;&#x53F3;</span>
+        axis = node.axis
+        next_node = node.lchild <span class="hljs-keyword">if</span> data[axis] &lt;= node.boundray <span class="hljs-keyword">else</span> node.rchild
+        <span class="hljs-keyword">return</span> self.iter_down(next_node, data)
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x627E;&#x5230;&#x4E86;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x5176;&#x5B9E;<strong>&#x4EE3;&#x8868;&#x6837;&#x672C;&#x7A7A;&#x95F4;&#x5F53;&#x4E2D;&#x7684;&#x4E00;&#x5C0F;&#x5757;&#x7A7A;&#x95F4;</strong>&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x5B9E;&#x9645;&#x8D70;&#x4E00;&#x4E0B;&#x6574;&#x4E2A;&#x6D41;&#x7A0B;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x8981;&#x67E5;&#x627E;3&#x4E2A;&#x70B9;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5019;&#x9009;&#x96C6;&#xFF0C;&#x7528;&#x6765;&#x5B58;&#x50A8;&#x7B54;&#x6848;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x627E;&#x5230;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x533A;&#x57DF;&#x5F53;&#x4E2D;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x52A0;&#x5165;&#x5019;&#x9009;&#x96C6;&#x3002;</p>
+<p><img src="https://pic1.zhimg.com/80/v2-cd00e60e4b34994bfe22dbc65ebb332c_720w.jpg" alt="img"></p>
+<p>&#x5728;&#x4E0A;&#x56FE;&#x5F53;&#x4E2D;&#x7D2B;&#x8272;&#x7684;x&#x4EE3;&#x8868;&#x6211;&#x4EEC;&#x67E5;&#x627E;&#x7684;&#x6837;&#x672C;&#xFF0C;&#x6211;&#x4EEC;&#x67E5;&#x627E;&#x5230;&#x7684;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x4E4B;&#x540E;&#xFF0C;&#x5728;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x4F1A;&#x628A;&#x5F53;&#x524D;&#x70B9;&#x52A0;&#x5165;&#x5019;&#x9009;&#x96C6;&#x3002;&#x7B2C;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x662F;<strong>&#x5019;&#x9009;&#x96C6;&#x8FD8;&#x6709;&#x7A7A;&#x4F59;</strong>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8FD8;&#x6CA1;&#x6709;&#x6EE1;K&#x4E2A;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;K&#x662F;&#x6211;&#x4EEC;&#x67E5;&#x8BE2;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;3&#x3002;&#x7B2C;&#x4E8C;&#x79CD;&#x60C5;&#x51B5;&#x662F;<strong>&#x5F53;&#x524D;&#x70B9;&#x5230;&#x6837;&#x672C;&#x7684;&#x8DDD;&#x79BB;&#x5C0F;&#x4E8E;&#x5019;&#x9009;&#x96C6;&#x4E2D;&#x6700;&#x5927;&#x7684;&#x4E00;&#x4E2A;</strong>&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x5019;&#x9009;&#x96C6;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x70B9;&#x88AB;&#x6211;&#x4EEC;&#x8BBF;&#x95EE;&#x8FC7;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;<strong>&#x6253;&#x4E0A;&#x6807;&#x8BB0;</strong>&#xFF0C;&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x70B9;&#x5DF2;&#x7ECF;&#x8BBF;&#x95EE;&#x8FC7;&#x4E86;&#x3002;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5224;&#x65AD;&#xFF0C;&#x6574;&#x68F5;&#x6811;&#x5F53;&#x4E2D;&#x7684;&#x641C;&#x7D22;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x5DF2;&#x7ECF;&#x662F;&#x6839;&#x8282;&#x70B9;&#x4E86;&#xFF0C;&#x8BF4;&#x660E;&#x6211;&#x4EEC;&#x7684;&#x904D;&#x5386;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;&#x5019;&#x9009;&#x96C6;&#xFF0C;&#x5426;&#x5219;&#x8BF4;&#x660E;&#x8FD8;&#x6CA1;&#x6709;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x641C;&#x7D22;&#x3002;&#x4E0A;&#x56FE;&#x5F53;&#x4E2D;&#x6211;&#x4EEC;&#x7528;<strong>&#x7EFF;&#x8272;&#x8868;&#x793A;&#x6837;&#x672C;&#x88AB;&#x653E;&#x5165;&#x4E86;&#x5019;&#x9009;&#x96C6;&#x5F53;&#x4E2D;&#xFF0C;&#x9EC4;&#x8272;&#x8868;&#x793A;&#x5DF2;&#x7ECF;&#x8BBF;&#x95EE;&#x8FC7;&#x3002;</strong></p>
+<p>&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x7684;&#x641C;&#x7D22;&#x8FD8;&#x6CA1;&#x6709;&#x7ED3;&#x675F;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x641C;&#x7D22;&#x3002;&#x7EE7;&#x7EED;&#x641C;&#x7D22;&#x9700;&#x8981;&#x5224;&#x65AD;<strong>&#x6837;&#x672C;&#x548C;&#x5F53;&#x524D;&#x5206;&#x5272;&#x7EBF;&#x7684;&#x8DDD;&#x79BB;</strong>&#x6765;&#x5224;&#x65AD;&#x548C;&#x5206;&#x5272;&#x7EBF;&#x7684;&#x53E6;&#x4E00;&#x4FA7;&#x6709;&#x6CA1;&#x6709;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7B54;&#x6848;&#x3002;&#x7531;&#x4E8E;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x6CA1;&#x6709;&#x53E6;&#x4E00;&#x4FA7;&#xFF0C;&#x6240;&#x4EE5;&#x4F5C;&#x7F62;&#xFF0C;&#x6211;&#x4EEC;&#x5F80;&#x4E0A;&#x79FB;&#x52A8;&#x4E00;&#x4E2A;&#xFF0C;&#x8DF3;&#x8F6C;&#x5230;&#x5B83;&#x7684;&#x7236;&#x4EB2;&#x8282;&#x70B9;&#x3002;</p>
+<p><img src="https://pic2.zhimg.com/80/v2-227d2b131d6a37563ab057933223caa1_720w.jpg" alt="img"></p>
+<p>&#x6211;&#x4EEC;&#x8BA1;&#x7B97;&#x8DDD;&#x79BB;&#x5E76;&#x4E14;&#x67E5;&#x770B;&#x5019;&#x9009;&#x96C6;&#xFF0C;&#x6B64;&#x65F6;&#x5019;&#x9009;&#x96C6;&#x672A;&#x6EE1;&#xFF0C;&#x6211;&#x4EEC;&#x52A0;&#x5165;&#x5019;&#x9009;&#x96C6;&#xFF0C;&#x6807;&#x8BB0;&#x4E3A;&#x5DF2;&#x7ECF;&#x8BBF;&#x95EE;&#x8FC7;&#x3002;&#x5B83;&#x867D;&#x7136;&#x5B58;&#x5728;&#x5206;&#x5272;&#x7EBF;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;<strong>&#x6CA1;&#x6709;&#x53E6;&#x4E00;&#x4FA7;&#x7684;&#x8282;&#x70B9;</strong>&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x8DF3;&#x8FC7;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x518D;&#x5F80;&#x4E0A;&#xFF0C;&#x904D;&#x5386;&#x5230;&#x5B83;&#x7684;&#x7236;&#x4EB2;&#x8282;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x540C;&#x6837;&#x7684;&#x5224;&#x65AD;&#xFF0C;&#x53D1;&#x73B0;&#x6B64;&#x65F6;&#x5019;&#x9009;&#x96C6;&#x8FD8;&#x6709;&#x7A7A;&#x4F59;&#xFF0C;&#x4E8E;&#x662F;&#x5C06;&#x5B83;&#x7EE7;&#x7EED;&#x52A0;&#x5165;&#x7B54;&#x6848;&#xFF1A;</p>
+<p><img src="https://pic4.zhimg.com/80/v2-f991fac3501bd37eb6d2da9c72d3111b_720w.jpg" alt="img"></p>
+<p>&#x4F46;&#x662F;&#x5F53;&#x6211;&#x4EEC;&#x5224;&#x65AD;&#x5230;&#x5206;&#x5272;&#x7EBF;&#x8DDD;&#x79BB;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#x8FD9;&#x4E00;&#x6B21;<strong>&#x6837;&#x672C;&#x5230;&#x5206;&#x5272;&#x7EBF;&#x7684;&#x4E3E;&#x4F8B;&#x8981;&#x6BD4;&#x4E4B;&#x524D;&#x5019;&#x9009;&#x96C6;&#x5F53;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x8DDD;&#x79BB;&#x8981;&#x5C0F;</strong>&#xFF0C;&#x6240;&#x4EE5;&#x5206;&#x5272;&#x7EBF;&#x7684;&#x53E6;&#x4E00;&#x4FA7;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7B54;&#x6848;&#xFF1A;</p>
+<p><img src="https://pic3.zhimg.com/80/v2-c1cd430a0908da4b84acfd2c1ff2bdce_720w.jpg" alt="img"></p>
+<p>&#x8FD9;&#x91CC;&#x7684;d1&#x662F;&#x6837;&#x672C;&#x5230;&#x5206;&#x5272;&#x7EBF;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;d2&#x662F;&#x6837;&#x672C;&#x5230;&#x5019;&#x9009;&#x96C6;&#x5F53;&#x4E2D;&#x6700;&#x8FDC;&#x70B9;&#x7684;&#x8DDD;&#x79BB;&#x3002;&#x7531;&#x4E8E;&#x5230;&#x5206;&#x5272;&#x7EBF;&#x66F4;&#x8FD1;&#xFF0C;&#x6240;&#x4EE5;&#x5206;&#x5272;&#x7EBF;&#x7684;&#x53E6;&#x4E00;&#x4FA7;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x4E5F;&#x5B58;&#x5728;&#x7B54;&#x6848;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;<strong>&#x641C;&#x7D22;&#x5206;&#x5272;&#x7EBF;&#x53E6;&#x4E00;&#x4FA7;&#x7684;&#x5B50;&#x6811;</strong>&#xFF0C;&#x4E00;&#x76F4;&#x641C;&#x7D22;&#x5230;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x3002;</p>
+<p><img src="https://pic3.zhimg.com/80/v2-0b76699bd97e26c1d257b13eb693b1ee_720w.jpg" alt="img"></p>
+<p>&#x6211;&#x4EEC;&#x627E;&#x5230;&#x4E86;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x8BA1;&#x7B97;&#x8DDD;&#x79BB;&#xFF0C;&#x53D1;&#x73B0;&#x6B64;&#x65F6;<strong>&#x5019;&#x9009;&#x96C6;&#x5DF2;&#x7ECF;&#x6EE1;&#x4E86;</strong>&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x7684;&#x8DDD;&#x79BB;&#x5927;&#x4E8E;&#x5019;&#x9009;&#x96C6;&#x5F53;&#x4E2D;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x7B54;&#x6848;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x6784;&#x6210;&#x65B0;&#x7684;&#x7B54;&#x6848;&#x3002;&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x6807;&#x8BB0;&#x5B83;&#x5DF2;&#x7ECF;&#x8BBF;&#x95EE;&#x8FC7;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x52A0;&#x5165;&#x5019;&#x9009;&#x96C6;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x5F80;&#x4E0A;&#x904D;&#x5386;&#xFF0C;&#x5230;&#x5B83;&#x7684;&#x7236;&#x8282;&#x70B9;&#xFF1A;</p>
+<p><img src="https://pic2.zhimg.com/80/v2-f7cb5070859d99f62f094b9b1406ed85_720w.jpg" alt="img"></p>
+<p>&#x6BD4;&#x8F83;&#x4E4B;&#x540E;&#x53D1;&#x73B0;&#xFF0C;data&#x5230;&#x5B83;&#x7684;<strong>&#x8DDD;&#x79BB;&#x5C0F;&#x4E8E;&#x5019;&#x9009;&#x96C6;&#x5F53;&#x4E2D;&#x6700;&#x5927;&#x7684;&#x90A3;&#x4E2A;</strong>&#xFF0C;&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x66F4;&#x65B0;&#x5019;&#x9009;&#x96C6;&#xFF0C;&#x53BB;&#x6389;&#x8DDD;&#x79BB;&#x5927;&#x4E8E;&#x5B83;&#x7684;&#x7B54;&#x6848;&#x3002;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x91CD;&#x590D;&#x4E0A;&#x8FF0;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x76F4;&#x5230;&#x6839;&#x8282;&#x70B9;&#x4E3A;&#x6B62;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x540E;&#x9762;&#x6CA1;&#x6709;&#x66F4;&#x8FD1;&#x7684;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x5019;&#x9009;&#x96C6;&#x4E00;&#x76F4;&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#xFF0C;&#x6700;&#x540E;&#x4E0A;&#x56FE;&#x5F53;&#x4E2D;&#x7684;&#x4E09;&#x4E2A;&#x6253;&#x4E86;&#x7EFF;&#x6807;&#x7684;&#x70B9;&#x5C31;&#x662F;&#x7B54;&#x6848;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x628A;&#x4E0A;&#x9762;&#x7684;&#x6D41;&#x7A0B;&#x6574;&#x7406;&#x4E00;&#x4E0B;&#xFF0C;&#x5C31;&#x5F97;&#x5230;&#x4E86;&#x9012;&#x5F52;&#x51FD;&#x6570;&#x5F53;&#x4E2D;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x6211;&#x4EEC;&#x7528;Python&#x5199;&#x51FA;&#x6765;&#x5176;&#x5B9E;&#x5DF2;&#x7ECF;&#x548C;&#x4EE3;&#x7801;&#x5DEE;&#x4E0D;&#x591A;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">query</span><span class="hljs-params">(node, data, answers, K)</span>:</span>
+    <span class="hljs-comment"># &#x5224;&#x65AD;node&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x8BBF;&#x95EE;&#x8FC7;</span>
+    <span class="hljs-keyword">if</span> node.visited:
+        <span class="hljs-comment"># &#x6807;&#x8BB0;&#x8BBF;&#x95EE;</span>
+        node.visited = <span class="hljs-keyword">True</span>
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;data&#x5230;node&#x4E2D;&#x70B9;&#x7684;&#x8DDD;&#x79BB;</span>
+        dis = cal_dis(data, node.point)
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x5C0F;&#x4E8E;&#x7B54;&#x6848;&#x4E2D;&#x6700;&#x5927;&#x503C;&#x5219;&#x66F4;&#x65B0;&#x7B54;&#x6848;</span>
+        <span class="hljs-keyword">if</span> dis &lt; max(answers):
+            answers.update(node.point)
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;data&#x5230;&#x5206;&#x5272;&#x7EBF;&#x7684;&#x8DDD;&#x79BB;</span>
+        dis = cal_dis(data, node.split)
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x5C0F;&#x4E8E;&#x6700;&#x957F;&#x8DDD;&#x79BB;&#xFF0C;&#x8BF4;&#x660E;&#x53E6;&#x4E00;&#x4FA7;&#x8FD8;&#x53EF;&#x80FD;&#x6709;&#x7B54;&#x6848;</span>
+        <span class="hljs-keyword">if</span> dis &lt; max(answers):
+            <span class="hljs-comment"># &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x5144;&#x5F1F;&#x8282;&#x70B9;</span>
+            brother = self.get_brother(node)
+            <span class="hljs-keyword">if</span> brother <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+                <span class="hljs-comment"># &#x5F80;&#x4E0B;&#x641C;&#x7D22;&#x5230;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x4ECE;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5F00;&#x59CB;&#x5BFB;&#x627E;</span>
+                leaf = self.iter_down(brother, data)
+                <span class="hljs-keyword">if</span> leaf <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+                    <span class="hljs-keyword">return</span> self.query(leaf, data, answers, K)
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x5230;&#x4E86;&#x6839;&#x8282;&#x70B9;&#x4E86;&#xFF0C;&#x9000;&#x51FA;</span>
+        <span class="hljs-keyword">if</span> node <span class="hljs-keyword">is</span> root:
+            <span class="hljs-keyword">return</span> answers
+        <span class="hljs-comment"># &#x9012;&#x5F52;&#x7236;&#x4EB2;&#x8282;&#x70B9;</span>
+        <span class="hljs-keyword">return</span> self.query(node.father, data, answers, K)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">if</span> node <span class="hljs-keyword">is</span> root:
+            <span class="hljs-keyword">return</span> answers
+        <span class="hljs-keyword">return</span> self.query(node.father, data, answers, K)
+</code></pre>
+<p>&#x6700;&#x7EC8;&#x5199;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x548C;&#x4E0A;&#x9762;&#x8FD9;&#x6BB5;&#x5E76;&#x6CA1;&#x6709;&#x592A;&#x591A;&#x7684;&#x5DEE;&#x522B;&#xFF0C;&#x5728;&#x5F97;&#x5230;&#x8DDD;&#x79BB;&#x4E4B;&#x540E;&#x548C;&#x7B54;&#x6848;&#x5F53;&#x4E2D;&#x7684;&#x6700;&#x5927;&#x8DDD;&#x79BB;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;<strong>&#x4F18;&#x5148;&#x961F;&#x5217;</strong>&#x3002;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x51E0;&#x4E4E;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x6211;&#x4E5F;&#x8D34;&#x4E0A;&#x6765;&#x7ED9;&#x5927;&#x5BB6;&#x611F;&#x53D7;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_query_nearest_k</span><span class="hljs-params">(self, node, path, data, topK, K)</span>:</span>
+    <span class="hljs-comment"># &#x6211;&#x4EEC;&#x7528;set&#x8BB0;&#x5F55;&#x8BBF;&#x95EE;&#x8FC7;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x76F4;&#x63A5;&#x5728;&#x8282;&#x70B9;&#x4E0A;&#x6807;&#x8BB0;</span>
+    <span class="hljs-keyword">if</span> node <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> path:
+        path.add(node)
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x6B27;&#x6C0F;&#x8DDD;&#x79BB;</span>
+        dis = KDTree.distance(node.value, data)
+        <span class="hljs-keyword">if</span> (len(topK) &lt; K <span class="hljs-keyword">or</span> dis &lt; topK[<span class="hljs-number">-1</span>][<span class="hljs-string">&apos;distance&apos;</span>]):
+            topK.append({<span class="hljs-string">&apos;node&apos;</span>: node, <span class="hljs-string">&apos;distance&apos;</span>: dis})
+            <span class="hljs-comment"># &#x4F7F;&#x7528;&#x4F18;&#x5148;&#x961F;&#x5217;&#x83B7;&#x53D6;topK</span>
+            topK = heapq.nsmallest(K, topK, key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-string">&apos;distance&apos;</span>])
+        axis = node.axis
+        <span class="hljs-comment"># &#x5206;&#x5272;&#x7EBF;&#x90FD;&#x662F;&#x76F4;&#x7EBF;&#xFF0C;&#x76F4;&#x63A5;&#x8BA1;&#x7B97;&#x5750;&#x6807;&#x5DEE;</span>
+        dis = abs(data[axis] - node.boundray)
+        <span class="hljs-keyword">if</span> len(topK) &lt; K <span class="hljs-keyword">or</span> dis &lt;= topK[<span class="hljs-number">-1</span>][<span class="hljs-string">&apos;distance&apos;</span>]:
+            brother = self.get_brother(node, path)
+            <span class="hljs-keyword">if</span> brother <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+                next_node = self.iter_down(brother, data)
+                <span class="hljs-keyword">if</span> next_node <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+                    <span class="hljs-keyword">return</span> self._query_nearest_k(next_node, path, data, topK, K)
+        <span class="hljs-keyword">if</span> node == self.root:
+            <span class="hljs-keyword">return</span> topK
+        <span class="hljs-keyword">return</span> self._query_nearest_k(node.father, path, data, topK, K)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">if</span> node == self.root:
+            <span class="hljs-keyword">return</span> topK
+        <span class="hljs-keyword">return</span> self._query_nearest_k(node.father, path, data, topK, K)
+</code></pre>
+<p>&#x8FD9;&#x6BB5;&#x903B;&#x8F91;&#x5927;&#x5BB6;&#x5E94;&#x8BE5;&#x90FD;&#x80FD;&#x770B;&#x660E;&#x767D;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x7591;&#x95EE;&#x662F;&#xFF0C;&#x6211;&#x4EEC;<strong>&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x5728;node&#x91CC;&#x9762;&#x52A0;&#x4E00;&#x4E2A;visited&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x4F20;&#x5165;&#x4E00;&#x4E2A;set&#x6765;&#x7EF4;&#x62A4;&#x8BBF;&#x95EE;&#x8FC7;&#x7684;&#x8282;&#x70B9;&#x5462;</strong>&#xFF1F;&#x8FD9;&#x4E2A;&#x903B;&#x8F91;&#x53EA;&#x770B;&#x4EE3;&#x7801;&#x662F;&#x5F88;&#x96BE;&#x60F3;&#x6E05;&#x695A;&#x7684;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x4EB2;&#x624B;&#x5B9E;&#x9A8C;&#x624D;&#x4F1A;&#x7406;&#x89E3;&#x3002;&#x5982;&#x679C;&#x5728;node&#x5F53;&#x4E2D;&#x52A0;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x5F53;&#x7136;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x8BDD;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x67E5;&#x627E;&#x4E4B;&#x540E;&#x5FC5;&#x987B;&#x5F97;&#x624B;&#x52A8;&#x518D;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x9012;&#x5F52;&#xFF0C;&#x5C06;&#x6811;&#x4E0A;&#x6240;&#x6709;&#x8282;&#x70B9;&#x7684;node&#x5168;&#x90E8;&#x7F6E;&#x4E3A;false&#xFF0C;&#x5426;&#x5219;&#x4E0B;&#x4E00;&#x6B21;&#x67E5;&#x8BE2;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x8282;&#x70B9;&#x5DF2;&#x7ECF;&#x88AB;&#x6807;&#x8BB0;&#x6210;&#x4E86;True&#xFF0C;&#x663E;&#x7136;&#x4F1A;&#x5F71;&#x54CD;&#x7ED3;&#x679C;&#x3002;&#x67E5;&#x8BE2;&#x4E4B;&#x540E;&#x5C06;&#x8FD9;&#x4E9B;&#x503C;&#x624B;&#x52A8;&#x8FD8;&#x539F;&#x4F1A;&#x5E26;&#x6765;&#x5F00;&#x9500;&#xFF0C;&#x6240;&#x4EE5;&#x624D;&#x8F6C;&#x6362;&#x601D;&#x8DEF;&#x4F7F;&#x7528;set&#x6765;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#x5224;&#x65AD;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x7684;iter_down&#x51FD;&#x6570;&#x548C;&#x6211;&#x4EEC;&#x4E0A;&#x9762;&#x8D34;&#x7684;&#x67E5;&#x627E;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x51FD;&#x6570;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x67E5;&#x627E;&#x5F53;&#x524D;&#x5B50;&#x6811;&#x7684;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x3002;&#x5982;&#x679C;&#x6211;&#x6CA1;&#x8BB0;&#x9519;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x6211;&#x4EEC;&#x6587;&#x7AE0;&#x5F53;&#x4E2D;<strong>&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x5728;&#x9012;&#x5F52;&#x5F53;&#x4E2D;&#x8C03;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x9012;&#x5F52;</strong>&#x7684;&#x60C5;&#x51B5;&#x3002;&#x5BF9;&#x4E8E;&#x521D;&#x5B66;&#x8005;&#x800C;&#x8A00;&#xFF0C;&#x8FD9;&#x5728;&#x7406;&#x89E3;&#x4E0A;&#x53EF;&#x80FD;&#x4F1A;&#x76F8;&#x5BF9;&#x56F0;&#x96BE;&#x4E00;&#x4E9B;&#x3002;&#x6211;&#x4E2A;&#x4EBA;&#x5EFA;&#x8BAE;&#x53EF;&#x4EE5;&#x4EB2;&#x81EA;&#x52A8;&#x624B;&#x8BD5;&#x4E00;&#x8BD5;&#x5728;&#x7EB8;&#x4E0A;&#x753B;&#x4E00;&#x4E2A;kd-tree&#x8FDB;&#x884C;&#x624B;&#x52A8;&#x6A21;&#x62DF;&#x8BD5;&#x4E00;&#x8BD5;&#xFF0C;&#x81EA;&#x7136;&#x5C31;&#x80FD;&#x77E5;&#x9053;&#x5176;&#x4E2D;&#x7684;&#x8FD0;&#x884C;&#x903B;&#x8F91;&#x4E86;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x601D;&#x8003;&#x548C;&#x5B66;&#x4E60;&#x975E;&#x5E38;&#x597D;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="&#x4F18;&#x5316;"><strong>&#x4F18;&#x5316;</strong></h2>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x7406;&#x89E3;&#x4E86;&#x6574;&#x4E2A;kd-tree&#x7684;&#x5EFA;&#x6811;&#x548C;&#x67E5;&#x627E;&#x7684;&#x903B;&#x8F91;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6765;<strong>&#x8003;&#x8651;&#x4E00;&#x4E0B;&#x4F18;&#x5316;</strong>&#x3002;</p>
+<p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x770B;&#x4E0B;&#x6765;&#x521D;&#x6B65;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x4E24;&#x4E2A;&#x53EF;&#x4EE5;&#x4F18;&#x5316;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x662F;&#x6211;&#x4EEC;&#x5EFA;&#x6811;&#x7684;&#x65F6;&#x5019;&#x3002;&#x6211;&#x4EEC;&#x6BCF;&#x6B21;&#x9012;&#x5F52;&#x7684;&#x65F6;&#x5019;&#x7531;&#x4E8E;&#x8981;&#x5C06;&#x6570;&#x636E;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#xFF0C;&#x6211;&#x4EEC;&#x662F;<strong>&#x4F7F;&#x7528;&#x4E86;&#x6392;&#x5E8F;</strong>&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x800C;&#x6BCF;&#x6B21;&#x6392;&#x5E8F;&#x90FD;&#x662F;<img src="https://www.zhihu.com/equation?tex=nlogn" alt="[&#x516C;&#x5F0F;]">&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x8FD9;&#x5176;&#x5B9E;&#x662F;&#x4E0D;&#x4F4E;&#x7684;&#x3002;&#x5176;&#x5B9E;&#x4ED4;&#x7EC6;&#x60F3;&#x60F3;&#xFF0C;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x6392;&#x5E8F;&#xFF0C;&#x6211;&#x4EEC;<strong>&#x53EA;&#x9700;&#x8981;&#x9009;&#x51FA;&#x6839;&#x636E;&#x67D0;&#x4E2A;&#x8F74;&#x6392;&#x5E8F;&#x524D;n/2&#x4E2A;&#x6570;</strong>&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x6392;&#x5E8F;&#x95EE;&#x9898;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x60F3;&#x5230;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x4E4B;&#x524D;&#x8BB2;&#x8FC7;&#x7684;&#x5FEB;&#x901F;&#x9009;&#x62E9;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x4F18;&#x5316;&#x3002;&#x4F7F;&#x7528;&#x5FEB;&#x901F;&#x9009;&#x62E9;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;<img src="https://www.zhihu.com/equation?tex=O%28n%29" alt="[&#x516C;&#x5F0F;]">&#x7684;&#x65F6;&#x95F4;&#x5185;&#x5B8C;&#x6210;&#x6570;&#x636E;&#x7684;&#x62C6;&#x5206;&#x3002;</p>
+<p>&#x53E6;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x67E5;&#x8BE2;K&#x4E2A;&#x90BB;&#x8FD1;&#x70B9;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;<strong>&#x4F18;&#x5148;&#x961F;&#x5217;</strong>&#x7EF4;&#x62A4;&#x7684;&#x5019;&#x9009;&#x96C6;&#x5F53;&#x4E2D;&#x7684;&#x7B54;&#x6848;&#xFF0C;&#x65B9;&#x4FBF;&#x6211;&#x4EEC;&#x5BF9;&#x7B54;&#x6848;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x4F18;&#x5148;&#x961F;&#x5217;&#x83B7;&#x53D6;topK&#x4E5F;&#x662F;<img src="https://www.zhihu.com/equation?tex=nlogn" alt="[&#x516C;&#x5F0F;]">&#x7684;&#x590D;&#x6742;&#x5EA6;&#x3002;&#x8FD9;&#x91CC;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x4F18;&#x5316;&#x7684;&#xFF0C;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x601D;&#x8DEF;&#x662F;<strong>&#x4F7F;&#x7528;&#x5806;&#x6765;&#x4EE3;&#x66FF;</strong>&#x3002;&#x53EF;&#x4EE5;&#x505A;&#x5230;<img src="https://www.zhihu.com/equation?tex=logN" alt="[&#x516C;&#x5F0F;]">&#x7684;&#x63D2;&#x5165;&#x548C;&#x5F39;&#x51FA;&#xFF0C;&#x76F8;&#x6BD4;&#x4E8E;heapq&#x7684;nsmallest&#x65B9;&#x6CD5;&#x8981;&#x6548;&#x7387;&#x66F4;&#x9AD8;&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;"><strong>&#x603B;&#x7ED3;</strong></h2>
+<p>&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x5173;&#x4E8E;KD-tree&#x7684;&#x539F;&#x7406;&#x90E8;&#x5206;&#x5DF2;&#x7ECF;&#x5DEE;&#x4E0D;&#x591A;&#x8BB2;&#x5B8C;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x4E86;&#x5EFA;&#x6811;&#x548C;&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#x4E4B;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x5728;KNN&#x7B97;&#x6CD5;&#x4E0A;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#x4E86;&#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x7684;KD-tree&#x53EA;&#x652F;&#x6301;&#x5EFA;&#x6811;&#x4EE5;&#x53CA;&#x67E5;&#x8BE2;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;<strong>&#x60F3;&#x8981;&#x63D2;&#x5165;&#x6216;&#x8005;&#x5220;&#x9664;&#x96C6;&#x5408;&#x5F53;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x529E;</strong>&#xFF1F;&#x96BE;&#x9053;&#x6BCF;&#x6B21;&#x4FEE;&#x6539;&#x90FD;&#x91CD;&#x65B0;&#x5EFA;&#x6811;&#x5417;&#xFF1F;&#x8FD9;&#x663E;&#x7136;&#x4E0D;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x8282;&#x70B9;&#x90FD;&#x4F1A;&#x5F15;&#x8D77;&#x6811;&#x7ED3;&#x6784;&#x7684;&#x53D8;&#x5316;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x6811;&#x4E0D;&#x518D;&#x5E73;&#x8861;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x5148;&#x5356;&#x4E2A;&#x5173;&#x5B50;&#xFF0C;&#x76F8;&#x5173;&#x7684;&#x5185;&#x5BB9;&#x5C06;&#x4F1A;&#x653E;&#x5230;&#x4E0B;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x5F53;&#x4E2D;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x540C;&#x5B66;&#x4E0D;&#x8981;&#x9519;&#x8FC7;&#x54E6;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6211;&#x628A;KD-tree&#x5B8C;&#x6574;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5728;&#x4E86;ubuntu.paste&#x4E0A;&#xFF0C;&#x60F3;&#x8981;&#x67E5;&#x770B;&#x5B8C;&#x6574;&#x6E90;&#x7801;&#x7684;&#x540C;&#x5B66;&#x8BF7;&#x5173;&#x6CE8;&#x5E76;&#x56DE;&#x590D;<strong>kd-tree</strong>&#x8FDB;&#x884C;&#x67E5;&#x770B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: algorithm">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="KDTree2.html" class="navigation navigation-next " aria-label="Next page: KDTree2.md">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"KDTree.md","level":"1.6.1","depth":2,"next":{"title":"KDTree2.md","level":"1.6.2","depth":2,"path":"algorithm/KDTree2.md","ref":"algorithm/KDTree2.md","articles":[]},"previous":{"title":"algorithm","level":"1.6","depth":1,"path":"algorithm/README.md","ref":"algorithm/README.md","articles":[{"title":"KDTree.md","level":"1.6.1","depth":2,"path":"algorithm/KDTree.md","ref":"algorithm/KDTree.md","articles":[]},{"title":"KDTree2.md","level":"1.6.2","depth":2,"path":"algorithm/KDTree2.md","ref":"algorithm/KDTree2.md","articles":[]},{"title":"README.md","level":"1.6.3","depth":2,"path":"algorithm/README.md","ref":"algorithm/README.md","articles":[]},{"title":"从匈牙利算法到KM算法.md","level":"1.6.4","depth":2,"path":"algorithm/从匈牙利算法到KM算法.md","ref":"algorithm/从匈牙利算法到KM算法.md","articles":[]},{"title":"匈牙利算法.md","level":"1.6.5","depth":2,"path":"algorithm/匈牙利算法.md","ref":"algorithm/匈牙利算法.md","articles":[]},{"title":"图说卡尔曼滤波，一份通俗易懂的教程.md","level":"1.6.6","depth":2,"path":"algorithm/图说卡尔曼滤波，一份通俗易懂的教程.md","ref":"algorithm/图说卡尔曼滤波，一份通俗易懂的教程.md","articles":[]},{"title":"正则表达式.md","level":"1.6.7","depth":2,"path":"algorithm/正则表达式.md","ref":"algorithm/正则表达式.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"algorithm/KDTree.md","mtime":"2020-12-27T10:18:08.497Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-17T05:07:13.121Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

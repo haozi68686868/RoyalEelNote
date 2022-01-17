@@ -1,0 +1,1891 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ZeroMQ简述.md · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="openCV.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3rdParty_Lib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="Eigen Guide.html">
+            
+                <a href="Eigen Guide.html">
+            
+                    
+                    Eigen Guide.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="Jsoncpp.html">
+            
+                <a href="Jsoncpp.html">
+            
+                    
+                    Jsoncpp.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.4" data-path="ZeroMQ简述.html">
+            
+                <a href="ZeroMQ简述.html">
+            
+                    
+                    ZeroMQ简述.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="openCV.html">
+            
+                <a href="openCV.html">
+            
+                    
+                    openCV.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                <a href="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                    
+                    precision_recall_accuracy_F值.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    Power Supply Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Power Supply Design/Altium Designer.html">
+            
+                <a href="../Power Supply Design/Altium Designer.html">
+            
+                    
+                    Altium Designer.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Power Supply Design/电源设计.html">
+            
+                <a href="../Power Supply Design/电源设计.html">
+            
+                    
+                    电源设计.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../SUMMARY.html">
+            
+                <a href="../SUMMARY.html">
+            
+                    
+                    SUMMARY.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../algorithm/KDTree.html">
+            
+                <a href="../algorithm/KDTree.html">
+            
+                    
+                    KDTree.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../algorithm/KDTree2.html">
+            
+                <a href="../algorithm/KDTree2.html">
+            
+                    
+                    KDTree2.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../algorithm/从匈牙利算法到KM算法.html">
+            
+                <a href="../algorithm/从匈牙利算法到KM算法.html">
+            
+                    
+                    从匈牙利算法到KM算法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../algorithm/匈牙利算法.html">
+            
+                <a href="../algorithm/匈牙利算法.html">
+            
+                    
+                    匈牙利算法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                <a href="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                    
+                    图说卡尔曼滤波，一份通俗易懂的教程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../algorithm/正则表达式.html">
+            
+                <a href="../algorithm/正则表达式.html">
+            
+                    
+                    正则表达式.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../autodrive/">
+            
+                <a href="../autodrive/">
+            
+                    
+                    autodrive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../autodrive/">
+            
+                <a href="../autodrive/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../autodrive/Ros概念.html">
+            
+                <a href="../autodrive/Ros概念.html">
+            
+                    
+                    Ros概念.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                <a href="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                    
+                    SOTIF Safety of the Intended Functionality.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../autodrive/dbc文件解析.html">
+            
+                <a href="../autodrive/dbc文件解析.html">
+            
+                    
+                    dbc文件解析.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../autodrive/ros漫游实操.html">
+            
+                <a href="../autodrive/ros漫游实操.html">
+            
+                    
+                    ros漫游实操.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                <a href="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                    
+                    四元数、欧拉角和方向余弦矩阵的相互转化.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../autodrive/李群与李代数.html">
+            
+                <a href="../autodrive/李群与李代数.html">
+            
+                    
+                    李群与李代数.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../autodrive/阿克曼转向原理.html">
+            
+                <a href="../autodrive/阿克曼转向原理.html">
+            
+                    
+                    阿克曼转向原理.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    c++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../c++/C++ algorithm.html">
+            
+                <a href="../c++/C++ algorithm.html">
+            
+                    
+                    C++ algorithm.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../c++/C++ string.html">
+            
+                <a href="../c++/C++ string.html">
+            
+                    
+                    C++ string.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../c++/C++ 数据类型.html">
+            
+                <a href="../c++/C++ 数据类型.html">
+            
+                    
+                    C++ 数据类型.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../c++/JAVA 和 C++的区别.html">
+            
+                <a href="../c++/JAVA 和 C++的区别.html">
+            
+                    
+                    JAVA 和 C++的区别.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../c++/c++ 多线程.html">
+            
+                <a href="../c++/c++ 多线程.html">
+            
+                    
+                    c++ 多线程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../c++/c++特别语法.html">
+            
+                <a href="../c++/c++特别语法.html">
+            
+                    
+                    c++特别语法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../c++/c++问题合集.html">
+            
+                <a href="../c++/c++问题合集.html">
+            
+                    
+                    c++问题合集.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../c++/cmake.html">
+            
+                <a href="../c++/cmake.html">
+            
+                    
+                    cmake.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                <a href="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                    
+                    cmake中的PUBLIC_PRIVATE_INTERFACE.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../c++/gcc编译warning.html">
+            
+                <a href="../c++/gcc编译warning.html">
+            
+                    
+                    gcc编译warning.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../c++/pragma once.html">
+            
+                <a href="../c++/pragma once.html">
+            
+                    
+                    pragma once.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../git/gerrit答题.html">
+            
+                <a href="../git/gerrit答题.html">
+            
+                    
+                    gerrit答题.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../git/git 开发笔记.html">
+            
+                <a href="../git/git 开发笔记.html">
+            
+                    
+                    git 开发笔记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../git/gitbook.html">
+            
+                <a href="../git/gitbook.html">
+            
+                    
+                    gitbook.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../git/gitlab.html">
+            
+                <a href="../git/gitlab.html">
+            
+                    
+                    gitlab.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    linux开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../linux开发环境/Linux 实用软件.html">
+            
+                <a href="../linux开发环境/Linux 实用软件.html">
+            
+                    
+                    Linux 实用软件.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../linux开发环境/NTP服务详解.html">
+            
+                <a href="../linux开发环境/NTP服务详解.html">
+            
+                    
+                    NTP服务详解.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../linux开发环境/Tmux 使用小技巧.html">
+            
+                <a href="../linux开发环境/Tmux 使用小技巧.html">
+            
+                    
+                    Tmux 使用小技巧.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../linux开发环境/VSCode.html">
+            
+                <a href="../linux开发环境/VSCode.html">
+            
+                    
+                    VSCode.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../linux开发环境/linux.html">
+            
+                <a href="../linux开发环境/linux.html">
+            
+                    
+                    linux.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../linux开发环境/shell_if语句.html">
+            
+                <a href="../linux开发环境/shell_if语句.html">
+            
+                    
+                    shell_if语句.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../linux开发环境/shell字符串操作.html">
+            
+                <a href="../linux开发环境/shell字符串操作.html">
+            
+                    
+                    shell字符串操作.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../python/python note.html">
+            
+                <a href="../python/python note.html">
+            
+                    
+                    python note.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../python/python之Argparse模块.html">
+            
+                <a href="../python/python之Argparse模块.html">
+            
+                    
+                    python之Argparse模块.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    senseauto
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../senseauto/3D2D匹配.html">
+            
+                <a href="../senseauto/3D2D匹配.html">
+            
+                    
+                    3D2D匹配.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                <a href="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                    
+                    DataFactoryUtil 需求文档.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../senseauto/Senseauto common.html">
+            
+                <a href="../senseauto/Senseauto common.html">
+            
+                    
+                    Senseauto common.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../senseauto/horizon通信流程.html">
+            
+                <a href="../senseauto/horizon通信流程.html">
+            
+                    
+                    horizon通信流程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../senseauto/rec_parser踩坑记.html">
+            
+                <a href="../senseauto/rec_parser踩坑记.html">
+            
+                    
+                    rec_parser踩坑记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../senseauto/senseauto开发使用笔记.html">
+            
+                <a href="../senseauto/senseauto开发使用笔记.html">
+            
+                    
+                    senseauto开发使用笔记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../senseauto/感知真值系统.html">
+            
+                <a href="../senseauto/感知真值系统.html">
+            
+                    
+                    感知真值系统.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../senseauto/相机感知系统.html">
+            
+                <a href="../senseauto/相机感知系统.html">
+            
+                    
+                    相机感知系统.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../senseauto/统一软件平台.html">
+            
+                <a href="../senseauto/统一软件平台.html">
+            
+                    
+                    统一软件平台.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../senseauto/统一软件平台公告.html">
+            
+                <a href="../senseauto/统一软件平台公告.html">
+            
+                    
+                    统一软件平台公告.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    software engineering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../software engineering/设计模式.html">
+            
+                <a href="../software engineering/设计模式.html">
+            
+                    
+                    设计模式.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../software engineering/软件工程tip.html">
+            
+                <a href="../software engineering/软件工程tip.html">
+            
+                    
+                    软件工程tip.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ZeroMQ简述.md</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="https://zguide.zeromq.org/" target="_blank">https://zguide.zeromq.org/</a></p>
+<p>&#x4E00;&#x3001;ZeroMQ&#x7B80;&#x8FF0;</p>
+<p>ZeroMQ&#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x6D88;&#x606F;&#x961F;&#x5217;&#x7684;&#x591A;&#x7EBF;&#x7A0B;&#x7F51;&#x7EDC;&#x5E93;&#xFF0C;&#x5176;&#x5BF9;&#x5957;&#x63A5;&#x5B57;&#x7C7B;&#x578B;&#x3001;&#x8FDE;&#x63A5;&#x5904;&#x7406;&#x3001;&#x5E27;&#x3001;&#x751A;&#x81F3;&#x8DEF;&#x7531;&#x7684;&#x5E95;&#x5C42;&#x7EC6;&#x8282;&#x8FDB;&#x884C;&#x62BD;&#x8C61;&#xFF0C;&#x63D0;&#x4F9B;&#x8DE8;&#x8D8A;&#x591A;&#x79CD;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x3002;&#x5F15;&#x7528;&#x4E91;&#x98CE;&#x7684;&#x8BDD;&#x6765;&#x8BF4;:ZeroMQ &#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x5BF9; socket &#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;&#x5B83;&#x53BB;&#x5B9E;&#x73B0;&#x5DF2;&#x6709;&#x7684;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x3002;&#x5B83;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x4E0D;&#x540C;&#x4E8E;&#x66F4;&#x5E95;&#x5C42;&#x7684;&#x70B9;&#x5BF9;&#x70B9;&#x901A;&#x8BAF;&#x6A21;&#x5F0F;&#x3002;&#x5B83;&#x6709;&#x6BD4; tcp &#x534F;&#x8BAE;&#x66F4;&#x9AD8;&#x4E00;&#x7EA7;&#x7684;&#x534F;&#x8BAE;&#x3002;&#xFF08;&#x5F53;&#x7136; ZeroMQ &#x4E0D;&#x4E00;&#x5B9A;&#x57FA;&#x4E8E; TCP &#x534F;&#x8BAE;&#xFF0C;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x8FDB;&#x7A0B;&#x95F4;&#x548C;&#x8FDB;&#x7A0B;&#x5185;&#x901A;&#x8BAF;&#xFF09;&#x5B83;&#x6539;&#x53D8;&#x4E86;&#x901A;&#x8BAF;&#x90FD;&#x57FA;&#x4E8E;&#x4E00;&#x5BF9;&#x4E00;&#x7684;&#x8FDE;&#x63A5;&#x8FD9;&#x4E2A;&#x5047;&#x8BBE;&#x3002;ZeroMQ &#x628A;&#x901A;&#x8BAF;&#x7684;&#x9700;&#x6C42;&#x770B;&#x6210;&#x56DB;&#x7C7B;&#x3002;&#x5176;&#x4E2D;&#x4E00;&#x7C7B;&#x662F;&#x4E00;&#x5BF9;&#x4E00;&#x7ED3;&#x5BF9;&#x901A;&#x8BAF;&#xFF0C;&#x7528;&#x6765;&#x652F;&#x6301;&#x4F20;&#x7EDF;&#x7684; TCP socket &#x6A21;&#x578B;&#xFF0C;&#x4F46;&#x5E76;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x3002;&#x5E38;&#x7528;&#x7684;&#x901A;&#x8BAF;&#x6A21;&#x5F0F;&#x53EA;&#x6709;&#x4E09;&#x7C7B;&#xFF1A;</p>
+<blockquote>
+<p>&#x8BF7;&#x6C42;&#x56DE;&#x5E94;&#x6A21;&#x578B;&#x3002;&#x7531;&#x8BF7;&#x6C42;&#x7AEF;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x7B49;&#x5F85;&#x56DE;&#x5E94;&#x7AEF;&#x56DE;&#x5E94;&#x8BF7;&#x6C42;&#x3002;&#x4ECE;&#x8BF7;&#x6C42;&#x7AEF;&#x6765;&#x770B;&#xFF0C;&#x4E00;&#x5B9A;&#x662F;&#x4E00;&#x5BF9;&#x5BF9;&#x6536;&#x53D1;&#x914D;&#x5BF9;&#x7684;&#xFF1B;&#x53CD;&#x4E4B;&#xFF0C;&#x5728;&#x56DE;&#x5E94;&#x7AEF;&#x4E00;&#x5B9A;&#x662F;&#x53D1;&#x6536;&#x5BF9;&#x3002;&#x8BF7;&#x6C42;&#x7AEF;&#x548C;&#x56DE;&#x5E94;&#x7AEF;&#x90FD;&#x53EF;&#x4EE5;&#x662F; 1:N &#x7684;&#x6A21;&#x578B;&#x3002;&#x901A;&#x5E38;&#x628A; 1 &#x8BA4;&#x4E3A;&#x662F; server &#xFF0C;N &#x8BA4;&#x4E3A;&#x662F; Client &#x3002;ZeroMQ &#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x7684;&#x652F;&#x6301;&#x8DEF;&#x7531;&#x529F;&#x80FD;&#xFF08;&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x529F;&#x80FD;&#x7684;&#x7EC4;&#x4EF6;&#x53EB;&#x4F5C; Device&#xFF09;&#xFF0C;&#x628A; 1:N &#x6269;&#x5C55;&#x4E3A; N:M &#xFF08;&#x53EA;&#x9700;&#x8981;&#x52A0;&#x5165;&#x82E5;&#x5E72;&#x8DEF;&#x7531;&#x8282;&#x70B9;&#xFF09;&#x3002;&#x4ECE;&#x8FD9;&#x4E2A;&#x6A21;&#x578B;&#x770B;&#xFF0C;&#x66F4;&#x5E95;&#x5C42;&#x7684;&#x7AEF;&#x70B9;&#x5730;&#x5740;&#x662F;&#x5BF9;&#x4E0A;&#x5C42;&#x9690;&#x85CF;&#x7684;&#x3002;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x90FD;&#x9690;&#x542B;&#x6709;&#x56DE;&#x5E94;&#x5730;&#x5740;&#xFF0C;&#x800C;&#x5E94;&#x7528;&#x5219;&#x4E0D;&#x5173;&#x5FC3;&#x5B83;&#x3002;</p>
+<p>&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x578B;&#x3002;&#x8FD9;&#x4E2A;&#x6A21;&#x578B;&#x91CC;&#xFF0C;&#x53D1;&#x5E03;&#x7AEF;&#x662F;&#x5355;&#x5411;&#x53EA;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#xFF0C;&#x4E14;&#x4E0D;&#x5173;&#x5FC3;&#x662F;&#x5426;&#x628A;&#x5168;&#x90E8;&#x7684;&#x4FE1;&#x606F;&#x90FD;&#x53D1;&#x9001;&#x7ED9;&#x8BA2;&#x9605;&#x7AEF;&#x3002;&#x5982;&#x679C;&#x53D1;&#x5E03;&#x7AEF;&#x5F00;&#x59CB;&#x53D1;&#x5E03;&#x4FE1;&#x606F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BA2;&#x9605;&#x7AEF;&#x5C1A;&#x672A;&#x8FDE;&#x63A5;&#x4E0A;&#x6765;&#xFF0C;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x76F4;&#x63A5;&#x4E22;&#x5F03;&#x3002;&#x4E0D;&#x8FC7;&#x4E00;&#x65E6;&#x8BA2;&#x9605;&#x7AEF;&#x8FDE;&#x63A5;&#x4E0A;&#x6765;&#xFF0C;&#x4E2D;&#x95F4;&#x4F1A;&#x4FDD;&#x8BC1;&#x6CA1;&#x6709;&#x4FE1;&#x606F;&#x4E22;&#x5931;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x8BA2;&#x9605;&#x7AEF;&#x5219;&#x53EA;&#x8D1F;&#x8D23;&#x63A5;&#x6536;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x53CD;&#x9988;&#x3002;&#x5982;&#x679C;&#x53D1;&#x5E03;&#x7AEF;&#x548C;&#x8BA2;&#x9605;&#x7AEF;&#x9700;&#x8981;&#x4EA4;&#x4E92;&#xFF08;&#x6BD4;&#x5982;&#x8981;&#x786E;&#x8BA4;&#x8BA2;&#x9605;&#x8005;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x8FDE;&#x63A5;&#x4E0A;&#xFF09;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x989D;&#x5916;&#x7684; socket &#x91C7;&#x7528;&#x8BF7;&#x6C42;&#x56DE;&#x5E94;&#x6A21;&#x578B;&#x6EE1;&#x8DB3;&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x7BA1;&#x9053;&#x6A21;&#x578B;&#x3002;&#x8FD9;&#x4E2A;&#x6A21;&#x578B;&#x91CC;&#xFF0C;&#x7BA1;&#x9053;&#x662F;&#x5355;&#x5411;&#x7684;&#xFF0C;&#x4ECE; PUSH &#x7AEF;&#x5355;&#x5411;&#x7684;&#x5411; PULL &#x7AEF;&#x5355;&#x5411;&#x7684;&#x63A8;&#x9001;&#x6570;&#x636E;&#x6D41;&#x3002;</p>
+</blockquote>
+<hr>
+<p>&#x4E8C;&#x3001;&#x6848;&#x4F8B;</p>
+<p>&#x8BF7;&#x6C42;&#x56DE;&#x5E94;&#x6A21;&#x578B;</p>
+<h6 id="clicpp">cli.cpp</h6>
+<pre><code class="lang-text">#include &lt;zmq.h&gt;
+#include &lt;string.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+
+int main(void)
+{
+    printf(&quot;Connecting to server...\n&quot;);
+
+    void * context = zmq_ctx_new();
+    void * socket = zmq_socket(context, ZMQ_REQ);
+    zmq_connect(socket, &quot;tcp://localhost:6666&quot;);
+
+    while(1)
+    {
+        char buffer[10];
+        const char * requestMsg = &quot;Hello&quot;;
+        int bytes = zmq_send(socket, requestMsg, strlen(requestMsg), 0);
+        printf(&quot;[Client][%d] Sended Request Message: %d bytes, content == \&quot;%s\&quot;\n&quot;, i, bytes, requestMsg);
+
+        bytes = zmq_recv(socket, buffer, 10, 0);
+        buffer[bytes] = &apos;\0&apos;;
+        printf(&quot;[Client][%d] Received Reply Message: %d bytes, content == \&quot;%s\&quot;\n&quot;, i, bytes, buffer);
+
+    }
+
+    zmq_close(socket);
+    zmq_ctx_destroy(context);
+
+    return 0;
+}
+</code></pre>
+<h6 id="sercpp">ser.cpp</h6>
+<pre><code class="lang-text">#include &lt;zmq.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;string.h&gt;
+#include &lt;assert.h&gt;
+
+int main(void)
+{
+    void * context = zmq_ctx_new();
+    void * socket = zmq_socket(context, ZMQ_REP);
+    zmq_bind(socket, &quot;tcp://*:6666&quot;);
+
+    while(1)
+    {
+        char buffer[10];
+        int bytes = zmq_recv(socket, buffer, 10, 0);
+        buffer[bytes] = &apos;\0&apos;;
+        printf(&quot;[Server] Recevied Request Message: %d bytes, content == \&quot;%s\&quot;\n&quot;, bytes, buffer);
+
+        sleep(1);
+
+        const char * replyMsg = &quot;World&quot;;
+        bytes = zmq_send(socket, replyMsg, strlen(replyMsg), 0);
+        printf(&quot;[Server] Sended Reply Message: %d bytes, content == \&quot;%s\&quot;\n&quot;, bytes, replyMsg);
+    }
+
+    zmq_close(socket);
+    zmq_ctx_destroy(context);
+
+    return 0;
+}
+</code></pre>
+<p>makefile</p>
+<pre><code>all: cli ser
+
+cli:cli.cpp
+g++ -std=c++11 cli.cpp -o cli -lzmq -lpthread -g
+
+ser:ser.cpp
+g++ -std=c++11 ser.cpp -o ser -lzmq -lpthread -g
+
+clean:
+rm -f ser cli
+</code></pre><p>&#x4E09;&#x3001;&#x6D41;&#x7A0B;&#x6B65;&#x9AA4;</p>
+<p>&#x8BF7;&#x6C42;&#x56DE;&#x5E94;&#x6A21;&#x578B;</p>
+<p>&#x670D;&#x52A1;&#x7AEF;&#xFF1A;</p>
+<pre><code>zmq_ctx_new()
+zmq_socket()
+zmq_bind()
+zmq_recv()
+zmq_send()
+</code></pre><p>&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;</p>
+<pre><code>zmq_ctx_new()
+zmq_socket()
+zmq_bind()
+zmq_send()
+zmq_recv()
+</code></pre><p>&#x6E90;&#x7801;&#x8D70;&#x8BFB;</p>
+<p>1.zmq_ctx_new()</p>
+<pre><code>//&#x8FD4;&#x56DE;ctx_t&#x5BF9;&#x8C61;
+void *zmq_ctx_new (void)
+{
+// We do this before the ctx constructor since its embedded mailbox_t
+// object needs the network to be up and running (at least on Windows).
+if (!zmq::initialize_network ()) {
+return NULL;
+}
+
+// Create 0MQ context.
+zmq::ctx_t *ctx = new (std::nothrow) zmq::ctx_t;
+if (ctx) {
+if (!ctx-&gt;valid ()) {
+delete ctx;
+return NULL;
+}
+}
+return ctx;
+}
+</code></pre><hr>
+<p>&#x51FD;&#x6570;&#x8FD4;&#x56DE;context&#xFF08;&#x4E0A;&#x4E0B;&#x6587;&#xFF09;&#xFF0C;&#x5176;&#x5B9E;&#x8C03;&#x7528;&#x7684;&#x662F;ctx_t&#x5BF9;&#x8C61;&#xFF08;&#x5B9E;&#x4F8B;&#x5316;&#xFF09;</p>
+<pre><code>zmq::ctx_t::ctx_t () :
+_tag (ZMQ_CTX_TAG_VALUE_GOOD),
+_starting (true),
+_terminating (false),
+_reaper (NULL),
+_max_sockets (clipped_maxsocket (ZMQ_MAX_SOCKETS_DFLT)),
+_max_msgsz (INT_MAX),
+_io_thread_count (ZMQ_IO_THREADS_DFLT),
+_blocky (true),
+_ipv6 (false),
+_zero_copy (true)
+{
+\#ifdef HAVE_FORK
+_pid = getpid ();
+\#endif
+\#ifdef ZMQ_HAVE_VMCI
+_vmci_fd = -1;
+_vmci_family = -1;
+\#endif
+
+// Initialise crypto library, if needed.
+zmq::random_open ();
+
+\#ifdef ZMQ_USE_NSS
+NSS_NoDB_Init (NULL);
+\#endif
+
+\#ifdef ZMQ_USE_GNUTLS
+gnutls_global_init ();
+\#endif
+}
+</code></pre><p>&#x4E3B;&#x8981;&#x5C31;&#x662F;&#x8BBE;&#x7F6E;&#x521D;&#x59CB;&#x5316;&#x7684;&#x53C2;&#x6570;&#xFF1B;&#x5982;;_max_sockets = 1024;_io_thread_count = 1;&#x5F53;&#x7136;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x72B6;&#x6001;&#x8BBE;&#x7F6E;&#x7B49;&#x7B49;&#xFF1B;</p>
+<hr>
+<p>2.zmq_socket()</p>
+<pre><code>void *zmq_socket (void *ctx_, int type_)
+{
+//&#x5BF9;&#x8C61;&#x4E3A;NULL&#xFF0C;&#x5219;&#x8FD4;&#x56DE;
+if (!ctx_ || !(static_cast&lt;zmq::ctx_t *&gt; (ctx_))-&gt;check_tag ()) {
+errno = EFAULT;
+return NULL;
+}
+//&#x5F3A;&#x8F6C;
+zmq::ctx_t *ctx = static_cast&lt;zmq::ctx_t *&gt; (ctx_);
+zmq::socket_base_t *s = ctx-&gt;create_socket (type_);
+return (void *) s;
+}
+</code></pre><p>&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code>void *ctx_&#xFF1B;zmq_ctx_new&#x8FD4;&#x56DE;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x53C2;&#x6570;&#xFF1B;
+
+int type_:Socket types.
+
+Socket types&#xFF1A;
+
+ZMQ_PAIR 0
+ZMQ_PUB 1
+ZMQ_SUB 2
+ZMQ_REQ 3
+ZMQ_REP 4
+ZMQ_DEALER 5
+ZMQ_ROUTER 6
+ZMQ_PULL 7
+ZMQ_PUSH 8
+ZMQ_XPUB 9
+ZMQ_XSUB 10
+ZMQ_STREAM 11
+</code></pre><p>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;&#x521B;&#x5EFA;&#x751F;&#x6210;&#x7684;socket</p>
+<hr>
+<p>&#x8C03;&#x7528;create_socket()</p>
+<pre><code>zmq::socket_base_t *zmq::ctx_t::create_socket (int type_)
+{
+scoped_lock_t locker (_slot_sync);
+//&#x521D;&#x59CB;&#x5316;&#x90AE;&#x7BB1;&#x6570;&#x7EC4;,&#x589E;&#x52A0;&#x4E24;&#x4E2A;&#x63D2;&#x69FD;(slots),
+//zmq_ctx_term thread &#x548C; reaper thread
+if (unlikely (_starting)) {
+if (!start ())
+return NULL;
+}
+
+// Once zmq_ctx_term() was called, we can&apos;t create new sockets.
+if (_terminating) {
+errno = ETERM;
+return NULL;
+}
+
+// If max_sockets limit was reached, return error.
+if (_empty_slots.empty ()) {
+errno = EMFILE;
+return NULL;
+}
+
+// Choose a slot for the socket.
+uint32_t slot = _empty_slots.back ();
+_empty_slots.pop_back ();
+
+// Generate new unique socket ID.
+//&#x751F;&#x6210;&#x65B0;&#x7684;&#x552F;&#x4E00;&#x7684;&#x5957;&#x63A5;&#x5B57;ID&#x3002;
+int sid = (static_cast&lt;int&gt; (max_socket_id.add (1))) + 1;
+
+// Create the socket and register its mailbox.
+//&#x521B;&#x5EFA;socket&#x5E76;&#x4E14;&#x6CE8;&#x518C;&#x90AE;&#x7BB1;
+socket_base_t *s = socket_base_t::create (type_, this, slot, sid);
+if (!s) {
+_empty_slots.push_back (slot);
+return NULL;
+}
+_sockets.push_back (s);
+_slots[slot] = s-&gt;get_mailbox ();
+
+return s;
+}
+</code></pre><hr>
+<p>&#x8C03;&#x7528;start ()&#x51FD;&#x6570;:</p>
+<pre><code>bool zmq::ctx_t::start ()
+{
+// Initialise the array of mailboxes. Additional two slots are for
+// zmq_ctx_term thread and reaper thread.
+_opt_sync.lock ();
+const int term_and_reaper_threads_count = 2;
+const int mazmq = _max_sockets; //1023
+const int ios = _io_thread_count;//1
+_opt_sync.unlock ();
+int slot_count = mazmq + ios + term_and_reaper_threads_count;//1026
+try {
+//&#x589E;&#x52A0;&#x5BB9;&#x91CF;,&#x4E0D;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;
+_slots.reserve (slot_count);
+_empty_slots.reserve (slot_count - term_and_reaper_threads_count);
+}
+catch (const std::bad_alloc &amp;) {
+errno = ENOMEM;
+return false;
+}
+//&#x6539;&#x53D8;&#x4E86;&#x5BB9;&#x5668;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x4E14;&#x521B;&#x5EFA;&#x4E86;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;
+_slots.resize (term_and_reaper_threads_count);
+
+// Initialise the infrastructure for zmq_ctx_term thread.
+_slots[term_tid] = &amp;_term_mailbox;
+
+//&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;
+_reaper = new (std::nothrow) reaper_t (this, reaper_tid);
+if (!_reaper) {
+errno = ENOMEM;
+goto fail_cleanup_slots;
+}
+if (!_reaper-&gt;get_mailbox ()-&gt;valid ())
+goto fail_cleanup_reaper;
+_slots[reaper_tid] = _reaper-&gt;get_mailbox ();
+_reaper-&gt;start ();
+
+// Create I/O thread objects and launch them.
+_slots.resize (slot_count, NULL);
+//&#x521B;&#x5EFA;IO&#x7EBF;&#x7A0B;&#x5E76;&#x542F;&#x52A8;
+for (int i = term_and_reaper_threads_count;
+i != ios + term_and_reaper_threads_count; i++) {
+io_thread_t *io_thread = new (std::nothrow) io_thread_t (this, i);
+if (!io_thread) {
+errno = ENOMEM;
+goto fail_cleanup_reaper;
+}
+if (!io_thread-&gt;get_mailbox ()-&gt;valid ()) {
+delete io_thread;
+goto fail_cleanup_reaper;
+}
+_io_threads.push_back (io_thread);
+_slots[i] = io_thread-&gt;get_mailbox ();
+io_thread-&gt;start ();
+}
+
+// In the unused part of the slot array, create a list of empty slots.
+for (int32_t i = static_cast&lt;int32_t&gt; (_slots.size ()) - 1;
+i &gt;= static_cast&lt;int32_t&gt; (ios) + term_and_reaper_threads_count; i--) {
+_empty_slots.push_back (i);
+}
+
+_starting = false;
+return true;
+
+fail_cleanup_reaper:
+_reaper-&gt;stop ();
+delete _reaper;
+_reaper = NULL;
+
+fail_cleanup_slots:
+_slots.clear ();
+return false;
+}
+</code></pre><p>ZMQ&#x4ECE;&#x5165;&#x95E8;&#x5230;&#x638C;&#x63E1;&lt;&#x4E09;&gt;</p>
+<hr>
+<p>&#x8BA2;&#x9605;-&#x53D1;&#x5E03;&#x6A21;&#x5F0F;</p>
+<p>ZeroMQ&#x7684;&#x8BA2;&#x9605;&#x53D1;&#x5E03;&#x6A21;&#x5F0F;&#x662F;&#x4E00;&#x79CD;&#x5355;&#x5411;&#x7684;&#x6570;&#x636E;&#x53D1;&#x5E03;&#xFF0C;&#x5F53;&#x5BA2;&#x6237;&#x7AEF;&#x5411;&#x670D;&#x52A1;&#x7AEF;&#x8BA2;&#x9605;&#x6D88;&#x606F;&#x4E4B;&#x540E;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x4FBF;&#x4F1A;&#x5C06;&#x4EA7;&#x751F;&#x7684;&#x6D88;&#x606F;&#x6E90;&#x6E90;&#x4E0D;&#x65AD;&#x7684;&#x63A8;&#x9001;&#x7ED9;&#x8BA2;&#x9605;&#x8005;</p>
+<p>&#x7279;&#x70B9;&#xFF1A;</p>
+<blockquote>
+<p>1.&#x4E00;&#x4E2A;&#x53D1;&#x5E03;&#x8005;&#xFF0C;&#x591A;&#x4E2A;&#x8BA2;&#x9605;&#x8005;&#x7684;&#x5173;&#x7CFB;&#xFF0C;1&#xFF1A;n&#xFF1B;
+2.&#x5F53;&#x53D1;&#x5E03;&#x8005;&#x6570;&#x636E;&#x53D8;&#x5316;&#x65F6;&#x53D1;&#x5E03;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x6709;&#x8BA2;&#x9605;&#x8005;&#x5747;&#x80FD;&#x591F;&#x63A5;&#x6536;&#x5230;&#x6570;&#x636E;&#x5E76;&#x5904;&#x7406;&#x3002;
+&#x8FD9;&#x5C31;&#x662F;&#x53D1;&#x5E03;/&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x6CE8;&#xFF1A;&#x4F7F;&#x7528;SUB&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x8BA2;&#x9605;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;zmq_setsockopt()&#x5BF9;&#x6D88;&#x606F;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+</blockquote>
+<p>&#x8BF4;&#x660E;&#xFF1A;&#x53D1;&#x5E03;&#x8005;&#x4F7F;&#x7528;PUB&#x5957;&#x63A5;&#x5B57;&#x5C06;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5230;&#x961F;&#x5217;&#x4E2D;&#xFF0C;&#x8BA2;&#x9605;&#x8005;&#x4F7F;&#x7528;SUB&#x5957;&#x63A5;&#x5B57;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x6E90;&#x6E90;&#x4E0D;&#x65AD;&#x7684;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x3002;&#x65B0;&#x7684;&#x8BA2;&#x9605;&#x8005;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x52A0;&#x5165;&#xFF0C;&#x4F46;&#x4E4B;&#x524D;&#x7684;&#x6D88;&#x606F;&#x662F;&#x65E0;&#x6CD5;&#x63A5;&#x6536;&#x5230;&#x7684;&#xFF1B;&#x5DF2;&#x6709;&#x7684;&#x8BA2;&#x9605;&#x8005;&#x53EF;&#x4EE5;&#x968F;&#x65F6;&#x9000;&#x51FA;&#xFF1B;&#x8BA2;&#x9605;&#x8005;&#x8FD8;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x201C;&#x8FC7;&#x6EE4;&#x5668;&#x201D;&#x7528;&#x6765;&#x6709;&#x9009;&#x62E9;&#x6027;&#x7684;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x3002;</p>
+<hr>
+<p>&#x56FE;&#x4F8B;&#xFF1A;</p>
+<p><img src="https://pic1.zhimg.com/80/v2-d8e39c2d13e3c68767778979323cda28_720w.jpg" alt="img"></p>
+<p><img src="https://pic1.zhimg.com/80/v2-dc828f8b16f329fb0aa6d105461d5e90_720w.jpg" alt="img"></p>
+<hr>
+<p>&#x6848;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<h6 id="pubcpp">pub.cpp</h6>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;assert.h&gt;
+#include &lt;string.h&gt;
+#include &quot;zmq.h&quot;
+
+int main()
+{
+void* context = zmq_ctx_new();
+assert(context != NULL);
+
+void* socket = zmq_socket(context, ZMQ_PUB);
+assert(socket != NULL);
+
+int ret = zmq_bind(socket, &quot;tcp://*:5555&quot;);
+assert(ret == 0);
+
+int i = 0;
+while(1)
+{
+char szBuf[1024] = {0};
+snprintf(szBuf, sizeof(szBuf), &quot;server i=%d&quot;, i);
+ret = zmq_send(socket, szBuf, strlen(szBuf) + 1, 0);
+i++;
+
+//sleep(1);
+}
+
+zmq_close (socket);
+zmq_ctx_destroy (context);
+
+return 0;
+}
+</code></pre><h6 id="subcpp">sub.cpp</h6>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;assert.h&gt;
+#include &quot;zmq.h&quot;
+#include &lt;thread&gt;
+
+using namespace std;
+
+#define TRUE 1
+
+void Recv(void* arg)
+{
+while(TRUE)
+{
+void* socket = arg;
+printf(&quot;into while\n&quot;);
+char szBuf[1024] = {0};
+int ret = zmq_recv(socket, szBuf, sizeof(szBuf) - 1, 0);
+if (ret &gt; 0)
+{
+printf(&quot;Recv:%s\n&quot;, szBuf);
+}
+}
+}
+
+
+void Recv2(void* arg)
+{
+while(TRUE)
+{
+void* socket = arg;
+printf(&quot;into while\n&quot;);
+char szBuf[1024] = {0};
+int ret = zmq_recv(socket, szBuf, sizeof(szBuf) - 1, 0);
+if (ret &gt; 0)
+{
+printf(&quot;Recv2:%s\n&quot;, szBuf);
+}
+}
+}
+
+int main()
+{
+printf(&quot;Hello world!\n&quot;);
+
+void* context = zmq_ctx_new();
+assert(context != NULL);
+
+void* socket = zmq_socket(context, ZMQ_SUB);
+assert(socket != NULL);
+
+int ret = zmq_connect(socket, &quot;tcp://localhost:5555&quot;);
+assert(ret == 0);
+
+ret = zmq_setsockopt(socket, ZMQ_SUBSCRIBE, &quot;&quot;, 0);
+assert(ret == 0);
+thread t1(Recv,socket);
+thread t2(Recv2,socket);
+/*
+while(1)
+{
+printf(&quot;into while\n&quot;);
+char szBuf[1024] = {0};
+ret = zmq_recv(socket, szBuf, sizeof(szBuf) - 1, 0);
+if (ret &gt; 0)
+{
+printf(&quot;%s\n&quot;, szBuf);
+}
+}
+*/
+t1.join();
+t2.join();
+zmq_close(socket);
+zmq_ctx_destroy(context);
+
+return 0;
+}
+</code></pre><p>makefile</p>
+<pre><code>all:pub sub
+
+CXX=g++
+CXXFLAGS=-fPIC -std=c++11 -o
+LDFLAGS=-lzmq -lpthread
+
+pub:pub.cpp
+$(CXX) pub.cpp $(CXXFLAGS) pub $(LDFLAGS)
+
+sub:sub.cpp
+$(CXX) sub.cpp $(CXXFLAGS) sub $(LDFLAGS)
+clean:
+rm -f sub pub
+</code></pre><p>&#x63A8;&#x62C9;&#x6A21;&#x5F0F;</p>
+<blockquote>
+<p>&#x63A8;&#x62C9;&#x6A21;&#x5F0F;&#xFF0C;PUSH&#x53D1;&#x9001;&#xFF0C;send&#x3002;PULL&#x65B9;&#x63A5;&#x6536;&#xFF0C;recv&#x3002;PUSH&#x53EF;&#x4EE5;&#x548C;&#x591A;&#x4E2A;PULL&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;PUSH&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#x88AB;&#x987A;&#x5E8F;&#x53D1;&#x9001;&#x7ED9;PULL&#x65B9;&#x3002;&#x6BD4;&#x5982;&#x4F60;PUSH&#x548C;&#x4E09;&#x4E2A;PULL&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#xFF0C;&#x5206;&#x522B;&#x662F;A,B,C&#x3002;PUSH&#x53D1;&#x9001;&#x7684;&#x7B2C;&#x4E00;&#x6570;&#x636E;&#x4F1A;&#x7ED9;A,&#x7B2C;&#x4E8C;&#x6570;&#x636E;&#x4F1A;&#x7ED9;B&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x6570;&#x636E;&#x7ED9;C&#xFF0C;&#x7B2C;&#x56DB;&#x4E2A;&#x6570;&#x636E;&#x7ED9;A&#x3002;&#x4E00;&#x76F4;&#x8FD9;&#x4E48;&#x5FAA;&#x73AF;&#x3002;</p>
+</blockquote>
+<hr>
+<p>&#x770B;&#x4E00;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p><img src="https://pic1.zhimg.com/80/v2-d8e39c2d13e3c68767778979323cda28_720w.jpg" alt="img"></p>
+<hr>
+<blockquote>
+<p>&#x6700;&#x4E0A;&#x9762;&#x662F;&#x4EA7;&#x751F;&#x4EFB;&#x52A1;&#x7684; &#x5206;&#x53D1;&#x8005; ventilator
+&#x4E2D;&#x95F4;&#x662F;&#x6267;&#x884C;&#x8005; worker
+&#x4E0B;&#x9762;&#x662F;&#x6536;&#x96C6;&#x7ED3;&#x679C;&#x7684;&#x63A5;&#x6536;&#x8005; sink</p>
+</blockquote>
+<p>&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>Ventilator.cpp</p>
+<pre><code class="lang-text">#include &lt;zmq.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;string.h&gt;
+#include &lt;assert.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+int main(void)
+{
+    void * context = zmq_ctx_new();
+    void * sender = zmq_socket(context, ZMQ_PUSH);
+    zmq_bind(sender, &quot;tcp://*:6666&quot;);
+    printf (&quot;Press Enter when the workers are ready: &quot;);
+    getchar ();
+    printf (&quot;Sending tasks to workers...\n&quot;);
+    while(1)
+    { 
+        const char * replyMsg = &quot;World&quot;;
+        zmq_send(sender, replyMsg, strlen(replyMsg), 0);
+        printf(&quot;[Server] Sended Reply Message content == \&quot;%s\&quot;\n&quot;, replyMsg);
+    }
+
+    zmq_close(sender);
+    zmq_ctx_destroy(context);
+
+    return 0;
+}
+</code></pre>
+<hr>
+<p>work.cpp</p>
+<pre><code>#include &lt;zmq.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;string.h&gt;
+#include &lt;assert.h&gt;
+
+int main(void)
+{
+void * context = zmq_ctx_new();
+void * recviver = zmq_socket(context, ZMQ_PULL);
+zmq_connect(recviver, &quot;tcp://localhost:6666&quot;);
+
+void * sender = zmq_socket(context, ZMQ_PUSH);
+zmq_connect(sender, &quot;tcp://localhost:5555&quot;);
+
+while(1)
+{ 
+char buffer [256];
+int size = zmq_recv (recviver, buffer, 255, 0);
+if(size &lt; 0)
+{
+return -1;
+}
+printf(&quot;buffer:%s\n&quot;,buffer);
+const char * replyMsg = &quot;World&quot;;
+zmq_send(sender, replyMsg, strlen(replyMsg), 0);
+printf(&quot;[Server] Sended Reply Message content == \&quot;%s\&quot;\n&quot;, replyMsg);
+}
+
+zmq_close(recviver);
+zmq_close(sender);
+zmq_ctx_destroy(context);
+
+return 0;
+}
+</code></pre><hr>
+<p>sink.cpp</p>
+<pre><code class="lang-text">#include &lt;zmq.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;string.h&gt;
+#include &lt;assert.h&gt;
+
+int main(void)
+{
+    void * context = zmq_ctx_new();
+    void * socket = zmq_socket(context, ZMQ_PULL);
+    zmq_bind(socket, &quot;tcp://*:5555&quot;);
+
+    while(1)
+    { 
+           char buffer [256];
+        int size = zmq_recv (socket, buffer, 255, 0);
+        if(size &lt; 0)
+        {
+            return -1;
+        }
+        printf(&quot;buffer:%s\n&quot;,buffer);
+    }
+
+    zmq_close(socket);
+    zmq_ctx_destroy(context);
+
+    return 0;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: README.md">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="openCV.html" class="navigation navigation-next " aria-label="Next page: openCV.md">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ZeroMQ简述.md","level":"1.1.4","depth":2,"next":{"title":"openCV.md","level":"1.1.5","depth":2,"path":"3rdParty_Lib/openCV.md","ref":"3rdParty_Lib/openCV.md","articles":[]},"previous":{"title":"README.md","level":"1.1.3","depth":2,"path":"3rdParty_Lib/README.md","ref":"3rdParty_Lib/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3rdParty_Lib/ZeroMQ简述.md","mtime":"2021-02-03T09:51:46.598Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-17T05:07:13.121Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

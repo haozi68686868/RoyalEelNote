@@ -1,0 +1,1400 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>四元数、欧拉角和方向余弦矩阵的相互转化.md · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="李群与李代数.html" />
+    
+    
+    <link rel="prev" href="ros漫游实操.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    3rdParty_Lib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../3rdParty_Lib/Eigen Guide.html">
+            
+                <a href="../3rdParty_Lib/Eigen Guide.html">
+            
+                    
+                    Eigen Guide.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../3rdParty_Lib/Jsoncpp.html">
+            
+                <a href="../3rdParty_Lib/Jsoncpp.html">
+            
+                    
+                    Jsoncpp.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                <a href="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                    
+                    ZeroMQ简述.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="../3rdParty_Lib/openCV.html">
+            
+                <a href="../3rdParty_Lib/openCV.html">
+            
+                    
+                    openCV.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                <a href="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                    
+                    precision_recall_accuracy_F值.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    Power Supply Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Power Supply Design/Altium Designer.html">
+            
+                <a href="../Power Supply Design/Altium Designer.html">
+            
+                    
+                    Altium Designer.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Power Supply Design/电源设计.html">
+            
+                <a href="../Power Supply Design/电源设计.html">
+            
+                    
+                    电源设计.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../SUMMARY.html">
+            
+                <a href="../SUMMARY.html">
+            
+                    
+                    SUMMARY.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../algorithm/KDTree.html">
+            
+                <a href="../algorithm/KDTree.html">
+            
+                    
+                    KDTree.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../algorithm/KDTree2.html">
+            
+                <a href="../algorithm/KDTree2.html">
+            
+                    
+                    KDTree2.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../algorithm/从匈牙利算法到KM算法.html">
+            
+                <a href="../algorithm/从匈牙利算法到KM算法.html">
+            
+                    
+                    从匈牙利算法到KM算法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../algorithm/匈牙利算法.html">
+            
+                <a href="../algorithm/匈牙利算法.html">
+            
+                    
+                    匈牙利算法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                <a href="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                    
+                    图说卡尔曼滤波，一份通俗易懂的教程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../algorithm/正则表达式.html">
+            
+                <a href="../algorithm/正则表达式.html">
+            
+                    
+                    正则表达式.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    autodrive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Ros概念.html">
+            
+                <a href="Ros概念.html">
+            
+                    
+                    Ros概念.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="SOTIF Safety of the Intended Functionality.html">
+            
+                <a href="SOTIF Safety of the Intended Functionality.html">
+            
+                    
+                    SOTIF Safety of the Intended Functionality.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="dbc文件解析.html">
+            
+                <a href="dbc文件解析.html">
+            
+                    
+                    dbc文件解析.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="ros漫游实操.html">
+            
+                <a href="ros漫游实操.html">
+            
+                    
+                    ros漫游实操.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.6" data-path="四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                <a href="四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                    
+                    四元数、欧拉角和方向余弦矩阵的相互转化.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="李群与李代数.html">
+            
+                <a href="李群与李代数.html">
+            
+                    
+                    李群与李代数.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="阿克曼转向原理.html">
+            
+                <a href="阿克曼转向原理.html">
+            
+                    
+                    阿克曼转向原理.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    c++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../c++/C++ algorithm.html">
+            
+                <a href="../c++/C++ algorithm.html">
+            
+                    
+                    C++ algorithm.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../c++/C++ string.html">
+            
+                <a href="../c++/C++ string.html">
+            
+                    
+                    C++ string.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../c++/C++ 数据类型.html">
+            
+                <a href="../c++/C++ 数据类型.html">
+            
+                    
+                    C++ 数据类型.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../c++/JAVA 和 C++的区别.html">
+            
+                <a href="../c++/JAVA 和 C++的区别.html">
+            
+                    
+                    JAVA 和 C++的区别.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../c++/c++ 多线程.html">
+            
+                <a href="../c++/c++ 多线程.html">
+            
+                    
+                    c++ 多线程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../c++/c++特别语法.html">
+            
+                <a href="../c++/c++特别语法.html">
+            
+                    
+                    c++特别语法.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../c++/c++问题合集.html">
+            
+                <a href="../c++/c++问题合集.html">
+            
+                    
+                    c++问题合集.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../c++/cmake.html">
+            
+                <a href="../c++/cmake.html">
+            
+                    
+                    cmake.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                <a href="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                    
+                    cmake中的PUBLIC_PRIVATE_INTERFACE.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../c++/gcc编译warning.html">
+            
+                <a href="../c++/gcc编译warning.html">
+            
+                    
+                    gcc编译warning.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="../c++/pragma once.html">
+            
+                <a href="../c++/pragma once.html">
+            
+                    
+                    pragma once.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../git/gerrit答题.html">
+            
+                <a href="../git/gerrit答题.html">
+            
+                    
+                    gerrit答题.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../git/git 开发笔记.html">
+            
+                <a href="../git/git 开发笔记.html">
+            
+                    
+                    git 开发笔记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../git/gitbook.html">
+            
+                <a href="../git/gitbook.html">
+            
+                    
+                    gitbook.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../git/gitlab.html">
+            
+                <a href="../git/gitlab.html">
+            
+                    
+                    gitlab.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    linux开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../linux开发环境/Linux 实用软件.html">
+            
+                <a href="../linux开发环境/Linux 实用软件.html">
+            
+                    
+                    Linux 实用软件.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../linux开发环境/NTP服务详解.html">
+            
+                <a href="../linux开发环境/NTP服务详解.html">
+            
+                    
+                    NTP服务详解.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../linux开发环境/Tmux 使用小技巧.html">
+            
+                <a href="../linux开发环境/Tmux 使用小技巧.html">
+            
+                    
+                    Tmux 使用小技巧.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../linux开发环境/VSCode.html">
+            
+                <a href="../linux开发环境/VSCode.html">
+            
+                    
+                    VSCode.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../linux开发环境/linux.html">
+            
+                <a href="../linux开发环境/linux.html">
+            
+                    
+                    linux.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../linux开发环境/shell_if语句.html">
+            
+                <a href="../linux开发环境/shell_if语句.html">
+            
+                    
+                    shell_if语句.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../linux开发环境/shell字符串操作.html">
+            
+                <a href="../linux开发环境/shell字符串操作.html">
+            
+                    
+                    shell字符串操作.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../python/python note.html">
+            
+                <a href="../python/python note.html">
+            
+                    
+                    python note.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../python/python之Argparse模块.html">
+            
+                <a href="../python/python之Argparse模块.html">
+            
+                    
+                    python之Argparse模块.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    senseauto
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../senseauto/3D2D匹配.html">
+            
+                <a href="../senseauto/3D2D匹配.html">
+            
+                    
+                    3D2D匹配.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                <a href="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                    
+                    DataFactoryUtil 需求文档.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../senseauto/Senseauto common.html">
+            
+                <a href="../senseauto/Senseauto common.html">
+            
+                    
+                    Senseauto common.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../senseauto/horizon通信流程.html">
+            
+                <a href="../senseauto/horizon通信流程.html">
+            
+                    
+                    horizon通信流程.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../senseauto/rec_parser踩坑记.html">
+            
+                <a href="../senseauto/rec_parser踩坑记.html">
+            
+                    
+                    rec_parser踩坑记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../senseauto/senseauto开发使用笔记.html">
+            
+                <a href="../senseauto/senseauto开发使用笔记.html">
+            
+                    
+                    senseauto开发使用笔记.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../senseauto/感知真值系统.html">
+            
+                <a href="../senseauto/感知真值系统.html">
+            
+                    
+                    感知真值系统.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../senseauto/相机感知系统.html">
+            
+                <a href="../senseauto/相机感知系统.html">
+            
+                    
+                    相机感知系统.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../senseauto/统一软件平台.html">
+            
+                <a href="../senseauto/统一软件平台.html">
+            
+                    
+                    统一软件平台.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../senseauto/统一软件平台公告.html">
+            
+                <a href="../senseauto/统一软件平台公告.html">
+            
+                    
+                    统一软件平台公告.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    software engineering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    README.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../software engineering/设计模式.html">
+            
+                <a href="../software engineering/设计模式.html">
+            
+                    
+                    设计模式.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../software engineering/软件工程tip.html">
+            
+                <a href="../software engineering/软件工程tip.html">
+            
+                    
+                    软件工程tip.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >四元数、欧拉角和方向余弦矩阵的相互转化.md</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x6700;&#x5F00;&#x59CB;&#x63A5;&#x89E6;&#x59FF;&#x6001;&#x7ED3;&#x7B97;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x56DB;&#x5143;&#x6570;&#x3001;&#x6B27;&#x62C9;&#x89D2;&#x548C;&#x65B9;&#x5411;&#x4F59;&#x5F26;&#x77E9;&#x9635;&#x7684;&#x76F8;&#x4E92;&#x8F6C;&#x5316;&#x4FBF;&#x662F;&#x5728;&#x8FDB;&#x9636;&#x8DEF;&#x4E0A;&#x7684;&#x4E00;&#x6761;&#x5C0F;&#x8001;&#x864E;&#xFF0C;&#x770B;&#x7684;&#x591A;&#x4E86;&#xFF0C;&#x7EC8;&#x4E8E;&#x4E5F;&#x7B97;&#x719F;&#x6089;&#x4E86;&#x3002;</p>
+<p>&#x5F15;&#x7528;&#x522B;&#x4EBA;&#x7684;&#x201C;<a href="https://zhuanlan.zhihu.com/p/46243954" target="_blank">&#x51E1;&#x662F;&#x628A;&#x4E00;&#x672C;&#x4E66;&#x8BFB;100&#x904D;&#x7684;&#x4EBA;&#xFF0C;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;&#x4EBA;&#x4E0D;&#x6210;&#x5927;&#x5668;</a>&#x201D;&#x8FD9;&#x53E5;&#x8BDD;&#xFF0C;&#x5E0C;&#x671B;&#x5BF9;&#x5927;&#x5BB6;&#x6709;&#x6240;&#x52C9;&#x52B1;&#x3002;</p>
+<p>&#x57FA;&#x7840;&#x7406;&#x8BBA;</p>
+<p>&#x5BF9;&#x4E8E;&#x5728;&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x91CC;&#x7684;&#x4E00;&#x4E2A;&#x53C2;&#x8003;&#x7CFB;&#xFF0C;&#x4EFB;&#x4F55;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x53D6;&#x5411;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x4E09;&#x4E2A;&#x6B27;&#x62C9;&#x89D2;</p>
+<p>&#x6765;&#x8868;&#x73B0;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0E;&#x53C2;&#x8003;&#x7CFB;&#x91CD;&#x5408;&#x7684;&#x5750;&#x6807;&#x7CFB;&#xFF0C;&#x901A;&#x8FC7;&#x7ED5; Z &#x8F74;&#x7684;&#x504F;&#x822A;&#x89D2;&#xFF08;Yaw&#xFF09;&#xFF0C;&#x7ED5; Y &#x8F74;&#x7684;</p>
+<p>&#x4FEF;&#x4EF0;&#x89D2;&#xFF08;Pitch&#xFF09;&#x548C;&#x7ED5; X &#x8F74;&#x7684;&#x6A2A;&#x6EDA;&#x89D2;&#xFF08;Roll&#xFF09;&#x65CB;&#x8F6C;&#x5230;&#x5F53;&#x524D;&#x59FF;&#x6001;&#xFF0C;&#x5E38;&#x7528;&#x5750;&#x6807;&#x7CFB;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="https://pic3.zhimg.com/80/v2-aa9bba6ff30af1c356ee5cd137e09008_720w.jpg" alt="img">&#x5317;&#x4E1C;&#x5730;&#x5750;&#x6807;&#x7CFB;</p>
+<p>&#x4E00;&#x3001;&#x65B9;&#x5411;&#x4F59;&#x5F26;&#x77E9;&#x9635; (&#x53C2;&#x8003;&#x300A;&#x6377;&#x8054;&#x60EF;&#x6027;&#x5BFC;&#x822A;&#x6280;&#x672F;&#x300B;&#x5F20;&#x5929;&#x5149;&#x7B49;)</p>
+<p>&#x5047;&#x5B9A;&#x521D;&#x59CB;&#x65F6;&#x523B;&#x8F7D;&#x4F53;&#x5750;&#x6807;&#x7CFB;&#x548C;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x91CD;&#x5408;&#xFF0C; &#x90A3;&#x4E48;&#x4EFB;&#x4E00;&#x5411;&#x91CF;&#x5728;&#x8F7D;&#x4F53;&#x5750;&#x6807;&#x7CFB;&#x548C;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x76F8;&#x540C;&#xFF0C; &#x5373; <img src="https://www.zhihu.com/equation?tex=r_%7Bb%7D+%3D+r_%7Bn%7D" alt="[&#x516C;&#x5F0F;]"> , <img src="https://www.zhihu.com/equation?tex=r_%7Bn%7D" alt="[&#x516C;&#x5F0F;]"> &#x5148;&#x7ED5;Z&#x8F74;&#x65CB;&#x8F6C;&#x89D2;&#x5EA6; <img src="https://www.zhihu.com/equation?tex=%5Cpsi" alt="[&#x516C;&#x5F0F;]"> ,&#x65CB;&#x8F6C;&#x77E9;&#x9635;&#x4E3A;&#xFF1A;</p>
+<p><img src="https://www.zhihu.com/equation?tex=C_%7B1%7D%3D+%5Cbegin%7Bbmatrix%7D+cos%5Cpsi%26sin%5Cpsi%260%5C%5C-sin%5Cpsi%26cos%5Cpsi%260%5C%5C0%260%261%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x63A8;&#x5BFC;&#x5982;&#x56FE;&#xFF1A;</p>
+<p><img src="https://picb.zhimg.com/80/v2-dd8fa451932cc96eefe1726480dc3892_720w.jpg" alt="img">&#x7ED5;Z&#x8F74;&#x65CB;&#x8F6C;&#xFF0C;&#x5176;&#x4ED6;&#x8F74;&#x7C7B;&#x4F3C;&#xFF0C;Y&#x8F74;&#x65CB;&#x8F6C;&#x65F6;&#x65B9;&#x5411;&#x76F8;&#x53CD;</p>
+<p>&#x518D;&#x7ED5; Y &#x8F74;&#x65CB;&#x8F6C;&#x89D2;&#x5EA6; <img src="https://www.zhihu.com/equation?tex=%5Ctheta+" alt="[&#x516C;&#x5F0F;]"> <img src="https://www.zhihu.com/equation?tex=C_%7B2%7D%3D+%5Cbegin%7Bbmatrix%7D+cos%5Ctheta%260%26-sin%5Ctheta%5C%5C0%261%260%5C%5Csin%5Ctheta%260%26cos%5Ctheta%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x518D;&#x7ED5; X &#x8F74;&#x65CB;&#x8F6C;&#x89D2;&#x5EA6; <img src="https://www.zhihu.com/equation?tex=%5Cphi" alt="[&#x516C;&#x5F0F;]"> <img src="https://www.zhihu.com/equation?tex=C_%7B3%7D%3D+%5Cbegin%7Bbmatrix%7D+1%260%260%5C%5C0%26cos%5Cphi%26sin%5Cphi%5C%5C0%26-sin%5Cphi%26cos%5Cphi%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x6B64;&#x65F6; <img src="https://www.zhihu.com/equation?tex=r_%7Bn%7D" alt="[&#x516C;&#x5F0F;]"> &#x7136;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#xFF0C; &#x4F46;&#x662F;&#x5728;&#x8F7D;&#x4F53;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x5219;&#x53D8;&#x4E3A; <img src="https://www.zhihu.com/equation?tex=r%5E%7B%27%7D_%7Bb%7D+%3D+C_%7B3%7DC_%7B2%7DC_%7B1%7Dr_%7Bb%7D+%3D+C_%7B3%7DC_%7B2%7DC_%7B1%7Dr_%7Bn%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x56E0;&#x6B64;&#x4ECE;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x8F7D;&#x4F53;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x53D8;&#x6362;&#x77E9;&#x9635;&#x53EF;&#x7531;&#x4E0B;&#x5F0F;&#x7ED9;&#x51FA;</p>
+<p><img src="https://www.zhihu.com/equation?tex=C%5E%7Bb%7D_%7Bn%7D+%3D+C_%7B3%7DC_%7B2%7DC_%7B1%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x4ECE;&#x8F7D;&#x4F53;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x8F6C;&#x53D8;&#x77E9;&#x9635;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="https://www.zhihu.com/equation?tex=C%5E%7Bn%7D_%7Bb%7D++%3D+C%5E%7Bb%27%7D_%7Bn%7D+%3D+C%5E%7B%27%7D_%7B1%7DC%5E%7B%27%7D_%7B2%7DC%5E%7B%27%7D_%7B3%7D+%5CRightarrow+C%5E%7B%27%7D_%7B1%7D%3D+%5Cbegin%7Bbmatrix%7D+cos%5Cpsi%26-sin%5Cpsi%260%5C%5Csin%5Cpsi%26cos%5Cpsi%260%5C%5C0%260%261%5Cend+%7Bbmatrix%7D+C%5E%7B%27%7D_%7B2%7D%3D+%5Cbegin%7Bbmatrix%7D+cos%5Ctheta%260%26sin%5Ctheta%5C%5C0%261%260%5C%5C-sin%5Ctheta%260%26cos%5Ctheta%5Cend+%7Bbmatrix%7D+C%5E%7B%27%7D_%7B3%7D%3D+%5Cbegin%7Bbmatrix%7D+1%260%260%5C%5C0%26cos%5Cphi%26-sin%5Cphi%5C%5C0%26sin%5Cphi%26cos%5Cphi%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p><img src="https://www.zhihu.com/equation?tex=C%5E%7Bn%7D_%7Bb%7D+%3D+%5Cbegin%7Bbmatrix%7D+cos%5Cpsi+cos%5Ctheta%26cos%5Cpsi+sin%5Ctheta+sin%5Cphi-cos%5Cphi+sin%5Cpsi+%26sin%5Cpsi+sin%5Cphi%2Bcos%5Cphi+cos%5Cpsi+sin%5Ctheta%5C%5Ccos%5Ctheta+sin%5Cpsi%26cos%5Cpsi+cos%5Cphi+%2B+sin%5Cpsi+sin%5Cphi+sin%5Ctheta%26cos%5Cphi+sin%5Cpsi+sin%5Ctheta-cos%5Cpsi+sin%5Cphi%5C%5C-sin%5Ctheta%26cos%5Ctheta+sin%5Cphi%26cos%5Ctheta+cos%5Cphi%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x6CE8;&#x610F;&#x5230;&#x5F53;&#x59FF;&#x6001;&#x89D2;&#x5F88;&#x5C0F;&#x7684;&#x65F6;&#x5019;&#xFF0C; <img src="https://www.zhihu.com/equation?tex=C%5E%7Bn%7D_%7Bb%7D" alt="[&#x516C;&#x5F0F;]"> &#x53EF;&#x4EE5;&#x7B80;&#x5316;&#x6210;&#xFF1A;</p>
+<p><img src="https://www.zhihu.com/equation?tex=C%5E%7Bn%7D_%7Bb%7D+%3D+%5Cbegin%7Bbmatrix%7D1%26-%5Cpsi+%26%5Ctheta%5C%5C%5Cpsi%261%26-%5Cphi%5C%5C-%5Ctheta%26%5Cphi%261%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x4E8C;&#x3001;&#x6B27;&#x62C9;&#x89D2;&#x4E0E;&#x56DB;&#x5143;&#x6570;</p>
+<p>&#x6309;Z-Y-X&#x7684;&#x65CB;&#x8F6C;&#x53D8;&#x6362;&#x987A;&#x5E8F;&#x6709;&#xFF1A;</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bbmatrix%7Dq_%7B0%7D+%5C%5Cq_%7B1%7D%5C%5Cq_%7B3%7D%5C%5Cq_%7B4%7D+%5Cend+%7Bbmatrix%7D%3D%5Cbegin%7Bbmatrix%7Dcos%28%5Cpsi%2F2%29+%5C%5C0%5C%5C0%5C%5Csin%28%5Cpsi%2F2%29+%5Cend+%7Bbmatrix%7D%5Cbegin%7Bbmatrix%7Dcos%28%5Ctheta%2F2%29+%5C%5C0%5C%5Csin%28%5Ctheta%2F2%29+%5C%5C0%5Cend+%7Bbmatrix%7D%5Cbegin%7Bbmatrix%7Dcos%28%5Cphi%2F2%29+%5C%5Csin%28%5Cphi%2F2%29%5C%5C0+%5C%5C0%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p><img src="https://www.zhihu.com/equation?tex=%3D%5Cbegin%7Bbmatrix%7Dcos%28%5Cphi%2F2%29cos%28%5Ctheta%2F2%29+cos%28%5Cpsi%2F2%29+%2Bsin%28%5Cphi%2F2%29sin%28%5Ctheta%2F2%29sin+%28%5Cpsi%2F2%29+%5C%5Csin%28%5Cphi%2F2%29cos%28%5Ctheta%2F2%29+cos%28%5Cpsi%2F2%29+-cos%28%5Cphi%2F2%29sin%28%5Ctheta%2F2%29+sin%28%5Cpsi%2F2%29%5C%5Ccos%28%5Cphi%2F2%29sin%28%5Ctheta%2F2%29+cos%28%5Cpsi%2F2%29+%2Bsin%28%5Cphi%2F2%29cos%28%5Ctheta%2F2%29+sin%28%5Cpsi%2F2%29%5C%5Ccos%28%5Cphi%2F2%29cos%28%5Ctheta%2F2%29+sin%28%5Cpsi%2F2%29+-sin%28%5Cphi%2F2%29sin%28%5Ctheta%2F2%29+cos%28%5Cpsi%2F2%29%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x56DB;&#x5143;&#x6570;&#x4E0E;&#x65CB;&#x8F6C;&#x77E9;&#x9635;&#xFF08;&#x5E38;&#x7528;&#x6765;&#x505A;&#x5750;&#x6807;&#x53D8;&#x6362;&#xFF09;</p>
+<p>2.1 b&#x7CFB;&#x8F6C;&#x5230;R&#x7CFB;&#x7684;&#x5750;&#x6807;&#x53D8;&#x6362;&#x77E9;&#x9635;</p>
+<p><img src="https://www.zhihu.com/equation?tex=p%27+%3D+q%5Cotimes+p%5Cotimes+q%2A" alt="[&#x516C;&#x5F0F;]"></p>
+<p><img src="https://www.zhihu.com/equation?tex=C_%7Bb%7D%5E%7BR%7D+%3D+%5Cbegin%7Bbmatrix%7Dq_%7B0%7D%5E%7B2%7D%2Bq_%7B1%7D%5E%7B2%7D-q_%7B2%7D%5E%7B2%7D-q_%7B3%7D%5E%7B2%7D+%26++2%28q_%7B1%7Dq_%7B2%7D-q_%7B0%7Dq_%7B3%7D%29%26+2%28q_%7B1%7Dq_%7B3%7D%2Bq_%7B0%7Dq_%7B2%7D%29+%5C%5C2%28q_%7B1%7Dq_%7B2%7D%2Bq_%7B0%7Dq_%7B3%7D%29+%26+q_%7B0%7D%5E%7B2%7D-q_%7B1%7D%5E%7B2%7D%2Bq_%7B2%7D%5E%7B2%7D-q_%7B3%7D%5E%7B2%7D+%26+2%28q_%7B2%7Dq_%7B3%7D-q_%7B0%7Dq_%7B1%7D%29++%5C%5C++2%28q_%7B1%7Dq_%7B3%7D-q_%7B0%7Dq_%7B2%7D%29%26+2%28q_%7B2%7Dq_%7B3%7D%2Bq_%7B0%7Dq_%7B1%7D%29%26q_%7B0%7D%5E%7B2%7D-q_%7B1%7D%5E%7B2%7D-q_%7B2%7D%5E%7B2%7D%2Bq_%7B3%7D%5E%7B2%7D%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>2.2 R&#x7CFB;&#x8F6C;&#x5230;b&#x7CFB;&#x7684;&#x5750;&#x6807;&#x53D8;&#x6362;&#x77E9;&#x9635;</p>
+<p><img src="https://www.zhihu.com/equation?tex=C_%7BR%7D%5E%7Bb%7D++%3D%7B+C_%7Bb%7D%5E%7BR%7D+%7D%5E%7BT%7D" alt="[&#x516C;&#x5F0F;]"> (&#x4E3A;&#x4E0A;&#x8FF0;&#x77E9;&#x9635;&#x7684;&#x8F6C;&#x7F6E;)</p>
+<p>&#x5BF9;&#x6BD4;R&#x548C; <img src="https://www.zhihu.com/equation?tex=C_%7Bb%7D%5E%7BR%7D+" alt="[&#x516C;&#x5F0F;]"> &#x5373;&#x53EF;&#x5F88;&#x5BB9;&#x6613;&#x5C06;&#x56DB;&#x5143;&#x6570;&#x8F6C;&#x6362;&#x6210;&#x6B27;&#x62C9;&#x89D2;&#x3002;</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cbegin%7Bbmatrix%7D%5Cphi+%5C%5C%5Ctheta%5C%5C%5Cpsi+%5Cend+%7Bbmatrix%7D+%3D+%5Cbegin%7Bbmatrix%7Darctan%7B%5Cfrac%7B2%28q_%7B0%7Dq_%7B1%7D%2Bq_%7B2%7Dq_%7B3%7D%29%7D%7Bq_%7B0%7D%5E2-q_%7B1%7D%5E2-q_%7B2%7D%5E2%2Bq_%7B3%7D%5E2%7D%7D%5C%5Carcsin%5B2%28q_%7B0%7Dq_%7B2%7D-q_%7B1%7Dq_%7B3%7D%29%5D%5C%5Carctan%7B%5Cfrac%7B2%28q_%7B0%7Dq_%7B3%7D%2Bq_%7B1%7Dq_%7B2%7D%29%7D%7Bq_%7B0%7D%5E2%2Bq_%7B1%7D%5E2-q_%7B2%7D%5E2-q_%7B3%7D%5E2%7D%7D%5Cend+%7Bbmatrix%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x4E09;&#x3001;&#x56DB;&#x5143;&#x6570;&#x7684;&#x66F4;&#x65B0;</p>
+<p><img src="https://www.zhihu.com/equation?tex=Q+%3D+cos%EF%BC%88%5Ctheta%2F2%EF%BC%89%2Bn%2Asin%28%5Ctheta%2F2%29" alt="[&#x516C;&#x5F0F;]"></p>
+<p>Q&#x5BF9;&#x65F6;&#x95F4;&#x6C42;&#x5BFC;&#x6570;&#xFF1A;</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cfrac%7B%5Cpartial+Q+%7D%7B%5Cpartial+t%7D%3D+-%5Cfrac%7B1+%7D%7B2%7Dsin%EF%BC%88%5Ctheta%2F2%EF%BC%89%5Cfrac%7B%5Cpartial+%5Ctheta+%7D%7B%5Cpartial+t%7D%2B%5Cfrac%7B%5Cpartial+n+%7D%7B%5Cpartial+t%7D%2Asin%28%5Ctheta%2F2%29+%2B+n%2Acos%28%5Ctheta%2F2%29%5Cfrac%7B%5Cpartial+%5Ctheta+%7D%7B%5Cpartial+t%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x56E0;&#x4E3A;</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cfrac%7B%5Cpartial+n+%7D%7B%5Cpartial+t%7D%3D0+" alt="[&#x516C;&#x5F0F;]"></p>
+<p><img src="https://www.zhihu.com/equation?tex=n%2An%3D-1" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x6240;&#x4EE5;</p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cfrac%7B%5Cpartial+Q+%7D%7B%5Cpartial+t%7D%3D+%5Cfrac%7B1+%7D%7B2%7D+%28cos%EF%BC%88%5Ctheta%2F2%29+%2B+n%2Asin%EF%BC%88%5Ctheta%2F2%29%29%5Cfrac%7B%5Cpartial+%5Ctheta+%7D%7B%5Cpartial+t%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p><img src="https://www.zhihu.com/equation?tex=%5Cfrac%7B%5Cpartial+Q+%7D%7B%5Cpartial+t%7D%3D+%5Cfrac%7B1+%7D%7B2%7D+W%5E%7Bn%7DQ" alt="[&#x516C;&#x5F0F;]"> &#x5176;&#x4E2D; <img src="https://www.zhihu.com/equation?tex=W%5E%7Bn%7D%3D%5Cfrac%7B%5Cpartial+%5Ctheta+%7D%7B%5Cpartial+t%7D" alt="[&#x516C;&#x5F0F;]"> &#x4E5F;&#x662F;&#x5927;&#x5730;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x89D2;&#x901F;&#x5EA6;,&#x7531;&#x56DB;&#x5143;&#x6570;&#x65CB;&#x8F6C;&#x5F97;&#xFF1A;</p>
+<p><img src="https://www.zhihu.com/equation?tex=W%5E%7Bn%7D%3DQW%5E%7Bb%7DQ%5E%7B%2A%7D" alt="[&#x516C;&#x5F0F;]"> &#x63A8;&#x51FA; <img src="https://www.zhihu.com/equation?tex=W%5E%7Bn%7DQ%3DQW%5E%7Bb%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x6240;&#x4EE5; <img src="https://www.zhihu.com/equation?tex=%5Cfrac%7B%5Cpartial+Q+%7D%7B%5Cpartial+t%7D%3D+%5Cfrac%7B1+%7D%7B2%7D+QW%5E%7Bb%7D" alt="[&#x516C;&#x5F0F;]"></p>
+<p>&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">abcd2cbn</span><span class="hljs-params">(strcut* data)</span>
+</span>{
+    <span class="hljs-keyword">float</span> a, b, c, d, ab, ac, ad, bb, bc, bd, cc, cd, dd;
+
+    a  = data-&gt;q0
+    b  = data-&gt;q1
+    c  = data-&gt;q2
+    d  = data-&gt;q3
+
+    ab = a * b;
+    ac = a * c;
+    ad = a * d;
+    bb = b * b;
+    bc = b * c;
+    bd = b * d;
+    cc = c * c;
+    cd = c * d;
+    dd = d * d;
+
+    data.cbn11 = <span class="hljs-number">1</span> - <span class="hljs-number">2</span> * (cc + dd);
+    data.cbn12 = <span class="hljs-number">2</span> * (bc - ad);
+    data.cbn13 = <span class="hljs-number">2</span> * (bd + ac);
+    data.cbn21 = <span class="hljs-number">2</span> * (bc + ad);
+    data.cbn22 = <span class="hljs-number">1</span> - <span class="hljs-number">2</span> * (bb + dd);
+    dataa.cbn23 = <span class="hljs-number">2</span> * (cd - ab);
+    data.cbn31 = <span class="hljs-number">2</span> * (bd - ac);
+    data.cbn32 = <span class="hljs-number">2</span> * (cd + ab);
+    data.cbn33 = <span class="hljs-number">1</span> - <span class="hljs-number">2</span> * (bb + cc);
+}
+</code></pre>
+<p>&#x7F16;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ros漫游实操.html" class="navigation navigation-prev " aria-label="Previous page: ros漫游实操.md">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="李群与李代数.html" class="navigation navigation-next " aria-label="Next page: 李群与李代数.md">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"四元数、欧拉角和方向余弦矩阵的相互转化.md","level":"1.7.6","depth":2,"next":{"title":"李群与李代数.md","level":"1.7.7","depth":2,"path":"autodrive/李群与李代数.md","ref":"autodrive/李群与李代数.md","articles":[]},"previous":{"title":"ros漫游实操.md","level":"1.7.5","depth":2,"path":"autodrive/ros漫游实操.md","ref":"autodrive/ros漫游实操.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.md","mtime":"2020-08-18T08:45:47.948Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-17T05:07:13.121Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

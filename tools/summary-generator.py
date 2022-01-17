@@ -19,7 +19,7 @@ def find_files(rel_path, n = 0, dir = ""):
         return
     if os.path.isdir(path):
         # path是文件夹
-        if path != ".":
+        if rel_path != "":
             title_file = os.path.join(rel_path,"README.md")
             if(not os.path.exists(os.path.join(dir,title_file))):
                 return
