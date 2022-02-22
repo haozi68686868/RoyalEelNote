@@ -1,0 +1,1335 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>linux进程状态 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="shell_if语句.html" />
+    
+    
+    <link rel="prev" href="linux.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    3rdParty_Lib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../3rdParty_Lib/Eigen Guide.html">
+            
+                <a href="../3rdParty_Lib/Eigen Guide.html">
+            
+                    
+                    Eigen Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../3rdParty_Lib/Jsoncpp.html">
+            
+                <a href="../3rdParty_Lib/Jsoncpp.html">
+            
+                    
+                    Jsoncpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                <a href="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                    
+                    ZeroMQ简述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../3rdParty_Lib/gRPC.html">
+            
+                <a href="../3rdParty_Lib/gRPC.html">
+            
+                    
+                    gRPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../3rdParty_Lib/openCV.html">
+            
+                <a href="../3rdParty_Lib/openCV.html">
+            
+                    
+                    openCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                <a href="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                    
+                    precision_recall_accuracy_F值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    Power Supply Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Power Supply Design/Altium Designer.html">
+            
+                <a href="../Power Supply Design/Altium Designer.html">
+            
+                    
+                    Altium Designer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Power Supply Design/电源设计.html">
+            
+                <a href="../Power Supply Design/电源设计.html">
+            
+                    
+                    电源设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../algorithm/KDTree.html">
+            
+                <a href="../algorithm/KDTree.html">
+            
+                    
+                    KDTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../algorithm/KDTree2.html">
+            
+                <a href="../algorithm/KDTree2.html">
+            
+                    
+                    KDTree2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../algorithm/从匈牙利算法到KM算法.html">
+            
+                <a href="../algorithm/从匈牙利算法到KM算法.html">
+            
+                    
+                    从匈牙利算法到KM算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../algorithm/匈牙利算法.html">
+            
+                <a href="../algorithm/匈牙利算法.html">
+            
+                    
+                    匈牙利算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                <a href="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                    
+                    图说卡尔曼滤波，一份通俗易懂的教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../algorithm/正则表达式.html">
+            
+                <a href="../algorithm/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../autodrive/">
+            
+                <a href="../autodrive/">
+            
+                    
+                    autodrive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../autodrive/Ros概念.html">
+            
+                <a href="../autodrive/Ros概念.html">
+            
+                    
+                    Ros概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                <a href="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                    
+                    SOTIF Safety of the Intended Functionality
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../autodrive/dbc文件解析.html">
+            
+                <a href="../autodrive/dbc文件解析.html">
+            
+                    
+                    dbc文件解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../autodrive/ros漫游实操.html">
+            
+                <a href="../autodrive/ros漫游实操.html">
+            
+                    
+                    ros漫游实操
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                <a href="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                    
+                    四元数、欧拉角和方向余弦矩阵的相互转化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../autodrive/李群与李代数.html">
+            
+                <a href="../autodrive/李群与李代数.html">
+            
+                    
+                    李群与李代数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../autodrive/阿克曼转向原理.html">
+            
+                <a href="../autodrive/阿克曼转向原理.html">
+            
+                    
+                    阿克曼转向原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    c++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../c++/C++ algorithm.html">
+            
+                <a href="../c++/C++ algorithm.html">
+            
+                    
+                    C++ algorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../c++/C++ string.html">
+            
+                <a href="../c++/C++ string.html">
+            
+                    
+                    C++ string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../c++/C++ 数据类型.html">
+            
+                <a href="../c++/C++ 数据类型.html">
+            
+                    
+                    C++ 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../c++/JAVA 和 C++的区别.html">
+            
+                <a href="../c++/JAVA 和 C++的区别.html">
+            
+                    
+                    JAVA 和 C++的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../c++/c++ 多线程.html">
+            
+                <a href="../c++/c++ 多线程.html">
+            
+                    
+                    c++ 多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../c++/c++特别语法.html">
+            
+                <a href="../c++/c++特别语法.html">
+            
+                    
+                    c++特别语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../c++/c++问题合集.html">
+            
+                <a href="../c++/c++问题合集.html">
+            
+                    
+                    c++问题合集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../c++/cmake.html">
+            
+                <a href="../c++/cmake.html">
+            
+                    
+                    cmake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                <a href="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                    
+                    cmake中的PUBLIC_PRIVATE_INTERFACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../c++/gcc编译warning.html">
+            
+                <a href="../c++/gcc编译warning.html">
+            
+                    
+                    gcc编译warning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="../c++/pragma once.html">
+            
+                <a href="../c++/pragma once.html">
+            
+                    
+                    pragma once
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../git/gerrit答题.html">
+            
+                <a href="../git/gerrit答题.html">
+            
+                    
+                    gerrit答题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../git/git 开发笔记.html">
+            
+                <a href="../git/git 开发笔记.html">
+            
+                    
+                    git 开发笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../git/gitbook.html">
+            
+                <a href="../git/gitbook.html">
+            
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../git/gitlab.html">
+            
+                <a href="../git/gitlab.html">
+            
+                    
+                    gitlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    linux开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="Linux 实用软件.html">
+            
+                <a href="Linux 实用软件.html">
+            
+                    
+                    Linux 实用软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="NTP服务详解.html">
+            
+                <a href="NTP服务详解.html">
+            
+                    
+                    NTP服务详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="Tmux 使用小技巧.html">
+            
+                <a href="Tmux 使用小技巧.html">
+            
+                    
+                    Tmux 使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="VSCode.html">
+            
+                <a href="VSCode.html">
+            
+                    
+                    VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="grep.html">
+            
+                <a href="grep.html">
+            
+                    
+                    grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="linux.html">
+            
+                <a href="linux.html">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.7" data-path="linux进程状态.html">
+            
+                <a href="linux进程状态.html">
+            
+                    
+                    linux进程状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="shell_if语句.html">
+            
+                <a href="shell_if语句.html">
+            
+                    
+                    shell_if语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="shell字符串操作.html">
+            
+                <a href="shell字符串操作.html">
+            
+                    
+                    shell字符串操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../python/python note.html">
+            
+                <a href="../python/python note.html">
+            
+                    
+                    python note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../python/python之Argparse模块.html">
+            
+                <a href="../python/python之Argparse模块.html">
+            
+                    
+                    python之Argparse模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    senseauto
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../senseauto/3D2D匹配.html">
+            
+                <a href="../senseauto/3D2D匹配.html">
+            
+                    
+                    3D2D匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                <a href="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                    
+                    DataFactoryUtil 需求文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../senseauto/Senseauto common.html">
+            
+                <a href="../senseauto/Senseauto common.html">
+            
+                    
+                    Senseauto common
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../senseauto/Senseauto_Ins_Sensor.html">
+            
+                <a href="../senseauto/Senseauto_Ins_Sensor.html">
+            
+                    
+                    Senseauto_Ins_Sensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../senseauto/Senseauto_Lidar.html">
+            
+                <a href="../senseauto/Senseauto_Lidar.html">
+            
+                    
+                    Senseauto_Lidar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../senseauto/horizon通信流程.html">
+            
+                <a href="../senseauto/horizon通信流程.html">
+            
+                    
+                    horizon通信流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../senseauto/rec_parser踩坑记.html">
+            
+                <a href="../senseauto/rec_parser踩坑记.html">
+            
+                    
+                    rec_parser踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../senseauto/senseauto开发使用笔记.html">
+            
+                <a href="../senseauto/senseauto开发使用笔记.html">
+            
+                    
+                    senseauto开发使用笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../senseauto/感知真值系统.html">
+            
+                <a href="../senseauto/感知真值系统.html">
+            
+                    
+                    感知真值系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../senseauto/相机感知系统.html">
+            
+                <a href="../senseauto/相机感知系统.html">
+            
+                    
+                    相机感知系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../senseauto/统一软件平台.html">
+            
+                <a href="../senseauto/统一软件平台.html">
+            
+                    
+                    统一软件平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="../senseauto/统一软件平台公告.html">
+            
+                <a href="../senseauto/统一软件平台公告.html">
+            
+                    
+                    统一软件平台公告
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    software engineering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../software engineering/设计模式.html">
+            
+                <a href="../software engineering/设计模式.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../software engineering/软件工程tip.html">
+            
+                <a href="../software engineering/软件工程tip.html">
+            
+                    
+                    软件工程tip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >linux进程状态</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>linux&#x662F;&#x4E00;&#x4E2A;&#x591A;&#x7528;&#x6237;&#xFF0C;&#x591A;&#x4EFB;&#x52A1;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x591A;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x591A;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C31;&#x5FC5;&#x7136;&#x4F1A;&#x4EA7;&#x751F;&#x5F88;&#x591A;&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x4F1A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong>Linux&#x4E0A;&#x8FDB;&#x7A0B;&#x7684;&#x4E94;&#x79CD;&#x72B6;&#x6001;&#xFF1A;</strong></p>
+<p>1.R&#x2014;&#x2014;Runnable&#xFF08;&#x8FD0;&#x884C;&#xFF09;&#xFF1A;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x6216;&#x5728;&#x8FD0;&#x884C;&#x961F;&#x5217;&#x4E2D;&#x7B49;&#x5F85;</p>
+<p>2.S&#x2014;&#x2014;sleeping&#xFF08;&#x4E2D;&#x65AD;&#xFF09;&#xFF1A;&#x4F11;&#x7720;&#x4E2D;&#xFF0C;&#x53D7;&#x963B;&#xFF0C;&#x5728;&#x7B49;&#x5F85;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x7684;&#x5F62;&#x6210;&#x6216;&#x63A5;&#x6536;&#x5230;&#x4FE1;&#x53F7;</p>
+<p>3.D&#x2014;&#x2014;uninterruptible sleep(&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;)&#xFF1A;&#x6536;&#x5230;&#x4FE1;&#x53F7;&#x4E0D;&#x5524;&#x9192;&#x548C;&#x4E0D;&#x53EF;&#x8FD0;&#x884C;&#xFF0C;&#x8FDB;&#x7A0B;&#x5FC5;&#x987B;&#x7B49;&#x5F85;&#x76F4;&#x5230;&#x6709;&#x4E2D;&#x65AD;&#x53D1;&#x751F;</p>
+<p>4.Z&#x2014;&#x2014;zombie&#xFF08;&#x50F5;&#x6B7B;&#xFF09;&#xFF1A;&#x8FDB;&#x7A0B;&#x5DF2;&#x7EC8;&#x6B62;&#xFF0C;&#x4F46;&#x8FDB;&#x7A0B;&#x63CF;&#x8FF0;&#x8FD8;&#x5728;&#xFF0C;&#x76F4;&#x5230;&#x7236;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;wait4()&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x540E;&#x91CA;&#x653E;</p>
+<p>5.T&#x2014;&#x2014;traced or stoppd(&#x505C;&#x6B62;)&#xFF1A;&#x8FDB;&#x7A0B;&#x6536;&#x5230;SiGSTOP,SIGSTP,SIGTOU&#x4FE1;&#x53F7;&#x540E;&#x505C;&#x6B62;&#x8FD0;&#x884C;</p>
+<p><strong>&#x72B6;&#x6001;&#x540E;&#x7F00;&#x8868;&#x793A;&#xFF1A;</strong></p>
+<p>&lt;&#xFF1A;&#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#x7684;&#x8FDB;&#x7A0B;</p>
+<p>N&#xFF1A;&#x4F18;&#x5148;&#x7EA7;&#x4F4E;&#x7684;&#x8FDB;&#x7A0B;</p>
+<p>L&#xFF1A;&#x6709;&#x4E9B;&#x9875;&#x88AB;&#x9501;&#x8FDB;&#x5185;&#x5B58;</p>
+<p>s&#xFF1A;&#x8FDB;&#x7A0B;&#x7684;&#x9886;&#x5BFC;&#x8005;&#xFF08;&#x5728;&#x5B83;&#x4E4B;&#x4E0B;&#x6709;&#x5B50;&#x8FDB;&#x7A0B;&#xFF09;</p>
+<p>l&#xFF1A;ismulti-threaded (using CLONE_THREAD, like NPTL pthreads do)</p>
+<p>+&#xFF1A;&#x4F4D;&#x4E8E;&#x540E;&#x53F0;&#x7684;&#x8FDB;&#x7A0B;&#x7EC4;</p>
+<h3 id="top-&#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;">Top &#x5DE5;&#x5177;&#x7684;&#x4F7F;&#x7528;</h3>
+<h4 id="&#x4EA4;&#x4E92;&#x6307;&#x4EE4;">&#x4EA4;&#x4E92;&#x6307;&#x4EE4;</h4>
+<p>Ctrl+L &#x64E6;&#x9664;&#x5E76;&#x4E14;&#x91CD;&#x5199;&#x5C4F;&#x5E55;&#x3002; 
+h &#x6216;&#x8005;? &#x663E;&#x793A;&#x5E2E;&#x52A9;&#x753B;&#x9762;&#xFF0C;&#x7ED9;&#x51FA;&#x4E00;&#x4E9B;&#x7B80;&#x77ED;&#x7684;&#x547D;&#x4EE4;&#x603B;&#x7ED3;&#x8BF4;&#x660E;&#x3002; 
+k &#x7EC8;&#x6B62;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x3002;&#x7CFB;&#x7EDF;&#x5C06;&#x63D0;&#x793A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x9700;&#x8981;&#x7EC8;&#x6B62;&#x7684;&#x8FDB;&#x7A0B;PID&#xFF0C;&#x4EE5;&#x53CA;&#x9700;&#x8981;&#x53D1;&#x9001;&#x7ED9;&#x8BE5;&#x8FDB;&#x7A0B;&#x4EC0;&#x4E48;&#x6837;&#x7684;&#x4FE1;&#x53F7;&#x3002;&#x4E00;&#x822C;&#x7684;&#x7EC8;&#x6B62;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;15&#x4FE1;&#x53F7;&#xFF1B;&#x5982;&#x679C;&#x4E0D;&#x80FD;&#x6B63;&#x5E38;&#x7ED3;&#x675F;&#x90A3;&#x5C31;&#x4F7F;&#x7528;&#x4FE1;&#x53F7;9&#x5F3A;&#x5236;&#x7ED3;&#x675F;&#x8BE5;&#x8FDB;&#x7A0B;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x4FE1;&#x53F7;15&#x3002;&#x5728;&#x5B89;&#x5168;&#x6A21;&#x5F0F;&#x4E2D;&#x6B64;&#x547D;&#x4EE4;&#x88AB;&#x5C4F;&#x853D;&#x3002; 
+i &#x5FFD;&#x7565;&#x95F2;&#x7F6E;&#x548C;&#x50F5;&#x6B7B;&#x8FDB;&#x7A0B;&#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x5173;&#x5F0F;&#x547D;&#x4EE4;&#x3002; 
+q &#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#x3002; 
+r &#x91CD;&#x65B0;&#x5B89;&#x6392;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x522B;&#x3002;&#x7CFB;&#x7EDF;&#x63D0;&#x793A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x9700;&#x8981;&#x6539;&#x53D8;&#x7684;&#x8FDB;&#x7A0B;PID&#x4EE5;&#x53CA;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x8FDB;&#x7A0B;&#x4F18;&#x5148;&#x7EA7;&#x503C;&#x3002;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x6B63;&#x503C;&#x5C06;&#x4F7F;&#x4F18;&#x5148;&#x7EA7;&#x964D;&#x4F4E;&#xFF0C;&#x53CD;&#x4E4B;&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x8BE5;&#x8FDB;&#x7A0B;&#x62E5;&#x6709;&#x66F4;&#x9AD8;&#x7684;&#x4F18;&#x5148;&#x6743;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;10&#x3002; 
+S &#x5207;&#x6362;&#x5230;&#x7D2F;&#x8BA1;&#x6A21;&#x5F0F;&#x3002; 
+s &#x6539;&#x53D8;&#x4E24;&#x6B21;&#x5237;&#x65B0;&#x4E4B;&#x95F4;&#x7684;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;&#x3002;&#x7CFB;&#x7EDF;&#x5C06;&#x63D0;&#x793A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x65B0;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;s&#x3002;&#x5982;&#x679C;&#x6709;&#x5C0F;&#x6570;&#xFF0C;&#x5C31;&#x6362;&#x7B97;&#x6210;m s&#x3002;&#x8F93;&#x5165;0&#x503C;&#x5219;&#x7CFB;&#x7EDF;&#x5C06;&#x4E0D;&#x65AD;&#x5237;&#x65B0;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x662F;5 s&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x592A;&#x5C0F;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5F88;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x8D77;&#x4E0D;&#x65AD;&#x5237;&#x65B0;&#xFF0C;&#x4ECE;&#x800C;&#x6839;&#x672C;&#x6765;&#x4E0D;&#x53CA;&#x770B;&#x6E05;&#x663E;&#x793A;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x800C;&#x4E14;&#x7CFB;&#x7EDF;&#x8D1F;&#x8F7D;&#x4E5F;&#x4F1A;&#x5927;&#x5927;&#x589E;&#x52A0;&#x3002; 
+f&#x6216;&#x8005;F &#x4ECE;&#x5F53;&#x524D;&#x663E;&#x793A;&#x4E2D;&#x6DFB;&#x52A0;&#x6216;&#x8005;&#x5220;&#x9664;&#x9879;&#x76EE;&#x3002; 
+o&#x6216;&#x8005;O &#x6539;&#x53D8;&#x663E;&#x793A;&#x9879;&#x76EE;&#x7684;&#x987A;&#x5E8F;&#x3002; 
+l &#x5207;&#x6362;&#x663E;&#x793A;&#x5E73;&#x5747;&#x8D1F;&#x8F7D;&#x548C;&#x542F;&#x52A8;&#x65F6;&#x95F4;&#x4FE1;&#x606F;&#x3002; 
+m &#x5207;&#x6362;&#x663E;&#x793A;&#x5185;&#x5B58;&#x4FE1;&#x606F;&#x3002; 
+t &#x5207;&#x6362;&#x663E;&#x793A;&#x8FDB;&#x7A0B;&#x548C;CPU&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x3002; 
+c &#x5207;&#x6362;&#x663E;&#x793A;&#x547D;&#x4EE4;&#x540D;&#x79F0;&#x548C;&#x5B8C;&#x6574;&#x547D;&#x4EE4;&#x884C;&#x3002; 
+<strong>M &#x6839;&#x636E;&#x9A7B;&#x7559;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;</strong> 
+<strong>P &#x6839;&#x636E;CPU&#x4F7F;&#x7528;&#x767E;&#x5206;&#x6BD4;&#x5927;&#x5C0F;&#x8FDB;&#x884C; &#x6392;&#x5E8F;&#x3002;</strong> 
+<strong>T &#x6839;&#x636E;&#x65F6;&#x95F4;/&#x7D2F;&#x8BA1;&#x65F6;&#x95F4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;</strong>
+<strong>N &#x6839;&#x636E;PID&#x8FDB;&#x884C;&#x6392;&#x5E8F;</strong>
+<strong>R &#x6309;&#x5F53;&#x524D;&#x6392;&#x5E8F;&#x65B9;&#x5F0F;&#x53CD;&#x5411;&#x6392;&#x5E8F;</strong></p>
+<p>W&#x5C06;&#x5F53;&#x524D;&#x8BBE;&#x7F6E;&#x5199;&#x5165;~/.toprc&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x8FD9;&#x662F;&#x5199;top&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x63A8;&#x8350;&#x65B9;&#x6CD5;&#x3002;</p>
+<h3 id="&#x5C55;&#x793A;&#x4FE1;&#x606F;">&#x5C55;&#x793A;&#x4FE1;&#x606F;</h3>
+<p>VIRT &#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x7684;&#x865A;&#x62DF;&#x5185;&#x5B58;&#x603B;&#x91CF;&#xFF0C;&#x5355;&#x4F4D;kb&#x3002;VIRT=SWAP+RES 
+SWAP &#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x7684;&#x865A;&#x62DF;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x88AB;&#x6362;&#x51FA;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x5355;&#x4F4D;kb&#x3002; 
+RES&#xFF08;resident memory usage &#x5E38;&#x9A7B;&#x5185;&#x5B58;&#xFF09;&#xFF0C;&#x8FDB;&#x7A0B;&#x4F7F;&#x7528;&#x7684;&#x3001;&#x672A;&#x88AB;&#x6362;&#x51FA;&#x7684;&#x7269;&#x7406;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#xFF0C;&#x5355;&#x4F4D;kb&#x3002;RES=CODE+DATA
+SHR &#x5171;&#x4EAB;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#xFF0C;&#x5355;&#x4F4D;kb</p>
+<pre><code>KiB Mem : 32764312 total,  6847020 free,  8507248 used, 17410044 buff/cache
+KiB Swap: 16915772 total, 16739644 free,   176128 used. 23255100 avail Mem
+</code></pre><p>Mem&#xFF1A;&#x7269;&#x7406;&#x5185;&#x5B58;&#x603B;&#x91CF;
+Swap&#xFF1A;&#x4EA4;&#x6362;&#x533A;&#x603B;&#x91CF;
+buff/cache&#xFF1A;&#x7F13;&#x51B2;&#x533A;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x6700;&#x8FD1;&#x88AB;&#x4F7F;&#x7528;&#x8FC7;&#xFF0C;&#x4F46;&#x88AB;&#x91CA;&#x653E;&#x6389;&#x7684;&#xFF0C;&#x4E5F;&#x662F;&#x53EF;&#x4F7F;&#x7528;&#x7684;&#x90E8;&#x5206;&#xFF09;
+avail Mem&#xFF1A;&#x53EF;&#x4F7F;&#x7528;&#x7684;&#x5185;&#x5B58;</p>
+<p><strong><em>\</em>Linux&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#xFF1A;R (TASK_RUNNING)&#xFF0C;&#x53EF;&#x6267;&#x884C;&#x72B6;&#x6001;&#x3002;**</strong></p>
+<p>   &#x53EA;&#x6709;&#x5728;&#x8BE5;&#x72B6;&#x6001;&#x7684;&#x8FDB;&#x7A0B;&#x624D;&#x53EF;&#x80FD;&#x5728;CPU&#x4E0A;&#x8FD0;&#x884C;&#x3002;&#x800C;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x5904;&#x4E8E;&#x53EF;&#x6267;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x4E9B;&#x8FDB;&#x7A0B;&#x7684;task_struct&#x7ED3;&#x6784;&#xFF08;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;&#xFF09;&#x88AB;&#x653E;&#x5165;&#x5BF9;&#x5E94;CPU&#x7684;&#x53EF;&#x6267;&#x884C;&#x961F;&#x5217;&#x4E2D;&#xFF08;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x4E00;&#x4E2A;CPU&#x7684;&#x53EF;&#x6267;&#x884C;&#x961F;&#x5217;&#x4E2D;&#xFF09;&#x3002;&#x8FDB;&#x7A0B;&#x8C03;&#x5EA6;&#x5668;&#x7684;&#x4EFB;&#x52A1;&#x5C31;&#x662F;&#x4ECE;&#x5404;&#x4E2A;CPU&#x7684;&#x53EF;&#x6267;&#x884C;&#x961F;&#x5217;&#x4E2D;&#x5206;&#x522B;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x5728;&#x8BE5;CPU&#x4E0A;&#x8FD0;&#x884C;&#x3002;</p>
+<p>  &#x5F88;&#x591A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x6559;&#x79D1;&#x4E66;&#x5C06;&#x6B63;&#x5728;CPU&#x4E0A;&#x6267;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x5B9A;&#x4E49;&#x4E3A;RUNNING&#x72B6;&#x6001;&#x3001;&#x800C;&#x5C06;&#x53EF;&#x6267;&#x884C;&#x4F46;&#x662F;&#x5C1A;&#x672A;&#x88AB;&#x8C03;&#x5EA6;&#x6267;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x5B9A;&#x4E49;&#x4E3A;READY&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x72B6;&#x6001;&#x5728;linux&#x4E0B;&#x7EDF;&#x4E00;&#x4E3A; TASK_RUNNING&#x72B6;&#x6001;&#x3002;</p>
+<p><strong><em>\</em>Linux&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#xFF1A;S (TASK_INTERRUPTIBLE)&#xFF0C;&#x53EF;&#x4E2D;&#x65AD;&#x7684;&#x7761;&#x7720;&#x72B6;&#x6001;&#x3002;**</strong></p>
+<p>  &#x5904;&#x4E8E;&#x8FD9;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x8FDB;&#x7A0B;&#x56E0;&#x4E3A;&#x7B49;&#x5F85;&#x67D0;&#x67D0;&#x4E8B;&#x4EF6;&#x7684;&#x53D1;&#x751F;&#xFF08;&#x6BD4;&#x5982;&#x7B49;&#x5F85;socket&#x8FDE;&#x63A5;&#x3001;&#x7B49;&#x5F85;&#x4FE1;&#x53F7;&#x91CF;&#xFF09;&#xFF0C;&#x800C;&#x88AB;&#x6302;&#x8D77;&#x3002;&#x8FD9;&#x4E9B;&#x8FDB;&#x7A0B;&#x7684;task_struct&#x7ED3;&#x6784;&#x88AB;&#x653E;&#x5165;&#x5BF9;&#x5E94;&#x4E8B;&#x4EF6;&#x7684;&#x7B49;&#x5F85;&#x961F;&#x5217;&#x4E2D;&#x3002;&#x5F53;&#x8FD9;&#x4E9B;&#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x65F6;&#xFF08;&#x7531;&#x5916;&#x90E8;&#x4E2D;&#x65AD;&#x89E6;&#x53D1;&#x3001;&#x6216;&#x7531;&#x5176;&#x4ED6;&#x8FDB;&#x7A0B;&#x89E6;&#x53D1;&#xFF09;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;&#x7B49;&#x5F85;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x5C06;&#x88AB;&#x5524;&#x9192;&#x3002;</p>
+<p>  &#x901A;&#x8FC7;ps&#x547D;&#x4EE4;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FDB;&#x7A0B;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x8FDB;&#x7A0B;&#x90FD;&#x5904;&#x4E8E;TASK_INTERRUPTIBLE&#x72B6;&#x6001;&#xFF08;&#x9664;&#x975E;&#x673A;&#x5668;&#x7684;&#x8D1F;&#x8F7D;&#x5F88;&#x9AD8;&#xFF09;&#x3002;&#x6BD5;&#x7ADF;CPU&#x5C31;&#x8FD9;&#x4E48;&#x4E00;&#x4E24;&#x4E2A;&#xFF0C;&#x8FDB;&#x7A0B;&#x52A8;&#x8F84;&#x51E0;&#x5341;&#x4E0A;&#x767E;&#x4E2A;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x8FDB;&#x7A0B;&#x90FD;&#x5728;&#x7761;&#x7720;&#xFF0C;CPU&#x53C8;&#x600E;&#x4E48;&#x54CD;&#x5E94;&#x5F97;&#x8FC7;&#x6765;&#x3002;</p>
+<p><strong><em>\</em>Linux&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#xFF1A;D (TASK_UNINTERRUPTIBLE)&#xFF0C;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x7684;&#x7761;&#x7720;&#x72B6;&#x6001;&#x3002;**</strong></p>
+<p>  &#x4E0E;TASK_INTERRUPTIBLE&#x72B6;&#x6001;&#x7C7B;&#x4F3C;&#xFF0C;&#x8FDB;&#x7A0B;&#x5904;&#x4E8E;&#x7761;&#x7720;&#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x662F;&#x6B64;&#x523B;&#x8FDB;&#x7A0B;&#x662F;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#x7684;&#x3002;&#x4E0D;&#x53EF;&#x4E2D;&#x65AD;&#xFF0C;&#x6307;&#x7684;&#x5E76;&#x4E0D;&#x662F;CPU&#x4E0D;&#x54CD;&#x5E94;&#x5916;&#x90E8;&#x786C;&#x4EF6;&#x7684;&#x4E2D;&#x65AD;&#xFF0C;&#x800C;&#x662F;&#x6307;&#x8FDB;&#x7A0B;&#x4E0D;&#x54CD;&#x5E94;&#x5F02;&#x6B65;&#x4FE1;&#x53F7;&#x3002;
+&#x7EDD;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FDB;&#x7A0B;&#x5904;&#x5728;&#x7761;&#x7720;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x603B;&#x662F;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x54CD;&#x5E94;&#x5F02;&#x6B65;&#x4FE1;&#x53F7;&#x7684;&#x3002;&#x5426;&#x5219;&#x4F60;&#x5C06;&#x60CA;&#x5947;&#x7684;&#x53D1;&#x73B0;&#xFF0C;kill -9&#x7ADF;&#x7136;&#x6740;&#x4E0D;&#x6B7B;&#x4E00;&#x4E2A;&#x6B63;&#x5728;&#x7761;&#x7720;&#x7684;&#x8FDB;&#x7A0B;&#x4E86;&#xFF01;&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x4E5F;&#x5F88;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;ps&#x547D;&#x4EE4;&#x770B;&#x5230;&#x7684;&#x8FDB;&#x7A0B;&#x51E0;&#x4E4E;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#xFF0C;&#x800C;&#x603B;&#x662F;TASK_INTERRUPTIBLE&#x72B6;&#x6001;&#x3002;</p>
+<p>  <strong>&#x800C;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#x5B58;&#x5728;&#x7684;&#x610F;&#x4E49;&#x5C31;&#x5728;&#x4E8E;&#xFF0C;&#x5185;&#x6838;&#x7684;&#x67D0;&#x4E9B;&#x5904;&#x7406;&#x6D41;&#x7A0B;&#x662F;&#x4E0D;&#x80FD;&#x88AB;&#x6253;&#x65AD;&#x7684;</strong>&#x3002;&#x5982;&#x679C;&#x54CD;&#x5E94;&#x5F02;&#x6B65;&#x4FE1;&#x53F7;&#xFF0C;&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;&#x4E2D;&#x5C31;&#x4F1A;&#x88AB;&#x63D2;&#x5165;&#x4E00;&#x6BB5;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x5F02;&#x6B65;&#x4FE1;&#x53F7;&#x7684;&#x6D41;&#x7A0B;&#xFF08;&#x8FD9;&#x4E2A;&#x63D2;&#x5165;&#x7684;&#x6D41;&#x7A0B;&#x53EF;&#x80FD;&#x53EA;&#x5B58;&#x5728;&#x4E8E;&#x5185;&#x6838;&#x6001;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x5EF6;&#x4F38;&#x5230;&#x7528;&#x6237;&#x6001;&#xFF09;&#xFF0C;&#x4E8E;&#x662F;&#x539F;&#x6709;&#x7684;&#x6D41;&#x7A0B;&#x5C31;&#x88AB;&#x4E2D;&#x65AD;&#x4E86;&#x3002;&#xFF08;&#x53C2;&#x89C1;&#x300A;linux&#x5185;&#x6838;&#x5F02;&#x6B65;&#x4E2D;&#x65AD;&#x6D45;&#x6790;&#x300B;&#xFF09;
+    &#x5728;&#x8FDB;&#x7A0B;&#x5BF9;&#x67D0;&#x4E9B;&#x786C;&#x4EF6;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x65F6;&#xFF08;&#x6BD4;&#x5982;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;read&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x5BF9;&#x67D0;&#x4E2A;&#x8BBE;&#x5907;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x8BFB;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;read&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x6700;&#x7EC8;&#x6267;&#x884C;&#x5230;&#x5BF9;&#x5E94;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4E0E;&#x5BF9;&#x5E94;&#x7684;&#x7269;&#x7406;&#x8BBE;&#x5907;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF09;&#xFF0C;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4F7F;&#x7528;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#x5BF9;&#x8FDB;&#x7A0B;&#x8FDB;&#x884C;&#x4FDD;&#x62A4;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x8FDB;&#x7A0B;&#x4E0E;&#x8BBE;&#x5907;&#x4EA4;&#x4E92;&#x7684;&#x8FC7;&#x7A0B;&#x88AB;&#x6253;&#x65AD;&#xFF0C;&#x9020;&#x6210;&#x8BBE;&#x5907;&#x9677;&#x5165;&#x4E0D;&#x53EF;&#x63A7;&#x7684;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x7684;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#x603B;&#x662F;&#x975E;&#x5E38;&#x77ED;&#x6682;&#x7684;&#xFF0C;&#x901A;&#x8FC7;ps&#x547D;&#x4EE4;&#x57FA;&#x672C;&#x4E0A;&#x4E0D;&#x53EF;&#x80FD;&#x6355;&#x6349;&#x5230;&#x3002;</p>
+<p>   linux&#x7CFB;&#x7EDF;&#x4E2D;&#x4E5F;&#x5B58;&#x5728;&#x5BB9;&#x6613;&#x6355;&#x6349;&#x7684;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#x3002;&#x6267;&#x884C;vfork&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x540E;&#xFF0C;&#x7236;&#x8FDB;&#x7A0B;&#x5C06;&#x8FDB;&#x5165;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#xFF0C;&#x76F4;&#x5230;&#x5B50;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;exit&#x6216;exec&#xFF08;&#x53C2;&#x89C1;&#x300A;&#x795E;&#x5947;&#x7684;vfork&#x300B;&#xFF09;&#x3002;
+&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5C31;&#x80FD;&#x5F97;&#x5230;&#x5904;&#x4E8E;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#x7684;&#x8FDB;&#x7A0B;&#xFF1A;</p>
+<p>#include  void main() {  if (!vfork()) sleep(100);  } </p>
+<p>&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#xFF0C;&#x7136;&#x540E;ps&#x4E00;&#x4E0B;&#xFF1A;</p>
+<p>kouu@kouu-one:~/test$ ps -ax | grep a.out  4371 pts/0  D+   0:00 ./a.out  4372 pts/0  S+   0:00 ./a.out  4374 pts/1  S+   0:00 grep a.out </p>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BD5;&#x9A8C;&#x4E00;&#x4E0B;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#x7684;&#x5A01;&#x529B;&#x3002;&#x4E0D;&#x7BA1;kill&#x8FD8;&#x662F;kill -9&#xFF0C;&#x8FD9;&#x4E2A;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#x7684;&#x7236;&#x8FDB;&#x7A0B;&#x4F9D;&#x7136;&#x5C79;&#x7ACB;&#x4E0D;&#x5012;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;Linux&#x8FDB;&#x7A0B;&#x7684;R&#x3001;S&#x3001;D&#x4E09;&#x79CD;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x91CC;&#x63A5;&#x7740;&#x4E0A;&#x9762;&#x7684;&#x6587;&#x7AE0;&#x4ECB;&#x7ECD;&#x53E6;&#x5916;&#x4E09;&#x4E2A;&#x72B6;&#x6001;&#x3002;</p>
+<p><strong><em>\</em>Linux&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#xFF1A;T (TASK_STOPPED or TASK_TRACED)&#xFF0C;&#x6682;&#x505C;&#x72B6;&#x6001;&#x6216;&#x8DDF;&#x8E2A;&#x72B6;&#x6001;&#x3002;**</strong></p>
+<p>  &#x5411;&#x8FDB;&#x7A0B;&#x53D1;&#x9001;&#x4E00;&#x4E2A;SIGSTOP&#x4FE1;&#x53F7;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x56E0;&#x54CD;&#x5E94;&#x8BE5;&#x4FE1;&#x53F7;&#x800C;&#x8FDB;&#x5165;TASK_STOPPED&#x72B6;&#x6001;&#xFF08;&#x9664;&#x975E;&#x8BE5;&#x8FDB;&#x7A0B;&#x672C;&#x8EAB;&#x5904;&#x4E8E;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#x800C;&#x4E0D;&#x54CD;&#x5E94;&#x4FE1;&#x53F7;&#xFF09;&#x3002;&#xFF08;SIGSTOP&#x4E0E;SIGKILL&#x4FE1;&#x53F7;&#x4E00;&#x6837;&#xFF0C;&#x662F;&#x975E;&#x5E38;&#x5F3A;&#x5236;&#x7684;&#x3002;&#x4E0D;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;signal&#x7CFB;&#x5217;&#x7684;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x91CD;&#x65B0;&#x8BBE;&#x7F6E;&#x5BF9;&#x5E94;&#x7684;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3002;&#xFF09;
+&#x5411;&#x8FDB;&#x7A0B;&#x53D1;&#x9001;&#x4E00;&#x4E2A;SIGCONT&#x4FE1;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9;&#x5176;&#x4ECE;TASK_STOPPED&#x72B6;&#x6001;&#x6062;&#x590D;&#x5230;TASK_RUNNING&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x5F53;&#x8FDB;&#x7A0B;&#x6B63;&#x5728;&#x88AB;&#x8DDF;&#x8E2A;&#x65F6;&#xFF0C;&#x5B83;&#x5904;&#x4E8E;TASK_TRACED&#x8FD9;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x72B6;&#x6001;&#x3002;&#x201C;&#x6B63;&#x5728;&#x88AB;&#x8DDF;&#x8E2A;&#x201D;&#x6307;&#x7684;&#x662F;&#x8FDB;&#x7A0B;&#x6682;&#x505C;&#x4E0B;&#x6765;&#xFF0C;&#x7B49;&#x5F85;&#x8DDF;&#x8E2A;&#x5B83;&#x7684;&#x8FDB;&#x7A0B;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;&#x6BD4;&#x5982;&#x5728;gdb&#x4E2D;&#x5BF9;&#x88AB;&#x8DDF;&#x8E2A;&#x7684;&#x8FDB;&#x7A0B;&#x4E0B;&#x4E00;&#x4E2A;&#x65AD;&#x70B9;&#xFF0C;&#x8FDB;&#x7A0B;&#x5728;&#x65AD;&#x70B9;&#x5904;&#x505C;&#x4E0B;&#x6765;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x5904;&#x4E8E;TASK_TRACED&#x72B6;&#x6001;&#x3002;&#x800C;&#x5728;&#x5176;&#x4ED6;&#x65F6;&#x5019;&#xFF0C;&#x88AB;&#x8DDF;&#x8E2A;&#x7684;&#x8FDB;&#x7A0B;&#x8FD8;&#x662F;&#x5904;&#x4E8E;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#x90A3;&#x4E9B;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x8FDB;&#x7A0B;&#x672C;&#x8EAB;&#x6765;&#x8BF4;&#xFF0C;TASK_STOPPED&#x548C;TASK_TRACED&#x72B6;&#x6001;&#x5F88;&#x7C7B;&#x4F3C;&#xFF0C;&#x90FD;&#x662F;&#x8868;&#x793A;&#x8FDB;&#x7A0B;&#x6682;&#x505C;&#x4E0B;&#x6765;&#x3002;
+&#x800C;TASK_TRACED&#x72B6;&#x6001;&#x76F8;&#x5F53;&#x4E8E;&#x5728;TASK_STOPPED&#x4E4B;&#x4E0A;&#x591A;&#x4E86;&#x4E00;&#x5C42;&#x4FDD;&#x62A4;&#xFF0C;&#x5904;&#x4E8E;TASK_TRACED&#x72B6;&#x6001;&#x7684;&#x8FDB;&#x7A0B;&#x4E0D;&#x80FD;&#x54CD;&#x5E94;SIGCONT&#x4FE1;&#x53F7;&#x800C;&#x88AB;&#x5524;&#x9192;&#x3002;&#x53EA;&#x80FD;&#x7B49;&#x5230;&#x8C03;&#x8BD5;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;ptrace&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x6267;&#x884C;PTRACE_CONT&#x3001;PTRACE_DETACH&#x7B49;&#x64CD;&#x4F5C;&#xFF08;&#x901A;&#x8FC7;ptrace&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#xFF09;&#xFF0C;&#x6216;&#x8C03;&#x8BD5;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#xFF0C;&#x88AB;&#x8C03;&#x8BD5;&#x7684;&#x8FDB;&#x7A0B;&#x624D;&#x80FD;&#x6062;&#x590D;TASK_RUNNING&#x72B6;&#x6001;&#x3002;</p>
+<p><strong><em>\</em>Linux&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#xFF1A;Z (TASK_DEAD - EXIT_ZOMBIE)&#xFF0C;&#x9000;&#x51FA;&#x72B6;&#x6001;&#xFF0C;&#x8FDB;&#x7A0B;&#x6210;&#x4E3A;&#x50F5;&#x5C38;&#x8FDB;&#x7A0B;&#x3002;**</strong></p>
+<p>  &#x8FDB;&#x7A0B;&#x5728;&#x9000;&#x51FA;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5904;&#x4E8E;TASK_DEAD&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x9000;&#x51FA;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FDB;&#x7A0B;&#x5360;&#x6709;&#x7684;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x5C06;&#x88AB;&#x56DE;&#x6536;&#xFF0C;&#x9664;&#x4E86;task_struct&#x7ED3;&#x6784;&#xFF08;&#x4EE5;&#x53CA;&#x5C11;&#x6570;&#x8D44;&#x6E90;&#xFF09;&#x4EE5;&#x5916;&#x3002;&#x4E8E;&#x662F;&#x8FDB;&#x7A0B;&#x5C31;&#x53EA;&#x5269;&#x4E0B;task_struct&#x8FD9;&#x4E48;&#x4E2A;&#x7A7A;&#x58F3;&#xFF0C;&#x6545;&#x79F0;&#x4E3A;&#x50F5;&#x5C38;&#x3002;
+&#x4E4B;&#x6240;&#x4EE5;&#x4FDD;&#x7559;task_struct&#xFF0C;&#x662F;&#x56E0;&#x4E3A;task_struct&#x91CC;&#x9762;&#x4FDD;&#x5B58;&#x4E86;&#x8FDB;&#x7A0B;&#x7684;&#x9000;&#x51FA;&#x7801;&#x3001;&#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x3002;&#x800C;&#x5176;&#x7236;&#x8FDB;&#x7A0B;&#x5F88;&#x53EF;&#x80FD;&#x4F1A;&#x5173;&#x5FC3;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x3002;&#x6BD4;&#x5982;&#x5728;shell&#x4E2D;&#xFF0C;$?&#x53D8;&#x91CF;&#x5C31;&#x4FDD;&#x5B58;&#x4E86;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x9000;&#x51FA;&#x7684;&#x524D;&#x53F0;&#x8FDB;&#x7A0B;&#x7684;&#x9000;&#x51FA;&#x7801;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x9000;&#x51FA;&#x7801;&#x5F80;&#x5F80;&#x88AB;&#x4F5C;&#x4E3A;if&#x8BED;&#x53E5;&#x7684;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x3002;
+&#x5F53;&#x7136;&#xFF0C;&#x5185;&#x6838;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#x5728;&#x522B;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x800C;&#x5C06;task_struct&#x7ED3;&#x6784;&#x91CA;&#x653E;&#x6389;&#xFF0C;&#x4EE5;&#x8282;&#x7701;&#x4E00;&#x4E9B;&#x7A7A;&#x95F4;&#x3002;&#x4F46;&#x662F;&#x4F7F;&#x7528;task_struct&#x7ED3;&#x6784;&#x66F4;&#x4E3A;&#x65B9;&#x4FBF;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x5185;&#x6838;&#x4E2D;&#x5DF2;&#x7ECF;&#x5EFA;&#x7ACB;&#x4E86;&#x4ECE;pid&#x5230;task_struct&#x67E5;&#x627E;&#x5173;&#x7CFB;&#xFF0C;&#x8FD8;&#x6709;&#x8FDB;&#x7A0B;&#x95F4;&#x7684;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x3002;&#x91CA;&#x653E;&#x6389;task_struct&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x4E00;&#x4E9B;&#x65B0;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4EE5;&#x4FBF;&#x8BA9;&#x7236;&#x8FDB;&#x7A0B;&#x627E;&#x5230;&#x5B83;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x9000;&#x51FA;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x7236;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;wait&#x7CFB;&#x5217;&#x7684;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF08;&#x5982;wait4&#x3001;waitid&#xFF09;&#x6765;&#x7B49;&#x5F85;&#x67D0;&#x4E2A;&#x6216;&#x67D0;&#x4E9B;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x9000;&#x51FA;&#xFF0C;&#x5E76;&#x83B7;&#x53D6;&#x5B83;&#x7684;&#x9000;&#x51FA;&#x4FE1;&#x606F;&#x3002;&#x7136;&#x540E;wait&#x7CFB;&#x5217;&#x7684;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x4F1A;&#x987A;&#x4FBF;&#x5C06;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x5C38;&#x4F53;&#xFF08;task_struct&#xFF09;&#x4E5F;&#x91CA;&#x653E;&#x6389;&#x3002;
+ &#x5B50;&#x8FDB;&#x7A0B;&#x5728;&#x9000;&#x51FA;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5185;&#x6838;&#x4F1A;&#x7ED9;&#x5176;&#x7236;&#x8FDB;&#x7A0B;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;&#xFF0C;&#x901A;&#x77E5;&#x7236;&#x8FDB;&#x7A0B;&#x6765;&#x201C;&#x6536;&#x5C38;&#x201D;&#x3002;&#x8FD9;&#x4E2A;&#x4FE1;&#x53F7;&#x9ED8;&#x8BA4;&#x662F;SIGCHLD&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x901A;&#x8FC7;clone&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x521B;&#x5EFA;&#x5B50;&#x8FDB;&#x7A0B;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x4FE1;&#x53F7;&#x3002;</p>
+<p>&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x80FD;&#x591F;&#x5236;&#x9020;&#x4E00;&#x4E2A;EXIT_ZOMBIE&#x72B6;&#x6001;&#x7684;&#x8FDB;&#x7A0B;&#xFF1A;</p>
+<p>#include  void main() {  if (fork())  while(1) sleep(100);  } </p>
+<p>&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#xFF0C;&#x7136;&#x540E;ps&#x4E00;&#x4E0B;&#xFF1A;</p>
+<p>kouu@kouu-one:~/test$ ps -ax | grep a.out  10410 pts/0  S+   0:00 ./a.out  10411 pts/0  Z+   0:00 [a.out]  10413 pts/1  S+   0:00 grep a.out </p>
+<p>&#x53EA;&#x8981;&#x7236;&#x8FDB;&#x7A0B;&#x4E0D;&#x9000;&#x51FA;&#xFF0C;&#x8FD9;&#x4E2A;&#x50F5;&#x5C38;&#x72B6;&#x6001;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#x5C31;&#x4E00;&#x76F4;&#x5B58;&#x5728;&#x3002;&#x90A3;&#x4E48;&#x5982;&#x679C;&#x7236;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x4E86;&#x5462;&#xFF0C;&#x8C01;&#x53C8;&#x6765;&#x7ED9;&#x5B50;&#x8FDB;&#x7A0B;&#x201C;&#x6536;&#x5C38;&#x201D;&#xFF1F;
+&#x5F53;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x5C06;&#x5B83;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8FDB;&#x7A0B;&#x90FD;&#x6258;&#x7BA1;&#x7ED9;&#x522B;&#x7684;&#x8FDB;&#x7A0B;&#xFF08;&#x4F7F;&#x4E4B;&#x6210;&#x4E3A;&#x522B;&#x7684;&#x8FDB;&#x7A0B;&#x7684;&#x5B50;&#x8FDB;&#x7A0B;&#xFF09;&#x3002;&#x6258;&#x7BA1;&#x7ED9;&#x8C01;&#x5462;&#xFF1F;&#x53EF;&#x80FD;&#x662F;&#x9000;&#x51FA;&#x8FDB;&#x7A0B;&#x6240;&#x5728;&#x8FDB;&#x7A0B;&#x7EC4;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF08;&#x5982;&#x679C;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#xFF09;&#xFF0C;&#x6216;&#x8005;&#x662F;1&#x53F7;&#x8FDB;&#x7A0B;&#x3002;&#x6240;&#x4EE5;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x3001;&#x6BCF;&#x65F6;&#x6BCF;&#x523B;&#x90FD;&#x6709;&#x7236;&#x8FDB;&#x7A0B;&#x5B58;&#x5728;&#x3002;&#x9664;&#x975E;&#x5B83;&#x662F;1&#x53F7;&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>1&#x53F7;&#x8FDB;&#x7A0B;&#xFF0C;pid&#x4E3A;1&#x7684;&#x8FDB;&#x7A0B;&#xFF0C;&#x53C8;&#x79F0;init&#x8FDB;&#x7A0B;&#x3002;
+linux&#x7CFB;&#x7EDF;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x88AB;&#x521B;&#x5EFA;&#x7684;&#x7528;&#x6237;&#x6001;&#x8FDB;&#x7A0B;&#x5C31;&#x662F;init&#x8FDB;&#x7A0B;&#x3002;&#x5B83;&#x6709;&#x4E24;&#x9879;&#x4F7F;&#x547D;&#xFF1A;
+1&#x3001;&#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x521D;&#x59CB;&#x5316;&#x811A;&#x672C;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x8FDB;&#x7A0B;&#xFF08;&#x5B83;&#x4EEC;&#x90FD;&#x662F;init&#x8FDB;&#x7A0B;&#x7684;&#x5B50;&#x5B59;&#xFF09;&#xFF1B;
+2&#x3001;&#x5728;&#x4E00;&#x4E2A;&#x6B7B;&#x5FAA;&#x73AF;&#x4E2D;&#x7B49;&#x5F85;&#x5176;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x9000;&#x51FA;&#x4E8B;&#x4EF6;&#xFF0C;&#x5E76;&#x8C03;&#x7528;waitid&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x6765;&#x5B8C;&#x6210;&#x201C;&#x6536;&#x5C38;&#x201D;&#x5DE5;&#x4F5C;&#xFF1B;
+init&#x8FDB;&#x7A0B;&#x4E0D;&#x4F1A;&#x88AB;&#x6682;&#x505C;&#x3001;&#x4E5F;&#x4E0D;&#x4F1A;&#x88AB;&#x6740;&#x6B7B;&#xFF08;&#x8FD9;&#x662F;&#x7531;&#x5185;&#x6838;&#x6765;&#x4FDD;&#x8BC1;&#x7684;&#xFF09;&#x3002;&#x5B83;&#x5728;&#x7B49;&#x5F85;&#x5B50;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x5904;&#x4E8E;TASK_INTERRUPTIBLE&#x72B6;&#x6001;&#xFF0C;&#x201C;&#x6536;&#x5C38;&#x201D;&#x8FC7;&#x7A0B;&#x4E2D;&#x5219;&#x5904;&#x4E8E;TASK_RUNNING&#x72B6;&#x6001;&#x3002;</p>
+<p><strong><em>\</em>Linux&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#xFF1A;X (TASK_DEAD - EXIT_DEAD)&#xFF0C;&#x9000;&#x51FA;&#x72B6;&#x6001;&#xFF0C;&#x8FDB;&#x7A0B;&#x5373;&#x5C06;&#x88AB;&#x9500;&#x6BC1;&#x3002;**</strong></p>
+<p>  &#x800C;&#x8FDB;&#x7A0B;&#x5728;&#x9000;&#x51FA;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;&#x4FDD;&#x7559;&#x5B83;&#x7684;task_struct&#x3002;&#x6BD4;&#x5982;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x662F;&#x591A;&#x7EBF;&#x7A0B;&#x7A0B;&#x5E8F;&#x4E2D;&#x88AB;detach&#x8FC7;&#x7684;&#x8FDB;&#x7A0B;&#xFF08;&#x8FDB;&#x7A0B;&#xFF1F;&#x7EBF;&#x7A0B;&#xFF1F;&#x53C2;&#x89C1;&#x300A;linux&#x7EBF;&#x7A0B;&#x6D45;&#x6790;&#x300B;&#xFF09;&#x3002;&#x6216;&#x8005;&#x7236;&#x8FDB;&#x7A0B;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;SIGCHLD&#x4FE1;&#x53F7;&#x7684;handler&#x4E3A;SIG_IGN&#xFF0C;&#x663E;&#x5F0F;&#x7684;&#x5FFD;&#x7565;&#x4E86;SIGCHLD&#x4FE1;&#x53F7;&#x3002;&#xFF08;&#x8FD9;&#x662F;posix&#x7684;&#x89C4;&#x5B9A;&#xFF0C;&#x5C3D;&#x7BA1;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x9000;&#x51FA;&#x4FE1;&#x53F7;&#x53EF;&#x4EE5;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A;SIGCHLD&#x4EE5;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x4FE1;&#x53F7;&#x3002;&#xFF09;
+  &#x6B64;&#x65F6;&#xFF0C;&#x8FDB;&#x7A0B;&#x5C06;&#x88AB;&#x7F6E;&#x4E8E;EXIT_DEAD&#x9000;&#x51FA;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x4EE3;&#x7801;&#x7ACB;&#x5373;&#x5C31;&#x4F1A;&#x5C06;&#x8BE5;&#x8FDB;&#x7A0B;&#x5F7B;&#x5E95;&#x91CA;&#x653E;&#x3002;&#x6240;&#x4EE5;EXIT_DEAD&#x72B6;&#x6001;&#x662F;&#x975E;&#x5E38;&#x77ED;&#x6682;&#x7684;&#xFF0C;&#x51E0;&#x4E4E;&#x4E0D;&#x53EF;&#x80FD;&#x901A;&#x8FC7;ps&#x547D;&#x4EE4;&#x6355;&#x6349;&#x5230;&#x3002;</p>
+<p><strong>&#x8FDB;&#x7A0B;&#x7684;&#x521D;&#x59CB;&#x72B6;&#x6001;</strong></p>
+<p>&#x8FDB;&#x7A0B;&#x662F;&#x901A;&#x8FC7;fork&#x7CFB;&#x5217;&#x7684;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF08;fork&#x3001;clone&#x3001;vfork&#xFF09;&#x6765;&#x521B;&#x5EFA;&#x7684;&#xFF0C;&#x5185;&#x6838;&#xFF08;&#x6216;&#x5185;&#x6838;&#x6A21;&#x5757;&#xFF09;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;kernel_thread&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x5185;&#x6838;&#x8FDB;&#x7A0B;&#x3002;&#x8FD9;&#x4E9B;&#x521B;&#x5EFA;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x51FD;&#x6570;&#x672C;&#x8D28;&#x4E0A;&#x90FD;&#x5B8C;&#x6210;&#x4E86;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#x2014;&#x2014;&#x5C06;&#x8C03;&#x7528;&#x8FDB;&#x7A0B;&#x590D;&#x5236;&#x4E00;&#x4EFD;&#xFF0C;&#x5F97;&#x5230;&#x5B50;&#x8FDB;&#x7A0B;&#x3002;&#xFF08;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x9009;&#x9879;&#x53C2;&#x6570;&#x6765;&#x51B3;&#x5B9A;&#x5404;&#x79CD;&#x8D44;&#x6E90;&#x662F;&#x5171;&#x4EAB;&#x3001;&#x8FD8;&#x662F;&#x79C1;&#x6709;&#x3002;&#xFF09;
+&#x90A3;&#x4E48;&#x65E2;&#x7136;&#x8C03;&#x7528;&#x8FDB;&#x7A0B;&#x5904;&#x4E8E;TASK_RUNNING&#x72B6;&#x6001;&#xFF08;&#x5426;&#x5219;&#xFF0C;&#x5B83;&#x82E5;&#x4E0D;&#x662F;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#xFF0C;&#x53C8;&#x600E;&#x4E48;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#xFF1F;&#xFF09;&#xFF0C;&#x5219;&#x5B50;&#x8FDB;&#x7A0B;&#x9ED8;&#x8BA4;&#x4E5F;&#x5904;&#x4E8E;TASK_RUNNING&#x72B6;&#x6001;&#x3002;
+&#x53E6;&#x5916;&#xFF0C;&#x5728;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x8C03;&#x7528;clone&#x548C;&#x5185;&#x6838;&#x51FD;&#x6570;kernel_thread&#x4E5F;&#x63A5;&#x53D7;CLONE_STOPPED&#x9009;&#x9879;&#xFF0C;&#x4ECE;&#x800C;&#x5C06;&#x5B50;&#x8FDB;&#x7A0B;&#x7684;&#x521D;&#x59CB;&#x72B6;&#x6001;&#x7F6E;&#x4E3A; TASK_STOPPED&#x3002;</p>
+<p><strong>&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x53D8;&#x8FC1;</strong></p>
+<p>  &#x8FDB;&#x7A0B;&#x81EA;&#x521B;&#x5EFA;&#x4EE5;&#x540E;&#xFF0C;&#x72B6;&#x6001;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x76F4;&#x5230;&#x8FDB;&#x7A0B;&#x9000;&#x51FA;&#x3002;&#x800C;&#x5C3D;&#x7BA1;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x6709;&#x597D;&#x51E0;&#x79CD;&#xFF0C;&#x4F46;&#x662F;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x7684;&#x53D8;&#x8FC1;&#x5374;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x65B9;&#x5411;&#x2014;&#x2014;&#x4ECE;TASK_RUNNING&#x72B6;&#x6001;&#x53D8;&#x4E3A;&#x975E;TASK_RUNNING&#x72B6;&#x6001;&#x3001;&#x6216;&#x8005;&#x4ECE;&#x975E;TASK_RUNNING&#x72B6;&#x6001;&#x53D8;&#x4E3A;TASK_RUNNING&#x72B6;&#x6001;&#x3002;
+  &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x7ED9;&#x4E00;&#x4E2A;TASK_INTERRUPTIBLE&#x72B6;&#x6001;&#x7684;&#x8FDB;&#x7A0B;&#x53D1;&#x9001;SIGKILL&#x4FE1;&#x53F7;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x5C06;&#x5148;&#x88AB;&#x5524;&#x9192;&#xFF08;&#x8FDB;&#x5165;TASK_RUNNING&#x72B6;&#x6001;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x54CD;&#x5E94;SIGKILL&#x4FE1;&#x53F7;&#x800C;&#x9000;&#x51FA;&#xFF08;&#x53D8;&#x4E3A;TASK_DEAD&#x72B6;&#x6001;&#xFF09;&#x3002;&#x5E76;&#x4E0D;&#x4F1A;&#x4ECE;TASK_INTERRUPTIBLE&#x72B6;&#x6001;&#x76F4;&#x63A5;&#x9000;&#x51FA;&#x3002;</p>
+<p>  &#x8FDB;&#x7A0B;&#x4ECE;&#x975E;TASK_RUNNING&#x72B6;&#x6001;&#x53D8;&#x4E3A;TASK_RUNNING&#x72B6;&#x6001;&#xFF0C;&#x662F;&#x7531;&#x522B;&#x7684;&#x8FDB;&#x7A0B;&#xFF08;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x4E2D;&#x65AD;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF09;&#x6267;&#x884C;&#x5524;&#x9192;&#x64CD;&#x4F5C;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x6267;&#x884C;&#x5524;&#x9192;&#x7684;&#x8FDB;&#x7A0B;&#x8BBE;&#x7F6E;&#x88AB;&#x5524;&#x9192;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;&#x4E3A;TASK_RUNNING&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5176;task_struct&#x7ED3;&#x6784;&#x52A0;&#x5165;&#x5230;&#x67D0;&#x4E2A;CPU&#x7684;&#x53EF;&#x6267;&#x884C;&#x961F;&#x5217;&#x4E2D;&#x3002;&#x4E8E;&#x662F;&#x88AB;&#x5524;&#x9192;&#x7684;&#x8FDB;&#x7A0B;&#x5C06;&#x6709;&#x673A;&#x4F1A;&#x88AB;&#x8C03;&#x5EA6;&#x6267;&#x884C;&#x3002;</p>
+<p> &#x800C;&#x8FDB;&#x7A0B;&#x4ECE;TASK_RUNNING&#x72B6;&#x6001;&#x53D8;&#x4E3A;&#x975E;TASK_RUNNING&#x72B6;&#x6001;&#xFF0C;&#x5219;&#x6709;&#x4E24;&#x79CD;&#x9014;&#x5F84;&#xFF1A;
+1&#x3001;&#x54CD;&#x5E94;&#x4FE1;&#x53F7;&#x800C;&#x8FDB;&#x5165;TASK_STOPED&#x72B6;&#x6001;&#x3001;&#x6216;TASK_DEAD&#x72B6;&#x6001;&#xFF1B;
+2&#x3001;&#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x4E3B;&#x52A8;&#x8FDB;&#x5165;TASK_INTERRUPTIBLE&#x72B6;&#x6001;&#xFF08;&#x5982;nanosleep&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF09;&#x3001;&#x6216;TASK_DEAD&#x72B6;&#x6001;&#xFF08;&#x5982;exit&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF09;&#xFF1B;&#x6216;&#x7531;&#x4E8E;&#x6267;&#x884C;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x9700;&#x8981;&#x7684;&#x8D44;&#x6E90;&#x5F97;&#x4E0D;&#x5230;&#x6EE1;&#x8DB3;&#xFF0C;&#x800C;&#x8FDB;&#x5165;TASK_INTERRUPTIBLE&#x72B6;&#x6001;&#x6216;TASK_UNINTERRUPTIBLE&#x72B6;&#x6001;&#xFF08;&#x5982;select&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF09;&#x3002;
+&#x663E;&#x7136;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x90FD;&#x53EA;&#x80FD;&#x53D1;&#x751F;&#x5728;&#x8FDB;&#x7A0B;&#x6B63;&#x5728;CPU&#x4E0A;&#x6267;&#x884C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="linux.html" class="navigation navigation-prev " aria-label="Previous page: linux">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="shell_if语句.html" class="navigation navigation-next " aria-label="Next page: shell_if语句">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"linux进程状态","level":"1.9.7","depth":2,"next":{"title":"shell_if语句","level":"1.9.8","depth":2,"path":"linux开发环境/shell_if语句.md","ref":"linux开发环境/shell_if语句.md","articles":[]},"previous":{"title":"linux","level":"1.9.6","depth":2,"path":"linux开发环境/linux.md","ref":"linux开发环境/linux.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux开发环境/linux进程状态.md","mtime":"2022-02-11T14:35:02.116Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-22T02:57:11.598Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

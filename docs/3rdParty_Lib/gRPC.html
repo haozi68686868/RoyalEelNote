@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>openCV · GitBook</title>
+        <title>gRPC · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Machine Learning/" />
+    <link rel="next" href="openCV.html" />
     
     
-    <link rel="prev" href="gRPC.html" />
+    <link rel="prev" href="ZeroMQ简述.html" />
     
 
     </head>
@@ -155,7 +155,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="gRPC.html">
+        <li class="chapter active" data-level="1.2.4" data-path="gRPC.html">
             
                 <a href="gRPC.html">
             
@@ -168,7 +168,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.5" data-path="openCV.html">
+        <li class="chapter " data-level="1.2.5" data-path="openCV.html">
             
                 <a href="openCV.html">
             
@@ -1134,7 +1134,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >openCV</a>
+        <a href=".." >gRPC</a>
     </h1>
 </div>
 
@@ -1149,42 +1149,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="opencv">openCV</h1>
-<pre><code class="lang-c++"><span class="hljs-comment">//&#x547D;&#x540D;&#x7A97;&#x53E3;&#xFF0C;&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x5C5E;&#x6027;</span>
-cv::namedWindow(<span class="hljs-string">&quot;image test&quot;</span>, CV_WINDOW_NORMAL);
-<span class="hljs-comment">//&#x663E;&#x793A;&#x56FE;&#x7247;</span>
-cv::imshow(<span class="hljs-string">&quot;image test&quot;</span>, frame);
-<span class="hljs-comment">//&#x8BFB;&#x53D6;&#x56FE;&#x7247;</span>
-frame = cv::imread(filePath);
-<span class="hljs-comment">//&#x5199;&#x5165;&#x56FE;&#x7247;</span>
-<span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; compression_params;
-compression_params.push_back(CV_IMWRITE_PNG_COMPRESSION);
-compression_params.push_back(<span class="hljs-number">6</span>); <span class="hljs-comment">// no loss compression 0~9&#x4E3A;PNG&#x683C;&#x5F0F;&#x7684;&#x538B;&#x7F29;&#x7CFB;&#x6570; &#x9ED8;&#x8BA4;&#x4E3A;3</span>
-cv::imwrite(filePath,frame, );
-</code></pre>
-<h5 id="&#x753B;&#x56FE;&#x5F62;">&#x753B;&#x56FE;&#x5F62;</h5>
-<pre><code class="lang-c++"><span class="hljs-comment">//&#x5706;&#x5F62;</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">cvCircle</span><span class="hljs-params">( CvArr* img, CvPoint center, <span class="hljs-keyword">int</span> radius, CvScalar color,
-               <span class="hljs-keyword">int</span> thickness=<span class="hljs-number">1</span>, <span class="hljs-keyword">int</span> line_type=<span class="hljs-number">8</span>, <span class="hljs-keyword">int</span> shift=<span class="hljs-number">0</span> )</span></span>;
-<span class="hljs-comment">//&#x692D;&#x5706;</span>
-<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">ellipse</span><span class="hljs-params">(Mat&amp; img, Point center,Size axes, <span class="hljs-keyword">double</span> angle, <span class="hljs-keyword">double</span> startAngle, <span class="hljs-keyword">double</span> endAngle, <span class="hljs-keyword">const</span> Scalar&amp; color,<span class="hljs-keyword">int</span> thickness=<span class="hljs-number">1</span>, <span class="hljs-keyword">int</span> lineType=<span class="hljs-number">8</span>, <span class="hljs-keyword">int</span> shift=<span class="hljs-number">0</span>)</span>
-<span class="hljs-comment">//&#x77E9;&#x5F62;</span>
-<span class="hljs-keyword">void</span> <span class="hljs-title">rectangle</span><span class="hljs-params">(Mat&amp; img,Rect rec, <span class="hljs-keyword">const</span> Scalar&amp;color, intthickness=<span class="hljs-number">1</span>, intlineType=<span class="hljs-number">8</span>,intshift=<span class="hljs-number">0</span> )</span>
-<span class="hljs-comment">//&#x76F4;&#x7EBF;</span>
-<span class="hljs-keyword">void</span> <span class="hljs-title">line</span><span class="hljs-params">(InputOutputArray img, Point pt1, Point pt2, <span class="hljs-keyword">const</span> Scalar&amp; color,
-          <span class="hljs-keyword">int</span> thickness = <span class="hljs-number">1</span>, <span class="hljs-keyword">int</span> lineType = LINE_8, <span class="hljs-keyword">int</span> shift = <span class="hljs-number">0</span>)</span></span>;
-<span class="hljs-keyword">void</span> cv::putText(
-        cv::Mat&amp; img, <span class="hljs-comment">// &#x5F85;&#x7ED8;&#x5236;&#x7684;&#x56FE;&#x50CF;</span>
-        <span class="hljs-keyword">const</span> <span class="hljs-built_in">string</span>&amp; text, <span class="hljs-comment">// &#x5F85;&#x7ED8;&#x5236;&#x7684;&#x6587;&#x5B57;</span>
-        cv::Point origin, <span class="hljs-comment">// &#x6587;&#x672C;&#x6846;&#x7684;&#x5DE6;&#x4E0B;&#x89D2;</span>
-        <span class="hljs-keyword">int</span> fontFace, <span class="hljs-comment">// &#x5B57;&#x4F53; (&#x5982;cv::FONT_HERSHEY_PLAIN)</span>
-        <span class="hljs-keyword">double</span> fontScale, <span class="hljs-comment">// &#x5C3A;&#x5BF8;&#x56E0;&#x5B50;&#xFF0C;&#x503C;&#x8D8A;&#x5927;&#x6587;&#x5B57;&#x8D8A;&#x5927;</span>
-        cv::Scalar color, <span class="hljs-comment">// &#x7EBF;&#x6761;&#x7684;&#x989C;&#x8272;&#xFF08;RGB&#xFF09;</span>
-        <span class="hljs-keyword">int</span> thickness = <span class="hljs-number">1</span>, <span class="hljs-comment">// &#x7EBF;&#x6761;&#x5BBD;&#x5EA6;</span>
-        <span class="hljs-keyword">int</span> lineType = <span class="hljs-number">8</span>, <span class="hljs-comment">// &#x7EBF;&#x578B;&#xFF08;4&#x90BB;&#x57DF;&#x6216;8&#x90BB;&#x57DF;&#xFF0C;&#x9ED8;&#x8BA4;8&#x90BB;&#x57DF;&#xFF09;</span>
-        <span class="hljs-keyword">bool</span> bottomLeftOrigin = <span class="hljs-literal">false</span> <span class="hljs-comment">// true=&apos;origin at lower left&apos;</span>
-    );
-</code></pre>
+                                <h1 id="grpc-&#x6982;&#x5FF5;">gRPC &#x6982;&#x5FF5;</h1>
+<p><a href="http://doc.oschina.net/grpc?t=58009" target="_blank">http://doc.oschina.net/grpc?t=58009</a></p>
+<p>&#x672C;&#x6587;&#x6863;&#x901A;&#x8FC7;&#x5BF9;&#x4E8E; gRPC &#x7684;&#x67B6;&#x6784;&#x548C; RPC &#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x6982;&#x89C8;&#x6765;&#x4ECB;&#x7ECD; gRPC &#x7684;&#x4E3B;&#x8981;&#x6982;&#x5FF5;&#x3002;&#x672C;&#x6587;&#x662F;&#x5728;&#x5047;&#x8BBE;&#x4F60;&#x5DF2;&#x7ECF;&#x8BFB;&#x8FC7;&#x6587;&#x6863;&#x90E8;&#x5206;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#x5C55;&#x5F00;&#x7684;&#x3002;&#x9488;&#x5BF9;&#x5177;&#x4F53;&#x8BED;&#x8A00;&#x7EC6;&#x8282;&#x8BF7;&#x67E5;&#x770B;&#x5BF9;&#x5E94;&#x8BED;&#x8A00;&#x7684;&#x5FEB;&#x901F;&#x5F00;&#x59CB;&#x3001;&#x6559;&#x7A0B;&#x548C;&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF08;&#x5F88;&#x5FEB;&#x5C31;&#x4F1A;&#x6709;&#x5B8C;&#x6574;&#x7684;&#x6587;&#x6863;&#xFF09;&#x3002;</p>
+<h2 id="&#x6982;&#x89C8;">&#x6982;&#x89C8;</h2>
+<h3 id="&#x670D;&#x52A1;&#x5B9A;&#x4E49;">&#x670D;&#x52A1;&#x5B9A;&#x4E49;</h3>
+<p>&#x6B63;&#x5982;&#x5176;&#x4ED6; RPC &#x7CFB;&#x7EDF;&#xFF0C;gRPC &#x57FA;&#x4E8E;&#x5982;&#x4E0B;&#x601D;&#x60F3;&#xFF1A;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#xFF0C; &#x6307;&#x5B9A;&#x5176;&#x53EF;&#x4EE5;&#x88AB;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x53CA;&#x5176;&#x53C2;&#x6570;&#x548C;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x3002;gRPC &#x9ED8;&#x8BA4;&#x4F7F;&#x7528; <a href="https://developers.google.com/protocol-buffers/" target="_blank">protocol buffers</a> &#x4F5C;&#x4E3A;&#x63A5;&#x53E3;&#x5B9A;&#x4E49;&#x8BED;&#x8A00;&#xFF0C;&#x6765;&#x63CF;&#x8FF0;&#x670D;&#x52A1;&#x63A5;&#x53E3;&#x548C;&#x6709;&#x6548;&#x8F7D;&#x8377;&#x6D88;&#x606F;&#x7ED3;&#x6784;&#x3002;&#x5982;&#x679C;&#x6709;&#x9700;&#x8981;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x66FF;&#x4EE3;&#x65B9;&#x6848;&#x3002;</p>
+<pre><code>service HelloService {
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+  required string greeting = 1;
+}
+
+message HelloResponse {
+  required string reply = 1;
+}
+</code></pre><p>gRPC &#x5141;&#x8BB8;&#x4F60;&#x5B9A;&#x4E49;&#x56DB;&#x7C7B;&#x670D;&#x52A1;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>&#x5355;&#x9879; RPC&#xFF0C;&#x5373;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x7ED9;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x4ECE;&#x670D;&#x52A1;&#x7AEF;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x5E94;&#x7B54;&#xFF0C;&#x5C31;&#x50CF;&#x4E00;&#x6B21;&#x666E;&#x901A;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x3002;</li>
+</ul>
+<pre><code>rpc SayHello(HelloRequest) returns (HelloResponse){
+}
+</code></pre><ul>
+<li>&#x670D;&#x52A1;&#x7AEF;&#x6D41;&#x5F0F; RPC&#xFF0C;&#x5373;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x7ED9;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x53EF;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#x7528;&#x6765;&#x8BFB;&#x53D6;&#x4E00;&#x7CFB;&#x5217;&#x6D88;&#x606F;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x4ECE;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x6D41;&#x91CC;&#x4E00;&#x76F4;&#x8BFB;&#x53D6;&#x76F4;&#x5230;&#x6CA1;&#x6709;&#x66F4;&#x591A;&#x6D88;&#x606F;&#x4E3A;&#x6B62;&#x3002;</li>
+</ul>
+<pre><code>rpc LotsOfReplies(HelloRequest) returns (stream HelloResponse){
+}
+</code></pre><ul>
+<li>&#x5BA2;&#x6237;&#x7AEF;&#x6D41;&#x5F0F; RPC&#xFF0C;&#x5373;&#x5BA2;&#x6237;&#x7AEF;&#x7528;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#x5199;&#x5165;&#x5E76;&#x53D1;&#x9001;&#x4E00;&#x7CFB;&#x5217;&#x6D88;&#x606F;&#x7ED9;&#x670D;&#x52A1;&#x7AEF;&#x3002;&#x4E00;&#x65E6;&#x5BA2;&#x6237;&#x7AEF;&#x5B8C;&#x6210;&#x6D88;&#x606F;&#x5199;&#x5165;&#xFF0C;&#x5C31;&#x7B49;&#x5F85;&#x670D;&#x52A1;&#x7AEF;&#x8BFB;&#x53D6;&#x8FD9;&#x4E9B;&#x6D88;&#x606F;&#x5E76;&#x8FD4;&#x56DE;&#x5E94;&#x7B54;&#x3002;</li>
+</ul>
+<pre><code>rpc LotsOfGreetings(stream HelloRequest) returns (HelloResponse) {
+}
+</code></pre><ul>
+<li>&#x53CC;&#x5411;&#x6D41;&#x5F0F; RPC&#xFF0C;&#x5373;&#x4E24;&#x8FB9;&#x90FD;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x8BFB;&#x5199;&#x6570;&#x636E;&#x6D41;&#x6765;&#x53D1;&#x9001;&#x4E00;&#x7CFB;&#x5217;&#x6D88;&#x606F;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#x64CD;&#x4F5C;&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x80FD;&#x6309;&#x5176;&#x5E0C;&#x671B;&#x7684;&#x4EFB;&#x610F;&#x987A;&#x5E8F;&#x8BFB;&#x5199;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x670D;&#x52A1;&#x7AEF;&#x53EF;&#x4EE5;&#x5728;&#x5199;&#x5E94;&#x7B54;&#x524D;&#x7B49;&#x5F85;&#x6240;&#x6709;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x6D88;&#x606F;&#xFF0C;&#x6216;&#x8005;&#x5B83;&#x53EF;&#x4EE5;&#x5148;&#x8BFB;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x518D;&#x5199;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x8BFB;&#x5199;&#x76F8;&#x7ED3;&#x5408;&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x3002;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x6D41;&#x91CC;&#x6D88;&#x606F;&#x7684;&#x987A;&#x5E8F;&#x4F1A;&#x88AB;&#x4FDD;&#x6301;&#x3002;</li>
+</ul>
+<pre><code class="lang-protobuf"><span class="hljs-function"><span class="hljs-keyword">rpc</span> BidiHello(stream HelloRequest) <span class="hljs-keyword">returns</span> (stream HelloResponse){
+}
+</span></code></pre>
 
                                 
                                 </section>
@@ -1212,12 +1215,12 @@ cv::imwrite(filePath,frame, );
 
             
                 
-                <a href="gRPC.html" class="navigation navigation-prev " aria-label="Previous page: gRPC">
+                <a href="ZeroMQ简述.html" class="navigation navigation-prev " aria-label="Previous page: ZeroMQ简述">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../Machine Learning/" class="navigation navigation-next " aria-label="Next page: Machine Learning">
+                <a href="openCV.html" class="navigation navigation-next " aria-label="Next page: openCV">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1228,7 +1231,7 @@ cv::imwrite(filePath,frame, );
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"openCV","level":"1.2.5","depth":2,"next":{"title":"Machine Learning","level":"1.3","depth":1,"path":"Machine Learning/README.md","ref":"Machine Learning/README.md","articles":[{"title":"precision_recall_accuracy_F值","level":"1.3.1","depth":2,"path":"Machine Learning/precision_recall_accuracy_F值.md","ref":"Machine Learning/precision_recall_accuracy_F值.md","articles":[]}]},"previous":{"title":"gRPC","level":"1.2.4","depth":2,"path":"3rdParty_Lib/gRPC.md","ref":"3rdParty_Lib/gRPC.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3rdParty_Lib/openCV.md","mtime":"2021-02-08T09:03:05.714Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-22T02:57:11.598Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"gRPC","level":"1.2.4","depth":2,"next":{"title":"openCV","level":"1.2.5","depth":2,"path":"3rdParty_Lib/openCV.md","ref":"3rdParty_Lib/openCV.md","articles":[]},"previous":{"title":"ZeroMQ简述","level":"1.2.3","depth":2,"path":"3rdParty_Lib/ZeroMQ简述.md","ref":"3rdParty_Lib/ZeroMQ简述.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3rdParty_Lib/gRPC.md","mtime":"2022-01-26T03:43:32.885Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-22T02:57:11.598Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
