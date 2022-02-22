@@ -30,14 +30,13 @@ def find_files(rel_path, n = 0, dir = ""):
             n = 0
         # 按文件名称排序
         dirs = sorted(os.listdir(path))
-        print("test")
         for file in dirs:
             find_files(os.path.join(rel_path,file), n, dir)
-            print("test")
     else:
         # path是文件
         if basename.endswith(".md") and basename != "SUMMARY.md" and basename != "README.md":
-            result_list.append(tab * n + flag + "[" + basename + "](" + rel_path + ")")
+            title_name = basename[:-3]
+            result_list.append(tab * n + flag + "[" + title_name + "](" + rel_path + ")")
             # result_str += tab * n + flag + "[" + path + "](" + dir + path + ")\n"
 
 if __name__ == "__main__":

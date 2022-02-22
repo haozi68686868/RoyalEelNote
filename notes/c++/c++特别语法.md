@@ -87,6 +87,13 @@ std::function<int(int ,int)>  c = divide();
 double my_divide (double x, double y) {return x/y;}
 auto fn_half = std::bind (my_divide,_1,2); // 
 std::cout << fn_half(10) << '\n';// 5
+
+// 绑定成员函数:
+  auto bound_member_fn = std::bind (&MyPair::multiply,_1); // returns x.multiply()
+  std::cout << bound_member_fn(ten_two) << '\n';           // 20
+
+  auto bound_member_data = std::bind (&MyPair::a,ten_two); // returns ten_two.a
+  std::cout << bound_member_data() << '\n';                // 10
 ```
 
 - _1表示占位符，位于<functional>中，std::placeholders::_1

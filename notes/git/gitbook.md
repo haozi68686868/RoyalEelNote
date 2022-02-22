@@ -1,5 +1,9 @@
 # Gitbook
 
+#### 踩坑记
+
+- 用gitbook生成 pdf，内置跳转需要标题是纯英文，不能有空格和中文
+
 **概述**
 
 GitBook 是使用 GitHub / Git 和 Markdown（或AsciiDoc）构建漂亮书籍的命令行工具（和Node.js库）。

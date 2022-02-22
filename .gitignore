@@ -34,3 +34,6 @@
 build/
 .vscode/
 bin/
+output_*/
+*.pdf
+_book

@@ -23,3 +23,7 @@ Minicom 串口调试工具
 文件空间展示
 
 - fileLight
+
+视频播放器
+
+- PotPlayer（仅windows）
