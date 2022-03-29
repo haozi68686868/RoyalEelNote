@@ -111,6 +111,7 @@ ssh -v liuxinhao@10.157.48.178
 ```
 
 ```
+# sudo vim /etc/ssh/sshd_config
 # Authentication:
 StrictModes no # 设置为no
 ```

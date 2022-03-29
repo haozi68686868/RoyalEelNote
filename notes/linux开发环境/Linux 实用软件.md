@@ -27,3 +27,7 @@ Minicom 串口调试工具
 视频播放器
 
 - PotPlayer（仅windows）
+
+API调试
+
+- Postman
