@@ -37,3 +37,4 @@ bin/
 output_*/
 *.pdf
 _book
+.DS_Store
