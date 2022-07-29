@@ -86,3 +86,21 @@ NodeWrapper:
   - 维护有一张节点状态和Status的map，默认是全局注册表（依上述）
   - 内部维护有status的队列，每次都从队头取出一个事件
     - 在non-blocking模式下，如果队列为空，取出的事件为senseAD::NodeState::UNKNOWN，节点不做任务处理
+
+#### 回放数据使用仿真时间
+
+```shell
+# 启动一个roscore
+roscore
+# 设置为使用仿真时间
+rosparam set use_sim_time true
+# 回放数据
+rosbag play --clock xxx.bag
+```
+
+#### rosbag filter
+
+```shell
+rosbag filter input.bag output.bag "topic == '/odometry/gps' and t.to_sec() <= 1284703931.86"
+```
+

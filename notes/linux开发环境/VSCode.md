@@ -4,6 +4,11 @@
 
 - ssh-remote
 - bracket Pair Colorizer
+- VS Code Counter
+- GitLens : 分锅神器
+- Git Graph
+
+### 踩坑日记
 
 g++ -g -o [output file] [cpps] -I [include path]
 

@@ -80,3 +80,9 @@ git branch -f <branch_name> <target_commit>
 git commit --amend --author="liuxinhao <liuxinhao@senseauto.com>"
 ```
 
+#### cherry-pick一个merge提交
+
+```
+git cherry-pick <commit-id> -m 1
+```
+
