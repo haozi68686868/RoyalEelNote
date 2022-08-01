@@ -1,0 +1,1647 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>万字长文解析CyberRT · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="四元数、欧拉角和方向余弦矩阵的相互转化.html" />
+    
+    
+    <link rel="prev" href="ros漫游实操.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    3rdParty_Lib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../3rdParty_Lib/Eigen Guide.html">
+            
+                <a href="../3rdParty_Lib/Eigen Guide.html">
+            
+                    
+                    Eigen Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../3rdParty_Lib/Jsoncpp.html">
+            
+                <a href="../3rdParty_Lib/Jsoncpp.html">
+            
+                    
+                    Jsoncpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                <a href="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                    
+                    ZeroMQ简述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../3rdParty_Lib/gRPC.html">
+            
+                <a href="../3rdParty_Lib/gRPC.html">
+            
+                    
+                    gRPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../3rdParty_Lib/openCV.html">
+            
+                <a href="../3rdParty_Lib/openCV.html">
+            
+                    
+                    openCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../DPC/">
+            
+                <a href="../DPC/">
+            
+                    
+                    DPC
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../DPC/A_Star.html">
+            
+                <a href="../DPC/A_Star.html">
+            
+                    
+                    A_Star
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../DPC/Control_summary.html">
+            
+                <a href="../DPC/Control_summary.html">
+            
+                    
+                    Control_summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../DPC/DPC_Summary.html">
+            
+                <a href="../DPC/DPC_Summary.html">
+            
+                    
+                    DPC_Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../DPC/DWA.html">
+            
+                <a href="../DPC/DWA.html">
+            
+                    
+                    DWA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../DPC/Motor_Control.html">
+            
+                <a href="../DPC/Motor_Control.html">
+            
+                    
+                    Motor_Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../DPC/PRM&RRT.html">
+            
+                <a href="../DPC/PRM&RRT.html">
+            
+                    
+                    PRM&RRT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../DPC/TEB.html">
+            
+                <a href="../DPC/TEB.html">
+            
+                    
+                    TEB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../DPC/pure_pursuit.html">
+            
+                <a href="../DPC/pure_pursuit.html">
+            
+                    
+                    pure_pursuit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../DPC/vehicle_dynamic_modeling.html">
+            
+                <a href="../DPC/vehicle_dynamic_modeling.html">
+            
+                    
+                    vehicle_dynamic_modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                <a href="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                    
+                    precision_recall_accuracy_F值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    Power Supply Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Power Supply Design/Altium Designer.html">
+            
+                <a href="../Power Supply Design/Altium Designer.html">
+            
+                    
+                    Altium Designer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Power Supply Design/电源设计.html">
+            
+                <a href="../Power Supply Design/电源设计.html">
+            
+                    
+                    电源设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../algorithm/KDTree.html">
+            
+                <a href="../algorithm/KDTree.html">
+            
+                    
+                    KDTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../algorithm/KDTree2.html">
+            
+                <a href="../algorithm/KDTree2.html">
+            
+                    
+                    KDTree2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../algorithm/从匈牙利算法到KM算法.html">
+            
+                <a href="../algorithm/从匈牙利算法到KM算法.html">
+            
+                    
+                    从匈牙利算法到KM算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../algorithm/匈牙利算法.html">
+            
+                <a href="../algorithm/匈牙利算法.html">
+            
+                    
+                    匈牙利算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                <a href="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                    
+                    图说卡尔曼滤波，一份通俗易懂的教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../algorithm/正则表达式.html">
+            
+                <a href="../algorithm/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    autodrive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="CyberRT.html">
+            
+                <a href="CyberRT.html">
+            
+                    
+                    CyberRT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="Ros概念.html">
+            
+                <a href="Ros概念.html">
+            
+                    
+                    Ros概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="SOTIF Safety of the Intended Functionality.html">
+            
+                <a href="SOTIF Safety of the Intended Functionality.html">
+            
+                    
+                    SOTIF Safety of the Intended Functionality
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="dbc文件解析.html">
+            
+                <a href="dbc文件解析.html">
+            
+                    
+                    dbc文件解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="dds服务.html">
+            
+                <a href="dds服务.html">
+            
+                    
+                    dds服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="ros漫游实操.html">
+            
+                <a href="ros漫游实操.html">
+            
+                    
+                    ros漫游实操
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.7" data-path="万字长文解析CyberRT.html">
+            
+                <a href="万字长文解析CyberRT.html">
+            
+                    
+                    万字长文解析CyberRT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                <a href="四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                    
+                    四元数、欧拉角和方向余弦矩阵的相互转化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="李群与李代数.html">
+            
+                <a href="李群与李代数.html">
+            
+                    
+                    李群与李代数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="阿克曼转向原理.html">
+            
+                <a href="阿克曼转向原理.html">
+            
+                    
+                    阿克曼转向原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    c++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../c++/C++ algorithm.html">
+            
+                <a href="../c++/C++ algorithm.html">
+            
+                    
+                    C++ algorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../c++/C++ string.html">
+            
+                <a href="../c++/C++ string.html">
+            
+                    
+                    C++ string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../c++/C++ 数据类型.html">
+            
+                <a href="../c++/C++ 数据类型.html">
+            
+                    
+                    C++ 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../c++/JAVA 和 C++的区别.html">
+            
+                <a href="../c++/JAVA 和 C++的区别.html">
+            
+                    
+                    JAVA 和 C++的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../c++/c++ 多线程.html">
+            
+                <a href="../c++/c++ 多线程.html">
+            
+                    
+                    c++ 多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../c++/c++特别语法.html">
+            
+                <a href="../c++/c++特别语法.html">
+            
+                    
+                    c++特别语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../c++/c++问题合集.html">
+            
+                <a href="../c++/c++问题合集.html">
+            
+                    
+                    c++问题合集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../c++/cmake.html">
+            
+                <a href="../c++/cmake.html">
+            
+                    
+                    cmake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                <a href="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                    
+                    cmake中的PUBLIC_PRIVATE_INTERFACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../c++/gcc编译warning.html">
+            
+                <a href="../c++/gcc编译warning.html">
+            
+                    
+                    gcc编译warning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../c++/pragma once.html">
+            
+                <a href="../c++/pragma once.html">
+            
+                    
+                    pragma once
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../git/gerrit答题.html">
+            
+                <a href="../git/gerrit答题.html">
+            
+                    
+                    gerrit答题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../git/git 开发笔记.html">
+            
+                <a href="../git/git 开发笔记.html">
+            
+                    
+                    git 开发笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../git/gitbook.html">
+            
+                <a href="../git/gitbook.html">
+            
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../git/gitlab.html">
+            
+                <a href="../git/gitlab.html">
+            
+                    
+                    gitlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../linux开发环境/">
+            
+                <a href="../linux开发环境/">
+            
+                    
+                    linux开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../linux开发环境/Epoll原理解析.html">
+            
+                <a href="../linux开发环境/Epoll原理解析.html">
+            
+                    
+                    Epoll原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../linux开发环境/Linux 实用软件.html">
+            
+                <a href="../linux开发环境/Linux 实用软件.html">
+            
+                    
+                    Linux 实用软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../linux开发环境/NTP服务详解.html">
+            
+                <a href="../linux开发环境/NTP服务详解.html">
+            
+                    
+                    NTP服务详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../linux开发环境/Tmux 使用小技巧.html">
+            
+                <a href="../linux开发环境/Tmux 使用小技巧.html">
+            
+                    
+                    Tmux 使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../linux开发环境/VSCode.html">
+            
+                <a href="../linux开发环境/VSCode.html">
+            
+                    
+                    VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../linux开发环境/apt.html">
+            
+                <a href="../linux开发环境/apt.html">
+            
+                    
+                    apt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="../linux开发环境/grep.html">
+            
+                <a href="../linux开发环境/grep.html">
+            
+                    
+                    grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="../linux开发环境/linux.html">
+            
+                <a href="../linux开发环境/linux.html">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="../linux开发环境/linux进程状态.html">
+            
+                <a href="../linux开发环境/linux进程状态.html">
+            
+                    
+                    linux进程状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="../linux开发环境/shell_if语句.html">
+            
+                <a href="../linux开发环境/shell_if语句.html">
+            
+                    
+                    shell_if语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="../linux开发环境/shell字符串操作.html">
+            
+                <a href="../linux开发环境/shell字符串操作.html">
+            
+                    
+                    shell字符串操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.12" data-path="../linux开发环境/协程.html">
+            
+                <a href="../linux开发环境/协程.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../python/python note.html">
+            
+                <a href="../python/python note.html">
+            
+                    
+                    python note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../python/python之Argparse模块.html">
+            
+                <a href="../python/python之Argparse模块.html">
+            
+                    
+                    python之Argparse模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    senseauto
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../senseauto/3D2D匹配.html">
+            
+                <a href="../senseauto/3D2D匹配.html">
+            
+                    
+                    3D2D匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                <a href="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                    
+                    DataFactoryUtil 需求文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../senseauto/Senseauto common.html">
+            
+                <a href="../senseauto/Senseauto common.html">
+            
+                    
+                    Senseauto common
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../senseauto/Senseauto_Ins_Sensor.html">
+            
+                <a href="../senseauto/Senseauto_Ins_Sensor.html">
+            
+                    
+                    Senseauto_Ins_Sensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../senseauto/Senseauto_Lidar.html">
+            
+                <a href="../senseauto/Senseauto_Lidar.html">
+            
+                    
+                    Senseauto_Lidar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../senseauto/horizon通信流程.html">
+            
+                <a href="../senseauto/horizon通信流程.html">
+            
+                    
+                    horizon通信流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../senseauto/monitor.html">
+            
+                <a href="../senseauto/monitor.html">
+            
+                    
+                    monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../senseauto/rec_parser踩坑记.html">
+            
+                <a href="../senseauto/rec_parser踩坑记.html">
+            
+                    
+                    rec_parser踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../senseauto/senseauto开发使用笔记.html">
+            
+                <a href="../senseauto/senseauto开发使用笔记.html">
+            
+                    
+                    senseauto开发使用笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../senseauto/感知真值系统.html">
+            
+                <a href="../senseauto/感知真值系统.html">
+            
+                    
+                    感知真值系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../senseauto/相机感知系统.html">
+            
+                <a href="../senseauto/相机感知系统.html">
+            
+                    
+                    相机感知系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.12" data-path="../senseauto/统一软件平台.html">
+            
+                <a href="../senseauto/统一软件平台.html">
+            
+                    
+                    统一软件平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.13" data-path="../senseauto/统一软件平台公告.html">
+            
+                <a href="../senseauto/统一软件平台公告.html">
+            
+                    
+                    统一软件平台公告
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    software engineering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../software engineering/设计模式.html">
+            
+                <a href="../software engineering/设计模式.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../software engineering/软件工程tip.html">
+            
+                <a href="../software engineering/软件工程tip.html">
+            
+                    
+                    软件工程tip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >万字长文解析CyberRT</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="1-cyberrt-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><strong>1. CyberRT &#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong></h3>
+<p>Apollo Cyber RT &#x662F;&#x4E13;&#x4E3A;&#x81EA;&#x52A8;&#x9A7E;&#x9A76;&#x573A;&#x666F;&#x8BBE;&#x8BA1;&#x7684;&#x5F00;&#x6E90;&#x3001;&#x9AD8;&#x6027;&#x80FD;&#x8FD0;&#x884C;&#x65F6;&#x6846;&#x67B6;&#x3002; &#x57FA;&#x4E8E;&#x4E2D;&#x5FC3;&#x5316;&#x8BA1;&#x7B97;&#x6A21;&#x578B;&#xFF0C;&#x4E3B;&#x8981;&#x4EF7;&#x503C;&#x662F;&#x63D0;&#x5347;&#x81EA;&#x52A8;&#x9A7E;&#x9A76;&#x7CFB;&#x7EDF;&#x7684;&#x9AD8;&#x5E76;&#x53D1;&#x3001;&#x4F4E;&#x5EF6;&#x8FDF;&#x3001;&#x9AD8;&#x541E;&#x5410;&#x3002;</p>
+<p>Apollo &#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x5F00;&#x59CB;&#x5C31;&#x4F7F;&#x7528; CyberRT&#xFF0C;&#x5728; v3.0 &#x4E4B;&#x524D;&#x7528;&#x7684;&#x90FD;&#x662F;&#x57FA;&#x4E8E; ROS &#x6846;&#x67B6;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x3002;&#x4F46;&#x5728;&#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x53D1;&#x73B0;&#x4E86;&#x5F88;&#x591A;&#x95EE;&#x9898;&#xFF0C;&#x968F;&#x7740; Apollo &#x7684;&#x53D1;&#x5C55;&#xFF0C;&#x5BF9;&#x6700;&#x9AD8;&#x6C34;&#x5E73;&#x7684;&#x7A33;&#x5065;&#x6027;&#x548C;&#x6027;&#x80FD;&#x7684;&#x9700;&#x6C42;&#xFF0C; Apollo Cyber RT &#x5E94;&#x8FD0;&#x800C;&#x751F;&#xFF0C;&#x5B83;&#x6EE1;&#x8DB3;&#x4E86;&#x4E00;&#x4E2A;&#x9762;&#x5411;&#x5546;&#x4E1A;&#x5316;&#x7684;&#x81EA;&#x52A8;&#x9A7E;&#x9A76;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x7684;&#x57FA;&#x7840;&#x9700;&#x6C42;&#x3002;</p>
+<p>CyberRT &#x6700;&#x660E;&#x663E;&#x7684; 3 &#x4E2A;&#x4F18;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x52A0;&#x901F;&#x7B97;&#x6CD5;</li>
+<li>&#x7B80;&#x5316;&#x90E8;&#x7F72;</li>
+<li>&#x589E;&#x5F3A;&#x81EA;&#x52A8;&#x9A7E;&#x9A76;&#x7CFB;&#x7EDF;&#x80FD;&#x529B;</li>
+</ol>
+<p>&#x672C;&#x6587;&#x7684;&#x76EE;&#x7684;&#x6709; 2 &#x4E2A;&#xFF1A;</p>
+<ol>
+<li>&#x5F04;&#x6E05;&#x695A; CyberRT &#x7684;&#x6574;&#x4F53;&#x6846;&#x67B6;&#x7ED3;&#x6784;</li>
+<li>&#x5F04;&#x6E05;&#x695A; CyberRT &#x5185;&#x90E8;&#x5927;&#x81F4;&#x534F;&#x4F5C;&#x673A;&#x5236;</li>
+</ol>
+<h3 id="2-cyberrt-&#x91CC;&#x9762;&#x6709;&#x4EC0;&#x4E48;&#xFF1F;"><strong>2. CyberRT &#x91CC;&#x9762;&#x6709;&#x4EC0;&#x4E48;&#xFF1F;</strong></h3>
+<p>CyberRT &#x662F;&#x4E00;&#x5806;&#x5E9E;&#x5927;&#x590D;&#x6742;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x5B66;&#x4E60;&#x8005;&#xFF0C;&#x6211;&#x4E8B;&#x5148;&#x4E5F;&#x5E76;&#x4E0D;&#x77E5;&#x9053; CyberRT &#x7684;&#x67B6;&#x6784;&#x56FE;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x4E5F;&#x53EA;&#x80FD;&#x4ECE;&#x4EE3;&#x7801;&#x4E2D;&#x5206;&#x6790;&#x5E76;&#x4ECE;&#x4E2D;&#x627E;&#x7EBF;&#x7D22;&#x3002;
+&#x6211;&#x6CE8;&#x610F;&#x5230; Cyber &#x76EE;&#x5F55;&#x4E0B;&#x6709; cyber.h &#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x8BA4;&#x4E3A;&#x5B83;&#x53EF;&#x80FD;&#x662F;&#x6700;&#x6E90;&#x5934;&#x6216;&#x8005;&#x662F;&#x6700;&#x57FA;&#x7840;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6240;&#x4EE5;&#x9009;&#x62E9;&#x4E86;&#x4ECE; cyber.h &#x5165;&#x624B;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-91998d112978bbdf3aa9edb038d813db_720w.jpg" alt="img"></p>
+<p>&#x8FD9;&#x91CC;&#x9762;&#x53EA;&#x6709;&#x4E00;&#x4E2A; CreateNode &#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F; Node &#x7684;&#x5F15;&#x7528;&#x3002;&#x6839;&#x636E;&#x5934;&#x6587;&#x4EF6;&#x5F15;&#x7528;&#x53CA;&#x5BF9;&#x4EE3;&#x7801;&#x7684;&#x654F;&#x611F;&#x6027;&#xFF0C;&#x5228;&#x53BB;&#x4E00;&#x4E9B; log&#x3001;time &#x4E4B;&#x7C7B;&#x7684;&#x8F85;&#x52A9;&#x7C7B;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x76F8;&#x4FE1; CyberRT &#x4E2D;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x5F88;&#x91CD;&#x8981;&#xFF1A;</p>
+<ul>
+<li>component</li>
+<li>node</li>
+<li>task</li>
+<li>timer</li>
+</ul>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x7814;&#x7A76; CyberRT &#x5F97;&#x5230; CyberRT &#x5168;&#x8C8C;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x76F8;&#x5E94;&#x7684;&#x4EE3;&#x7801;&#x5165;&#x624B;&#x3002;</p>
+<h3 id="21-node"><strong>2.1 Node</strong></h3>
+<p>&#x5728; Node.h &#x6587;&#x4EF6;&#x4E2D;&#x53D1;&#x73B0;&#x4E86;&#x5F88;&#x591A;&#x6709;&#x610F;&#x4E49;&#x7684;&#x4E1C;&#x897F;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-e52d29c6d8a36f0b924913afc9e285dc_720w.jpg" alt="img"></p>
+<p>&#x6CE8;&#x91CA;&#x4E2D;&#x6709;&#x63D0;&#x5230;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x4FE1;&#x606F;&#xFF1A;</p>
+<ul>
+<li>Node &#x662F; CyberRT &#x7684;&#x57FA;&#x7840;&#x6784;&#x4EF6;</li>
+<li>&#x4EFB;&#x4F55; Module &#x5305;&#x542B;&#x76F8;&#x5E94;&#x7684; Node</li>
+<li>Module &#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x4E5F;&#x662F;&#x901A;&#x8FC7; Node &#x8FDB;&#x884C;&#x4EA4;&#x4E92;</li>
+<li>Node &#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x53EF;&#x4EE5;&#x8BBE;&#x5B9A;&#x4E0D;&#x540C;&#x7684;&#x6A21;&#x5F0F;</li>
+<li>Read/Write &#x662F;&#x4E00;&#x79CD; Node &#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x65B9;&#x5F0F;</li>
+<li>Service/Client &#x662F;&#x53E6;&#x5916;&#x4E00;&#x79CD; Node &#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x65B9;&#x5F0F;</li>
+</ul>
+<p>&#x53E6;&#x5916;&#xFF0C;node &#x4E2D;&#x7684;private&#x5C5E;&#x6027;&#x6307;&#x793A;&#x4E86;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-f4d56aaf79cfb05d6bab7190017dbeb4_720w.jpg" alt="img"></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x4E00;&#x4E2A; Node &#x6709;&#x4E00;&#x7CFB;&#x5217;&#x76F8;&#x5173;&#x7684; Reader&#x3002; &#x4E5F;&#x53EF;&#x4EE5;&#x6709;&#x76F8;&#x5E94;&#x7684; NodeChannelImpl &#x548C; NodeServiceImpl&#x3002;</p>
+<h3 id="22-reader"><strong>2.2 Reader</strong></h3>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-ebdca13bcd8027166fdb00222e836d80_720w.jpg" alt="img"></p>
+<p>&#x6CE8;&#x91CA;&#x8BF4;&#x4E86; 3 &#x70B9;&#xFF1A;</p>
+<ul>
+<li>Reader &#x901A;&#x8FC7;&#x8BA2;&#x9605; Channel &#x83B7;&#x53D6;&#x4FE1;&#x606F;</li>
+<li>&#x6536;&#x5230;&#x4FE1;&#x606F;&#x65F6;&#x4F1A;&#x89E6;&#x53D1;&#x4F20;&#x9012;&#x5230; Reader &#x7684;&#x56DE;&#x8C03; callback</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x76D1;&#x542C; Blocker &#x4E2D;&#x7684;&#x7F13;&#x5B58;&#x4FE1;&#x606F;</li>
+</ul>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-d5022f4af22ad5a14e68f7befa3bce13_720w.jpg" alt="img"></p>
+<p>&#x800C;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#xFF0C;Reader &#x4F1A;&#x548C;&#x4E00;&#x79CD; Topology &#x7F51;&#x7EDC;&#x53D1;&#x751F;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5378;&#x8F7D;&#x3002;</p>
+<p>&#x5E76;&#x4E14;, Reader &#x548C; Channel &#x662F;&#x76F8;&#x5173;&#x8054;&#x7684;,&#x7531; ChannelManager &#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x3002;</p>
+<h3 id="23-channelimpl"><strong>2.3 ChannelImpl</strong></h3>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-113d95579eedfb712af2382826356cdc_720w.jpg" alt="img"></p>
+<p>Channel &#x662F; Node &#x4E4B;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x6865;&#x6881;&#xFF0C;&#x7528;&#x6765;&#x7ED9; Reader &#x548C; Writer &#x4E4B;&#x95F4;&#x5EFA;&#x7ACB;&#x901A;&#x4FE1;&#x3002;</p>
+<h3 id="24-topologymanager"><strong>2.4 TopologyManager</strong></h3>
+<p>&#x524D;&#x65B9;&#x8BB2;&#x5230; Reader &#x4F1A;&#x548C;&#x4E00;&#x79CD; Topology &#x7F51;&#x7EDC;&#x53D1;&#x751F;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x4EE5;&#x52A0;&#x5165;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5378;&#x8F7D;&#x3002;&#x5176;&#x5B9E; Writer &#x4E5F;&#x4E00;&#x6837;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x4ECD;&#x7136;&#x9700;&#x8981;&#x53BB;&#x89C2;&#x5BDF;&#x4E0E; Topology &#x76F8;&#x5173;&#x7684;&#x7C7B;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-e1f47470867ccd2f2d642e2b15cd86de_720w.jpg" alt="img"></p>
+<p>&#x6CE8;&#x91CA;&#x91CC;&#x9762;&#x5199;&#x660E;&#x767D;&#x4E86;&#x6211;&#x60F3;&#x8981;&#x7684;&#x4E1C;&#x897F;&#xFF1A;</p>
+<ol>
+<li>CyberRT &#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x7531; Topology &#x5448;&#x73B0;</li>
+<li>Topology &#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;&#x6709;&#x5411;&#x56FE; DAG</li>
+<li>Node &#x662F; DAG &#x4E2D;&#x7684;&#x9876;&#x70B9;</li>
+<li>Channel &#x662F; Writer &#x6D41;&#x5411; Reader &#x7684;&#x8FB9;</li>
+<li>Service &#x662F; Server &#x6D41;&#x5411; Client &#x7684;&#x8FB9;</li>
+<li>Topology &#x662F;&#x7531; TopologyManager &#x751F;&#x6210;&#x7684;</li>
+<li>TopologyManager &#x5185;&#x5BB9;&#x6709; 3 &#x4E2A;&#x5B50; Mannager:NodeManager&#x3001;ChannelManager&#x3001;ServiceManager</li>
+<li>NodeManager &#x662F;&#x6765;&#x67E5;&#x627E; Node &#x662F;&#x5426;&#x5728; Topology &#x5F53;&#x4E2D;</li>
+<li>ChannelManager &#x7528;&#x6765;&#x67E5;&#x627E; Channel &#x662F;&#x5426;&#x5728; Topology &#x5F53;&#x4E2D;&#xFF0C;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684; Writer &#x548C; Reader</li>
+<li>ServiceManager &#x7528;&#x6765;&#x67E5;&#x627E; Service &#x662F;&#x5426;&#x5728; Topology &#x5F53;&#x4E2D;&#xFF0C;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684; Server &#x548C; Client</li>
+<li>TopologyManager &#x4F9D;&#x9760; fast-rtps &#x8FDB;&#x884C;&#x901A;&#x4FE1; &#xFF0C;&#x53EF;&#x4EE5;&#x76D1;&#x542C;&#x5143;&#x7D20;&#x52A0;&#x5165;&#x548C;&#x79BB;&#x5F00; topology &#x7F51;&#x7EDC;</li>
+<li>&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x6CE8;&#x518C; ChangeFunc &#x6765;&#x76D1;&#x542C; Topology &#x7F51;&#x7EDC;&#x7684;&#x53D8;&#x5316;</li>
+</ol>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x5927;&#x6982;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x793A;&#x610F;&#x56FE;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-405ee05c2b3461694a32971ea5770201_720w.jpg" alt="img"></p>
+<p>&#x6709;&#x4E86;&#x8FD9;&#x5F20;&#x56FE;&#x57FA;&#x672C;&#x4E0A;&#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x91CA; CyberRT &#x4E2D;&#x5927;&#x591A;&#x6570;&#x5185;&#x5BB9;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x6CE8;&#x610F;&#x5230;&#x524D;&#x9762; Node &#x4E2D;&#x6709; Component &#x548C; TimerComponent &#x7684;&#x5B58;&#x5728;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x53BB;&#x770B;&#x770B;&#x5B83;&#x4EEC;&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#x3002;</p>
+<h3 id="25-component"><strong>2.5 Component</strong></h3>
+<p>Component &#x7684;&#x57FA;&#x7C7B;&#x662F; ComponentBase&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-7caa62b835529544be3552ca447546f6_720w.jpg" alt="img"></p>
+<p>&#x4ECE;&#x76F8;&#x5E94;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#x63D0;&#x793A;&#xFF1A;</p>
+<ul>
+<li>Component &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E00;&#x4E9B; .proto &#x914D;&#x7F6E;</li>
+<li>class loader &#x53EF;&#x80FD;&#x4F1A;&#x52A0;&#x8F7D;&#x5B83;</li>
+<li>&#x5185;&#x7F6E; Reader</li>
+<li>&#x6709;&#x76F8;&#x5E94;&#x7684; Node</li>
+<li>&#x901A;&#x8FC7; Scheduler &#x8FDB;&#x884C;&#x8C03;&#x5EA6;</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x770B; Component &#x76F8;&#x5173;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-70a8f7d1691cd85acf61ade4e25cdaba_720w.jpg" alt="img"></p>
+<p>&#x611F;&#x8C22; CyberRT &#x7684;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x5173;&#x952E;&#x4EE3;&#x7801;&#x6CE8;&#x91CA;&#x7684;&#x5F88;&#x660E;&#x767D;&#x3002;</p>
+<ul>
+<li>&#x4E00;&#x4E2A; Component &#x6700;&#x591A;&#x53EF;&#x4EE5;&#x652F;&#x6491; 4 &#x4E2A; Channel &#x8FDB;&#x884C;&#x6D88;&#x606F;&#x5904;&#x7406;</li>
+<li>Component &#x7EE7;&#x627F;&#x81EA; Component&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49; Component&#xFF0C;&#x53EA;&#x8981;&#x7EE7;&#x627F; Component &#x5E76;&#x590D;&#x5199;&#x5B83;&#x7684; Init() &#x548C; Proc()</li>
+<li>Init &#x548C; Proc &#x7684;&#x8C03;&#x7528;&#x662F;&#x7531; CyberRT Frame &#x9A71;&#x52A8;&#x7684;&#xFF0C;&#x4E0D;&#x8981;&#x4E3B;&#x52A8;&#x53BB;&#x8C03;&#x7528;&#x5B83;&#x4EEC;</li>
+</ul>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-78a419736d5c40344011252461d837e1_720w.jpg" alt="img"></p>
+<p>Initialize &#x7531; protocol &#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#x3002; Proc &#x662F;&#x4E00;&#x4E2A; Component &#x7684;&#x903B;&#x8F91;&#x5904;&#x7406;&#x5355;&#x5143;&#xFF0C;&#x5305;&#x542B; 4 &#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5206;&#x522B;&#x4EE3;&#x8868; 4 &#x4E2A; channel &#x7684;&#x6D88;&#x606F;&#x3002;</p>
+<h3 id="26-timercomponent"><strong>2.6 TimerComponent</strong></h3>
+<p>&#x770B;&#x540D;&#x5B57;&#x5C31;&#x77E5;&#x9053;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;&#x7EC4;&#x4EF6;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-a6481c5b75906a18d1bf1e7cbd5b7cf3_720w.jpg" alt="img"></p>
+<p>TimerComponent &#x540C;&#x6837;&#x7EE7;&#x627F;&#x81EA; ComponentBase&#xFF0C;&#x4E0D;&#x8FC7;&#x5185;&#x90E8;&#x6709;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;&#x5668; Timer&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-4fafc18fcaf4e3f6f6f4b771aed44a8a_720w.jpg" alt="img"></p>
+<p>Timer &#x7684;&#x5185;&#x90E8;&#x53C8;&#x6709;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x7C7B;&#x578B; TimingWheel &#x548C; TimerTask&#xFF0C;&#x987E;&#x540D;&#x601D;&#x4E49;&#x662F;&#x5B9A;&#x65F6;&#x5668;&#x65F6;&#x95F4;&#x8F6E;&#x6362;&#x548C;&#x5B9A;&#x65F6;&#x5668;&#x4EFB;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x7C7B;&#x3002;</p>
+<p>&#x95EE;&#x9898;&#x662F;&#x8C01;&#x89E6;&#x53D1; TimerTask &#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x5F88;&#x5BB9;&#x6613;&#x60F3;&#x5230;&#x8C03;&#x5EA6;&#x5668;&#xFF0C;&#x800C; CyberRT &#x4EE3;&#x7801;&#x4E2D;&#x4E5F;&#x6B63;&#x597D;&#x6709;&#x4E00;&#x4E2A; scheduler&#x3002;</p>
+<p>&#x95EE;&#x9898;&#x662F; scheduler &#x53C8;&#x662F;&#x8C01;&#x89E6;&#x53D1;&#x7684;&#x5462;&#xFF1F;</p>
+<h3 id="27-scheduler"><strong>2.7 scheduler</strong></h3>
+<p>&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x56E2;&#x4E2D;&#x53BB;&#x627E;&#x7EBF;&#x5934;&#x662F;&#x4EF6;&#x5F88;&#x96BE;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x9700;&#x8981;&#x501F;&#x52A9;&#x4E8E;&#x731C;&#x6D4B;&#x3002;</p>
+<p>&#x6211;&#x731C;&#x6D4B;&#x6574;&#x4E2A; cyberRT &#x7684;&#x8D77;&#x6E90;&#x662F; init.c &#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-4cc10703020ebbe0437c458793571075_720w.jpg" alt="img"></p>
+<p>&#x51FA;&#x73B0;&#x4E86; scheduler &#x7684;&#x8EAB;&#x5F71;&#xFF0C;&#x4F46;&#x8FD9;&#x91CC;&#x662F;&#x8BBE;&#x7F6E; log &#x76F8;&#x5173;&#x7684;&#x7EBF;&#x7A0B;&#x3002;
+&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x5C06;&#x76EE;&#x5149;&#x79FB;&#x5230; SysMo &#x4E0A;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-00c4eb746adda4164e622b55164f154d_720w.jpg" alt="img"></p>
+<p>SysMo &#x521B;&#x5EFA;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x91CC;&#x9762;&#x6267;&#x884C;&#x4E00;&#x4E2A; while &#x5FAA;&#x73AF;&#xFF0C;&#x7136;&#x540E;&#x6BCF;&#x6B21;&#x8C03;&#x7528; scheduler &#x7684; CheckSchedStatus &#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x7EC8;&#x4E8E;&#x53EF;&#x4EE5;&#x53BB;&#x9605;&#x8BFB; scheduler &#x76F8;&#x5E94;&#x7684;&#x4EE3;&#x7801;&#x4E86;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-fd27645c5a402719c7f443754a0abfc3_720w.jpg" alt="img"></p>
+<p>&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x7C7B;&#xFF0C;&#x6839;&#x636E;&#x7B56;&#x7565;&#x4E0D;&#x540C;&#x6709; SchedulerClassic &#x548C; SchedulerChoreography &#x4E24;&#x79CD;&#x5B9E;&#x73B0;&#xFF0C;&#x6211;&#x5728;&#x8FD9;&#x968F;&#x4FBF;&#x6311;&#x9009;&#x4E00;&#x79CD;&#x4E5F;&#x5C31;&#x662F; SchedulerClassic &#x770B;&#x770B;&#x5B83;&#x5185;&#x90E8;&#x957F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-cf27ca5b5d7942754e986abfd9f2c073_720w.jpg" alt="img"></p>
+<p>&#x770B;&#x5B83;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x8981;&#x7D20;&#xFF1A;</p>
+<ol>
+<li>&#x91C7;&#x7528;&#x534F;&#x7A0B;&#x8C03;&#x5EA6;</li>
+<li>&#x5185;&#x90E8;&#x4F1A;&#x521B;&#x5EFA; Processor&#xFF0C;&#x5E76;&#x4F1A;&#x5B9A;&#x671F;&#x89E6;&#x53D1;&#x901A;&#x77E5;&#x4FE1;&#x606F;</li>
+<li>&#x6709;&#x4E00;&#x4E9B; ClassicTask&#xFF0C;&#x53EF;&#x80FD;&#x4EE3;&#x8868;&#x5E38;&#x89C4;&#x7684;&#x4EFB;&#x52A1;</li>
+</ol>
+<p>&#x4F46;&#x804A;&#x804A;&#x7EA6;&#x7EA6;&#x6211;&#x5BDF;&#x89C9;&#x5230;&#x4EE3;&#x7801;&#x8DEF;&#x5F84;&#x79BB;&#x6211;&#x7684;&#x76EE;&#x6807;&#x8D8A;&#x6765;&#x8D8A;&#x8FDC;&#xFF0C;&#x6211;&#x5176;&#x5B9E;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x5982;&#x4F55;&#x627E;&#x5230; Node &#x548C; Component &#x7684;&#x6E90;&#x5934;&#xFF0C;&#x5B83;&#x4EEC;&#x662F;&#x5982;&#x4F55;&#x88AB;&#x5468;&#x671F;&#x89E6;&#x53D1; proc &#x65B9;&#x6CD5;&#x7684;&#x3002;</p>
+<p>&#x4E8E;&#x662F;&#x6211;&#x8DF3;&#x51FA;&#x4EE3;&#x7801;&#x68EE;&#x6797;&#xFF0C;&#x91CD;&#x89C6;&#x5BA1;&#x89C6;&#x6574;&#x4E2A;&#x4EE3;&#x7801;&#x76EE;&#x5F55;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x73B0;&#x4E86; mainboard&#x3002;</p>
+<h3 id="28-mainboard"><strong>2.8 mainboard</strong></h3>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-68c935e464cfecba61a0407d3ac14d5b_720w.jpg" alt="img"></p>
+<p>&#x53D1;&#x73B0;&#x65B0;&#x5927;&#x9646;&#x4E86;&#xFF0C;&#x539F;&#x6765; mainboard &#x662F; cyberRT &#x7684;&#x5165;&#x53E3;&#xFF0C;init &#x65B9;&#x6CD5;&#x90FD;&#x5728;&#x8FD9;&#x91CC;&#x89E6;&#x53D1;&#x3002;</p>
+<p>Module &#x4E5F;&#x5728;&#x8FD9;&#x91CC;&#x542F;&#x52A8;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-a9b96ed160ab93fa3efb61d4d0d497a9_720w.jpg" alt="img"></p>
+<p>ModuleController &#x51E0;&#x4E4E;&#x85CF;&#x4E86;&#x6211;&#x60F3;&#x4E86;&#x89E3;&#x7684;&#x7B54;&#x6848;&#x3002;classloadermanager&#x3001;componentbase&#x3001;dag&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-1549dac19c299f852372b7d2b5e9b173_720w.jpg" alt="img"></p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-13c94986897135b76e059d8f1827a9f4_720w.jpg" alt="img"></p>
+<p>class_loader_manager &#x521B;&#x5EFA;&#x76F8;&#x5E94;&#x7684; Component &#x548C; TimerComponent &#x5E76;&#x5BF9;&#x5B83;&#x4EEC;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-588cd3e50ea272f2faa353f95e14688b_720w.jpg" alt="img"></p>
+<p>Component &#x524D;&#x9762;&#x7684;&#x6587;&#x7AE0;&#x8BB2;&#x8FC7;&#xFF0C;&#x4F46;&#x73B0;&#x5728;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x7684;&#x662F;&#x5B83;&#x548C; Scheduler &#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-baa410ddf3e705a581cdd0394189fea8_720w.jpg" alt="img"></p>
+<p>&#x5728; Component &#x7684; Initialize() &#x4E2D;&#xFF0C;Scheduler &#x4F1A;&#x6839;&#x636E; Node &#x7684;&#x540D;&#x5B57;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; Task</p>
+<h3 id="29-&#x518D;&#x770B;-scheduler"><strong>2.9 &#x518D;&#x770B; Scheduler</strong></h3>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-ee3312c83bf4a6025f3af1c62ab3824b_720w.jpg" alt="img"></p>
+<p>Scheduler &#x4F1A;&#x5C06; node &#x4E0E; CRoutine &#x5EFA;&#x7ACB;&#x8054;&#x7CFB;&#xFF0C;&#x7136;&#x540E;&#x4E0E; Processor &#x4E5F;&#x5EFA;&#x7ACB;&#x8054;&#x7CFB;&#x3002;</p>
+<p>&#x6838;&#x5FC3;&#x70B9;&#x5728;&#x4E8E; cr&#xFF0C;&#x5B83;&#x662F;&#x534F;&#x7A0B;&#x5355;&#x5143;&#xFF0C;&#x5728; Component &#x4E2D;&#x901A;&#x8FC7; RoutineFactory &#x521B;&#x5EFA;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-4887ef9a996bdf528ec8dac7fb79fefa_720w.jpg" alt="img"></p>
+<p>Routine &#x662F;&#x914D;&#x5408; DataVisitor &#x4F7F;&#x7528;&#x7684;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-82c5894e15d5a1b0943e35e2d58f5eb3_720w.jpg" alt="img"></p>
+<p>routine &#x4E2D;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; for &#x5FAA;&#x73AF;,&#x901A;&#x8FC7; datavisitor &#x4E0D;&#x65AD;&#x53BB;&#x6293;&#x53D6;&#x6D88;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x6D88;&#x606F;&#x5219;&#x8C03;&#x7528; f() &#x51FD;&#x6570;&#x5904;&#x7406;&#xFF0C;&#x5426;&#x5219;&#x901A;&#x8FC7; Yield &#x5C06;&#x6267;&#x884C;&#x6743;&#x8BA9;&#x5EA6;&#x51FA;&#x6765;&#x3002;
+&#x90A3;&#x4E48; f &#x51FD;&#x6570;&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x5B83;&#x662F;&#x5728; CreateRoutineFactory &#x4F20;&#x9012;&#x8FDB;&#x6765;&#x7684;&#x3002; &#x6E90;&#x5934;&#x662F; Component &#x4E2D;&#x7684; func&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-7b13496a2d6aa59edf22ebea2e8a27f1_720w.jpg" alt="img"></p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x6BB5;&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;&#xFF0C;&#x6700;&#x7EC8;&#x6838;&#x5FC3;&#x903B;&#x8F91;&#x5176;&#x5B9E;&#x662F;&#x8C03;&#x7528; Component &#x4E2D;&#x7684; Process()&#xFF0C;&#x771F;&#x76F8;&#x5DF2;&#x7ECF;&#x5F88;&#x63A5;&#x8FD1;&#x4E86;&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-c1c27ffa3ca124f66d6272e32b54699b_720w.jpg" alt="img"></p>
+<p>Process &#x4E2D;&#x8C03;&#x7528; Proc() &#x65B9;&#x6CD5;&#x5904;&#x7406;&#x6D88;&#x606F;&#xFF0C;&#x4E5F;&#x662F;&#x672C;&#x6587;&#x8981;&#x63A2;&#x7A76;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x6574;&#x4E2A; CyberRT &#x7684;&#x6D41;&#x7A0B;&#x5305;&#x62EC;&#x5982;&#x4F55;&#x521B;&#x5EFA; Component&#xFF0C;Component&#x5982;&#x4F55;&#x88AB;&#x6D88;&#x606F;&#x9A71;&#x52A8;&#x5927;&#x81F4;&#x6D41;&#x7A0B;&#x90FD;&#x660E;&#x767D;&#x4E86;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x4E0E; Component &#x5BF9;&#x5E94;&#x7684;&#x662F; TimerComponent&#xFF0C;&#x5B83;&#x5E94;&#x8BE5;&#x662F;&#x5B9A;&#x65F6;&#x9A71;&#x52A8;&#x800C;&#x4E0D;&#x662F;&#x6D88;&#x606F;&#x9A71;&#x52A8;&#x3002;&#x4E0B;&#x9762;&#x5C0F;&#x8282;&#xFF0C;&#x5F00;&#x59CB;&#x5206;&#x6790;&#x5B83;&#x3002;</p>
+<h3 id="210-timer"><strong>2.10 Timer</strong></h3>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-d08577ec50c131f3ed1ab8e1af85a7b9_720w.jpg" alt="img"></p>
+<p>Timer &#x662F;&#x5728; TimerComponent &#x4E2D;&#x7684; Initialize &#x4E2D;&#x88AB;&#x5B9E;&#x4F8B;&#x5316;,&#x4F20;&#x5165;&#x4E86;&#x5B9A;&#x65F6;&#x5468;&#x671F;&#x548C;&#x56DE;&#x8C03;&#x51FD;&#x6570; func&#x3002;</p>
+<p>func &#x672C;&#x8EAB;&#x5176;&#x5B9E;&#x662F;&#x8C03;&#x7528; TimerComponent &#x7684; Proc()&#x3002;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-42fc23ca4a1d8877a96730a555dab351_720w.jpg" alt="img"></p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-b4ec43b401ec26cc0892d134e5b56392_720w.jpg" alt="img"></p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-5ccae54cf3b5744a2ebc54e732da6347_720w.jpg" alt="img"></p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-cdb0147391ecac7702e73278d80bc446_720w.jpg" alt="img"></p>
+<p>&#x6700;&#x7EC8; Timer &#x4F1A;&#x5C06; TimerComponent &#x4E2D;&#x7684; Proc &#x5F53;&#x6210; callback &#x5C01;&#x88C5;&#x6210; TimeTask&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;&#x5B83;&#x4EEC;&#x7684;&#x89E6;&#x53D1;&#x65F6;&#x95F4;&#xFF0C;&#x7136;&#x540E;&#x6DFB;&#x52A0;&#x5230;&#x5185;&#x90E8;&#x7684; TimingWheel &#x5F53;&#x4E2D;&#x8FDB;&#x884C;&#x4EFB;&#x52A1;&#x8F6E;&#x6362;&#x3002;&#x57FA;&#x4E8E;&#x7BC7;&#x5E45;&#xFF0C;TimingWheel &#x4E0D;&#x518D;&#x8BE6;&#x7EC6;&#x5206;&#x6790;&#xFF0C;&#x56E0;&#x4E3A;&#x5230;&#x6B64;&#xFF0C;TimerComponent &#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x89E6;&#x53D1;&#x903B;&#x8F91;&#x4E5F;&#x5DF2;&#x7ECF;&#x6E05;&#x695A;&#x4E86;&#x3002;</p>
+<h3 id="211-cyberrt-&#x6574;&#x4F53;&#x6846;&#x67B6;&#x5168;&#x8C8C;"><strong>2.11 CyberRT &#x6574;&#x4F53;&#x6846;&#x67B6;&#x5168;&#x8C8C;</strong></h3>
+<p>&#x7ECF;&#x8FC7;&#x524D;&#x9762;&#x5C0F;&#x7ED3;&#x7684;&#x5206;&#x6790;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0; CyberRT &#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#x548C;&#x5E9E;&#x5927;&#x7684;&#xFF0C;&#x7814;&#x7A76; CyberRT &#x4E00;&#x4E9B;&#x6838;&#x5FC3;&#x7684;&#x7C7B;&#x5C55;&#x793A;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-c2fd66ffb76d5e70c7d93abbd68e26b9_720w.jpg" alt="img"></p>
+<ol>
+<li>&#x6838;&#x5FC3;&#x7C7B;&#x662F; Component &#x548C; TimerComponent</li>
+<li>&#x652F;&#x6491; component &#x7684;&#x662F; Node&#x3001;Scheduler&#x3001;Timer&#x3001;DataVisitor</li>
+<li>&#x5176;&#x4ED6;&#x7684; Reader&#x3001;Writer&#x3001;ChannelImple&#x3001;TimerTask &#x7B49;&#x7B49;&#x662F;&#x5177;&#x4F53;&#x7684;&#x7EC6;&#x8282;&#x76F8;&#x5173;&#x7C7B;</li>
+</ol>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x5168;&#x90E8;&#x7684; CyberRT &#x4E0D;&#x6B62;&#x4E0A;&#x56FE;&#x4E2D;&#x5217;&#x51FA;&#x7684;&#x8FD9;&#x4E9B;&#xFF0C;&#x672C;&#x6587;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x6982;&#x8C8C;&#xFF0C;&#x7EC6;&#x8282;&#x540E;&#x7EED;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x529F;&#x80FD;&#x5355;&#x72EC;&#x5206;&#x6790;&#x3002;</p>
+<h3 id="3-cyberrt-&#x7684;&#x534F;&#x4F5C;&#x673A;&#x5236;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><strong>3. CyberRT &#x7684;&#x534F;&#x4F5C;&#x673A;&#x5236;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</strong></h3>
+<p>&#x5728;&#x68B3;&#x7406; CyberRT &#x76F8;&#x5173;&#x7684;&#x7C7B;&#x65F6;&#xFF0C;&#x5176;&#x5B9E;&#x6D41;&#x7A0B;&#x5DF2;&#x7ECF;&#x57FA;&#x672C;&#x4E0A;&#x5F04;&#x660E;&#x767D;&#x4E86;&#x3002;</p>
+<p>&#x4E3B;&#x8981;&#x7684;&#x6D41;&#x7A0B;&#x6709; 2 &#x4E2A;&#xFF1A;</p>
+<ol>
+<li>Component &#x548C; TimerComponent &#x7684;&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;</li>
+<li>&#x5B83;&#x4EEC;&#x7684;&#x6D88;&#x606F;&#x89E6;&#x53D1;&#x673A;&#x5236;</li>
+</ol>
+<p><img src="&#x4E07;&#x5B57;&#x957F;&#x6587;&#x89E3;&#x6790;CyberRT.assets/v2-3576c960929fb4835bbe0fdb2125ed5f_720w.jpg" alt="img"></p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x56FE;&#x663E;&#x793A;&#x4E86; CyberRT &#x521B;&#x5EFA;&#x6D41;&#x7A0B;&#x548C; Component &#x6D88;&#x606F;&#x9A71;&#x52A8;&#x7B80;&#x5355;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B83;&#x4E00;&#x89C8; CyberRT &#x7684;&#x57FA;&#x672C;&#x903B;&#x8F91;&#xFF0C;&#x800C;&#x66F4;&#x7CBE;&#x7EC6;&#x5316;&#x7684;&#x573A;&#x666F;&#x5219;&#x9700;&#x8981;&#x66F4;&#x4ED4;&#x7EC6;&#x9605;&#x8BFB;&#x548C;&#x601D;&#x8003;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x5728;&#x540E;&#x7EED;&#x6587;&#x7AE0;&#x4E2D;&#x4F1A;&#x9646;&#x7EED;&#x5206;&#x6790;&#x3002;</p>
+<h3 id="4-&#x603B;&#x7ED3;"><strong>4. &#x603B;&#x7ED3;</strong></h3>
+<p>CyberRT &#x786E;&#x5B9E;&#x5F88;&#x590D;&#x6742;&#xFF0C;&#x4F46;&#x7ECF;&#x8FC7;&#x521D;&#x6B65;&#x7684;&#x4EE3;&#x7801;&#x5FEB;&#x901F;&#x9605;&#x8BFB;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x5176;&#x5B9E;&#x5B83;&#x7684;&#x5E95;&#x5C42;&#x539F;&#x7406;&#x4E5F;&#x633A;&#x7B80;&#x5355;&#x7684;&#x3002;</p>
+<ol>
+<li>CyberRT &#x662F;&#x57FA;&#x4E8E; Fast-RTPS &#x8FDB;&#x884C;&#x6D88;&#x606F;&#x9A71;&#x52A8;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E1A;&#x52A1;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x57FA;&#x4E8E;&#x6B64;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x901A;&#x8BAF;&#xFF0C;&#x8FD9;&#x4E2A;&#x548C; ROS2 &#x6CA1;&#x6709;&#x591A;&#x5927;&#x5DEE;&#x522B;;</li>
+<li>CyberRT &#x901A;&#x8FC7; Node &#x8282;&#x70B9;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x7684;&#x5E95;&#x5C42;&#x5BF9;&#x63A5;&#xFF0C;&#x800C; Component &#x5219;&#x8D1F;&#x8D23;&#x5177;&#x4F53;&#x4E1A;&#x52A1;&#x76F8;&#x5173;&#x7684;&#x903B;&#x8F91;;</li>
+<li>CRoutine &#x57FA;&#x4E8E;&#x6D88;&#x606F;&#x9A71;&#x52A8;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x5C06; Component &#x4E2D;&#x7684; Proc &#x56DE;&#x8C03;&#x4F5C;&#x4E3A;&#x57FA;&#x7840;&#x7684;&#x534F;&#x7A0B;&#x6267;&#x884C;&#x5355;&#x5143;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E; Sheduler &#x76F8;&#x5E94;&#x7684;&#x8C03;&#x5EA6;&#x7B56;&#x7565;&#x8FDB;&#x884C;&#x8C03;&#x5EA6;&#xFF0C;&#x5B83;&#x4FDD;&#x8BC1;&#x4E86;&#x591A;&#x4EFB;&#x52A1;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#xFF0C;&#x4F46;&#x6211;&#x81EA;&#x5DF1;&#x4E5F;&#x6709;&#x4E2A;&#x7591;&#x95EE;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5B83;&#x80FD;&#x4FDD;&#x8BC1;&#x8FDB;&#x7A0B;&#x7EA7;&#x522B;&#x7684;&#x6B63;&#x5E38;&#x8C03;&#x5EA6;&#x5417;&#xFF1F;</li>
+<li>TimerComponent &#x4F9D;&#x9760; Timer &#x8FDB;&#x884C;&#x5B9A;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x5B83;&#x7684; proc &#x65B9;&#x6CD5;&#x88AB;&#x5C01;&#x88C5;&#x6210;&#x4E3A; TimeTask &#x4E2D;&#x7684;&#x56DE;&#x8C03;&#xFF0C;TimingWheel &#x6839;&#x636E;&#x8C03;&#x5EA6;&#x7B56;&#x7565;&#x8FDB;&#x884C;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#xFF1B;</li>
+<li>CyberRT &#x5F3A;&#x5927;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#x5B83;&#x7684; 3 &#x4E2A;&#x62D3;&#x6251;&#x7F51;&#x7EDC;&#xFF0C;&#x57FA;&#x4E8E; fast-rtps &#x901A;&#x8FC7;&#x670D;&#x52A1;&#x53D1;&#x73B0;&#xFF0C;&#x80FD;&#x591F;&#x5FEB;&#x901F;&#x627E;&#x5230;&#x76F8;&#x5E94;&#x7684; Node &#x72B6;&#x6001;&#xFF0C;&#x4E5F;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#xFF0C;&#x8FD9;&#x5728;&#x6211;&#x4E4B;&#x524D;&#x5206;&#x6790;&#x7684;&#x7CFB;&#x7EDF;&#x76D1;&#x63A7; Monitor &#x4E2D;&#xFF0C;&#x80FD;&#x591F;&#x8F7B;&#x677E;&#x76D1;&#x63A7;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x5065;&#x5EB7;&#x72B6;&#x6001;&#x3002;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ros漫游实操.html" class="navigation navigation-prev " aria-label="Previous page: ros漫游实操">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="四元数、欧拉角和方向余弦矩阵的相互转化.html" class="navigation navigation-next " aria-label="Next page: 四元数、欧拉角和方向余弦矩阵的相互转化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"万字长文解析CyberRT","level":"1.7.7","depth":2,"next":{"title":"四元数、欧拉角和方向余弦矩阵的相互转化","level":"1.7.8","depth":2,"path":"autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.md","ref":"autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.md","articles":[]},"previous":{"title":"ros漫游实操","level":"1.7.6","depth":2,"path":"autodrive/ros漫游实操.md","ref":"autodrive/ros漫游实操.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"autodrive/万字长文解析CyberRT.md","mtime":"2022-08-01T12:03:02.717Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-01T12:23:56.760Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

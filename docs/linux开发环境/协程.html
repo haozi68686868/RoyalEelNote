@@ -1,0 +1,1930 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>协程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python/" />
+    
+    
+    <link rel="prev" href="shell字符串操作.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../3rdParty_Lib/">
+            
+                <a href="../3rdParty_Lib/">
+            
+                    
+                    3rdParty_Lib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../3rdParty_Lib/Eigen Guide.html">
+            
+                <a href="../3rdParty_Lib/Eigen Guide.html">
+            
+                    
+                    Eigen Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../3rdParty_Lib/Jsoncpp.html">
+            
+                <a href="../3rdParty_Lib/Jsoncpp.html">
+            
+                    
+                    Jsoncpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                <a href="../3rdParty_Lib/ZeroMQ简述.html">
+            
+                    
+                    ZeroMQ简述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../3rdParty_Lib/gRPC.html">
+            
+                <a href="../3rdParty_Lib/gRPC.html">
+            
+                    
+                    gRPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../3rdParty_Lib/openCV.html">
+            
+                <a href="../3rdParty_Lib/openCV.html">
+            
+                    
+                    openCV
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../DPC/">
+            
+                <a href="../DPC/">
+            
+                    
+                    DPC
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../DPC/A_Star.html">
+            
+                <a href="../DPC/A_Star.html">
+            
+                    
+                    A_Star
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../DPC/Control_summary.html">
+            
+                <a href="../DPC/Control_summary.html">
+            
+                    
+                    Control_summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../DPC/DPC_Summary.html">
+            
+                <a href="../DPC/DPC_Summary.html">
+            
+                    
+                    DPC_Summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../DPC/DWA.html">
+            
+                <a href="../DPC/DWA.html">
+            
+                    
+                    DWA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../DPC/Motor_Control.html">
+            
+                <a href="../DPC/Motor_Control.html">
+            
+                    
+                    Motor_Control
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../DPC/PRM&RRT.html">
+            
+                <a href="../DPC/PRM&RRT.html">
+            
+                    
+                    PRM&RRT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../DPC/TEB.html">
+            
+                <a href="../DPC/TEB.html">
+            
+                    
+                    TEB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../DPC/pure_pursuit.html">
+            
+                <a href="../DPC/pure_pursuit.html">
+            
+                    
+                    pure_pursuit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../DPC/vehicle_dynamic_modeling.html">
+            
+                <a href="../DPC/vehicle_dynamic_modeling.html">
+            
+                    
+                    vehicle_dynamic_modeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Machine Learning/">
+            
+                <a href="../Machine Learning/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                <a href="../Machine Learning/precision_recall_accuracy_F值.html">
+            
+                    
+                    precision_recall_accuracy_F值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Power Supply Design/">
+            
+                <a href="../Power Supply Design/">
+            
+                    
+                    Power Supply Design
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Power Supply Design/Altium Designer.html">
+            
+                <a href="../Power Supply Design/Altium Designer.html">
+            
+                    
+                    Altium Designer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Power Supply Design/电源设计.html">
+            
+                <a href="../Power Supply Design/电源设计.html">
+            
+                    
+                    电源设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../algorithm/">
+            
+                <a href="../algorithm/">
+            
+                    
+                    algorithm
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../algorithm/KDTree.html">
+            
+                <a href="../algorithm/KDTree.html">
+            
+                    
+                    KDTree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../algorithm/KDTree2.html">
+            
+                <a href="../algorithm/KDTree2.html">
+            
+                    
+                    KDTree2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../algorithm/从匈牙利算法到KM算法.html">
+            
+                <a href="../algorithm/从匈牙利算法到KM算法.html">
+            
+                    
+                    从匈牙利算法到KM算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../algorithm/匈牙利算法.html">
+            
+                <a href="../algorithm/匈牙利算法.html">
+            
+                    
+                    匈牙利算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                <a href="../algorithm/图说卡尔曼滤波，一份通俗易懂的教程.html">
+            
+                    
+                    图说卡尔曼滤波，一份通俗易懂的教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../algorithm/正则表达式.html">
+            
+                <a href="../algorithm/正则表达式.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../autodrive/">
+            
+                <a href="../autodrive/">
+            
+                    
+                    autodrive
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../autodrive/CyberRT.html">
+            
+                <a href="../autodrive/CyberRT.html">
+            
+                    
+                    CyberRT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../autodrive/Ros概念.html">
+            
+                <a href="../autodrive/Ros概念.html">
+            
+                    
+                    Ros概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                <a href="../autodrive/SOTIF Safety of the Intended Functionality.html">
+            
+                    
+                    SOTIF Safety of the Intended Functionality
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../autodrive/dbc文件解析.html">
+            
+                <a href="../autodrive/dbc文件解析.html">
+            
+                    
+                    dbc文件解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../autodrive/dds服务.html">
+            
+                <a href="../autodrive/dds服务.html">
+            
+                    
+                    dds服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../autodrive/ros漫游实操.html">
+            
+                <a href="../autodrive/ros漫游实操.html">
+            
+                    
+                    ros漫游实操
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../autodrive/万字长文解析CyberRT.html">
+            
+                <a href="../autodrive/万字长文解析CyberRT.html">
+            
+                    
+                    万字长文解析CyberRT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                <a href="../autodrive/四元数、欧拉角和方向余弦矩阵的相互转化.html">
+            
+                    
+                    四元数、欧拉角和方向余弦矩阵的相互转化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="../autodrive/李群与李代数.html">
+            
+                <a href="../autodrive/李群与李代数.html">
+            
+                    
+                    李群与李代数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="../autodrive/阿克曼转向原理.html">
+            
+                <a href="../autodrive/阿克曼转向原理.html">
+            
+                    
+                    阿克曼转向原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../c++/">
+            
+                <a href="../c++/">
+            
+                    
+                    c++
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../c++/C++ algorithm.html">
+            
+                <a href="../c++/C++ algorithm.html">
+            
+                    
+                    C++ algorithm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../c++/C++ string.html">
+            
+                <a href="../c++/C++ string.html">
+            
+                    
+                    C++ string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../c++/C++ 数据类型.html">
+            
+                <a href="../c++/C++ 数据类型.html">
+            
+                    
+                    C++ 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../c++/JAVA 和 C++的区别.html">
+            
+                <a href="../c++/JAVA 和 C++的区别.html">
+            
+                    
+                    JAVA 和 C++的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../c++/c++ 多线程.html">
+            
+                <a href="../c++/c++ 多线程.html">
+            
+                    
+                    c++ 多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../c++/c++特别语法.html">
+            
+                <a href="../c++/c++特别语法.html">
+            
+                    
+                    c++特别语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="../c++/c++问题合集.html">
+            
+                <a href="../c++/c++问题合集.html">
+            
+                    
+                    c++问题合集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="../c++/cmake.html">
+            
+                <a href="../c++/cmake.html">
+            
+                    
+                    cmake
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                <a href="../c++/cmake中的PUBLIC_PRIVATE_INTERFACE.html">
+            
+                    
+                    cmake中的PUBLIC_PRIVATE_INTERFACE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="../c++/gcc编译warning.html">
+            
+                <a href="../c++/gcc编译warning.html">
+            
+                    
+                    gcc编译warning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="../c++/pragma once.html">
+            
+                <a href="../c++/pragma once.html">
+            
+                    
+                    pragma once
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../git/">
+            
+                <a href="../git/">
+            
+                    
+                    git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../git/gerrit答题.html">
+            
+                <a href="../git/gerrit答题.html">
+            
+                    
+                    gerrit答题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../git/git 开发笔记.html">
+            
+                <a href="../git/git 开发笔记.html">
+            
+                    
+                    git 开发笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../git/gitbook.html">
+            
+                <a href="../git/gitbook.html">
+            
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../git/gitlab.html">
+            
+                <a href="../git/gitlab.html">
+            
+                    
+                    gitlab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    linux开发环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="Epoll原理解析.html">
+            
+                <a href="Epoll原理解析.html">
+            
+                    
+                    Epoll原理解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="Linux 实用软件.html">
+            
+                <a href="Linux 实用软件.html">
+            
+                    
+                    Linux 实用软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="NTP服务详解.html">
+            
+                <a href="NTP服务详解.html">
+            
+                    
+                    NTP服务详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="Tmux 使用小技巧.html">
+            
+                <a href="Tmux 使用小技巧.html">
+            
+                    
+                    Tmux 使用小技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="VSCode.html">
+            
+                <a href="VSCode.html">
+            
+                    
+                    VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="apt.html">
+            
+                <a href="apt.html">
+            
+                    
+                    apt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="grep.html">
+            
+                <a href="grep.html">
+            
+                    
+                    grep
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="linux.html">
+            
+                <a href="linux.html">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="linux进程状态.html">
+            
+                <a href="linux进程状态.html">
+            
+                    
+                    linux进程状态
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="shell_if语句.html">
+            
+                <a href="shell_if语句.html">
+            
+                    
+                    shell_if语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" data-path="shell字符串操作.html">
+            
+                <a href="shell字符串操作.html">
+            
+                    
+                    shell字符串操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.12" data-path="协程.html">
+            
+                <a href="协程.html">
+            
+                    
+                    协程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../python/python note.html">
+            
+                <a href="../python/python note.html">
+            
+                    
+                    python note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../python/python之Argparse模块.html">
+            
+                <a href="../python/python之Argparse模块.html">
+            
+                    
+                    python之Argparse模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../senseauto/">
+            
+                <a href="../senseauto/">
+            
+                    
+                    senseauto
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../senseauto/3D2D匹配.html">
+            
+                <a href="../senseauto/3D2D匹配.html">
+            
+                    
+                    3D2D匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.2" data-path="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                <a href="../senseauto/DataFactoryUtil 需求文档.html">
+            
+                    
+                    DataFactoryUtil 需求文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.3" data-path="../senseauto/Senseauto common.html">
+            
+                <a href="../senseauto/Senseauto common.html">
+            
+                    
+                    Senseauto common
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.4" data-path="../senseauto/Senseauto_Ins_Sensor.html">
+            
+                <a href="../senseauto/Senseauto_Ins_Sensor.html">
+            
+                    
+                    Senseauto_Ins_Sensor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.5" data-path="../senseauto/Senseauto_Lidar.html">
+            
+                <a href="../senseauto/Senseauto_Lidar.html">
+            
+                    
+                    Senseauto_Lidar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.6" data-path="../senseauto/horizon通信流程.html">
+            
+                <a href="../senseauto/horizon通信流程.html">
+            
+                    
+                    horizon通信流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.7" data-path="../senseauto/monitor.html">
+            
+                <a href="../senseauto/monitor.html">
+            
+                    
+                    monitor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.8" data-path="../senseauto/rec_parser踩坑记.html">
+            
+                <a href="../senseauto/rec_parser踩坑记.html">
+            
+                    
+                    rec_parser踩坑记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.9" data-path="../senseauto/senseauto开发使用笔记.html">
+            
+                <a href="../senseauto/senseauto开发使用笔记.html">
+            
+                    
+                    senseauto开发使用笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.10" data-path="../senseauto/感知真值系统.html">
+            
+                <a href="../senseauto/感知真值系统.html">
+            
+                    
+                    感知真值系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.11" data-path="../senseauto/相机感知系统.html">
+            
+                <a href="../senseauto/相机感知系统.html">
+            
+                    
+                    相机感知系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.12" data-path="../senseauto/统一软件平台.html">
+            
+                <a href="../senseauto/统一软件平台.html">
+            
+                    
+                    统一软件平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12.13" data-path="../senseauto/统一软件平台公告.html">
+            
+                <a href="../senseauto/统一软件平台公告.html">
+            
+                    
+                    统一软件平台公告
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../software engineering/">
+            
+                <a href="../software engineering/">
+            
+                    
+                    software engineering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../software engineering/设计模式.html">
+            
+                <a href="../software engineering/设计模式.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../software engineering/软件工程tip.html">
+            
+                <a href="../software engineering/软件工程tip.html">
+            
+                    
+                    软件工程tip
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >协程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x534F;&#x7A0B;&#x7B80;&#x4ECB;&#xFF08;coroutine&#xFF09;">&#x534F;&#x7A0B;&#x7B80;&#x4ECB;&#xFF08;coroutine&#xFF09;</h1>
+<p><a href="https://www.zhihu.com/people/linuxsao-di-seng" target="_blank"><img src="&#x534F;&#x7A0B;.assets/v2-e8621faf371fd574152aa9e65d48ed48_xs.jpg" alt="Linux&#x767E;&#x91CC;"></a></p>
+<p><a href="https://www.zhihu.com/people/linuxsao-di-seng" target="_blank">Linux&#x767E;&#x91CC;</a></p>
+<p>7 &#x4EBA;&#x8D5E;&#x540C;&#x4E86;&#x8BE5;&#x6587;&#x7AE0;</p>
+<p>&#x534F;&#x7A0B;&#x4E0D;&#x662F;&#x7CFB;&#x7EDF;&#x7EA7;&#x7EBF;&#x7A0B;&#xFF0C;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x534F;&#x7A0B;&#x88AB;&#x79F0;&#x4E3A;&#x201C;&#x8F7B;&#x91CF;&#x7EA7;&#x7EBF;&#x7A0B;&#x201D;&#x3001;&#x201C;&#x5FAE;&#x7EBF;&#x7A0B;&#x201D;&#x3001;&#x201C;&#x7EA4;&#x7A0B;(fiber)&#x201D;&#x7B49;&#x3002;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x534F;&#x7A0B;&#x662F;&#x7EBF;&#x7A0B;&#x91CC;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;<strong>&#x5FEB;&#x901F;</strong>&#x5207;&#x6362;</p>
+<p>&#x534F;&#x7A0B;&#x548C;&#x7528;&#x6237;&#x6001;&#x7EBF;&#x7A0B;&#x975E;&#x5E38;&#x63A5;&#x8FD1;&#xFF0C;&#x7528;&#x6237;&#x6001;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x7684;&#x5207;&#x6362;&#x4E0D;&#x9700;&#x8981;&#x9677;&#x5165;&#x5185;&#x6838;&#xFF0C;&#x4F46;&#x90E8;&#x5206;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x7528;&#x6237;&#x6001;&#x7EBF;&#x7A0B;&#x7684;&#x5207;&#x6362;&#x9700;&#x8981;&#x5185;&#x6838;&#x6001;&#x7EBF;&#x7A0B;&#x7684;&#x8F85;&#x52A9;</p>
+<p>&#x534F;&#x7A0B;&#x662F;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF08;&#x6216;&#x8005; lib&#xFF09;&#x63D0;&#x4F9B;&#x7684;&#x7279;&#x6027;&#xFF08;&#x534F;&#x7A0B;&#x4E4B;&#x95F4;&#x7684;&#x5207;&#x6362;&#x65B9;&#x5F0F;&#x4E0E;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x7531;&#x7F16;&#x7A0B;&#x4EBA;&#x5458;&#x786E;&#x5B9A;&#xFF09;&#xFF0C;&#x662F;&#x7528;&#x6237;&#x6001;&#x64CD;&#x4F5C;&#x3002;&#x534F;&#x7A0B;&#x9002;&#x7528;&#x4E8E; IO &#x5BC6;&#x96C6;&#x578B;&#x7684;&#x4EFB;&#x52A1;&#x3002;&#x5E38;&#x89C1;&#x63D0;&#x4F9B;&#x539F;&#x751F;&#x534F;&#x7A0B;&#x652F;&#x6301;&#x7684;&#x8BED;&#x8A00;&#x6709;&#xFF1A;c++20&#x3001;golang&#x3001;python &#x7B49;&#xFF0C;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4EE5;&#x5E93;&#x7684;&#x5F62;&#x5F0F;&#x63D0;&#x4F9B;&#x534F;&#x7A0B;&#x529F;&#x80FD;&#xFF0C;&#x6BD4;&#x5982; C++20 &#x4E4B;&#x524D;&#x817E;&#x8BAF;&#x7684; fiber &#x548C; libco &#x7B49;&#x7B49;</p>
+<h2 id="linux-&#x7EBF;&#x7A0B;&#x8D44;&#x6E90;&#x6D88;&#x8017;&#x5206;&#x6790;">Linux &#x7EBF;&#x7A0B;&#x8D44;&#x6E90;&#x6D88;&#x8017;&#x5206;&#x6790;</h2>
+<h3 id="&#x5927;&#x8111;--&#x6D41;&#x6C34;&#x7EBF;--&#x5206;&#x5DE5;">&#x5927;&#x8111; &amp;&amp; &#x6D41;&#x6C34;&#x7EBF; &amp;&amp; &#x5206;&#x5DE5;</h3>
+<p>&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x53EF;&#x4EE5;&#x7C7B;&#x6BD4;&#x4E8E;&#x4EBA;&#x8111;&#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x3002;&#x5DE5;&#x4F5C;&#x4E2D;&#x4E0D;&#x65AD;&#x5207;&#x6362;&#x5DE5;&#x4F5C;&#x5185;&#x5BB9;&#x4E0E;&#x573A;&#x666F;&#x4E00;&#x822C;&#x975E;&#x5E38;&#x7D2F;&#x4E14;&#x6548;&#x7387;&#x4F4E;&#x4E0B;&#xFF08;&#x8FD9;&#x662F;&#x6D41;&#x6C34;&#x7EBF;&#x53D1;&#x660E;&#x7684;&#x521D;&#x8877;&#x4E5F;&#x662F;&#x52B3;&#x52A8;&#x5206;&#x5DE5;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF09;&#xFF0C;&#x4F46;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#x4E0B;&#x6709;&#x5173;&#x8054;&#x7684;&#x51E0;&#x4E2A;&#x5B50;&#x4EFB;&#x52A1;&#x4E4B;&#x95F4;&#x76F8;&#x4E92;&#x5207;&#x6362;&#x5E76;&#x4E0D;&#x8017;&#x795E;&#xFF0C;&#x8FD9;&#x4E0E;&#x7EBF;&#x7A0B;&#x548C;&#x534F;&#x7A0B;&#x7684;&#x5207;&#x6362;&#x975E;&#x5E38;&#x76F8;&#x4F3C;</p>
+<p>&#x4EBA;&#x8111;&#x652F;&#x6301;&#x5F02;&#x6B65;&#x5904;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x9965;&#x997F;&#x611F;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x7CFB;&#x7EDF;&#x4E2D;&#x65AD;&#xFF1B;&#x6211;&#x4EEC;&#x7684;&#x751F;&#x7269;&#x949F;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x7C7B;&#x4F3C;&#x4E8E;&#x5B9A;&#x65F6;&#x5668;&#x4E00;&#x6837;&#x7684;&#x540E;&#x53F0;&#x786C;&#x4EF6;&#xFF1B;&#x6211;&#x4EEC;&#x7684;&#x611F;&#x60C5;&#x3001;&#x77E5;&#x8BC6;&#x3001;&#x610F;&#x8BC6;&#x90FD;&#x5728;&#x6F5C;&#x79FB;&#x9ED8;&#x5316;&#x4E2D;&#x6162;&#x6162;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x8FD9;&#x8BF4;&#x660E;&#x5927;&#x8111;&#x4E5F;&#x6709;&#x201C;&#x540E;&#x53F0;&#x4EFB;&#x52A1;&#x201D;</p>
+<h3 id="&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;">&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;</h3>
+<p>&#x8FDB;&#x7A0B;&#x3001;&#x7EBF;&#x7A0B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x505A;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF0C;</p>
+<p>&#x4E0B;&#x56FE;&#x5C55;&#x793A;&#x4E86;&#x8FDB;&#x7A0B;/&#x7EBF;&#x7A0B;&#x5728;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B; CPU &#x9700;&#x8981;&#x7684;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF08;CPU Context&#xFF0C;CPU &#x4E0A;&#x4E0B;&#x6587;&#xFF09;&#xFF0C;&#x6BD4;&#x5982;&#x901A;&#x7528;&#x5BC4;&#x5B58;&#x5668;&#x3001;&#x6808;&#x4FE1;&#x606F;&#xFF08;EBP/ESP&#xFF09;&#x7B49;&#x3002;&#x8FDB;&#x7A0B;/&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x65F6;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x4E0E;&#x6062;&#x590D;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;</p>
+<p>&#x8FDB;&#x7A0B;/&#x5185;&#x6838;&#x6001;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x4E0E;OS&#x5185;&#x6838;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#xFF0C;&#x4FDD;&#x5B58;/&#x8BFB;&#x53D6; CPU &#x4E0A;&#x4E0B;&#x6587;&#x4FE1;&#x606F;&#x3002;&#x5185;&#x6838;&#x6001;&#xFF08;Kernel&#xFF09;&#x7684;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x662F;&#x5171;&#x4EAB;&#x7684;&#xFF0C;&#x8BFB;&#x5199;&#x65F6;&#x9700;&#x8981;&#x540C;&#x6B65;&#x673A;&#x5236;&#xFF0C;&#x6240;&#x4EE5;&#x64CD;&#x4F5C;&#x4E00;&#x65E6;&#x9677;&#x5165;&#x5185;&#x6838;&#x6001;&#x5C31;&#x4F1A;&#x6D88;&#x8017;&#x66F4;&#x591A;&#x7684;&#x65F6;&#x95F4;</p>
+<p>&#x8FDB;&#x7A0B;&#x9700;&#x8981;&#x4E0E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x8FDB;&#x7A0B;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x4E89;&#x62A2;&#xFF0C;&#x4E14;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x8D44;&#x6E90;&#x7684;&#x9501;&#x662F;&#x5168;&#x5C40;&#x7684;&#xFF1B;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x4E00;&#x822C;&#x5728;&#x8FDB;&#x7A0B;&#x5185;&#x5171;&#x4EAB;&#xFF0C;&#x6240;&#x4EE5;&#x7EBF;&#x7A0B;&#x95F4;&#x8D44;&#x6E90;&#x5171;&#x4EAB;&#x76F8;&#x6BD4;&#x5982;&#x8FDB;&#x7A0B;&#x800C;&#x8A00;&#x8981;&#x8F7B;&#x4E00;&#x4E9B;&#x3002;&#x867D;&#x7136;&#x5F88;&#x591A;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF08;&#x6BD4;&#x5982; Linux&#xFF09;&#x8FDB;&#x7A0B;&#x4E0E;&#x7EBF;&#x7A0B;&#x533A;&#x522B;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x660E;&#x663E;&#xFF0C;&#x4F46;&#x7EBF;&#x7A0B;&#x8FD8;&#x662F;&#x6BD4;&#x8FDB;&#x7A0B;&#x8981;&#x8F7B;</p>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-271c1d083aaadf67791b163f3c6ec884_720w.jpg" alt="img"></p>
+<h3 id="linux-&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x8017;&#x65F6;&#x5206;&#x6790;">Linux &#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x8017;&#x65F6;&#x5206;&#x6790;</h3>
+<p>&#x7EBF;&#x7A0B;&#x7684;&#x5207;&#x6362;&#xFF08;Context Switch&#xFF09;&#x76F8;&#x6BD4;&#x4E8E;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x800C;&#x8A00;&#x5E76;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x8017;&#x65F6;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF08;2018&#x5E74;&#xFF09;&#xFF1A;</p>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-42ed9912c852c994196abc1bc46b06eb_720w.jpg" alt="img"></p>
+<p>Linux 2.6 &#x4E4B;&#x540E; Linux &#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x6027;&#x80FD;&#x63D0;&#x9AD8;&#x4E86;&#x5F88;&#x591A;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x573A;&#x666F;&#x4E0B;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x8017;&#x65F6;&#x5728; 2us &#x5DE6;&#x53F3;&#x3002;&#x4E0B;&#x9762;&#x662F; Linux &#x4E0B;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x8017;&#x65F6;&#x7EDF;&#x8BA1;&#xFF08;2013 &#x5E74;&#xFF09;</p>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-12b06814132154a4df5977b5cf56bf2d_720w.jpg" alt="img"></p>
+<p>&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#x7EBF;&#x7A0B;&#x6709;&#x7528;&#x7684; CPU &#x65F6;&#x95F4;&#x7247;&#x90FD;&#x5728;&#x6570;&#x5341;&#x6BEB;&#x79D2;&#x7EA7;&#x522B;&#xFF0C;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x5360;&#x603B;&#x8017;&#x65F6;&#x7684;&#x5343;&#x5206;&#x4E4B;&#x51E0;&#x4EE5;&#x5185;&#x3002;&#x534F;&#x7A0B;&#x7684;&#x4F7F;&#x7528;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x635F;&#x8017;&#x8FDB;&#x4E00;&#x6B65;&#x964D;&#x4F4E;&#xFF08;&#x4E3B;&#x8981;&#x662F;&#x53BB;&#x9664;&#x4E86;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982; futex &#x7B49;&#xFF09;</p>
+<p>&#x867D;&#x7136;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x5BF9;&#x4E8E;&#x5E38;&#x89C1;&#x4E1A;&#x52A1;&#x800C;&#x8A00;&#x5E76;&#x4E0D;&#x91CD;&#x8981;&#xFF0C;&#x4F46;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x8BED;&#x8A00;&#x6216;&#x8005;&#x7CFB;&#x7EDF;&#x90FD;&#x652F;&#x6301;&#x4E00;&#x6B21;&#x521B;&#x5EFA;&#x5F88;&#x591A;&#x7EBF;&#x7A0B;&#x3002;32 &#x4F4D;&#x7CFB;&#x7EDF;&#x5373;&#x4F7F;&#x4F7F;&#x7528;&#x4E86;&#x865A;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF0C;&#x56E0;&#x4E3A;&#x8FDB;&#x7A0B;&#x80FD;&#x8BBF;&#x95EE;&#x7684;&#x865A;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x5927;&#x6982;&#x662F; 3GB&#xFF0C;&#x6240;&#x4EE5;&#x5355;&#x8FDB;&#x7A0B;&#x6700;&#x591A;&#x521B;&#x5EFA; 300 &#x591A;&#x6761;&#x7EBF;&#x7A0B;&#xFF08;&#x5047;&#x8BBE;&#x7CFB;&#x7EDF;&#x4E3A;&#x6BCF;&#x6761;&#x7EBF;&#x7A0B;&#x5206;&#x914D; 10M &#x6808;&#x7A7A;&#x95F4;&#xFF09;&#x3002;&#x592A;&#x591A;&#x7EBF;&#x7A0B;&#x4E5F;&#x6709;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x89E6;&#x53D1;&#x4E86;&#x7F3A;&#x9875;&#x4E2D;&#x65AD;&#x7684;&#x98CE;&#x9669;</p>
+<p>&#x521B;&#x5EFA;&#x5F88;&#x591A;&#x7EBF;&#x7A0B;&#xFF08;&#x6BD4;&#x5982; 64 &#x4F4D;&#x7CFB;&#x7EDF;&#x4E0B;&#x521B;&#x5EFA; 1 &#x4E07;&#x6761;&#x7EBF;&#x7A0B;&#xFF09;&#xFF0C;&#x4E0D;&#x8003;&#x8651;&#x4F18;&#x5148;&#x7EA7;&#x4E14;&#x5047;&#x8BBE; CPU &#x6709; 10 &#x4E2A;&#x6838;&#x5FC3;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x6BCF;&#x79D2;&#x6709; 1ms &#x7684;&#x65F6;&#x95F4;&#x7247;&#xFF0C;&#x6574;&#x4E2A;&#x4E1A;&#x52A1;&#x7684;&#x8017;&#x65F6;&#x5927;&#x6982;&#x662F; (n&#x2212;1)&#x2217;1+n&#x2217;0.001 &#x79D2;&#xFF08;n &#x662F;&#x7EBF;&#x7A0B;&#x5728;&#x5904;&#x7406;&#x4E1A;&#x52A1;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x88AB;&#x8C03;&#x5EA6;&#x7684;&#x6B21;&#x6570;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x5927;&#x91CF;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x8D44;&#x6E90;&#x7ADE;&#x4E89;&#xFF0C;&#x90A3;&#x4E48;&#x7CFB;&#x7EDF;&#x884C;&#x4E3A;&#x5C06;&#x96BE;&#x4EE5;&#x9884;&#x6D4B;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x6709;&#x9650;&#x7684;&#x8D44;&#x6E90;&#x4E0B;&#x521B;&#x5EFA;&#x5927;&#x91CF;&#x7EBF;&#x7A0B;&#x662F;&#x4E0D;&#x5408;&#x7406;&#x7684;&#xFF0C;&#x670D;&#x52A1;&#x7EBF;&#x7A0B;&#x7684;&#x4E2A;&#x6570;&#x548C; CPU &#x6838;&#x5FC3;&#x6570;&#x5E94;&#x8BE5;&#x5728;&#x4E00;&#x4E2A;&#x5408;&#x7406;&#x7684;&#x6BD4;&#x4F8B;&#x5185;&#x3002;</p>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-c3fb830b503c7164a54b612e34072f80_720w.jpg" alt="img"></p>
+<h3 id="&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x5360;&#x7528;">&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x5360;&#x7528;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B; Linux &#x7CFB;&#x7EDF;&#x7ED9;&#x6BCF;&#x6761;&#x7EBF;&#x7A0B;&#x5206;&#x914D;&#x7684;&#x6808;&#x7A7A;&#x95F4;&#x6700;&#x5927;&#x662F; 6&#xFF5E;8MB&#xFF0C;&#x8FD9;&#x4E2A;&#x5927;&#x5C0F;&#x662F;&#x4E0A;&#x9650;&#xFF0C;&#x4E5F;&#x662F;&#x865A;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;&#x6BCF;&#x6761;&#x7EBF;&#x7A0B;&#x771F;&#x5B9E;&#x7684;&#x6808;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x3002;&#x7EBF;&#x7A0B;&#x771F;&#x5B9E;&#x6808;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x4F1A;&#x968F;&#x7740;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x800C;&#x53D8;&#x5316;&#xFF0C;&#x5982;&#x679C;&#x7EBF;&#x7A0B;&#x53EA;&#x4F7F;&#x7528;&#x4E86;&#x5C11;&#x91CF;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x771F;&#x5B9E;&#x7EBF;&#x7A0B;&#x6808;&#x53EF;&#x80FD;&#x53EA;&#x6709;&#x51E0;&#x5341;&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x7CFB;&#x7EDF;&#x5728;&#x7EF4;&#x62A4;&#x7EBF;&#x7A0B;&#x65F6;&#x9700;&#x8981;&#x5206;&#x914D;&#x989D;&#x5916;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x6240;&#x4EE5;&#x7EBF;&#x7A0B;&#x6570;&#x7684;&#x589E;&#x52A0;&#x8FD8;&#x662F;&#x4F1A;&#x63D0;&#x9AD8;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x7684;&#x6D88;&#x8017;</p>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>&#x5982;&#x679C;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x7ADE;&#x4E89;&#x5173;&#x7CFB;&#x3001;&#x7EBF;&#x7A0B;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x8F83;&#x5C11;&#x4E14;&#x5BF9;&#x5EF6;&#x65F6;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x654F;&#x611F;&#x6216;&#x8005;&#x8BF4;&#x7EBF;&#x7A0B;&#x521B;&#x5EFA;&#x4E0D;&#x9891;&#x7E41;&#xFF08;&#x6570;&#x5206;&#x949F;&#x521B;&#x5EFA;&#x4E00;&#x6B21;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x76F4;&#x63A5;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x7EBF;&#x7A0B;&#xFF08;<code>std::thread+detach/std::async</code>&#xFF09;&#x4E5F;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x9009;&#x62E9;</p>
+<p>&#x5982;&#x679C;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x65F6;&#x95F4;&#x8FDC;&#x5C0F;&#x4E8E; IO &#x8017;&#x65F6;&#xFF0C;&#x7EBF;&#x7A0B;&#x5207;&#x6362;&#x975E;&#x5E38;&#x9891;&#x7E41;&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;&#x534F;&#x7A0B;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x9009;&#x62E9;</p>
+<p>&#x534F;&#x7A0B;&#x7684;&#x4F18;&#x52BF;&#x5E76;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x51CF;&#x5C11;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x5207;&#x6362;&#xFF0C;&#x4ECE;&#x7F16;&#x7A0B;&#x7684;&#x89D2;&#x5EA6;&#x6765;&#x770B;&#xFF0C;<strong>&#x534F;&#x7A0B;&#x7684;&#x5F15;&#x5165;&#x7B80;&#x5316;&#x4E86;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;</strong>&#x3002;&#x534F;&#x7A0B;&#x4E3A;&#x4E00;&#x4E9B;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x63D0;&#x4F9B;&#x4E86;&#x65E0;&#x9501;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C06;&#x5728;&#x4E0B;&#x6587;&#x8FDB;&#x884C;&#x4ECB;&#x7ECD;</p>
+<h2 id="&#x7EBF;&#x7A0B;&#x4E0E;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;">&#x7EBF;&#x7A0B;&#x4E0E;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;</h2>
+<h3 id="&#x540C;&#x6B65;&#x4E0E;&#x5F02;&#x6B65;">&#x540C;&#x6B65;&#x4E0E;&#x5F02;&#x6B65;</h3>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-b9f3a240be49f92b3725a008c032c210_720w.jpg" alt="img"></p>
+<p>&#x540C;&#x6B65;&#x4E0E;&#x5F02;&#x6B65;&#x7684;&#x533A;&#x522B;&#x662F;&#x987A;&#x5E8F;&#x4E0E;&#x5E76;&#x884C;&#xFF0C;&#x540C;&#x6B65;&#x7F16;&#x7A0B;&#x610F;&#x5473;&#x7740;&#x53EA;&#x6709;&#x524D;&#x7F6E;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x624D;&#x80FD;&#x6267;&#x884C;&#x540E;&#x7EED;&#x6D41;&#x7A0B;&#xFF0C;&#x5982;&#x4E0A;&#x56FE; AB &#x548C; CD&#xFF1B;&#x5F02;&#x6B65;&#x8BF4;&#x660E;&#x4E8C;&#x8005;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x4E0A;&#x56FE;&#x4E2D;&#x7684; AC&#xFF08;&#x8FD9;&#x91CC;&#x4E0D;&#x533A;&#x5206;&#x5E76;&#x53D1;&#x3001;&#x5E76;&#x884C;&#x7684;&#x533A;&#x522B;&#xFF09;</p>
+<h3 id="&#x5E38;&#x89C1;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;">&#x5E38;&#x89C1;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x65B9;&#x5F0F;</h3>
+<h3 id="c11-async--future">C++11 async &amp;&amp; future</h3>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-f3da8a58963317c4e12911e35dd98474_720w.jpg" alt="img"></p>
+<p>&#x672F;&#x8BED; future&#xFF08;&#x671F;&#x8D27;&#xFF09;&amp;&amp; promise&#xFF08;&#x627F;&#x8BFA;&#xFF09; &#x6E90;&#x81EA;&#x91D1;&#x878D;&#x9886;&#x57DF;</p>
+<p>&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x591A;&#x7EBF;&#x7A0B;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x7684;&#x7D2F;&#x52A0;&#x3002;&#x7EBF;&#x7A0B;&#x7684;&#x521B;&#x5EFA;/&#x8C03;&#x5EA6;&#x4E0E;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x4F1A;&#x9020;&#x6210;&#x4E86;&#x4E00;&#x4E9B;&#x6D88;&#x8017;&#xFF0C;&#x6240;&#x4EE5;&#x5C11;&#x91CF;&#x6570;&#x636E;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x591A;&#x7EBF;&#x7A0B;</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">int64_t</span> multi_thread_acc(<span class="hljs-keyword">const</span> <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; data) {
+    <span class="hljs-keyword">if</span> (data.size() &lt; ELEM_NUM_MULTI_TH_LIMIT) { <span class="hljs-comment">// &#x5C11;&#x4E8E;&#x4E00;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x7D2F;&#x52A0;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5355;&#x7EBF;&#x7A0B;&#x4F1A;&#x66F4;&#x597D;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">std</span>::accumulate(data.begin(), data.end(), <span class="hljs-keyword">int64_t</span>(<span class="hljs-number">0</span>));
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">auto</span> step = data.size() / USED_CORE_NUM; <span class="hljs-comment">// or std: :hardware_currency</span>
+        <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;<span class="hljs-built_in">std</span>::future&lt;<span class="hljs-keyword">int64_t</span>&gt;&gt; ret_vec;
+        ret_vec.reserve(USED_CORE_NUM);
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; USED_CORE_NUM; i++) {
+            <span class="hljs-keyword">auto</span> lhs_it = data.begin() + i * step;
+            <span class="hljs-keyword">auto</span> rhs_it = (i == USED_CORE_NUM - <span class="hljs-number">1</span>) ? data.end() : lhs_it + step;
+            ret_vec.emplace_back(
+              <span class="hljs-comment">// &#x6301;&#x7EED;&#x521B;&#x5EFA;&#x5C11;&#x91CF;&#x7EBF;&#x7A0B;&#x5E76;&#x4E0D;&#x4F1A;&#x7ED9;&#x7CFB;&#x7EDF;&#x9020;&#x6210;&#x592A;&#x5927;&#x7684;&#x538B;&#x529B;</span>
+              <span class="hljs-built_in">std</span>::async([lhs_it, rhs_it] {
+                <span class="hljs-keyword">return</span> <span class="hljs-built_in">std</span>::accumulate(lhs_it, rhs_it, <span class="hljs-keyword">int64_t</span>(<span class="hljs-number">0</span>));
+              }));
+        }
+        <span class="hljs-keyword">int64_t</span> ret = <span class="hljs-number">0</span>;
+        <span class="hljs-comment">// &#x963B;&#x585E;&#x8C03;&#x7528;</span>
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span>&amp; fu : ret_vec) {
+            ret += fu.get();
+        }
+        <span class="hljs-keyword">return</span> ret;
+    }
+}
+</code></pre>
+<p>&#x4ECE;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x5E38;&#x89C4;&#x7684;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x624B;&#x6BB5;&#x8FD8;&#x662F;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x540C;&#x6B65;&#x7684;&#x8FC7;&#x7A0B;&#x6765;&#x641C;&#x96C6;&#x5F02;&#x6B65;&#x7EBF;&#x7A0B;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;</p>
+<h3 id="reactorproactor">Reactor/Proactor</h3>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-7b3111cb2db1f3e1f88c5120fd9985f1_720w.jpg" alt="img"></p>
+<p>Reactor/Proactor &#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x8FD9;&#x91CC;&#xFF0C;&#x672C;&#x6587;&#x4E0D;&#x505A;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF0C;&#x66F4;&#x591A;&#x77E5;&#x8BC6;&#x53EF;&#x4EE5;&#x5B66;&#x4E60; Asio</p>
+<p>&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7684;&#x53D1;&#x5C55;&#x4E0E;&#x6A21;&#x5F0F;&#x5927;&#x6982;&#x6709;&#x4E0B;&#x9762;&#x51E0;&#x79CD;(3.3)&#xFF1A;</p>
+<ol>
+<li>&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;/&#x8FDB;&#x7A0B;&#xFF0C;&#x963B;&#x585E;&#x5F0F; IO</li>
+<li>&#x963B;&#x585E;&#x5F0F; IO&#xFF0C;&#x7EBF;&#x7A0B;&#x6C60;</li>
+<li>&#x975E;&#x963B;&#x585E;&#x5F0F; IO &amp;&amp; IO &#x590D;&#x7528;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; Reactor</li>
+<li>Leader/Folloer &#x7B49;&#x6A21;&#x5F0F;</li>
+</ol>
+<p>Reactor &#x7F16;&#x7A0B;&#x6A21;&#x5F0F;&#x662F;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x7684;&#xFF0C;&#x5E76;&#x4EE5;&#x56DE;&#x8C03;&#xFF08;handle&#xFF09;&#x7684;&#x65B9;&#x5F0F;&#x5B8C;&#x6210;&#x5177;&#x4F53;&#x4E1A;&#x52A1;&#xFF0C;Reactor &#x6709;&#x51E0;&#x4E2A;&#x57FA;&#x672C;&#x6982;&#x5FF5;</p>
+<ol>
+<li>nonblockingIO&#xFF0B;IOmultiplexing&#xFF0C;&#x8BF7;&#x53C2;&#x8003; epoll</li>
+<li>Event loop&#xFF0C;&#x4E00;&#x4E2A;&#x76D1;&#x63A7;&#x4E8B;&#x4EF6;&#x6E90;&#xFF08;epoll fd&#xFF09;&#x7684;&#x201C;&#x6B7B;&#x5FAA;&#x73AF;&#x201D;</li>
+</ol>
+<pre><code class="lang-cpp"><span class="hljs-comment">// ... &#x524D;&#x7F6E;&#x8BBE;&#x7F6E;&#x7565;</span>
+<span class="hljs-keyword">while</span>(<span class="hljs-literal">true</span>) { <span class="hljs-comment">// event loop </span>
+    nfds = epoll_wait(epollFd, events, MAX_EVENTS, <span class="hljs-number">-1</span>);
+    <span class="hljs-keyword">if</span>(nfds == <span class="hljs-number">-1</span>){
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;epoll_wait failed\n&quot;</span>);
+        <span class="hljs-built_in">exit</span>(EXIT_FAILURE);
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nfds; i++){
+        <span class="hljs-keyword">if</span>(events[i].data.fd == listenFd){
+            connectFd = accept(listenFd, (sockaddr*)<span class="hljs-literal">NULL</span>, <span class="hljs-literal">NULL</span>);
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Connected ...\n&quot;</span>);
+            <span class="hljs-keyword">pthread_t</span> thread;
+            <span class="hljs-comment">// &#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x6C60;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x7CFB;&#x7EDF;&#x6D88;&#x8017;</span>
+            pthread_create(&amp;thread, <span class="hljs-literal">NULL</span>, handleConnection, (<span class="hljs-keyword">void</span> *) &amp;connectFd);
+        }
+        <span class="hljs-keyword">else</span> {
+          <span class="hljs-keyword">if</span>() <span class="hljs-comment">// readable</span>
+          <span class="hljs-keyword">if</span>() <span class="hljs-comment">// writeable</span>
+        }
+    }
+}
+</code></pre>
+<h3 id="&#x4F18;&#x70B9;&#x4E0E;&#x7F3A;&#x70B9;">&#x4F18;&#x70B9;&#x4E0E;&#x7F3A;&#x70B9;</h3>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x7EBF;&#x7A0B;&#x6570;&#x76EE;&#x57FA;&#x672C;&#x56FA;&#x5B9A;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x7684;&#x65F6;&#x5019;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E0D;&#x4F1A;&#x9891;&#x7E41;&#x521B;&#x5EFA;&#x4E0E;&#x9500;&#x6BC1;</li>
+<li>&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x5730;&#x5728;&#x7EBF;&#x7A0B;&#x95F4;&#x8C03;&#x914D;&#x8D1F;&#x8F7D;</li>
+<li>IO &#x4E8B;&#x4EF6;&#x53D1;&#x751F;&#x7684;&#x7EBF;&#x7A0B;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x540C;&#x4E00;&#x4E2A; TCP &#x8FDE;&#x63A5;&#x4E0D;&#x5FC5;&#x8003;&#x8651;&#x4E8B;&#x4EF6;&#x5E76;&#x53D1;</li>
+</ol>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x7684;&#x6A21;&#x578B;&#x6709;&#x4E2A;&#x975E;&#x5E38;&#x660E;&#x663E;&#x7684;&#x7F3A;&#x9677;&#xFF0C;<strong>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF08;handle&#xFF09;&#x4E0D;&#x80FD;&#x963B;&#x585E;&#xFF08;&#x975E;&#x62A2;&#x5360;&#x5F0F;&#x8C03;&#x5EA6;&#xFF09;</strong>&#xFF0C;&#x5426;&#x5219;&#x7EBF;&#x7A0B;&#x6216;&#x8005;&#x8FDB;&#x7A0B;&#x6709;&#x8017;&#x5C3D;&#x7684;&#x98CE;&#x9669;&#xFF0C;&#x5373;&#x4F7F;&#x4E0D;&#x8017;&#x5C3D;&#xFF0C;&#x4E5F;&#x4F1A;&#x7ED9;&#x7CFB;&#x7EDF;&#x5E26;&#x6765;&#x8D1F;&#x62C5;&#x3002;&#x53C2;&#x8003;&#x4E0A;&#x6587;&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x521B;&#x5EFA;&#x5927;&#x91CF;&#x8FDB;&#x7A0B;/&#x7EBF;&#x7A0B;&#x662F;&#x4E0D;&#x5408;&#x7406;&#x7684;</p>
+<h3 id="&#x54CD;&#x5E94;&#x5F0F;&#x7F16;&#x7A0B;&#xFF08;&#x57FA;&#x4E8E;&#x56DE;&#x8C03;&#xFF09;">&#x54CD;&#x5E94;&#x5F0F;&#x7F16;&#x7A0B;&#xFF08;&#x57FA;&#x4E8E;&#x56DE;&#x8C03;&#xFF09;</h3>
+<p>&#x54CD;&#x5E94;&#x5F0F;&#x7F16;&#x7A0B;&#xFF08; Reactive Programming&#xFF09;&#x4E3B;&#x8981;&#x5173;&#x6CE8;&#x7684;&#x662F;&#x6570;&#x636E;&#x6D41;&#x7684;&#x53D8;&#x6362;&#x548C;&#x6D41;&#x8F6C;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x66F4;&#x6CE8;&#x63CF;&#x8FF0;&#x6570;&#x636E;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x4E4B;&#x95F4; &#x7684;&#x5173;&#x7CFB;&#x3002;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x4E4B;&#x95F4;&#x7528;&#x51FD;&#x6570;&#x53D8;&#x6362;&#x6765;&#x8FDE;&#x63A5;&#xFF0C;&#x51FD;&#x6570;&#x4E4B;&#x95F4;&#x4E5F;&#x53EA;&#x5BF9;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x8D1F;&#x8D23;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x8F7B;&#x677E;&#x5730;&#x901A;&#x8FC7;&#x5C06;&#x8FD9;&#x4E9B; &#x51FD;&#x6570;&#x8C03;&#x7528;&#x5206;&#x53D1;&#x5230;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x4E0A;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x5F02;&#x6B65;</p>
+<p>&#x54CD;&#x5E94;&#x5F0F;&#x7F16;&#x7A0B;&#x4E2D;&#x7684;&#x903B;&#x8F91;&#x5355;&#x5143;&#x4E5F;&#x4E0D;&#x80FD;&#x963B;&#x585E;&#xFF0C;&#x5426;&#x5219;&#x4E5F;&#x6709;&#x8017;&#x5C3D;&#x5DE5;&#x4F5C;&#x7EBF;&#x7A0B;&#x7684;&#x98CE;&#x9669;&#xFF1B;&#x975E;&#x963B;&#x585E;&#x5F0F; handle &#x53C8;&#x6709;&#x9677;&#x5165;&#x56DE;&#x8C03;&#x5730;&#x72F1;&#x7684;&#x98CE;&#x9669;</p>
+<h3 id="&#x56DE;&#x8C03;&#x5730;&#x72F1;">&#x56DE;&#x8C03;&#x5730;&#x72F1;</h3>
+<p>&#x5927;&#x90E8;&#x5206;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x6846;&#x67B6;&#x90FD;&#x662F;&#x57FA;&#x4E8E;&#x56DE;&#x8C03;&#x7684;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x4E1A;&#x52A1;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x6B65;&#x9AA4;&#x65F6;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x5206;&#x5E03;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x6267;&#x884C;&#x5355;&#x5143;&#x4E2D;&#xFF0C;&#x8FD9;&#x5BF9;&#x4EE3;&#x7801;&#x7684;&#x7EF4;&#x62A4;&#x4E0E;&#x7406;&#x89E3;&#x9020;&#x6210;&#x4E86;&#x538B;&#x529B;&#x3002;&#x5F53;&#x6267;&#x884C;&#x94FE;&#x6761;&#x975E;&#x5E38;&#x957F;&#x65F6;&#x56DE;&#x8C03;&#x94FE;&#x8DEF;&#x4E5F;&#x4F1A;&#x5F88;&#x6DF1;</p>
+<p>&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x4E0E;&#x56DE;&#x8C03;&#x7684;&#x7F16;&#x7801;&#x98CE;&#x683C;&#x5C06;&#x4E1A;&#x52A1;&#x5272;&#x88C2;&#x5230;&#x4E0D;&#x540C;&#x7684; handle &#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x7406;&#x89E3;&#x4E0E;&#x7EF4;&#x62A4;&#x8D77;&#x6765;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;</p>
+<h3 id="coroutine">Coroutine</h3>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x53D9;&#x8FF0;&#xFF0C;&#x5728;&#x8D44;&#x6E90;&#x6709;&#x9650;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;&#x9AD8;&#x6027;&#x80FD;&#x670D;&#x52A1;&#x9700;&#x8981;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><strong>&#x51CF;&#x5C11;&#x7EBF;&#x7A0B;&#x7684;&#x91CD;&#x590D;&#x9AD8;&#x9891;&#x521B;&#x5EFA;</strong></p>
+<ol>
+<li><ol>
+<li>&#x5E38;&#x89C4;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;&#x7EBF;&#x7A0B;&#x6C60;</li>
+</ol>
+</li>
+</ol>
+<p><strong>&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x7EBF;&#x7A0B;&#x7684;&#x963B;&#x585E;</strong></p>
+<ol>
+<li><ol>
+<li>Reactor &amp;&amp; &#x975E;&#x963B;&#x585E;&#x56DE;&#x8C03;&#xFF0C;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x80FD;&#x529B;&#x6709;&#x9650;</li>
+<li>&#x54CD;&#x5E94;&#x5F0F;&#x7F16;&#x7A0B;&#xFF0C;&#x5BB9;&#x6613;&#x9677;&#x5165;&#x56DE;&#x8C03;&#x5730;&#x72F1;&#xFF0C;&#x5272;&#x88C2;&#x4E1A;&#x52A1;&#x903B;&#x8F91;</li>
+<li>&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#xFF0C;&#x4F8B;&#x5982;&#x534F;&#x7A0B;</li>
+</ol>
+</li>
+</ol>
+<p><strong>&#x63D0;&#x5347;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x7EF4;&#x62A4;&#x4E0E;&#x53EF;&#x7406;&#x89E3;&#x6027;&#xFF0C;&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x56DE;&#x8C03;&#x5730;&#x72F1;</strong></p>
+<ol>
+<li><ol>
+<li>&#x5C11;&#x4F7F;&#x7528;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x51CF;&#x5C11;&#x56DE;&#x8C03;&#x94FE;&#x6DF1;&#x5EA6;</li>
+</ol>
+</li>
+</ol>
+<p>&#x4F7F;&#x7528;&#x534F;&#x7A0B;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x4E0A;&#x9762; 2/3 &#x4E24;&#x4E2A;&#x95EE;&#x9898;&#x3002;<strong>&#x534F;&#x7A0B;&#x53EF;&#x4EE5;&#x7528;&#x540C;&#x6B65;&#x7F16;&#x7A0B;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x624D;&#x80FD;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;</strong></p>
+<blockquote>
+<p><strong>&#x534F;&#x7A0B;&#x540C;&#x65F6;&#x5305;&#x542B;&#x4E86;&#x5F02;&#x6B65;&#x4E0E;&#x56DE;&#x8C03;&#x4E24;&#x5C42;&#x8BED;&#x4E49;&#xFF08;&#x300A;&#x6DF1;&#x5165;&#x7406;&#x89E3; kotlin &#x534F;&#x7A0B;&#x300B;&#xFF09;</strong></p>
+</blockquote>
+<p><strong>&#x534F;&#x7A0B;&#x4E0E;&#x72B6;&#x6001;&#x673A;</strong></p>
+<blockquote>
+<p>A computer is a state machine. Threads are for people who can&#x2019;t program state machines &#x2014;&#x2014;Alan Cox</p>
+</blockquote>
+<p>&#x65E0;&#x6808;&#x534F;&#x7A0B;&#x662F;&#x5BF9;<strong>&#x8BA1;&#x7B97;&#x673A;&#x662F;&#x72B6;&#x6001;&#x673A;</strong>&#x7684;&#x5B9E;&#x8DF5;</p>
+<h2 id="&#x534F;&#x7A0B;&#x7684;&#x539F;&#x7406;">&#x534F;&#x7A0B;&#x7684;&#x539F;&#x7406;</h2>
+<p>&#x534F;&#x7A0B;&#x7684;&#x5207;&#x6362;&#x548C;&#x7EBF;&#x7A0B;&#x8FDB;&#x7A0B;&#x7684;&#x5207;&#x6362;&#x673A;&#x5236;&#x662F;&#x76F8;&#x4F3C;&#x7684;&#xFF08;CPU &#x4E0A;&#x4E0B;&#x6587;&#x4E0E;&#x6808;&#x4FE1;&#x606F;&#x7684;&#x4FDD;&#x5B58;&#x4E0E;&#x6062;&#x590D;&#xFF09;&#xFF0C;&#x534F;&#x7A0B;&#x5728;&#x5207;&#x6362;&#x51FA;&#x53BB;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x7684;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#xFF0C;&#x6BD4;&#x5982; CPU &#x5BC4;&#x5B58;&#x5668;&#x3001;&#x6808;&#x4FE1;&#x606F;&#x7B49;&#x7B49;</p>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-287d6e768ebb5262314981ce445241db_720w.jpg" alt="img"></p>
+<p><strong>Stackless &amp;&amp; Stackful</strong></p>
+<p>&#x6709;&#x6808;&#x534F;&#x7A0B;&#x4E0E;&#x65E0;&#x6808;&#x534F;&#x7A0B;&#x662F;&#x534F;&#x7A0B;&#x7684;&#x4E24;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x6808;&#x662F;&#x201C;&#x903B;&#x8F91;&#x6808;&#x201D;&#xFF0C;&#x4E0D;&#x662F;&#x5185;&#x5B58;&#x6808;</p>
+<p>&#x6BD4;&#x5982;&#x534F;&#x7A0B; A &#x8C03;&#x7528;&#x4E86;&#x534F;&#x7A0B; B&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x6709; B &#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x8C03;&#x7528; A &#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x534F;&#x7A0B;&#x5C31;&#x662F; Stackful&#xFF0C;&#x6B64;&#x65F6; A/B &#x662F;&#x975E;&#x5BF9;&#x79F0;&#x534F;&#x7A0B;&#xFF1B;&#x5982;&#x679C; A/B &#x88AB;&#x8C03;&#x7528;&#x7684;&#x6982;&#x7387;&#x76F8;&#x540C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x534F;&#x7A0B;&#x5C31;&#x662F; Stackless&#xFF0C;&#x6B64;&#x65F6; A/B &#x662F;&#x5BF9;&#x79F0;&#x534F;&#x7A0B;</p>
+<p>&#x4E0B;&#x9762;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;&#x65E0;&#x6808;&#x534F;&#x7A0B;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x6709;&#x6808;&#x534F;&#x7A0B;&#x6709;&#x5174;&#x8DA3;&#xFF0C;&#x53EF;&#x4EE5;&#x770B; libco &#x7B49;&#x5E93;&#x7B49;&#x5B9E;&#x73B0;&#x3002;C++20 &#x5F15;&#x5165;&#x7684;&#x662F;&#x65E0;&#x6808;&#x534F;&#x7A0B;</p>
+<h3 id="&#x4F7F;&#x7528;-setjmplongjmp-&#x5B9E;&#x73B0;&#x7684;&#x7B80;&#x5355;&#x534F;&#x7A0B;">&#x4F7F;&#x7528; setjmp/longjmp &#x5B9E;&#x73B0;&#x7684;&#x7B80;&#x5355;&#x534F;&#x7A0B;</h3>
+<p>&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x6A21;&#x62DF;&#x4E86;&#x5355;&#x7EBF;&#x7A0B;&#x5E76;&#x53D1;&#x6267;&#x884C;&#x4E24;&#x4E2A; <code>while(true){...}</code> &#x51FD;&#x6570;&#xFF0C;</p>
+<p>setjmp/longjmp &#x4E0D;&#x80FD;&#x4F5C;&#x4E3A;&#x534F;&#x7A0B;&#x5B9E;&#x73B0;&#x7684;&#x5E95;&#x5C42;&#x673A;&#x5236;&#xFF0C;&#x56E0;&#x4E3A; setjmp/longjmp &#x5BF9;&#x6808;&#x4FE1;&#x606F;&#x7684;&#x652F;&#x6301;&#x6709;&#x9650;</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">int</span> max_iteration = <span class="hljs-number">9</span>;
+<span class="hljs-keyword">int</span> iter;
+
+jmp_buf Main;
+jmp_buf PointPing;
+jmp_buf PointPong;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Ping</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Pong</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span>* argv[])</span> </span>{
+    iter = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">if</span> (setjmp(Main) == <span class="hljs-number">0</span>) Ping();
+    <span class="hljs-keyword">if</span> (setjmp(Main) == <span class="hljs-number">0</span>) Pong();
+    longjmp(PointPing, <span class="hljs-number">1</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Ping</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+    <span class="hljs-keyword">if</span> (setjmp(PointPing) == <span class="hljs-number">0</span>) longjmp(Main, <span class="hljs-number">1</span>); <span class="hljs-comment">// &#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x91CD;&#x7F6E;&#xFF0C;reset the world</span>
+    <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%3d : Ping-&quot;</span>, iter);
+        <span class="hljs-keyword">if</span> (setjmp(PointPing) == <span class="hljs-number">0</span>) longjmp(PointPong, <span class="hljs-number">1</span>);
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">Pong</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>{
+    <span class="hljs-keyword">if</span> (setjmp(PointPong) == <span class="hljs-number">0</span>) longjmp(Main, <span class="hljs-number">1</span>);
+    <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Pong\n&quot;</span>);
+        iter++;
+        <span class="hljs-keyword">if</span> (iter &gt; max_iteration) <span class="hljs-built_in">exit</span>(<span class="hljs-number">0</span>);
+        <span class="hljs-keyword">if</span> (setjmp(PointPong) == <span class="hljs-number">0</span>) longjmp(PointPing, <span class="hljs-number">1</span>);
+    }
+}
+</code></pre>
+<p>&#x901A;&#x8FC7;&#x547D;&#x4EE4;<code>gcc test.c</code>&#x7F16;&#x8BD1;&#x540E;&#x6267;&#x884C;<code>./a.out 7</code>&#xFF0C;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-cpp"><span class="hljs-number">1</span> : Ping-Pong
+<span class="hljs-number">2</span> : Ping-Pong
+<span class="hljs-number">3</span> : Ping-Pong
+<span class="hljs-number">4</span> : Ping-Pong
+<span class="hljs-number">5</span> : Ping-Pong
+<span class="hljs-number">6</span> : Ping-Pong
+<span class="hljs-number">7</span> : Ping-Pong
+</code></pre>
+<h3 id="&#x534F;&#x7A0B;&#x7684;&#x7279;&#x70B9;">&#x534F;&#x7A0B;&#x7684;&#x7279;&#x70B9;</h3>
+<ol>
+<li>&#x534F;&#x7A0B;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x8BA9;&#x51FA; CPU &#x65F6;&#x95F4;&#x7247;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x662F;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x8BA9;&#x51FA; CPU &#x65F6;&#x95F4;&#x7247;&#xFF0C;&#x800C;&#x662F;&#x7EBF;&#x7A0B;&#x5185;&#x7684;&#x67D0;&#x4E2A;&#x534F;&#x7A0B;&#x8BA9;&#x51FA;&#x65F6;&#x95F4;&#x7247;&#x4F9B;<strong>&#x540C;&#x7EBF;&#x7A0B;&#x5185;</strong>&#x5176;&#x4ED6;&#x534F;&#x7A0B;&#x8FD0;&#x884C;</li>
+<li>&#x534F;&#x7A0B;&#x53EF;&#x4EE5;&#x6062;&#x590D; CPU &#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x5F53;&#x53E6;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x5176;&#x9700;&#x8981;&#x6062;&#x590D; CPU &#x4E0A;&#x4E0B;&#x6587;&#x73AF;&#x5883;</li>
+<li>&#x534F;&#x7A0B;&#x6709;&#x4E2A;&#x7BA1;&#x7406;&#x8005;&#xFF0C;&#x7BA1;&#x7406;&#x8005;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#x6765;&#x8FD0;&#x884C;&#xFF0C;&#x5176;&#x4ED6;&#x534F;&#x7A0B;&#x8981;&#x4E48;&#x963B;&#x585E;&#xFF0C;&#x8981;&#x4E48;ready&#xFF0C;&#x6216;&#x8005;died</li>
+<li>&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x534F;&#x7A0B;&#x5C06;&#x5360;&#x6709;<strong>&#x5F53;&#x524D;&#x7EBF;&#x7A0B;</strong>&#x7684;&#x6240;&#x6709;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;</li>
+<li>&#x534F;&#x7A0B;&#x5929;&#x751F;&#x6709;<strong>&#x6808;&#x5C5E;&#x6027;</strong>&#xFF0C;&#x800C;&#x4E14;&#x662F; lock free</li>
+</ol>
+<h3 id="&#x5176;&#x4ED6;&#x534F;&#x7A0B;&#x5E93;">&#x5176;&#x4ED6;&#x534F;&#x7A0B;&#x5E93;</h3>
+<h3 id="ucontext&#xFF0C;cpu-&#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;">ucontext&#xFF0C;CPU &#x4E0A;&#x4E0B;&#x6587;&#x7BA1;&#x7406;</h3>
+<p>&#x4E0B;&#x9762;&#x5173;&#x4E8E; ucontext &#x7684;&#x4ECB;&#x7ECD;&#x6E90;&#x81EA;&#xFF1A;<a href="https://link.zhihu.com/?target=http%3A//pubs.opengroup.org/onlinepubs/7908799/xsh/ucontext.h.html" target="_blank">http://pubs.opengroup.org/onlinepubs/7908799/xsh/ucontext.h.html</a> &#x3002;ucontext lib &#x5DF2;&#x7ECF;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x4F46;&#x4F9D;&#x65E7;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x534F;&#x7A0B;&#x5165;&#x95E8;&#x8D44;&#x6599;&#x3002;&#x5176;&#x4ED6;&#x5E95;&#x5C42;&#x534F;&#x7A0B;&#x5E93;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x67E5;&#x770B; Boost.Context / tbox &#x7B49;&#xFF0C;&#x534F;&#x7A0B;&#x5E93;&#x7684;&#x5BF9;&#x6BD4;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF1A;<a href="https://link.zhihu.com/?target=https%3A//github.com/tboox/benchbox/wiki/switch" target="_blank">https://github.com/tboox/benchbox/wiki/switch</a></p>
+<p>linux &#x7CFB;&#x7EDF;&#x4E00;&#x822C;&#x90FD;&#x6709; ucontext &#x8FD9;&#x4E2A; c &#x8BED;&#x8A00;&#x5E93;&#xFF0C;&#x8FD9;&#x4E2A;&#x5E93;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x64CD;&#x63A7;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E0B;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x548C; setjmp/longjmp &#x4E0D;&#x540C;&#xFF0C;ucontext &#x76F4;&#x63A5;&#x63D0;&#x4F9B;&#x4E86;&#x8BBE;&#x7F6E;&#x51FD;&#x6570;&#x8FD0;&#x884C;&#x65F6;&#x6808;&#x7684;&#x65B9;&#x5F0F;&#xFF08;makecontext&#xFF09;&#xFF0C;&#x907F;&#x514D;&#x4E0D;&#x540C;&#x51FD;&#x6570;&#x6808;&#x7A7A;&#x95F4;&#x7684;&#x91CD;&#x53E0;</p>
+<p>ucontext &#x53EA;&#x64CD;&#x4F5C;&#x4E0E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;&#x7684; CPU &#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x6240;&#x4EE5;&#x4E0B;&#x6587;&#x4E2D;&#x6D89;&#x53CA; ucontext &#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5747;&#x6307;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x3002;&#x4E00;&#x822C;CPU &#x6709;&#x591A;&#x4E2A;&#x6838;&#x5FC3;&#xFF0C;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x67D0;&#x4E00;&#x65F6;&#x523B;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#xFF0C;&#x6240;&#x4EE5; ucontext &#x53EA;&#x6D89;&#x53CA;&#x4E00;&#x4E2A;&#x4E0E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;&#x7684; CPU &#x6838;&#x5FC3;</p>
+<p>ucontext.h &#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86; ucontext_t &#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x6210;&#x5458;&#xFF1A;</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">ucontext_t</span> *uc_link     <span class="hljs-comment">// next context</span>
+<span class="hljs-keyword">sigset_t</span>    uc_sigmask  <span class="hljs-comment">// &#x963B;&#x585E;&#x4FE1;&#x53F7;&#x963B;&#x585E;</span>
+<span class="hljs-keyword">stack_t</span>     uc_stack    <span class="hljs-comment">// &#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6808;</span>
+<span class="hljs-keyword">mcontext_t</span>  uc_mcontext <span class="hljs-comment">// &#x5B9E;&#x9645;&#x4FDD;&#x5B58; CPU &#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E0E;&#x5E73;&#x53F0;&amp;&#x673A;&#x5668;&#x76F8;&#x5173;&#xFF0C;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;</span>
+</code></pre>
+<p>&#x540C;&#x65F6;&#xFF0C;ucontext.h &#x5934;&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;&#x56DB;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4E0B;&#x9762;&#x5206;&#x522B;&#x4ECB;&#x7ECD;&#xFF1A;</p>
+<pre><code class="lang-cpp">int  getcontext(ucontext_t *); // &#x83B7;&#x5F97;&#x5F53;&#x524D; CPU &#x4E0A;&#x4E0B;&#x6587;
+int  setcontext(const ucontext_t *);// &#x91CD;&#x7F6E;&#x5F53;&#x524D; CPU &#x4E0A;&#x4E0B;&#x6587;
+void makecontext(ucontext_t *, (void *)(), int, ...); // &#x4FEE;&#x6539;&#x4E0A;&#x4E0B;&#x6587;&#x4FE1;&#x606F;&#xFF0C;&#x6BD4;&#x5982;&#x8BBE;&#x7F6E;&#x6808;&#x6307;&#x9488;
+int  swapcontext(ucontext_t *, const ucontext_t *);
+</code></pre>
+<p>getcontext &amp; setcontext</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;ucontext.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getcontext</span><span class="hljs-params">(ucontext_t *ucp)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">setcontext</span><span class="hljs-params">(ucontext_t *ucp)</span></span>;
+</code></pre>
+<p>getcontext &#x51FD;&#x6570;&#x4F7F;&#x7528;&#x5F53;&#x524D; CPU &#x4E0A;&#x4E0B;&#x6587;&#x521D;&#x59CB;&#x5316; ucp &#x6240;&#x6307;&#x5411;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x7684;&#x5185;&#x5BB9;&#x5305;&#x62EC; CPU &#x5BC4;&#x5B58;&#x5668;&#x3001;&#x4FE1;&#x53F7; mask &#x548C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6808;&#x7A7A;&#x95F4;</p>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;</strong>&#xFF1A;getcontext &#x6210;&#x529F;&#x8FD4;&#x56DE; 0&#xFF0C;&#x5931;&#x8D25;&#x8FD4;&#x56DE; -1&#x3002;<strong>&#x6CE8;&#x610F;</strong>&#xFF0C;&#x5982;&#x679C; setcontext &#x6267;&#x884C;&#x6210;&#x529F;&#xFF0C;&#x90A3;&#x4E48;&#x8C03;&#x7528; setcontext &#x7684;&#x51FD;&#x6570;&#x5C06;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;&#xFF0C;&#x56E0;&#x4E3A;&#x5F53;&#x524D; CPU &#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x5DF2;&#x7ECF;&#x4EA4;&#x7ED9;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x6216;&#x8005;&#x8FC7;&#x7A0B;&#x4E86;&#xFF0C;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x5B8C;&#x5168;&#x653E;&#x5F03;&#x4E86; &#x5BF9; CPU &#x7684;&#x201C;&#x6240;&#x6709;&#x6743;&#x201D;</p>
+<p><strong>&#x5E94;&#x7528;</strong>&#xFF1A;&#x5F53;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x51FD;&#x6570;&#x9700;&#x8981;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#xFF0C;&#x968F;&#x540E;&#x8FDB;&#x5165;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x9636;&#x6BB5;&#x3002;&#x53EF;&#x79FB;&#x690D;&#x7684;&#x7A0B;&#x5E8F;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x8BFB;&#x53D6;&#x4E0E;&#x4FEE;&#x6539; <code>ucontext_t</code> &#x4E2D;&#x7684; <code>uc_mcontext</code>&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x540C;&#x5E73;&#x53F0;&#x4E0B; <code>uc_mcontext</code> &#x7684;&#x5B9E;&#x73B0;&#x662F;&#x4E0D;&#x540C;&#x7684;</p>
+<h3 id="makecontext--swapcontext">makecontext &amp; swapcontext</h3>
+<pre><code class="lang-cpp">#include &lt;ucontext.h&gt;
+void makecontext(ucontext_t *ucp, (void *func)(), int argc, ...);
+int swapcontext(ucontext_t *oucp, const ucontext_t *ucp);
+</code></pre>
+<p>makecontext &#x4FEE;&#x6539;&#x7531; getcontext &#x521B;&#x5EFA;&#x7684;&#x4E0A;&#x4E0B;&#x6587; ucp&#x3002;&#x5982;&#x679C; ucp &#x6307;&#x5411;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x7531; swapcontext &#x6216; setcontext &#x6062;&#x590D;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5C06;&#x6267;&#x884C;&#x4F20;&#x9012;&#x7ED9; makecontext &#x7684;&#x51FD;&#x6570; func(...)</p>
+<p>&#x6267;&#x884C; makecontext &#x540E;&#x9700;&#x8981;&#x4E3A;&#x65B0;&#x4E0A;&#x4E0B;&#x6587;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x6808;&#x7A7A;&#x95F4;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x521B;&#x5EFA;&#xFF0C;&#x90A3;&#x4E48;&#x65B0;&#x51FD;&#x6570;func&#x6267;&#x884C;&#x65F6;&#x4F1A;&#x4F7F;&#x7528;&#x65E7;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x6808;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x6808;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x4E0D;&#x5B58;&#x5728;&#x4E86;&#x3002;argc &#x5FC5;&#x987B;&#x548C; func &#x4E2D;&#x6574;&#x578B;&#x53C2;&#x6570;&#x7684;&#x4E2A;&#x6570;&#x76F8;&#x7B49;&#x3002;</p>
+<p>swapcontext &#x5C06;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;&#x4FE1;&#x606F;&#x4FDD;&#x5B58;&#x5230; oucp &#x4E2D;&#x5E76;&#x4F7F;&#x7528; ucp &#x91CD;&#x7F6E; CPU &#x4E0A;&#x4E0B;&#x6587;</p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;swapcontext &#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE; 0&#xFF0C;&#x5931;&#x8D25;&#x8FD4;&#x56DE; -1 &#x5E76;&#x7F6E; errno&#x3002;&#x5982;&#x679C; ucp &#x6240;&#x6307;&#x5411;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x6808;&#x7A7A;&#x95F4;&#x4EE5;&#x6267;&#x884C;&#x4F59;&#x4E0B;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;swapcontext &#x5C06;&#x8FD4;&#x56DE; -1</p>
+<p>&#x8FDB;&#x4E00;&#x6B65;&#x5B66;&#x4E60;</p>
+<p>&#x6709;&#x5F88;&#x591A;&#x534F;&#x7A0B;&#x5E93;&#x7684;&#x5B9E;&#x73B0;&#x662F;&#x57FA;&#x4E8E; ucontext &#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x5B66;&#x4E60;&#x8FD9;&#x4E9B;&#x5E93;&#x7684;&#x65F6;&#x5019;&#x987A;&#x4FBF;&#x5B66;&#x4E60;&#x4E00;&#x4E0B; ucontext &#x5E93;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</p>
+<h3 id="coroutine&#xFF0C;&#x7B80;&#x5355;&#x7684;-c-&#x534F;&#x7A0B;&#x5E93;"><strong>coroutine&#xFF0C;&#x7B80;&#x5355;&#x7684; C &#x534F;&#x7A0B;&#x5E93;</strong></h3>
+<p>coroutine &#x662F;&#x57FA;&#x4E8E; ucontext &#x7684;&#x4E00;&#x4E2A; C &#x8BED;&#x8A00;&#x534F;&#x7A0B;&#x5E93;&#x5B9E;&#x73B0;&#x3002;&#x5305;&#x542B;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5728;&#x5185;&#xFF0C;&#x5168;&#x90E8;&#x4EE3;&#x7801;&#x884C;&#x6570;&#x4E0D;&#x8D85;&#x8FC7; 300 &#x884C;&#xFF0C;Mac&amp;&amp;Linux &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x6BB5;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;coroutine.h&quot;</span></span>
+
+<span class="hljs-keyword">struct</span> args { <span class="hljs-keyword">int</span> n; };
+
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> schedule* S, <span class="hljs-keyword">void</span>* ud)</span> </span>{
+    <span class="hljs-keyword">struct</span> args* arg = ud;
+    <span class="hljs-keyword">int</span> start = arg-&gt;n;
+    <span class="hljs-keyword">int</span> i;
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;coroutine %d : %d\n&quot;</span>, coroutine_running(S), start + i);
+        coroutine_yield(S);
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">struct</span> schedule* S = coroutine_open(); <span class="hljs-comment">// &#x521B;&#x5EFA;&#x534F;&#x7A0B;&#x7BA1;&#x7406;&#x5BF9;&#x8C61;</span>
+
+    <span class="hljs-keyword">struct</span> args arg1 = {<span class="hljs-number">0</span>};
+    <span class="hljs-keyword">struct</span> args arg2 = {<span class="hljs-number">100</span>};
+
+    <span class="hljs-keyword">int</span> co1 = coroutine_new(S, foo, &amp;arg1); <span class="hljs-comment">// &#x6CE8;&#x518C;&#x534F;&#x7A0B;&#x51FD;&#x6570;</span>
+    <span class="hljs-keyword">int</span> co2 = coroutine_new(S, foo, &amp;arg2);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;main start\n&quot;</span>);
+    <span class="hljs-keyword">while</span> (coroutine_status(S, co1) || coroutine_status(S, co2)) {
+        coroutine_resume(S, co1); <span class="hljs-comment">// &#x6267;&#x884C;&#x534F;&#x7A0B;</span>
+        coroutine_resume(S, co2);
+    }
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;main end\n&quot;</span>);
+    coroutine_close(S);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="fiberlibco-&#x7B49;">fiber/libco &#x7B49;</h3>
+<p>&#x534F;&#x7A0B;&#x5E38;&#x7528;&#x4E8E;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#xFF0C;libco &#x7B49;&#x5E93;&#x5229;&#x7528;&#x534F;&#x7A0B;&#x52AB;&#x6301;&#x5E76;&#x5C01;&#x88C5;&#x4E86;&#x5E95;&#x5C42;&#x7F51;&#x7EDC; IO &#x76F8;&#x5173;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4EE5;&#x540C;&#x6B65;&#x7F16;&#x7A0B;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x4E86;&#x7F51;&#x7EDC;&#x4E8B;&#x4EF6;&#x7684;&#x5F02;&#x6B65;&#x5904;&#x7406;</p>
+<p>&#x5177;&#x4F53;&#x7EC6;&#x8282;&#x8BF7;&#x53C2;&#x8003;&#x5176;&#x4ED6;&#x8D44;&#x6599;&#xFF0C;&#x672C;&#x6587;&#x4E0D;&#x5C55;&#x5F00;&#x4ECB;&#x7ECD;</p>
+<h3 id="n1--nm-&#x534F;&#x7A0B;">N:1 &amp;&amp; N:M &#x534F;&#x7A0B;</h3>
+<p>&#x548C;&#x7EBF;&#x7A0B;&#x7ED1;&#x5B9A;&#x7684;&#x534F;&#x7A0B;&#x53EA;&#x6709;&#x5728;&#x5BF9;&#x5E94;&#x7EBF;&#x7A0B;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x624D;&#x6709;&#x88AB;&#x6267;&#x884C;&#x7684;&#x53EF;&#x80FD;&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x5E94;&#x7EBF;&#x7A0B;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x534F;&#x7A0B;&#x5B8C;&#x5168;&#x5360;&#x6709;&#x4E86;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x534F;&#x7A0B;&#x90FD;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;&#x884C;</p>
+<p>&#x534F;&#x7A0B;&#x7684;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x90FD;&#x4FDD;&#x5B58;&#x5728;&#x4E0A;&#x4E0B;&#x6587;&#xFF08;Contex&#xFF09;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x5C06;&#x4E0D;&#x540C;&#x4E0A;&#x4E0B;&#x6587;&#x5206;&#x53D1;&#x7ED9;&#x4E0D;&#x540C;&#x7684;&#x7EBF;&#x7A0B;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x534F;&#x7A0B;&#x7684;&#x8DE8;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#xFF0C;&#x5982;&#x6B64;&#xFF0C;&#x534F;&#x7A0B;&#x88AB;&#x963B;&#x585E;&#x7684;&#x6982;&#x7387;&#x5C06;&#x51CF;&#x5C0F;</p>
+<p>&#x501F;&#x7528; <a href="https://link.zhihu.com/?target=https%3A//github.com/apache/incubator-brpc/blob/master/docs/cn/bthread.md" target="_blank">BRPC</a> &#x4E2D;&#x5BF9; N:M &#x534F;&#x7A0B;&#x7684;&#x4ECB;&#x7ECD;&#xFF0C;&#x6765;&#x89E3;&#x91CA;&#x4E0B;&#x4EC0;&#x4E48;&#x662F; N:M &#x534F;&#x7A0B;</p>
+<blockquote>
+<p>&#x6211;&#x4EEC;&#x5E38;&#x8BF4;&#x7684;&#x534F;&#x7A0B;&#x7279;&#x6307; N:1 &#x7EBF;&#x7A0B;&#x5E93;&#xFF0C;&#x5373;&#x6240;&#x6709;&#x7684;&#x534F;&#x7A0B;&#x8FD0;&#x884C;&#x4E8E;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x7EBF;&#x7A0B;&#x4E2D;&#xFF0C;&#x8BA1;&#x7B97;&#x80FD;&#x529B;&#x548C;&#x5404;&#x7C7B;eventloop&#x5E93;&#x7B49;&#x4EF7;&#x3002;&#x7531;&#x4E8E;&#x4E0D;&#x8DE8;&#x7EBF;&#x7A0B;&#xFF0C;&#x534F;&#x7A0B;&#x4E4B;&#x95F4;&#x7684;&#x5207;&#x6362;&#x4E0D;&#x9700;&#x8981;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x5FEB;(100ns-200ns)&#xFF0C;&#x53D7;cache&#x4E00;&#x81F4;&#x6027;&#x7684;&#x5F71;&#x54CD;&#x4E5F;&#x5C0F;&#x3002;&#x4F46;&#x4EE3;&#x4EF7;&#x662F;&#x534F;&#x7A0B;&#x65E0;&#x6CD5;&#x9AD8;&#x6548;&#x5730;&#x5229;&#x7528;&#x591A;&#x6838;&#xFF0C;&#x4EE3;&#x7801;&#x5FC5;&#x987B;&#x975E;&#x963B;&#x585E;&#xFF0C;&#x5426;&#x5219;&#x6240;&#x6709;&#x7684;&#x534F;&#x7A0B;&#x90FD;&#x88AB;&#x5361;&#x4F4F;&#x2026;&#x2026;
+bthread&#x662F;&#x4E00;&#x4E2A;M:N&#x7EBF;&#x7A0B;&#x5E93;&#xFF0C;&#x4E00;&#x4E2A;bthread&#x88AB;&#x5361;&#x4F4F;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x5176;&#x4ED6;bthread&#x3002;&#x5173;&#x952E;&#x6280;&#x672F;&#x4E24;&#x70B9;&#xFF1A;work stealing &#x8C03;&#x5EA6;&#x548C;butex&#xFF0C;&#x524D;&#x8005;&#x8BA9;bthread&#x66F4;&#x5FEB;&#x5730;&#x88AB;&#x8C03;&#x5EA6;&#x5230;&#x66F4;&#x591A;&#x7684;&#x6838;&#x5FC3;&#x4E0A;&#xFF0C;&#x540E;&#x8005;&#x8BA9;bthread&#x548C;pthread&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x7B49;&#x5F85;&#x548C;&#x5524;&#x9192;&#x3002;&#x8FD9;&#x4E24;&#x70B9;&#x534F;&#x7A0B;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x3002;&#x66F4;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x77E5;&#x8BC6;&#x67E5;&#x770B;&#x8FD9;&#x91CC;</p>
+</blockquote>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<h3 id="&#x534F;&#x7A0B;&#x7684;&#x7EC4;&#x6210;">&#x534F;&#x7A0B;&#x7684;&#x7EC4;&#x6210;</h3>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;N:M &#x6A21;&#x5F0F;&#x4E0B;&#x7684;&#x534F;&#x7A0B;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x53EF;&#x7528;&#x6237;&#x786E;&#x5B9A;&#x8C03;&#x5EA6;&#x987A;&#x5E8F;&#x7684;&#x7528;&#x6237;&#x6001;&#x7EBF;&#x7A0B;&#x3002;&#x4E0E;&#x7CFB;&#x7EDF;&#x7EA7;&#x7EBF;&#x7A0B;&#x5BF9;&#x7167;&#x53EF;&#x4EE5;&#x5C06;&#x534F;&#x7A0B;&#x6846;&#x67B6;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6A21;&#x5757;</p>
+<ul>
+<li><p>&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x5BF9;&#x5E94;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684; PCB/TCB(Process/Thread Control Block)</p>
+</li>
+<li><p>&#x4FDD;&#x5B58;&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x5BF9;&#x5E94;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x4FDD;&#x5B58; PCB/TCB &#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x3002;&#x534F;&#x7A0B;&#x4E0A;&#x4E0B;&#x6587;&#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#xFF0C;&#x6BD4;&#x5982;&#x666E;&#x901A;&#x534F;&#x7A0B;&#x961F;&#x5217;&#x3001;&#x5B9A;&#x65F6;&#x7684;&#x534F;&#x7A0B;&#x4F18;&#x5148;&#x961F;&#x5217;&#x7B49;</p>
+</li>
+<li><p>&#x534F;&#x7A0B;&#x7684;&#x6267;&#x884C;&#x5668;</p>
+</li>
+<li><ul>
+<li>&#x534F;&#x7A0B;&#x7684;&#x8C03;&#x5EA6;&#x5668;&#xFF0C;&#x5BF9;&#x5E94;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x8FDB;&#x7A0B;/&#x7EBF;&#x7A0B;&#x8C03;&#x5EA6;&#x5668;</li>
+<li>&#x6267;&#x884C;&#x534F;&#x7A0B;&#x7684; worker &#x7EBF;&#x7A0B;&#xFF0C;&#x5BF9;&#x5E94;&#x5B9E;&#x9645;&#x7EBF;&#x7A0B;/&#x8FDB;&#x7A0B;&#x6240;&#x4F7F;&#x7528;&#x7684; CPU &#x6838;&#x5FC3;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x534F;&#x7A0B;&#x7684;&#x8C03;&#x5EA6;">&#x534F;&#x7A0B;&#x7684;&#x8C03;&#x5EA6;</h3>
+<p>&#x534F;&#x7A0B;&#x7684;&#x8C03;&#x5EA6;&#x4E0E; OS &#x7EBF;&#x7A0B;&#x8C03;&#x5EA6;&#x5341;&#x5206;&#x76F8;&#x4F3C;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x534F;&#x7A0B;&#x8C03;&#x5EA6;&#x793A;&#x4F8B;&#x6240;&#x793A;</p>
+<p><img src="&#x534F;&#x7A0B;.assets/v2-401520501717f2b39743483d3e456d6c_720w.jpg" alt="img"></p>
+<h3 id="&#x534F;&#x7A0B;&#x5DE5;&#x5177;">&#x534F;&#x7A0B;&#x5DE5;&#x5177;</h3>
+<p>&#x7CFB;&#x7EDF;&#x7EA7;&#x7EBF;&#x7A0B;&#x6709;&#x9501;&#xFF08;mutex&#xFF09;&#x3001;&#x6761;&#x4EF6;&#x53D8;&#x91CF;&#xFF08;condition&#xFF09;&#x7B49;&#x5DE5;&#x5177;&#xFF0C;&#x534F;&#x7A0B;&#x4E5F;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x6BD4;&#x5982; libgo &#x63D0;&#x4F9B;&#x4E86;&#x534F;&#x7A0B;&#x4E4B;&#x95F4;&#x4F7F;&#x7528;&#x7684;&#x9501; Co_mutex/Co_rwmutex &#x3002;&#x4E0D;&#x540C;&#x534F;&#x7A0B;&#x6846;&#x67B6;&#x5BF9;&#x5DE5;&#x5177;&#x7684;&#x652F;&#x6301;&#x7A0B;&#x5EA6;&#x4E0D;&#x540C;&#xFF0C;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x4E5F;&#x4E0D;&#x5C3D;&#x76F8;&#x540C;&#xFF0C;&#x672C;&#x6587;&#x4E0D;&#x505A;&#x6DF1;&#x5165;&#x4ECB;&#x7ECD;</p>
+<p>&#x7CFB;&#x7EDF;&#x7EA7;&#x7EBF;&#x7A0B;&#x548C;&#x534F;&#x7A0B;&#x5904;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x7CFB;&#x7EDF;&#x5C42;&#x7EA7;&#xFF0C;&#x6240;&#x4EE5;&#x4E24;&#x8005;&#x7684;&#x540C;&#x6B65;&#x5DE5;&#x5177;&#x4E0D;&#x5B8C;&#x5168;&#x901A;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x534F;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x7EBF;&#x7A0B;&#x7684;&#x9501;&#xFF08;&#x4F8B;&#x5982;&#xFF1A;std::mutex&#xFF09;&#xFF0C;&#x5219;&#x6574;&#x4E2A;&#x7EBF;&#x7A0B;&#x5C06;&#x4F1A;&#x88AB;&#x963B;&#x585E;&#xFF0C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5C06;&#x4E0D;&#x4F1A;&#x518D;&#x8C03;&#x5EA6;&#x4E0E;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x534F;&#x7A0B;</p>
+<h3 id="&#x534F;&#x7A0B;-vs-&#x7EBF;&#x7A0B;">&#x534F;&#x7A0B; vs &#x7EBF;&#x7A0B;</h3>
+<ol>
+<li><strong>&#x8C03;&#x5EA6;&#x65B9;&#x5F0F;</strong>
+&#x534F;&#x7A0B;&#x7531;&#x7F16;&#x7A0B;&#x8005;&#x63A7;&#x5236;&#xFF0C;&#x534F;&#x7A0B;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x6709;&#x4F18;&#x5148;&#x7EA7;&#xFF1B;&#x7EBF;&#x7A0B;&#x7531;&#x7CFB;&#x7EDF;&#x63A7;&#x5236;&#xFF0C;&#x4E00;&#x822C;&#x6CA1;&#x6709;&#x4F18;&#x5148;&#x7EA7;</li>
+<li><strong>&#x8C03;&#x5EA6;&#x901F;&#x5EA6;</strong>
+&#x534F;&#x7A0B;&#x51E0;&#x4E4E;&#x6BD4;&#x7EBF;&#x7A0B;&#x5FEB;&#x4E00;&#x4E2A;&#x6570;&#x91CF;&#x7EA7;&#x3002;&#x534F;&#x7A0B;&#x8C03;&#x7528;&#x7531;&#x7F16;&#x7801;&#x8005;&#x63A7;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x65E0;&#x6548;&#x7684;&#x8C03;&#x5EA6;</li>
+<li><strong>&#x8D44;&#x6E90;&#x5360;&#x7528;</strong>
+&#x534F;&#x7A0B;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x5185;&#x5B58;&#x5360;&#x7528;&#x91CF;&#xFF0C;&#x7075;&#x6D3B;&#x6027;&#x66F4;&#x597D;&#xFF1B;&#x7EBF;&#x7A0B;&#x7531;&#x7CFB;&#x7EDF;&#x63A7;&#x5236;</li>
+<li><strong>&#x521B;&#x5EFA;&#x6570;&#x91CF;</strong>
+&#x534F;&#x7A0B;&#x7684;&#x4F7F;&#x7528;&#x66F4;&#x7075;&#x6D3B;&#xFF08;&#x6709;&#x4F18;&#x5148;&#x7EA7;&#x63A7;&#x5236;&#x3001;&#x8D44;&#x6E90;&#x4F7F;&#x7528;&#x53EF;&#x63A7;&#xFF09;&#xFF0C;&#x8C03;&#x5EA6;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF0C;&#x76F8;&#x6BD4;&#x4E8E;&#x7EBF;&#x7A0B;&#x800C;&#x8A00;&#x8C03;&#x5EA6;&#x635F;&#x8017;&#x66F4;&#x5C0F;&#xFF0C;&#x6240;&#x4EE5;&#x771F;&#x5B9E;&#x53EF;&#x521B;&#x5EFA;&#x4E14;&#x6709;&#x6548;&#x7684;&#x534F;&#x7A0B;&#x6570;&#x91CF;&#x53EF;&#x4EE5;&#x6BD4;&#x7EBF;&#x7A0B;&#x591A;&#x5F88;&#x591A;&#xFF0C;&#x8FD9;&#x662F;&#x4F7F;&#x7528;&#x534F;&#x7A0B;&#x5B9E;&#x73B0;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x7684;&#x91CD;&#x8981;&#x57FA;&#x7840;&#x3002;&#x540C;&#x6837;&#x56E0;&#x4E3A;&#x8C03;&#x5EA6;&#x4E0E;&#x8D44;&#x6E90;&#x7684;&#x9650;&#x5236;&#xFF0C;<strong>&#x6709;&#x6548;&#x534F;&#x7A0B;&#x7684;&#x6570;&#x91CF;&#x4E5F;&#x662F;&#x6709;&#x4E0A;&#x9650;&#x7684;</strong></li>
+</ol>
+<h2 id="&#x534F;&#x7A0B;&#x4E0E;&#x5F02;&#x6B65;">&#x534F;&#x7A0B;&#x4E0E;&#x5F02;&#x6B65;</h2>
+<p>C++ 20 &#x540E;&#x5F15;&#x5165;&#x4E86;&#x534F;&#x7A0B;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x66F4;&#x6DF1;&#x5165;&#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF1A;<a href="https://link.zhihu.com/?target=http%3A//cppstd20.com/" target="_blank">&#x300A;C++20 - The Complete Guide&#x300B;&#x2014;&#x2014;Nicolai M. Josuttis</a>&#xFF0C;<a href="https://link.zhihu.com/?target=http%3A//www.josuttis.com/" target="_blank">&#x4F5C;&#x8005;&#x5B98;&#x7F51;</a>&#x503C;&#x5F97;&#x4E00;&#x770B;&#x3002;C++20 &#x53EA;&#x5F15;&#x5165;&#x4E86;&#x534F;&#x7A0B;&#x9700;&#x8981;&#x7684;&#x5E95;&#x5C42;&#x652F;&#x6301;&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x6BD4;&#x8F83;&#x96BE;&#xFF0C;&#x4E0D;&#x8FC7;&#x5F88;&#x591A;&#x5E93;&#x5DF2;&#x7ECF;&#x63D0;&#x4F9B;&#x4E86;&#x5C01;&#x88C5;&#xFF0C;&#x6BD4;&#x5982;<a href="https://link.zhihu.com/?target=https%3A//github.com/chriskohlhoff/asio" target="_blank">ASIO</a>&#x548C;<a href="https://link.zhihu.com/?target=https%3A//github.com/lewissbaker/cppcoro" target="_blank">cppcoro</a>&#x3002;C++20 &#x534F;&#x7A0B;&#x7684;<a href="https://zhuanlan.zhihu.com/p/85440615" target="_blank">&#x6027;&#x80FD;</a>&#x8FD8;&#x662F;&#x975E;&#x5E38;&#x9AD8;&#x7684;&#xFF0C;&#x7B49; C++23 &#x63D0;&#x4F9B;&#x7B80;&#x5316;&#x540E;&#x7684; lib&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x4F7F;&#x7528;&#x534F;&#x7A0B;&#x4E86;</p>
+<p>&#x7F16;&#x8BD1;&#x534F;&#x7A0B;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x9700;&#x8981; g++10 &#x6216;&#x8005;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#xFF08;clang++12 &#x5BF9;&#x534F;&#x7A0B;&#x652F;&#x6301;&#x6709;&#x9650;&#xFF09;</p>
+<ol>
+<li>Mac&#xFF0C;<code>brew install gcc@10</code></li>
+<li>Ubuntu&#xFF0C;<code>apt install gcc-10</code> / <code>apt install g++-10</code></li>
+</ol>
+<p>&#x5C06;&#x534F;&#x7A0B;&#x7684;&#x4F7F;&#x7528;&#x505A;&#x4E86;&#x5C01;&#x88C5;&#xFF0C;<strong>&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x90FD;&#x4E0D;&#x4F1A;&#x548C;&#x5E95;&#x5C42;&#x534F;&#x7A0B;&#x5DE5;&#x5177;&#x6253;&#x4EA4;&#x5230;</strong>&#xFF0C;&#x4EE3;&#x7801;&#x7684;&#x7F16;&#x5199;&#x98CE;&#x683C;&#x548C;&#x5E38;&#x89C4;&#x7684;&#x540C;&#x6B65;&#x7F16;&#x7801;&#x98CE;&#x683C;&#x76F8;&#x540C;</p>
+<h3 id="&#x534F;&#x7A0B;&#x5BF9;-cpuio-&#x7684;&#x5F71;&#x54CD;">&#x534F;&#x7A0B;&#x5BF9; CPU/IO &#x7684;&#x5F71;&#x54CD;</h3>
+<p>&#x534F;&#x7A0B;&#x7684;&#x76EE;&#x7684;&#x5728;&#x4E8E;&#x5254;&#x9664;&#x7EBF;&#x7A0B;&#x7684;&#x963B;&#x585E;&#xFF0C;&#x5C3D;&#x53EF;&#x80FD;&#x63D0;&#x9AD8; CPU &#x7684;&#x5229;&#x7528;&#x7387;</p>
+<p>&#x5F88;&#x591A;&#x670D;&#x52A1;&#x5728;&#x5904;&#x7406;&#x4E1A;&#x52A1;&#x65F6;&#x9700;&#x8981;&#x8BF7;&#x6C42;&#x7B2C;&#x4E09;&#x65B9;&#x670D;&#x52A1;&#xFF0C;&#x5411;&#x7B2C;&#x4E09;&#x65B9;&#x670D;&#x52A1;&#x53D1;&#x8D77; RPC &#x8C03;&#x7528;&#x3002;RPC &#x8C03;&#x7528;&#x7684;&#x7F51;&#x7EDC;&#x8017;&#x65F6;&#x4E00;&#x822C;&#x8017;&#x65F6;&#x5728;&#x6BEB;&#x79D2;&#x7EA7;&#x522B;&#xFF0C;RPC &#x670D;&#x52A1;&#x7684;&#x5904;&#x7406;&#x8017;&#x65F6;&#x4E5F;&#x53EF;&#x80FD;&#x5728;&#x6BEB;&#x79D2;&#x7EA7;&#x522B;&#xFF0C;&#x5982;&#x679C;&#x5F53;&#x524D;&#x670D;&#x52A1;&#x4F7F;&#x7528;&#x540C;&#x6B65;&#x8C03;&#x7528;&#xFF0C;&#x5373; RPC &#x8FD4;&#x56DE;&#x540E;&#x624D;&#x8FDB;&#x884C;&#x540E;&#x7EED;&#x903B;&#x8F91;&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x6BCF;&#x79D2;&#x5904;&#x7406;&#x7684;&#x4E1A;&#x52A1;&#x6570;&#x91CF;&#x662F;&#x53EF;&#x4EE5;&#x4F30;&#x7B97;&#x7684;</p>
+<p>&#x5047;&#x8BBE;&#x6BCF;&#x6B21;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x82B1;&#x8D39;&#x5728; RPC &#x8C03;&#x7528;&#x4E0A;&#x7684;&#x8017;&#x65F6;&#x662F; 20ms&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x4E00;&#x79D2;&#x6700;&#x591A;&#x5904;&#x7406; 50 &#x6B21;&#x8BF7;&#x6C42;&#x3002;&#x5982;&#x679C;&#x5728;&#x7B49;&#x5F85; RPC &#x8FD4;&#x56DE;&#x65F6;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6CA1;&#x6709;&#x88AB;&#x7CFB;&#x7EDF;&#x8C03;&#x5EA6;&#x8F6C;&#x6362;&#x4E3A; Ready &#x72B6;&#x6001;&#xFF0C;&#x90A3;&#x5F53;&#x524D; CPU &#x6838;&#x5FC3;&#x5C31;&#x4F1A;&#x7A7A;&#x8F6C;&#xFF0C;&#x6D6A;&#x8D39;&#x4E86; CPU &#x8D44;&#x6E90;&#x3002;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x7EBF;&#x7A0B;&#x6570;&#x91CF;&#x63D0;&#x9AD8;&#x7CFB;&#x7EDF;&#x541E;&#x5410;&#x91CF;&#x7684;&#x6548;&#x679C;&#x975E;&#x5E38;&#x6709;&#x9650;&#xFF0C;&#x800C;&#x4E14;&#x521B;&#x5EFA;&#x5927;&#x91CF;&#x7EBF;&#x7A0B;&#x4E5F;&#x4F1A;&#x9020;&#x6210;&#x5176;&#x4ED6;&#x95EE;&#x9898;</p>
+<p>&#x534F;&#x7A0B;&#x867D;&#x7136;&#x4E0D;&#x4E00;&#x5B9A;&#x80FD;&#x51CF;&#x5C11;&#x4E00;&#x6B21;&#x4E1A;&#x52A1;&#x8BF7;&#x6C42;&#x7684;&#x8017;&#x65F6;&#xFF0C;&#x4F46;&#x4E00;&#x5B9A;&#x53EF;&#x4EE5;&#x63D0;&#x5347;&#x7CFB;&#x7EDF;&#x7684;&#x541E;&#x5410;&#x91CF;&#xFF1A;</p>
+<ol>
+<li>&#x5F53;&#x524D;&#x4E1A;&#x52A1;&#x53EA;&#x6709;&#x4E00;&#x6B21;&#x7B2C;&#x4E09;&#x65B9; RPC &#x7684;&#x8C03;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x534F;&#x7A0B;&#x4E0D;&#x4F1A;&#x51CF;&#x5C11;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x7684;&#x8017;&#x65F6;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x63D0;&#x5347; QPS</li>
+<li>&#x5F53;&#x524D;&#x4E1A;&#x52A1;&#x9700;&#x8981;&#x591A;&#x4E2A;&#x7B2C;&#x4E09;&#x65B9; RPC &#x8C03;&#x7528;&#xFF0C;&#x540C;&#x65F6;&#x521B;&#x5EFA;&#x591A;&#x4E2A;&#x534F;&#x7A0B;&#x53EF;&#x4EE5;&#x8BA9;&#x591A;&#x4E2A; RPC &#x8C03;&#x7528;&#x4E00;&#x8D77;&#x6267;&#x884C;&#xFF0C;&#x5219;&#x5F53;&#x524D;&#x4E1A;&#x52A1;&#x7684; RPC &#x8017;&#x65F6;&#x7531;&#x8017;&#x65F6;&#x6700;&#x957F;&#x7684; RPC &#x8C03;&#x7528;&#x51B3;&#x5B9A;</li>
+</ol>
+<h3 id="asio-c-&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#xFF08;&#x540C;&#x6B65;&#x5F02;&#x6B65;&#x534F;&#x7A0B;&#xFF09;">ASIO C++ &#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#xFF08;&#x540C;&#x6B65;/&#x5F02;&#x6B65;/&#x534F;&#x7A0B;&#xFF09;</h3>
+<p><a href="https://link.zhihu.com/?target=https%3A//github.com/chriskohlhoff/asio" target="_blank">ASIO</a> &#x662F;&#x4E00;&#x4E2A;&#x8DE8;&#x5E73;&#x53F0;&#x7684; C++ &#x7F51;&#x7EDC;&#x5E93;&#xFF0C;&#x6709;&#x975E;&#x5E38;&#x5927;&#x7684;&#x53EF;&#x80FD;&#x8FDB;&#x5165; C++ &#x6807;&#x51C6;&#x5E93;&#x3002;ASIO &#x4E0D;&#x4EC5;&#x4EC5;&#x63D0;&#x4F9B;&#x4E86;&#x7F51;&#x7EDC;&#x529F;&#x80FD;&#xFF08;TCP/UDP/ICMP &#x7B49;&#xFF09;&#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x7F16;&#x7A0B;&#x5DE5;&#x5177;&#xFF0C;&#x6BD4;&#x5982;&#x4E32;&#x53E3;&#x3001;&#x5B9A;&#x65F6;&#x5668;&#x7B49;&#x3002;ASIO &#x53EF;&#x4EE5;&#x8131;&#x79BB; Boost &#x7F16;&#x8BD1;&#xFF0C;&#x4E14;&#x53EA;&#x9700;&#x8981;<a href="https://link.zhihu.com/?target=https%3A//sourceforge.net/projects/asio/files/asio/1.19.2%20%28Development%29/" target="_blank">&#x5934;&#x6587;&#x4EF6;</a>&#xFF0C;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x5F88;&#x65B9;&#x4FBF;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5747;&#x57FA;&#x4E8E; <a href="https://link.zhihu.com/?target=https%3A//sourceforge.net/projects/asio/files/asio/1.19.2%20%28Development%29/" target="_blank">ASIO 1.19.2</a></p>
+<h3 id="&#x963B;&#x585E;&#x578B;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#xFF08;echo&#xFF09;">&#x963B;&#x585E;&#x578B;&#x7F51;&#x7EDC;&#x670D;&#x52A1;&#xFF08;Echo&#xFF09;</h3>
+<p>&#x53C2;&#x8003;&#x4EE3;&#x7801;&#xFF1A;<a href="https://link.zhihu.com/?target=https%3A//github.com/chriskohlhoff/asio/blob/master/asio/src/examples/cpp11/echo/blocking_tcp_echo_server.cpp" target="_blank">blocking_tcp_echo_server</a> &#xFF0C;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x3002;&#x6D77;&#x91CF;&#x8BF7;&#x6C42;&#x5BF9;&#x7CFB;&#x7EDF;&#x800C;&#x8A00;&#x8D1F;&#x62C5;&#x6BD4;&#x8F83;&#x91CD;</p>
+<pre><code class="lang-cpp">// g++-10 -I. echo_server.cpp
+void session(tcp::socket sock) {
+  // &#x540C;&#x6B65;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x5FFD;&#x7565;&#x4E86;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x903B;&#x8F91;
+  for (;;) {
+    size_t length = sock.read_some(asio::buffer(data), error);
+    asio::write(sock, asio::buffer(data, length));
+  }
+}
+
+void server(asio::io_context&amp; io_context, unsigned short port) {
+    tcp::acceptor a(io_context, tcp::endpoint(tcp::v4(), port));
+    // &#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7684; a.accept() &#x662F;&#x963B;&#x585E;&#x578B;&#x64CD;&#x4F5C;&#xFF0C;accept &#x8FD4;&#x56DE;&#x540E;&#x624D;&#x4F1A;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;
+    for (;;) std::thread(session, a.accept()).detach();
+}
+
+int main(int argc, char* argv[]) {
+    asio::io_context io_context;
+    server(io_context, std::atoi(argv[1]));
+    return 0;
+}
+</code></pre>
+<h3 id="&#x975E;&#x963B;&#x585E;&#x578B;-echo">&#x975E;&#x963B;&#x585E;&#x578B; Echo</h3>
+<p>&#x53C2;&#x8003;&#x4EE3;&#x7801;&#xFF1A;<a href="https://link.zhihu.com/?target=https%3A//github.com/chriskohlhoff/asio/blob/master/asio/src/examples/cpp11/echo/async_tcp_echo_server.cpp" target="_blank">async_tcp_echo_server</a> &#xFF0C;<strong>&#x57FA;&#x4E8E;&#x4E8B;&#x4EF6;&#x4E0E;&#x56DE;&#x8C03;</strong>&#x3002;&#x6240;&#x6709;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E2D;&#x90FD;&#x6709;&#x5BF9;&#x5176;&#x4ED6;&#x63A5;&#x53E3;&#x7684;&#x8C03;&#x7528;&#xFF08;&#x6BD4;&#x5982; <code>do_read</code> &#x4E2D;&#x8C03;&#x7528;&#x4E86; <code>do_write</code>&#xFF09;&#xFF0C;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x88AB;&#x5272;&#x88C2;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x56DE;&#x8C03;&#x4E2D;</p>
+<pre><code class="lang-cpp">// g++-10 -I. echo_server.cpp
+class session : public std::enable_shared_from_this&lt;session&gt; {
+public:
+    session(tcp::socket socket) : socket_(std::move(socket)) {}
+    void start() { do_read(); }
+
+private:
+    void do_read() {
+        auto self(shared_from_this());
+        socket_.async_read_some(asio::buffer(data_, max_length),
+                                [this, self](...) { if (!ec) do_write(length);});
+    }
+
+    void do_write(std::size_t length) {
+        auto self(shared_from_this());
+        asio::async_write(socket_, asio::buffer(data_, length),
+                          [this, self](...) { if (!ec) do_read(); });
+    }
+
+    tcp::socket socket_;
+    enum { max_length = 1024 };
+    char data_[max_length];
+};
+
+class server {
+public:
+    server(asio::io_context&amp; io_context, short port)
+        : acceptor_(io_context, tcp::endpoint(tcp::v4(), port)) { do_accept(); }
+
+private:
+    void do_accept() {
+        acceptor_.async_accept([this](std::error_code ec, tcp::socket socket) {
+            if (!ec) std::make_shared&lt;session&gt;(std::move(socket))-&gt;start();
+            do_accept();
+        });
+    }
+
+    tcp::acceptor acceptor_;
+};
+
+int main(int argc, char* argv[]) {
+    asio::io_context io_context;
+    server s(io_context, std::atoi(argv[1]));
+    io_context.run();
+    return 0;
+}
+</code></pre>
+<h3 id="&#x534F;&#x7A0B;&#x7248;-echo">&#x534F;&#x7A0B;&#x7248; Echo</h3>
+<p>ASIO 1.19.2 &#x5DF2;&#x7ECF;&#x652F;&#x6301; C++20 &#x7684;&#x534F;&#x7A0B;&#xFF0C;&#x4F5C;&#x8005; github &#x4ED3;&#x5E93;&#x4E2D;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x4E86;&#x534F;&#x7A0B;&#x7684;&#x4F7F;&#x7528;&#x793A;&#x4F8B;&#xFF08;<a href="https://link.zhihu.com/?target=https%3A//github.com/chriskohlhoff/asio/tree/master/asio/src/examples/cpp17/coroutines_ts" target="_blank">coroutines_ts</a>&#xFF09;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x5176;&#x4E2D; <a href="https://link.zhihu.com/?target=https%3A//github.com/chriskohlhoff/asio/blob/master/asio/src/examples/cpp17/coroutines_ts/echo_server.cpp" target="_blank">echo_server</a> &#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x4F7F;&#x7528;&#x652F;&#x6301; C++20 &#x6807;&#x51C6;&#x7684;&#x7F16;&#x8BD1;&#x5668;&#x53EF;&#x76F4;&#x63A5;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;</p>
+<pre><code class="lang-cpp">// g++-10 -fcoroutines -std=c++20 -I. echo_server.cpp
+awaitable&lt;void&gt; echo(tcp::socket socket) {
+    try {
+        char data[1024];
+          size_t n = 0;
+        for (;;) {
+            n = co_await socket.async_read_some(asio::buffer(data), use_awaitable);
+            co_await async_write(socket, asio::buffer(data, n), use_awaitable);
+        }
+    } catch (std::exception&amp; e) { ... }
+}
+
+awaitable&lt;void&gt; listener() {
+    auto executor = co_await this_coro::executor;
+    tcp::acceptor acceptor(executor, {tcp::v4(), 55555});
+    for (;;) {
+        tcp::socket socket = co_await acceptor.async_accept(use_awaitable);
+        co_spawn(executor, echo(std::move(socket)), detached);
+    }
+}
+
+int main() {
+      asio::io_context io_context(1);
+      asio::signal_set signals(io_context, SIGINT, SIGTERM);
+      signals.async_wait([&amp;](auto, auto) { io_context.stop(); });
+      co_spawn(io_context, listener(), detached);
+      io_context.run();
+    return 0;
+}
+</code></pre>
+<h2 id="&#x63A8;&#x8350;">&#x63A8;&#x8350;</h2>
+<p>&#x5982;&#x679C;&#x60F3;&#x8FDB;&#x4E00;&#x6B65;&#x4E86;&#x89E3;&#x5B66;&#x4E60;&#x534F;&#x7A0B;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x770B;&#x4E00;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x89C6;&#x9891;&#x8D44;&#x6599;</p>
+<h2 id="&#x5B9E;&#x73B0;&#x534F;&#x7A0B;&#x6846;&#x67B6;&#xFF0C;&#x5E95;&#x5C42;&#x539F;&#x7406;&#x4E0E;&#x6027;&#x80FD;&#x5206;&#x6790;&#xFF0C;&#x9762;&#x8BD5;&#x5229;&#x5203;">&#x5B9E;&#x73B0;&#x534F;&#x7A0B;&#x6846;&#x67B6;&#xFF0C;&#x5E95;&#x5C42;&#x539F;&#x7406;&#x4E0E;&#x6027;&#x80FD;&#x5206;&#x6790;&#xFF0C;&#x9762;&#x8BD5;&#x5229;&#x5203;</h2>
+<h3 id="1&#x534F;&#x7A0B;&#x8D77;&#x6E90;">1.&#x534F;&#x7A0B;&#x8D77;&#x6E90;</h3>
+<ul>
+<li>&#x534F;&#x7A0B;&#x8D77;&#x6E90; &#x2014; &#x5B58;&#x5728;&#x7684;&#x539F;&#x56E0;&#xFF1F;</li>
+<li>&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF1F;&#x4E0E;&#x7EBF;&#x7A0B;&#x4F7F;&#x7528;&#x6709;&#x4F55;&#x533A;&#x522B;&#xFF1F;</li>
+<li>&#x5185;&#x90E8;&#x662F;&#x5982;&#x4F55;&#x5DE5;&#x4F5C;&#x7684;&#xFF1F;</li>
+<li>&#x539F;&#x8BED;&#x64CD;&#x4F5C;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;&#x5206;&#x522B;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#xFF1F;</li>
+</ul>
+<h3 id="2&#x534F;&#x7A0B;&#x5B9E;&#x73B0;&#x4E4B;&#x5207;&#x6362;-&#x2014;-&#x4E0A;&#x4E0B;&#x6587;&#x5982;&#x4F55;&#x5207;&#x6362;&#xFF1F;&#x4EE3;&#x7801;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#xFF1F;">2.&#x534F;&#x7A0B;&#x5B9E;&#x73B0;&#x4E4B;&#x5207;&#x6362; &#x2014; &#x4E0A;&#x4E0B;&#x6587;&#x5982;&#x4F55;&#x5207;&#x6362;&#xFF1F;&#x4EE3;&#x7801;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#xFF1F;</h3>
+<ul>
+<li>&#x8FD0;&#x884C;&#x4F53;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#xFF1F;&#x8C03;&#x5EA6;&#x5668;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#xFF1F;</li>
+<li>&#x534F;&#x7A0B;&#x5982;&#x4F55;&#x88AB;&#x8C03;&#x5EA6;&#xFF1F;</li>
+<li>&#x534F;&#x7A0B;&#x591A;&#x6838;&#x6A21;&#x5F0F; &#x2014; &#x591A;&#x6838;&#x5B9E;&#x73B0;</li>
+<li>&#x534F;&#x7A0B;&#x6027;&#x80FD;&#x6D4B;&#x8BD5; &#x2014; &#x5B9E;&#x6218;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="shell字符串操作.html" class="navigation navigation-prev " aria-label="Previous page: shell字符串操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python/" class="navigation navigation-next " aria-label="Next page: python">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"协程","level":"1.10.12","depth":2,"next":{"title":"python","level":"1.11","depth":1,"path":"python/README.md","ref":"python/README.md","articles":[{"title":"python note","level":"1.11.1","depth":2,"path":"python/python note.md","ref":"python/python note.md","articles":[]},{"title":"python之Argparse模块","level":"1.11.2","depth":2,"path":"python/python之Argparse模块.md","ref":"python/python之Argparse模块.md","articles":[]}]},"previous":{"title":"shell字符串操作","level":"1.10.11","depth":2,"path":"linux开发环境/shell字符串操作.md","ref":"linux开发环境/shell字符串操作.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux开发环境/协程.md","mtime":"2022-08-01T10:52:59.540Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-01T12:23:56.760Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
