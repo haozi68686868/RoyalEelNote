@@ -39,6 +39,12 @@ vectors.emplace_back(std::make_shared<Eigen::Vector4d>(std::move(v)));
 
 1. 全程使用智能指针管理
 2. 局部变量，然后后make_shared
+3. 三种用途
+   - shared_ptr
+   - unique_ptr
+   - weak_ptr
+     - 解决循环引用计数问题
+     - 使用时需使用weak_ptr.lock()来获得shared_ptr，保证在这个shared_ptr存活时，对象不被释放（这个类似于Java引用的Get)
 
 ##### 初始化方式
 
@@ -75,5 +81,70 @@ template <class T, class U>
   std::cout << "foo's dynamic type: " << foo->dynamic_type << '\n'; // A
   std::cout << "bar's static  type: " << bar->static_type << '\n'; // B
   std::cout << "bar's dynamic type: " << bar->dynamic_type << '\n'; // A
+```
+
+#### C++常用容器
+
+deque：双向队列
+
+queue：单向队列（内部实现其实是deque）
+
+priority_queue：优先队列（在头文件queue中）
+
+map/unordered_map：字典
+
+set/unordered_set：集合
+
+stack：栈
+
+vector/array: Array静态，vector动态
+
+list: 双向链表
+
+forward_list: 单向链表
+
+#### priority_queue 优先队列
+
+pop() 弹出
+
+top() 查看最前面的值
+
+push()/emplace() 插入元素
+
+默认是优先输出最大的值
+
+```c++
+std::priority_queue<int> a;
+// 等同于 std::priority_queue<int,vector<int>,less<int> > a;
+
+// 小元素优先
+std::priority_queue<int,vector<int>,greater<int> > a;
+
+// 定义
+template <class T, class Container = vector<T>,
+  class Compare = less<typename Container::value_type> > class priority_queue;
+
+// 构造方式
+std::priority_queue<int> first;
+  std::priority_queue<int> second (myints,myints+4);
+  std::priority_queue<int, std::vector<int>, std::greater<int> >
+                            third (myints,myints+4);
+  
+
+// using mycomparison:
+class mycomparison
+{
+  bool reverse;
+public:
+  mycomparison(const bool& revparam=false)
+    {reverse=revparam;}
+  bool operator() (const int& lhs, const int&rhs) const
+  {
+    if (reverse) return (lhs>rhs);
+    else return (lhs<rhs);
+  }
+};
+
+typedef std::priority_queue<int,std::vector<int>,mycomparison> mypq_type;
 ```
 

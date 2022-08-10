@@ -63,3 +63,31 @@ Easy to Change 更容易变更
 
 1. 针对接口编程，而不是针对实现编程
 2. 优先使用对象组合，而不是类继承
+
+##### 面向对象六大原则
+
+1. 单一职责：Single Responsibility
+2. 开闭原则：Open-Closed Principle
+   - 应该对扩展开发，而对修改关闭
+   - 关键：抽象化、接口、抽象类
+   - 抽象层尽量保持稳定，一旦确定就不允许修改。
+3. 里氏替换原则：Liskov Substitution Principle
+   - 任何基类出现的地方，子类一定可以出现（程序不会出错）
+4. 依赖倒置原则：Dependence Inversion Principle
+   - 抽象不应该依赖于细节，细节应该依赖于抽象
+   - 要针对接口编程，而不是针对实现编程
+5. 接口隔离原则：Interface Segregation Principle
+   - 使用多个专门的接口，而不是单一的总接口
+   - 应该依赖需要的接口，不依赖用不到的
+6. 合成复用原则：Composite Reuse Principle
+   - 优先使用组合/聚合，而不是继承
+7. 迪米特法则：Law of Demeter
+   - 软件实体应当尽可能与其他实体发生相互作用
+   - 减少直接耦合，横向纵向耦合，多采用中介的方式，如facade和mediator模式
+   - 关键词：松耦合
+
+##### 好的系统设计特质
+
+1. 可扩展性（Extensibility）
+2. 灵活性（Flexibility）
+3. 可插拔性（Pluggability）

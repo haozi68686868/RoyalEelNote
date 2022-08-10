@@ -194,3 +194,9 @@ time echo "scale=3000; 4*a(1)" | bc -l
 cat /proc/cpuinfo
 ```
 
+#### 查看端口
+
+```
+lsof -i:50057
+```
+
