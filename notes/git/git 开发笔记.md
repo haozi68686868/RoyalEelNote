@@ -86,3 +86,14 @@ git commit --amend --author="liuxinhao <liuxinhao@senseauto.com>"
 git cherry-pick <commit-id> -m 1
 ```
 
+#### 修改远程仓库地址
+
+```shell
+git clone xxx_a.git
+cd xxx_a
+git remote set-url origin xxx_b.git
+git push origin
+# 推送所有分支
+git push origin '*:*'
+```
+
