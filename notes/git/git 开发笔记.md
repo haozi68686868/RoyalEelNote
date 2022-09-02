@@ -97,3 +97,12 @@ git push origin
 git push origin '*:*'
 ```
 
+
+
+```bash
+git push <远程主机名> <本地分支名>:<远程分支名>
+git branch --track <branch_name> origin/<branch_name>
+git push origin <branch_name>:<branch_name>
+git push origin HEAD:<branch_name>
+```
+

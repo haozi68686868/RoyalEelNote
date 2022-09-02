@@ -31,3 +31,14 @@ Minicom 串口调试工具
 API调试
 
 - Postman
+
+火焰图
+
+- Perf
+- https://www.brendangregg.com/perf.html
+- https://blog.csdn.net/u014608280/article/details/80265718
+
+统计代码行数
+
+- tokei
+- cloc
