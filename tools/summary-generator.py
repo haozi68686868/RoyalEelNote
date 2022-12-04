@@ -47,7 +47,7 @@ if __name__ == "__main__":
         exit(1)
     dir = sys.argv[1]
     find_files("", 0, dir)
-    with open(os.path.join(dir,'SUMMARY.md'), 'w') as f:
+    with open(os.path.join(dir,'SUMMARY.md'), 'w', encoding='utf8') as f:
         for file in result_list:
             print(file)
             f.write(file)
