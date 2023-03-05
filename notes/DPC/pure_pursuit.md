@@ -44,9 +44,12 @@ l<sub>d</sub>: 前视距离
 
 接下来推导怎么求曲率k
 $$
-\frac{l_d}{sin(2\alpha)}=\frac{R}{sin(\pi/2-\alpha)}\\
+\frac{l_d}{sin(2\alpha)}=\frac{R}{sin(\pi/2-\alpha)}
+$$
+$$
 \frac{l_d}{sin(alpha)}=2R
 $$
+
 考虑时间t，可以将（2）式表示为
 $$
 \delta(t)=arctan(k(t)L)=arctan(\frac{2Lsin(\alpha(t))}{l_d})

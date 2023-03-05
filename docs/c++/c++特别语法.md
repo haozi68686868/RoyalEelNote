@@ -357,3 +357,37 @@ gcc -m32 -o helloworld main.cpp # -m32 32位编译方式
   成员函数模板不能被声明为virtual。这个约束是强制的，因为虚函数的通常实现是使用固定大小的虚函数表，每个虚函数有一个入口。然而，模板函数的实例数不是固定的，直到整个程序被编译一遍。
 
 - C++不支持这么做。如果支持的话，只有到链接时才能生成虚函数表。一般情况下，C++语言的实现必须处理动态链接。
+
+#### constexpr
+
+- 修饰变量：该变量是一个可以编译器推导的值
+- 修饰函数：该函数**有可能**可以编译期静态
+
+```c++
+constexpr int func(int a);
+constexpr int val = func(1); // constexpr
+int x;
+int y = func(x); // 普通函数
+
+// 编译器计算
+constexpr unsigned fibonacci(unsigned i) {
+   return (i <= 1u) ? i : (fibonacci(i - 1) + fibonacci(i - 2));
+ }
+```
+
+- 为什么cmath函数大多不是constexpr?
+  - 历史原因，浮点数计算有很多操作寄存器的异常处理机制，如errno、溢出标志位等，很难统一constexpr和run-time版本
+- if constexpr（C++17引入）
+
+```c++
+template<typename T>auto any2i(T t) {
+    if constexpr (std::is_same<T, std::string>::value) {
+        if constexpr (T::npos == -1) {
+            return atoi(t.c_str());
+        }
+    } else {
+        return t;
+    }
+}
+```
+

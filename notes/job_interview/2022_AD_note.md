@@ -692,3 +692,174 @@ time  4 7
   new_average = average*[days/(days+1)] + current_day / (days+1)
 ```
 
+
+
+高塔
+
+```c++
+#include <string>
+#include <vector>
+#include <queue>
+#include <unordered_map>
+using namespace std;
+
+enum class CuboidStatus: int {
+  STRAIGHT = 0,
+  HORIZONTAL = 1,
+  VERTICAL = 2,
+};
+
+struct Point {
+    int x;
+    int y;
+    Point() = default;
+    Point(int x, int y): x(x), y(y) {}
+    bool operator==(const Point& rhs) const{
+        return x == rhs.x && y == rhs.y;
+    }
+    Point operator+(const Point& rhs) const {
+        return Point(x + rhs.x, y + rhs.y);
+    }
+};
+
+using TransferMap = unordered_map<char, pair<Point, CuboidStatus>>;
+unordered_map<CuboidStatus, TransferMap> STATUS_MAP{
+ {CuboidStatus::STRAIGHT, {
+    {'L', {{-2, 0} , CuboidStatus::HORIZONTAL}},
+    {'R', {{1, 0} , CuboidStatus::HORIZONTAL}},
+    {'U', {{0, -2} , CuboidStatus::VERTICAL}},
+    {'D', {{0, 1} , CuboidStatus::VERTICAL}},
+}},
+{CuboidStatus::HORIZONTAL,{
+    {'L', {{-1, 0} , CuboidStatus::STRAIGHT}},
+    {'R', {{2, 0} , CuboidStatus::STRAIGHT}},
+    {'U', {{0, -1} , CuboidStatus::HORIZONTAL}},
+    {'D', {{0, 1} , CuboidStatus::HORIZONTAL}},
+}},
+{CuboidStatus::VERTICAL,{
+    {'L', {{-1, 0} , CuboidStatus::VERTICAL}},
+    {'R', {{1, 0} , CuboidStatus::VERTICAL}},
+    {'U', {{0, -1} , CuboidStatus::STRAIGHT}},
+    {'D', {{0, 2} , CuboidStatus::STRAIGHT}},
+}}
+};
+
+struct Node {
+    Point basePoint;
+    CuboidStatus status;
+    Node() = default;
+    Node(const Node&) = default;
+    Node(const Point& point, CuboidStatus s): 
+          basePoint(point), status(s) {}
+    Point getBasePoint() const{
+        return basePoint;
+    }
+    Point getOtherPoint() const{
+        Point ret = basePoint;
+        if (CuboidStatus::VERTICAL == status) {
+            ret.y += 1;
+        }
+        else if (CuboidStatus::HORIZONTAL == status) {
+            ret.x += 1;
+        }
+        return ret;
+    }
+    Node onOperation(char oper) {
+        pair<Point, CuboidStatus> dPos = STATUS_MAP[status][oper];
+        return Node(basePoint + dPos.first, dPos.second);
+    }
+    bool operator==(const Node& rhs) const{
+        return basePoint == rhs.basePoint
+              && status == rhs.status;
+    }
+};
+
+
+bool judgePointValid(const vector<string>& input, Point point) {
+    int height = input.size();
+    int width = input[0].size(); 
+    if (point.x >= 0 && point.x < width 
+        && point.y >= 0 && point.y < height
+        && input[point.y][point.x] != '0') {
+          return true;
+    }
+    return false;
+}
+
+bool judgeNodeValid(const vector<string>& input, const Node& node) {
+    if (CuboidStatus::STRAIGHT == node.status) {
+      return judgePointValid(input, node.getBasePoint());
+    }
+    return judgePointValid(input, node.getBasePoint()) 
+            && judgePointValid(input, node.getOtherPoint());
+}
+
+void findStartAndEnd(const vector<string>& input, 
+                    Point& start, Point& end) {
+    for (int y = 0; y < input.size(); ++ y) {
+        for (int x = 0; x < input[0].size(); ++ x) {
+            if (input[y][x] == 'B') {
+                start.x = x;
+                start.y = y;
+            }
+            else if (input[y][x] == 'X') {
+                end.x = x;
+                end.y = y;
+            }
+        }
+    }
+}
+
+struct hashFunc {
+  size_t operator()(const Node& node) const {
+    return node.basePoint.x * 10000 + node.basePoint.y * 100 + static_cast<int>(node.status);
+  }
+};
+
+string traceback(unordered_map<Node, char, hashFunc> mapDir, 
+                unordered_map<Node, Node, hashFunc> mapPrevNode,
+                const Node& endPoint) {
+      string inverseRet;
+      Node tmpNode = endPoint;
+      while(mapDir[tmpNode] != 'B') {
+          inverseRet += mapDir[tmpNode];
+          tmpNode = mapPrevNode[tmpNode];
+      }
+      return string(inverseRet.rbegin(), inverseRet.rend());
+}
+
+string solution(vector<string> input) {
+    Point start;
+    Point end;
+    findStartAndEnd(input, start, end);
+    vector<char> vecStep {'L', 'R', 'U', 'D'};
+    queue<Node> que;
+    unordered_map<Node, char, hashFunc> mapDir;
+    unordered_map<Node, Node, hashFunc> mapPrevNode;
+    Node startNode = Node(start, CuboidStatus::STRAIGHT);
+    Node endNode = Node(end, CuboidStatus::STRAIGHT);
+    mapDir[startNode] = 'B'; // B for start
+    
+    que.emplace(startNode);
+  
+    while (!que.empty()) {
+        Node node = que.front();
+        if (node == endNode) {
+            return traceback(mapDir, mapPrevNode, node);
+        }
+        for (char dir: vecStep) {
+            Node nextNode = node.onOperation(dir);
+            if (mapDir.find(nextNode) == mapDir.end()
+                && judgeNodeValid(input, nextNode)) {                
+                mapPrevNode.emplace(nextNode, node);
+                mapDir.emplace(nextNode, dir);
+                que.emplace(nextNode);
+            }
+        }
+        que.pop();
+    }
+    return "";
+}
+
+```
+

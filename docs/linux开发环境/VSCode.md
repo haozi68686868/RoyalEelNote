@@ -64,3 +64,33 @@ gcc -v -E -x c++ -
 ,"clang.cxxflags": ["-std=c++14"] //有效
 ```
 
+##### VSCode自动换行
+
+Word Wrap
+
+##### VSCode Ubantu18 添加右键菜单
+
+1. 进入~/.local/share/nautilus/scripts文件夹
+
+```text
+cd ~/.local/share/nautilus/scripts
+```
+
+2. 创建右键菜单文件
+
+```text
+vim Vscode_it
+```
+
+3. Vscode_it的内容为
+
+```text
+#!/bin/bash
+code $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS
+```
+
+4. 给Vscode_it加权限
+
+```text
+sudo chmod u+x Vscode_it
+```

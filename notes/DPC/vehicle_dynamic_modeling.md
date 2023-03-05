@@ -9,8 +9,14 @@ $$
 - 轮胎力
 
 $$
-F_{xr}=C_{\sigma f}\sigma_{xf}\\
-\sigma_f=\frac{r_{eff}\omega_w-V_x}{V_x}\  (r_{eff}\omega_w<V_x)\\
+F_{xr}=C_{\sigma f}\sigma_{xf}
+$$
+
+$$
+\sigma_f=\frac{r_{eff}\omega_w-V_x}{V_x}\  (r_{eff}\omega_w<V_x)
+$$
+
+$$
 \sigma_f=\frac{r_{eff}\omega_w-V_x}{r_{eff}\omega_w}\  (r_{eff}\omega_w>V_x)
 $$
 

@@ -31,11 +31,11 @@ FN（False Negative）：在判定为negative的样本中，判断错误的数�
 在两者都要求高的情况下，综合衡量P和R就用F值：
 
 $$
-F = \frac{(\alpha^2+1)·P·R}{P+R}
+F = \frac{(\alpha^2+1)\cdot P\cdot R}{P+R}
 $$
 α为1时，就是常见的F1值（F1 score）： 
 $$
-F = \frac{2·P·R}{P+R}
+F = \frac{2\cdot P\cdot R}{P+R}
 $$
 一般多个模型假设进行比较时，F1 score越高，说明它越好。
 

@@ -83,6 +83,10 @@ template <class T, class U>
   std::cout << "bar's dynamic type: " << bar->dynamic_type << '\n'; // A
 ```
 
+- unique_ptr作为参数时，应该使用值传递还是右值引用(&&)？
+  - 应当使用值传递，可以确保原对象已经交出了控制权。
+  - 若传递右值引用，那么调用方则不确定是否还能使用原有的指针
+
 #### C++常用容器
 
 deque：双向队列

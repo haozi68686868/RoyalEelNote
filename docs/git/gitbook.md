@@ -4,6 +4,52 @@
 
 - 用gitbook生成 pdf，内置跳转需要标题是纯英文，不能有空格和中文
 
+#### 解析加载Latex公式
+
+- gitbook目前感觉不怎么维护，有两个可用的稳定插件
+  - katex：较好支持pdf和html，但是latex部分语法没有支持
+  - mathjax：官方镜像已经坏掉了，建议用mathjax-pro：https://github.com/kevinkangkang/gitbook-plugin-mathjax-pro
+
+##### Mathjax-Pro安装
+
+```
+npm install mathjax@2.7.7
+```
+
+- Add it to your `book.json` configuration:
+
+```
+{
+    "plugins": ["mathjax-pro"]
+}
+```
+
+- Install your plugins using:
+
+```
+gitbook install
+```
+
+You can force the use of svg pre-processed
+
+- adding to your `book.json`:
+
+```
+{
+    "pluginsConfig": {
+        "mathjax-pro":{
+            "forceSVG": true
+        }
+    }
+}
+```
+
+[gitbook使用mathjax --知乎：kevinkangkang](https://zhuanlan.zhihu.com/p/132638228)
+
+https://zhuanlan.zhihu.com/p/123870902
+
+[Gitbook踩坑记录III --知乎：Tensor](https://zhuanlan.zhihu.com/p/125577482)
+
 **概述**
 
 GitBook 是使用 GitHub / Git 和 Markdown（或AsciiDoc）构建漂亮书籍的命令行工具（和Node.js库）。

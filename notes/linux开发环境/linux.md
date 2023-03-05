@@ -17,6 +17,15 @@ ctrl+shift+C/V
 ctrl+C
 ```
 
+#### 截屏操作
+
+```shell
+# 选中范围截图
+shift+screen
+# 如果要复制到剪贴板，统一加ctrl
+ctrl+shift+screen
+```
+
 #### 远程文件操作
 
 ```
@@ -200,3 +209,28 @@ cat /proc/cpuinfo
 lsof -i:50057
 ```
 
+#### ubantu18 调整字体
+
+```
+apt install gnome-tweaks
+```
+
+#### ubantu18修改启动菜单
+
+- 路径 /usr/local/applications
+
+### sudo会丢失环境变量的问题
+
+1. sudo su
+   1. 会重新加载所有的环境变量(~/.bashrc)
+   2. 会重置环境变量
+      - 若不希望重置，可改 /etc/sudoers，将"Default env_reset"改为"Default !env_reset"
+2. sudo \<cmd>
+   - 会重置 LD_LIBRARY_PATH，有可能导致找不到动态链接库
+   - 解决方案：
+     1. 在执行sudo时添加环境变量，sudo LD_LIBRARY_PATH=$LD_LIBRARY_PATH\<cmd>
+     2. 修改/etc/environment
+
+##### 符号相关调试指令
+
+ldd, nm

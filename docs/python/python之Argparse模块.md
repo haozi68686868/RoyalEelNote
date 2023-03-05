@@ -49,11 +49,21 @@ parser.add_argument('--save-model', action='store_true', default=False,
                         help='For Saving the current Model')
 ```
 
-其中action参数的'store_true'指的是：触发action时为真，不触发则为假。即储存了一个bool变量，默认为false，触发不用赋值即变为true
+action参数
+
+- ”store_true“指的是：触发action时为真，不触发则为假。即储存了一个bool变量，默认为false，触发不用赋值即变为true
+- "append"：添加到数组
+
 type:指定参数类别，默认是str，传入数字要定义
 help：是一些提示信息
 default：是默认值
 metavar: 在 usage 说明中的参数名称，对于必选参数默认就是参数名称，对于可选参数默认是全大写的参数名称.
+
+- nargs参数
+  - "N" ：N个参数
+  - "*"：0~任意个参数，会存成数组
+  - ”+“: 至少1个参数，会存成数组
+
 其它详细用法文档介绍：https://docs.python.org/zh-cn/3/library/argparse.html#argparse.ArgumentParser.add_argument
 
 ## 解析参数
